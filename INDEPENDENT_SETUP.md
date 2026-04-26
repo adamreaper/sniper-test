@@ -24,7 +24,7 @@ This copy is the independent version scaffold.
    - `data/app-ready.json`
 
 Current board thresholds:
-- raw floor: `$75`
+- raw floor: `none`
 - ROI floor: `80%`
 - minimum PSA 10 sales: `3`
 
