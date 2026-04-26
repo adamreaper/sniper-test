@@ -43,8 +43,8 @@ That installs and starts:
 - `one-piece-sniper-test-refresh.service` (oneshot refresh job)
 
 Current schedule:
-- one full refresh every `1d` after the last successful run
-- plus a boot catch-up after `5min`
+- one full refresh every day at `5:45 AM`
+- `Persistent=true` means if the machine was off at that time, systemd will run the missed refresh shortly after login/startup
 
 Useful commands:
 ```bash

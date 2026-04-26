@@ -1,9 +1,8 @@
 [Unit]
-Description=Daily refresh timer for One Piece Sniper Test
+Description=Daily 5:45 AM refresh timer for One Piece Sniper Test
 
 [Timer]
-OnBootSec=5min
-OnUnitActiveSec=1d
+OnCalendar=*-*-* 05:45:00
 Persistent=true
 Unit=one-piece-sniper-test-refresh.service
 
