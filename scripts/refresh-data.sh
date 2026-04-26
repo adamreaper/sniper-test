@@ -69,10 +69,10 @@ trap cleanup EXIT
 
   if [[ "$AUTO_PUSH_TO_GITHUB" == "1" ]]; then
     cd "$APP_DIR"
-    git pull --rebase "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
     git add data/latest.json data/latest-v2.json data/weekly-base.json data/trade-plan.json data/app-ready.json
     if ! git diff --cached --quiet; then
       git commit -m "Refresh sniper test data $(date +%F' '%H:%M)"
+      git pull --rebase "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
       git push "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
       echo "[$(date -Iseconds)] Git push complete"
     else
