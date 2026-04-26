@@ -810,6 +810,17 @@
     </div>
     <div id="results" class="grid"></div>
 
+    <section class="panel lots-panel" id="lastSeenReviewSection">
+      <div class="section-head" style="margin-top:0">
+        <div>
+          <h2 class="section-title">Last seen review candidates</h2>
+          <div class="section-copy">Borderline review listings from earlier refreshes that fell off the current board or no longer passed the live review gate.</div>
+        </div>
+        <div id="lastSeenReviewMeta" class="meta">Loading review history...</div>
+      </div>
+      <div id="lastSeenReviewResults" class="grid"></div>
+    </section>
+
     <section class="panel lots-panel" id="lotsSection">
       <div class="section-head" style="margin-top:0">
         <div>
@@ -841,6 +852,7 @@
 
     let allRows = [];
     let lotRows = [];
+    let lastSeenReviewRows = [];
     let tickerFrame = null;
     let activeFilter = 'all';
     let tradePlanMap = new Map();
@@ -1087,6 +1099,41 @@
       document.getElementById('realisticProfitWeek').textContent = fmtMoney(realisticProfit);
     }
 
+    function renderLastSeenReviewRows(rows) {
+      const container = document.getElementById('lastSeenReviewResults');
+      const meta = document.getElementById('lastSeenReviewMeta');
+      const section = document.getElementById('lastSeenReviewSection');
+      if (!rows.length) {
+        meta.textContent = 'No older review candidates saved right now.';
+        container.innerHTML = '<div class="empty">When a review candidate disappears on a later refresh, it will show up here instead of vanishing.</div>';
+        section.style.display = 'none';
+        return;
+      }
+      section.style.display = 'block';
+      meta.textContent = `${rows.length} row${rows.length === 1 ? '' : 's'} remembered from earlier refreshes`;
+      container.innerHTML = rows.map((row) => `
+        <article class="card review-available">
+          <div class="topline">
+            <div class="card-head">
+              <div class="rank">⏱</div>
+              <div>
+                <div class="title">${row.code} ${row.name}</div>
+                <div class="subtitle">${row.setName || 'Unknown set'} • last seen ${fmtDate(row.lastSeenAt)}</div>
+                <div class="status-row"><span class="badge badge-manual-review">Last seen review candidates</span></div>
+              </div>
+            </div>
+            <div class="roi">${fmtPct(row.roiPercent)}</div>
+          </div>
+          <div class="metrics">
+            <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
+            <div class="metric"><div class="label">PSA 10</div><div class="value">${fmtMoney(row.psa10Market)}</div></div>
+          </div>
+          <div class="candidate"><div class="candidate-title">Last seen manual review bucket</div><div class="candidate-note">These were seen on an earlier refresh but did not survive the latest live scan.</div></div>
+          <div class="candidate-list">${(Array.isArray(row.lastSeenReviewCandidates) ? row.lastSeenReviewCandidates : []).map((candidate, index) => renderCandidateCard(candidate, index, 'Last seen review')).join('')}</div>
+        </article>
+      `).join('');
+    }
+
     function renderLots(rows) {
       const container = document.getElementById('lotsResults');
       const meta = document.getElementById('lotsMeta');
@@ -1253,6 +1300,7 @@
         tradePlanMap = new Map();
       }
       allRows = Array.isArray(data.rows) ? data.rows : [];
+      lastSeenReviewRows = Array.isArray(data.lastSeenReviewRows) ? data.lastSeenReviewRows : [];
       if (lotsRes && lotsRes.ok) {
         const lotsData = await lotsRes.json();
         lotRows = Array.isArray(lotsData.rows) ? lotsData.rows : [];
@@ -1273,6 +1321,7 @@
       initChips();
       initDock();
       render(allRows);
+      renderLastSeenReviewRows(lastSeenReviewRows);
       renderLots(lotRows);
       document.getElementById('search').addEventListener('input', applyFilter);
     }
@@ -1282,6 +1331,8 @@
       document.getElementById('maxProfitWeek').textContent = '-';
       document.getElementById('realisticProfitWeek').textContent = '-';
       document.getElementById('results').innerHTML = '<div class="empty">No weekly scan data yet. Once the cron job runs, latest.json will appear here.</div>';
+      document.getElementById('lastSeenReviewMeta').textContent = 'Review history unavailable';
+      document.getElementById('lastSeenReviewResults').innerHTML = '<div class="empty">Review history will show up here once at least one candidate drops off a later refresh.</div>';
       document.getElementById('lotsMeta').textContent = 'Lot feed unavailable';
       document.getElementById('lotsResults').innerHTML = '<div class="empty">Lots will show up here once app-ready.json is published.</div>';
     });
