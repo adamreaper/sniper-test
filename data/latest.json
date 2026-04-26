@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T19:53:58.711Z",
+  "generatedAt": "2026-04-26T20:00:31.482Z",
   "dateStamp": "2026-04-26",
   "filters": {
     "source": "PriceCharting English One Piece full-price guide + eBay photo-enriched raw candidates",
@@ -13,41 +13,12 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 9,
+  "rowsWithEbayField": 6,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "/home/deck/.openclaw/workspace/one-piece-sniper-test/data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 9,
+  "qualifiedCount": 6,
   "rows": [
-    {
-      "code": "OP08-058",
-      "name": "Charlotte Pudding (SPR)",
-      "setName": "Extra Booster: Anime 25th Collection",
-      "productId": "629189",
-      "rarity": "L",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-extra-booster-anime-25th-collection/charlotte-pudding-op08-058",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/charlotte-pudding-op08-058",
-      "searchScore": 131,
-      "rawMarket": 177.12,
-      "psa10Market": 1525,
-      "netPsa10Exit": 1342,
-      "gradingCost": 33,
-      "costBasis": 210.12,
-      "profit": 1131.88,
-      "roi": 5.3868,
-      "roiPercent": 538.68,
-      "psa10SalesCount": 7,
-      "ungradedSalesCount": 16,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 416,
-      "collectrLink": "https://app.getcollectr.com/explore/product/629189",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629189.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0
-    },
     {
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
@@ -75,112 +46,6 @@
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597065.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
-      "ebayCandidateCount": 0
-    },
-    {
-      "code": "EB02-061",
-      "name": "Monkey.D.Luffy (061) (Manga)",
-      "setName": "Extra Booster: Anime 25th Collection",
-      "productId": "629167",
-      "rarity": "SEC",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-extra-booster-anime-25th-collection/monkeydluffy-manga-eb02-061",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/monkeydluffy-manga-eb02-061",
-      "searchScore": 143,
-      "rawMarket": 2525,
-      "psa10Market": 6937.5,
-      "netPsa10Exit": 6105,
-      "gradingCost": 79.99,
-      "costBasis": 2604.99,
-      "profit": 3500.01,
-      "roi": 1.3436,
-      "roiPercent": 134.36,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 40,
-      "bgs10SalesCount": 17,
-      "collectrRawMarket": 3952.04,
-      "collectrLink": "https://app.getcollectr.com/explore/product/629167",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629167.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [
-        {
-          "itemId": "v1|397401320935|0",
-          "title": "One Piece Card Game - Monkey D. Luffy Manga EB02-061",
-          "price": 1137.49,
-          "shipping": 0,
-          "total": 1137.49,
-          "itemWebUrl": "https://www.ebay.com/itm/397401320935",
-          "imageUrl": "https://i.ebayimg.com/images/g/F3YAAeSwSqVpOoEX/s-l1600.jpg",
-          "additionalImages": [],
-          "seller": {
-            "username": "pokevalut8",
-            "feedbackPercentage": "99.6",
-            "feedbackScore": 520
-          },
-          "photoScore": {
-            "score": 50,
-            "psa10Probability": 50,
-            "confidence": 20,
-            "notes": "Photo score fallback used.",
-            "visibleLanguage": "unknown",
-            "rejectForLanguage": false,
-            "rejectForStockImage": false
-          },
-          "roi": {
-            "gradingCost": 79.99,
-            "costBasis": 1217.48,
-            "netExit": 6105,
-            "profit": 4887.52,
-            "roi": 4.0145,
-            "roiPercent": 401.45
-          },
-          "rankMeta": {
-            "score": 86,
-            "priceEdgePercent": 54.95,
-            "sellerFeedbackPct": 99.6
-          },
-          "reviewReason": "Manual review: visible language = unknown"
-        },
-        {
-          "itemId": "v1|397401315202|0",
-          "title": "One Piece Card Game - Monkey D. Luffy Manga EB02-061",
-          "price": 1138.49,
-          "shipping": 0,
-          "total": 1138.49,
-          "itemWebUrl": "https://www.ebay.com/itm/397401315202?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xAzl0CRsFGj6oeKg99ijGJBSNxhGaOyZWuQ0Ujo5tVs5g7xb8YKbiEA%2BGP7oyzdjKb9JaUkshl4FjWZBuTwrSalTw02ZXopRgKtu5Y6JHKHsFSmorL5F%2BcZe%2F44fimCyUJjz4WN4jQnVf9f8Bf2gyTsx%2FWMZyi8QpPNSluYZPQAjo5IlYhKXDX%2BquP5kzuOfNE%3D",
-          "imageUrl": "https://i.ebayimg.com/images/g/F3YAAeSwSqVpOoEX/s-l1600.jpg",
-          "additionalImages": [],
-          "seller": {
-            "username": "fiwp5548",
-            "feedbackPercentage": "99.5",
-            "feedbackScore": 421
-          },
-          "photoScore": {
-            "score": 50,
-            "psa10Probability": 50,
-            "confidence": 20,
-            "notes": "Photo score fallback used.",
-            "visibleLanguage": "unknown",
-            "rejectForLanguage": false,
-            "rejectForStockImage": false
-          },
-          "roi": {
-            "gradingCost": 79.99,
-            "costBasis": 1218.48,
-            "netExit": 6105,
-            "profit": 4886.52,
-            "roi": 4.0103,
-            "roiPercent": 401.03
-          },
-          "rankMeta": {
-            "score": 85.9,
-            "priceEdgePercent": 54.91,
-            "sellerFeedbackPct": 99.5
-          },
-          "reviewReason": "Manual review: visible language = unknown"
-        }
-      ],
       "ebayCandidateCount": 0
     },
     {
@@ -237,35 +102,6 @@
       "collectrLink": "https://app.getcollectr.com/explore/product/596984",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_596984.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0
-    },
-    {
-      "code": "OP06-001",
-      "name": "Uta (SPR)",
-      "setName": "Extra Booster: Anime 25th Collection",
-      "productId": "629173",
-      "rarity": "L",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-extra-booster-anime-25th-collection/uta-op06-001",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/uta-op06-001",
-      "searchScore": 127,
-      "rawMarket": 700,
-      "psa10Market": 1776.73,
-      "netPsa10Exit": 1563.52,
-      "gradingCost": 79.99,
-      "costBasis": 779.99,
-      "profit": 783.53,
-      "roi": 1.0045,
-      "roiPercent": 100.45,
-      "psa10SalesCount": 5,
-      "ungradedSalesCount": 23,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 491.9,
-      "collectrLink": "https://app.getcollectr.com/explore/product/629173",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629173.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
       "ebayCandidateCount": 0
@@ -354,48 +190,7 @@
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597035.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
-      "reviewCandidates": [
-        {
-          "itemId": "v1|366338499840|0",
-          "title": "2024 One Piece MARSHALL D. TEACH #OP09-093 Emperors in the New World Manga ENG",
-          "price": 1082.56,
-          "shipping": 0,
-          "total": 1082.56,
-          "itemWebUrl": "https://www.ebay.com/itm/366338499840",
-          "imageUrl": "https://i.ebayimg.com/images/g/ae4AAeSwpHBp2qh3/s-l1600.jpg",
-          "additionalImages": [
-            "https://i.ebayimg.com/images/g/FSQAAeSwOqpp2Njc/s-l1600.jpg"
-          ],
-          "seller": {
-            "username": "tcg.heych",
-            "feedbackPercentage": "98.9",
-            "feedbackScore": 98
-          },
-          "photoScore": {
-            "score": 50,
-            "psa10Probability": 50,
-            "confidence": 20,
-            "notes": "Photo score fallback used.",
-            "visibleLanguage": "unknown",
-            "rejectForLanguage": false,
-            "rejectForStockImage": false
-          },
-          "roi": {
-            "gradingCost": 79.99,
-            "costBasis": 1162.55,
-            "netExit": 2268.26,
-            "profit": 1105.71,
-            "roi": 0.9511,
-            "roiPercent": 95.11
-          },
-          "rankMeta": {
-            "score": 48.8,
-            "priceEdgePercent": 6.27,
-            "sellerFeedbackPct": 98.9
-          },
-          "reviewReason": "Manual review: visible language = unknown"
-        }
-      ],
+      "reviewCandidates": [],
       "ebayCandidateCount": 0
     }
   ]
