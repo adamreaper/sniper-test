@@ -99,6 +99,19 @@
       flex: 1 1 320px;
       min-width: 0;
     }
+    .hero-mascot {
+      width: 110px;
+      height: 215px;
+      flex: 0 0 auto;
+      background-image: url('./assets/sprites/nami-idle-strip.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      image-rendering: pixelated;
+      transform: scale(1.05);
+      transform-origin: center bottom;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
+      animation: namiIdle 1s steps(6) infinite;
+    }
     .ticker-shell {
       margin-bottom: 18px;
       padding: 10px 0;
@@ -665,6 +678,11 @@
         height: 58px;
         border-radius: 16px;
       }
+      .hero-mascot {
+        width: 88px;
+        height: 172px;
+        background-size: 528px 172px;
+      }
       h1 {
         font-size: 28px;
         margin-bottom: 6px;
@@ -769,6 +787,10 @@
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
+    @keyframes namiIdle {
+      from { background-position: 0 0; }
+      to { background-position: -660px 0; }
+    }
   </style>
 </head>
 <body>
@@ -783,6 +805,7 @@
         <div class="hero-copy">
           <h1>One Piece PSA 10 ROI Board Test</h1>
         </div>
+        <div class="hero-mascot" aria-hidden="true" title="Nami idle animation"></div>
       </div>
       <div class="stats-wrap">
         <div class="stats">
