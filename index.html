@@ -100,18 +100,7 @@
       min-width: 0;
     }
     .hero-mascot {
-      width: 96px;
-      height: 176px;
-      flex: 0 0 auto;
-      background-image: url('./assets/sprites/nami-victory-clean-sheet.png');
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: 288px 176px;
-      image-rendering: pixelated;
-      transform: scale(1.05);
-      transform-origin: center bottom;
-      filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
-      display: block;
+      display: none;
     }
     .ticker-shell {
       margin-bottom: 18px;
@@ -680,9 +669,7 @@
         border-radius: 16px;
       }
       .hero-mascot {
-        width: 82px;
-        height: 150px;
-        background-size: 246px 150px;
+        display: none;
       }
       h1 {
         font-size: 28px;
@@ -802,7 +789,6 @@
         <div class="hero-copy">
           <h1>One Piece PSA 10 ROI Board Test</h1>
         </div>
-        <div class="hero-mascot" id="heroMascot" aria-hidden="true"></div>
       </div>
       <div class="stats-wrap">
         <div class="stats">
@@ -1333,17 +1319,7 @@
       });
     }
 
-    function initHeroMascotAnimation() {
-      const mascot = document.getElementById('heroMascot');
-      if (!mascot) return;
-      const frames = [0, 1, 2, 1];
-      let frameIndex = 0;
-      mascot.style.backgroundPosition = '0px 0px';
-      window.setInterval(() => {
-        frameIndex = (frameIndex + 1) % frames.length;
-        mascot.style.backgroundPosition = `${-96 * frames[frameIndex]}px 0px`;
-      }, 220);
-    }
+    function initHeroMascotAnimation() {}
 
     async function boot() {
       const [res, tradePlanRes, lotsRes] = await Promise.all([
