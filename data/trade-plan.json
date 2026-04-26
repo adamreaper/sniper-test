@@ -1,16 +1,46 @@
 {
-  "generatedAt": "2026-04-26T20:01:13.725Z",
-  "sourceFeedUpdatedAt": "2026-04-26T20:01:13.663Z",
+  "generatedAt": "2026-04-26T20:20:11.849Z",
+  "sourceFeedUpdatedAt": "2026-04-26T20:20:11.786Z",
   "sourceMode": "rows",
   "summary": {
-    "totalPlans": 6,
+    "totalPlans": 9,
     "buyNowCount": 0,
     "manualReviewCount": 0,
-    "watchCount": 6
+    "watchCount": 9
   },
   "plans": [
     {
       "sourceRank": 1,
+      "name": "Charlotte Pudding (SPR)",
+      "code": "OP08-058",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "rawMarket": 177.12,
+      "psa10Market": 1525,
+      "costBasis": 210.12,
+      "netPsa10Exit": 1342,
+      "expectedPsaNet": 1131.88,
+      "roiPercent": 538.68,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629189",
+      "priceEdgePercent": 0,
+      "buyScore": 24.9,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 1
+    },
+    {
+      "sourceRank": 2,
       "name": "Gol.D.Roger (Manga)",
       "code": "OP09-118",
       "setName": "Emperors in the New World",
@@ -37,10 +67,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 1
+      "rank": 2
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 3,
+      "name": "Monkey.D.Luffy (061) (Manga)",
+      "code": "EB02-061",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "rawMarket": 2525,
+      "psa10Market": 6937.5,
+      "costBasis": 2604.99,
+      "netPsa10Exit": 6105,
+      "expectedPsaNet": 3500.01,
+      "roiPercent": 134.36,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629167",
+      "priceEdgePercent": 0,
+      "buyScore": 11.4,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 3
+    },
+    {
+      "sourceRank": 7,
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "code": "OP05-119",
       "setName": "A Fist of Divine Speed",
@@ -67,10 +127,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 2
+      "rank": 4
     },
     {
-      "sourceRank": 3,
+      "sourceRank": 5,
       "name": "Buggy (051) (Manga)",
       "code": "OP09-051",
       "setName": "Emperors in the New World",
@@ -97,10 +157,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 3
+      "rank": 5
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 9,
       "name": "Marshall.D.Teach (093) (Manga)",
       "code": "OP09-093",
       "setName": "Emperors in the New World",
@@ -127,10 +187,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 4
+      "rank": 6
     },
     {
-      "sourceRank": 2,
+      "sourceRank": 6,
+      "name": "Uta (SPR)",
+      "code": "OP06-001",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "rawMarket": 700,
+      "psa10Market": 1776.73,
+      "costBasis": 779.99,
+      "netPsa10Exit": 1563.52,
+      "expectedPsaNet": 783.53,
+      "roiPercent": 100.45,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629173",
+      "priceEdgePercent": 0,
+      "buyScore": 1.1,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 7
+    },
+    {
+      "sourceRank": 4,
       "name": "Vinsmoke Reiju (SP)",
       "code": "EB03-031",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -157,10 +247,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 5
+      "rank": 8
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 8,
       "name": "Nefeltari Vivi - 024 (SP)",
       "code": "EB03-024",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -187,7 +277,7 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 6
+      "rank": 9
     }
   ]
 }

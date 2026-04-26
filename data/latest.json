@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T20:01:13.663Z",
+  "generatedAt": "2026-04-26T20:20:11.786Z",
   "dateStamp": "2026-04-26",
   "filters": {
     "source": "PriceCharting English One Piece full-price guide + eBay photo-enriched raw candidates",
@@ -13,12 +13,43 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 6,
+  "rowsWithEbayField": 9,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "/home/deck/.openclaw/workspace/one-piece-sniper-test/data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 6,
+  "qualifiedCount": 9,
+  "lastSeenReviewRows": [],
   "rows": [
+    {
+      "code": "OP08-058",
+      "name": "Charlotte Pudding (SPR)",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "productId": "629189",
+      "rarity": "L",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-extra-booster-anime-25th-collection/charlotte-pudding-op08-058",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/charlotte-pudding-op08-058",
+      "searchScore": 131,
+      "rawMarket": 177.12,
+      "psa10Market": 1525,
+      "netPsa10Exit": 1342,
+      "gradingCost": 33,
+      "costBasis": 210.12,
+      "profit": 1131.88,
+      "roi": 5.3868,
+      "roiPercent": 538.68,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 16,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 416,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629189",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629189.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
+    },
     {
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
@@ -46,7 +77,38 @@
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597065.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
-      "ebayCandidateCount": 0
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
+    },
+    {
+      "code": "EB02-061",
+      "name": "Monkey.D.Luffy (061) (Manga)",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "productId": "629167",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-extra-booster-anime-25th-collection/monkeydluffy-manga-eb02-061",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/monkeydluffy-manga-eb02-061",
+      "searchScore": 143,
+      "rawMarket": 2525,
+      "psa10Market": 6937.5,
+      "netPsa10Exit": 6105,
+      "gradingCost": 79.99,
+      "costBasis": 2604.99,
+      "profit": 3500.01,
+      "roi": 1.3436,
+      "roiPercent": 134.36,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 40,
+      "bgs10SalesCount": 17,
+      "collectrRawMarket": 3952.04,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629167",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629167.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
     },
     {
       "code": "EB03-031",
@@ -75,7 +137,8 @@
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672824.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
-      "ebayCandidateCount": 0
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
     },
     {
       "code": "OP09-051",
@@ -104,7 +167,38 @@
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_596984.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
-      "ebayCandidateCount": 0
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
+    },
+    {
+      "code": "OP06-001",
+      "name": "Uta (SPR)",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "productId": "629173",
+      "rarity": "L",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-extra-booster-anime-25th-collection/uta-op06-001",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/uta-op06-001",
+      "searchScore": 127,
+      "rawMarket": 700,
+      "psa10Market": 1776.73,
+      "netPsa10Exit": 1563.52,
+      "gradingCost": 79.99,
+      "costBasis": 779.99,
+      "profit": 783.53,
+      "roi": 1.0045,
+      "roiPercent": 100.45,
+      "psa10SalesCount": 5,
+      "ungradedSalesCount": 23,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 491.9,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629173",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629173.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
     },
     {
       "code": "OP05-119",
@@ -133,7 +227,8 @@
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632503.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
-      "ebayCandidateCount": 0
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
     },
     {
       "code": "EB03-024",
@@ -162,7 +257,8 @@
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672822.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
-      "ebayCandidateCount": 0
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
     },
     {
       "code": "OP09-093",
@@ -191,7 +287,8 @@
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597035.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
-      "ebayCandidateCount": 0
+      "ebayCandidateCount": 0,
+      "lastReviewSeenAt": null
     }
   ]
 }
