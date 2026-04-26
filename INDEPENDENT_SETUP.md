@@ -23,6 +23,11 @@ This copy is the independent version scaffold.
    - `data/trade-plan.json`
    - `data/app-ready.json`
 
+Current board thresholds:
+- raw floor: `$75`
+- ROI floor: `70%`
+- minimum PSA 10 sales: `3`
+
 ## Run it manually
 ```bash
 bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/refresh-data.sh
