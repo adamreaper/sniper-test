@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-26T20:36:04.215Z",
-  "sourceFeedUpdatedAt": "2026-04-26T20:36:04.154Z",
+  "generatedAt": "2026-04-26T20:46:58.425Z",
+  "sourceFeedUpdatedAt": "2026-04-26T20:46:58.356Z",
   "sourceMode": "rows",
   "summary": {
-    "totalPlans": 17,
+    "totalPlans": 14,
     "buyNowCount": 0,
     "manualReviewCount": 0,
-    "watchCount": 17
+    "watchCount": 14
   },
   "plans": [
     {
@@ -250,7 +250,7 @@
       "rank": 8
     },
     {
-      "sourceRank": 15,
+      "sourceRank": 14,
       "name": "Marshall.D.Teach (093) (Manga)",
       "code": "OP09-093",
       "setName": "Emperors in the New World",
@@ -371,36 +371,6 @@
     },
     {
       "sourceRank": 12,
-      "name": "Gol.D.Roger (Alternate Art)",
-      "code": "OP09-118",
-      "setName": "Emperors in the New World",
-      "rawMarket": 89.93,
-      "psa10Market": 264.46,
-      "costBasis": 122.93,
-      "netPsa10Exit": 232.72,
-      "expectedPsaNet": 109.79,
-      "roiPercent": 89.31,
-      "compCount": 0,
-      "ebayCandidateCount": 0,
-      "bestListingTotal": 0,
-      "bestListingUrl": null,
-      "bestListingPhotoScore": 0,
-      "bestSellerFeedbackPercent": 0,
-      "bestShipping": 0,
-      "candidateRankScore": 0,
-      "collectrLink": "https://app.getcollectr.com/explore/product/597066",
-      "priceEdgePercent": 0,
-      "buyScore": 0,
-      "confidenceTier": "D",
-      "action": "watch",
-      "riskFlags": [
-        "no_live_listing",
-        "collectr_only_psa_signal"
-      ],
-      "rank": 13
-    },
-    {
-      "sourceRank": 13,
       "name": "Shanks - OP09-004 (SP) (Silver)",
       "code": "OP09-004",
       "setName": "Carrying On His Will",
@@ -427,10 +397,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 14
+      "rank": 13
     },
     {
-      "sourceRank": 14,
+      "sourceRank": 13,
       "name": "Nefeltari Vivi - 024 (SP)",
       "code": "EB03-024",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -457,67 +427,7 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 15
-    },
-    {
-      "sourceRank": 16,
-      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
-      "code": "OP13-118",
-      "setName": "Carrying On His Will",
-      "rawMarket": 92.25,
-      "psa10Market": 250,
-      "costBasis": 125.25,
-      "netPsa10Exit": 220,
-      "expectedPsaNet": 94.75,
-      "roiPercent": 75.65,
-      "compCount": 0,
-      "ebayCandidateCount": 0,
-      "bestListingTotal": 0,
-      "bestListingUrl": null,
-      "bestListingPhotoScore": 0,
-      "bestSellerFeedbackPercent": 0,
-      "bestShipping": 0,
-      "candidateRankScore": 0,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
-      "priceEdgePercent": 0,
-      "buyScore": 0,
-      "confidenceTier": "D",
-      "action": "watch",
-      "riskFlags": [
-        "no_live_listing",
-        "collectr_only_psa_signal"
-      ],
-      "rank": 16
-    },
-    {
-      "sourceRank": 17,
-      "name": "Monkey.D.Luffy (118) (Parallel)",
-      "code": "OP13-118",
-      "setName": "Carrying On His Will",
-      "rawMarket": 92.25,
-      "psa10Market": 250,
-      "costBasis": 125.25,
-      "netPsa10Exit": 220,
-      "expectedPsaNet": 94.75,
-      "roiPercent": 75.65,
-      "compCount": 0,
-      "ebayCandidateCount": 0,
-      "bestListingTotal": 0,
-      "bestListingUrl": null,
-      "bestListingPhotoScore": 0,
-      "bestSellerFeedbackPercent": 0,
-      "bestShipping": 0,
-      "candidateRankScore": 0,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
-      "priceEdgePercent": 0,
-      "buyScore": 0,
-      "confidenceTier": "D",
-      "action": "watch",
-      "riskFlags": [
-        "no_live_listing",
-        "collectr_only_psa_signal"
-      ],
-      "rank": 17
+      "rank": 14
     }
   ]
 }
