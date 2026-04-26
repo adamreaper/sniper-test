@@ -797,7 +797,7 @@
         <div class="hero-copy">
           <h1>One Piece PSA 10 ROI Board Test</h1>
         </div>
-        <canvas class="hero-mascot" id="heroMascot" width="96" height="164" aria-hidden="true"></canvas>
+        <img class="hero-mascot" id="heroMascot" src="./assets/sprites/nami-victory-finalnorm/frame-1.png" alt="" aria-hidden="true" />
       </div>
       <div class="stats-wrap">
         <div class="stats">
@@ -1329,65 +1329,23 @@
     }
 
     function initHeroMascotAnimation() {
-      const canvas = document.getElementById('heroMascot');
-      if (!canvas) return;
-      const ctx = canvas.getContext('2d', { alpha: true });
-      if (!ctx) return;
-      ctx.imageSmoothingEnabled = false;
-
-      const sheet = new Image();
-      sheet.src = './assets/sprites/nami-victory-reference.png';
-
-      const canvasWidth = 96;
-      const canvasHeight = 164;
-      const frameDelayMs = 180;
+      const mascot = document.getElementById('heroMascot');
+      if (!mascot) return;
       const frames = [
-        { sx: 8, sy: 20, sw: 84, sh: 156, dx: 8, dy: 8 },
-        { sx: 101, sy: 20, sw: 84, sh: 156, dx: 7, dy: 8 },
-        { sx: 196, sy: 20, sw: 84, sh: 156, dx: 6, dy: 8 },
-        { sx: 291, sy: 20, sw: 84, sh: 156, dx: 7, dy: 8 },
-        { sx: 386, sy: 20, sw: 84, sh: 156, dx: 8, dy: 8 },
+        './assets/sprites/nami-victory-finalnorm/frame-1.png',
+        './assets/sprites/nami-victory-finalnorm/frame-2.png',
+        './assets/sprites/nami-victory-finalnorm/frame-1.png',
       ];
+      frames.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
       let frameIndex = 0;
-      let lastTick = 0;
-
-      const offscreen = document.createElement('canvas');
-      offscreen.width = canvasWidth;
-      offscreen.height = canvasHeight;
-      const offCtx = offscreen.getContext('2d', { alpha: true, willReadFrequently: true });
-
-      function drawFrame(index) {
-        if (!offCtx) return;
-        const frame = frames[index];
-        offCtx.clearRect(0, 0, canvasWidth, canvasHeight);
-        offCtx.drawImage(sheet, frame.sx, frame.sy, frame.sw, frame.sh, frame.dx, frame.dy, frame.sw, frame.sh);
-
-        const imageData = offCtx.getImageData(0, 0, canvasWidth, canvasHeight);
-        const data = imageData.data;
-        for (let i = 0; i < data.length; i += 4) {
-          const r = data[i];
-          const g = data[i + 1];
-          const b = data[i + 2];
-          if (r < 18 && g < 18 && b < 18) data[i + 3] = 0;
-        }
-        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-        ctx.putImageData(imageData, 0, 0);
-      }
-
-      function tick(ts) {
-        if (!lastTick) lastTick = ts;
-        if (ts - lastTick >= frameDelayMs) {
-          frameIndex = (frameIndex + 1) % frames.length;
-          drawFrame(frameIndex);
-          lastTick = ts;
-        }
-        window.requestAnimationFrame(tick);
-      }
-
-      sheet.onload = () => {
-        drawFrame(0);
-        window.requestAnimationFrame(tick);
-      };
+      mascot.src = frames[0];
+      window.setInterval(() => {
+        frameIndex = (frameIndex + 1) % frames.length;
+        mascot.src = frames[frameIndex];
+      }, 220);
     }
 
     async function boot() {
