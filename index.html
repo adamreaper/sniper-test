@@ -92,7 +92,7 @@
     }
     .countdown-banner {
       display: grid;
-      grid-template-columns: minmax(280px, 420px) minmax(220px, 1fr);
+      grid-template-columns: minmax(280px, 360px) minmax(220px, 1fr);
       gap: 20px;
       align-items: center;
       margin-bottom: 18px;
@@ -104,7 +104,8 @@
     .countdown-visual {
       position: relative;
       width: 100%;
-      max-width: 420px;
+      max-width: 360px;
+      justify-self: center;
     }
     .countdown-visual img {
       width: 100%;
@@ -723,16 +724,29 @@
       }
       .countdown-banner {
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 12px;
         padding: 14px;
       }
       .countdown-visual {
-        max-width: 360px;
+        max-width: 250px;
         margin: 0 auto;
+      }
+      .countdown-overlay {
+        font-size: clamp(14px, 4.8vw, 22px);
       }
       .countdown-copy {
         text-align: center;
         justify-items: center;
+        gap: 8px;
+      }
+      .countdown-title {
+        font-size: 22px;
+      }
+      .countdown-note {
+        font-size: 14px;
+      }
+      .countdown-subline {
+        font-size: 13px;
       }
       .hero-mascot {
         display: none;
