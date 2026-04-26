@@ -25,7 +25,7 @@ This copy is the independent version scaffold.
 
 Current board thresholds:
 - raw floor: `$75`
-- ROI floor: `70%`
+- ROI floor: `80%`
 - minimum PSA 10 sales: `3`
 
 ## Run it manually
