@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-26T20:31:05.280Z",
-  "sourceFeedUpdatedAt": "2026-04-26T20:31:05.216Z",
+  "generatedAt": "2026-04-26T20:36:04.215Z",
+  "sourceFeedUpdatedAt": "2026-04-26T20:36:04.154Z",
   "sourceMode": "rows",
   "summary": {
-    "totalPlans": 9,
+    "totalPlans": 17,
     "buyNowCount": 0,
     "manualReviewCount": 0,
-    "watchCount": 9
+    "watchCount": 17
   },
   "plans": [
     {
@@ -41,6 +41,36 @@
     },
     {
       "sourceRank": 2,
+      "name": "Kyros (SPR)",
+      "code": "EB01-040",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "rawMarket": 200.63,
+      "psa10Market": 1380,
+      "costBasis": 233.63,
+      "netPsa10Exit": 1214.4,
+      "expectedPsaNet": 980.77,
+      "roiPercent": 419.8,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629088",
+      "priceEdgePercent": 0,
+      "buyScore": 22.3,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 2
+    },
+    {
+      "sourceRank": 4,
       "name": "Gol.D.Roger (Manga)",
       "code": "OP09-118",
       "setName": "Emperors in the New World",
@@ -67,10 +97,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "sourceRank": 3,
+      "name": "Perona (SPR)",
+      "code": "OP06-021",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "rawMarket": 449.97,
+      "psa10Market": 1650,
+      "costBasis": 482.97,
+      "netPsa10Exit": 1452,
+      "expectedPsaNet": 969.03,
+      "roiPercent": 200.64,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629175",
+      "priceEdgePercent": 0,
+      "buyScore": 14.2,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 4
+    },
+    {
+      "sourceRank": 5,
       "name": "Monkey.D.Luffy (061) (Manga)",
       "code": "EB02-061",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -97,10 +157,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 3
+      "rank": 5
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 6,
+      "name": "Tony Tony.Chopper (SPR)",
+      "code": "OP08-001",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "rawMarket": 980,
+      "psa10Market": 2725.5,
+      "costBasis": 1059.99,
+      "netPsa10Exit": 2398.44,
+      "expectedPsaNet": 1338.45,
+      "roiPercent": 126.27,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629185",
+      "priceEdgePercent": 0,
+      "buyScore": 10.6,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 6
+    },
+    {
+      "sourceRank": 11,
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "code": "OP05-119",
       "setName": "A Fist of Divine Speed",
@@ -127,10 +217,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 4
+      "rank": 7
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 9,
       "name": "Buggy (051) (Manga)",
       "code": "OP09-051",
       "setName": "Emperors in the New World",
@@ -157,10 +247,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 5
+      "rank": 8
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 15,
       "name": "Marshall.D.Teach (093) (Manga)",
       "code": "OP09-093",
       "setName": "Emperors in the New World",
@@ -187,10 +277,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 6
+      "rank": 9
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 10,
       "name": "Uta (SPR)",
       "code": "OP06-001",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -217,10 +307,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 7
+      "rank": 10
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 7,
+      "name": "Koala (SP)",
+      "code": "EB03-042",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rawMarket": 140,
+      "psa10Market": 443.25,
+      "costBasis": 173,
+      "netPsa10Exit": 390.06,
+      "expectedPsaNet": 217.06,
+      "roiPercent": 125.47,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672825",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 11
+    },
+    {
+      "sourceRank": 8,
       "name": "Vinsmoke Reiju (SP)",
       "code": "EB03-031",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -247,10 +367,70 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 8
+      "rank": 12
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 12,
+      "name": "Gol.D.Roger (Alternate Art)",
+      "code": "OP09-118",
+      "setName": "Emperors in the New World",
+      "rawMarket": 89.93,
+      "psa10Market": 264.46,
+      "costBasis": 122.93,
+      "netPsa10Exit": 232.72,
+      "expectedPsaNet": 109.79,
+      "roiPercent": 89.31,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/597066",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 13
+    },
+    {
+      "sourceRank": 13,
+      "name": "Shanks - OP09-004 (SP) (Silver)",
+      "code": "OP09-004",
+      "setName": "Carrying On His Will",
+      "rawMarket": 772.45,
+      "psa10Market": 1815.62,
+      "costBasis": 852.44,
+      "netPsa10Exit": 1597.75,
+      "expectedPsaNet": 745.31,
+      "roiPercent": 87.43,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657443",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 14
+    },
+    {
+      "sourceRank": 14,
       "name": "Nefeltari Vivi - 024 (SP)",
       "code": "EB03-024",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -277,7 +457,67 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 9
+      "rank": 15
+    },
+    {
+      "sourceRank": 16,
+      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "code": "OP13-118",
+      "setName": "Carrying On His Will",
+      "rawMarket": 92.25,
+      "psa10Market": 250,
+      "costBasis": 125.25,
+      "netPsa10Exit": 220,
+      "expectedPsaNet": 94.75,
+      "roiPercent": 75.65,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 16
+    },
+    {
+      "sourceRank": 17,
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "code": "OP13-118",
+      "setName": "Carrying On His Will",
+      "rawMarket": 92.25,
+      "psa10Market": 250,
+      "costBasis": 125.25,
+      "netPsa10Exit": 220,
+      "expectedPsaNet": 94.75,
+      "roiPercent": 75.65,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 17
     }
   ]
 }
