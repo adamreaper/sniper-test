@@ -239,6 +239,16 @@
       border: 1px solid var(--border);
       color: var(--muted);
     }
+    .inline-button:disabled,
+    a.button.disabled,
+    button.button:disabled {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
+      color: rgba(169,181,214,.55);
+      cursor: not-allowed;
+      box-shadow: none;
+      pointer-events: none;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -1031,7 +1041,9 @@
         container.innerHTML = '<div class="empty">No matching cards.</div>';
         return;
       }
-      container.innerHTML = rows.map((row, index) => `
+      container.innerHTML = rows.map((row, index) => {
+        const priceChartingLink = row.priceChartingUrl || (row.priceChartingPath ? `https://www.pricecharting.com${row.priceChartingPath}` : '');
+        return `
         <article class="card ${hasReviewCandidates(row) ? 'review-available' : ''}">
           <div class="media ${mediaRingClass(row)}">
             <img
@@ -1062,10 +1074,12 @@
           </div>
           <div class="links">
             <a class="button" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>
+            ${priceChartingLink ? `<a class="button secondary" href="${priceChartingLink}" target="_blank" rel="noopener noreferrer">Open PriceCharting</a>` : ''}
           </div>
           ${renderCandidates(row)}
         </article>
-      `).join('');
+      `;
+      }).join('');
     }
 
 
@@ -1211,6 +1225,19 @@
       return `$${filters?.gradingCost ?? 33}`;
     }
 
+    function isVercelDeployment() {
+      return window.location.hostname.endsWith('.vercel.app');
+    }
+
+    function configureRefreshButton() {
+      const button = document.getElementById('refreshButton');
+      if (!button) return;
+      if (isVercelDeployment()) {
+        button.disabled = true;
+        button.title = 'Manual refresh is disabled on the Vercel version.';
+      }
+    }
+
     async function triggerManualRefresh() {
       const button = document.getElementById('refreshButton');
       if (button) {
@@ -1252,6 +1279,7 @@
         chip.addEventListener('click', () => setActiveChip(chip.dataset.filter || 'all'));
       });
       document.getElementById('refreshButton')?.addEventListener('click', triggerManualRefresh);
+      configureRefreshButton();
     }
 
     function initDock() {
