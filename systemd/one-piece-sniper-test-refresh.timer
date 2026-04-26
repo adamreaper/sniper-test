@@ -1,0 +1,11 @@
+[Unit]
+Description=Hourly refresh timer for One Piece Sniper Test
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=1h
+Persistent=true
+Unit=one-piece-sniper-test-refresh.service
+
+[Install]
+WantedBy=timers.target

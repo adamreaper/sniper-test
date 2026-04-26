@@ -1,0 +1,7 @@
+logs/
+state/
+archive/
+data/latest.backup.json
+data/app-ready.source.json
+data/refresh-status.json
+.DS_Store

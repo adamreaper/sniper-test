@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="OP ROI" />
+  <meta name="theme-color" content="#08111f" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/icon-512.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <title>One Piece PSA 10 ROI Board Test</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #08111f;
+      --bg-2: #11152c;
+      --panel: rgba(17, 24, 43, 0.88);
+      --panel-2: rgba(26, 35, 61, 0.92);
+      --panel-soft: rgba(255,255,255,0.05);
+      --text: #ebf2ff;
+      --muted: #a9b5d6;
+      --accent: #8a7dff;
+      --accent-2: #58a6ff;
+      --good: #3ddc97;
+      --warn: #ffcc66;
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 18px 40px rgba(0,0,0,.28);
+    }
+    * { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(138,125,255,.22), transparent 28%),
+        linear-gradient(180deg, #0d1020 0%, #101731 38%, #0a1325 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-bottom: max(20px, env(safe-area-inset-bottom));
+    }
+    .hero, .panel, .card, .ticker-shell, .toolbar {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      backdrop-filter: blur(14px);
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 24px;
+      margin-bottom: 20px;
+      background:
+        radial-gradient(circle at top right, rgba(138,125,255,.24), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(88,166,255,.12), transparent 28%),
+        var(--panel);
+    }
+    .hero-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .app-logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 0 22px rgba(0,0,0,.28);
+      flex: 0 0 auto;
+    }
+    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.02; letter-spacing: -.03em; }
+    p { margin: 0; color: var(--muted); }
+    .stats-wrap {
+      margin-top: 18px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .panel {
+      padding: 16px;
+      background: var(--panel-soft);
+    }
+    .stat-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .stat-value { font-size: 26px; font-weight: 700; margin-top: 6px; }
+    .hero-copy {
+      flex: 1 1 320px;
+      min-width: 0;
+    }
+    .ticker-shell {
+      margin-bottom: 18px;
+      padding: 10px 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .ticker-shell::before,
+    .ticker-shell::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 64px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .ticker-shell::before {
+      left: 0;
+      background: linear-gradient(90deg, rgba(8,17,31,1), rgba(8,17,31,0));
+    }
+    .ticker-shell::after {
+      right: 0;
+      background: linear-gradient(270deg, rgba(8,17,31,1), rgba(8,17,31,0));
+    }
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      gap: 24px;
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+    }
+    .ticker-group {
+      display: flex;
+      gap: 12px;
+      flex: 0 0 auto;
+    }
+    .ticker-item {
+      width: 72px;
+      height: 96px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      flex: 0 0 auto;
+      box-shadow: 0 0 16px rgba(0,0,0,.18);
+    }
+    .ticker-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .chip-row {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 4px 2px 2px;
+      margin: 16px 0 0;
+      scrollbar-width: none;
+    }
+    .chip-row::-webkit-scrollbar {
+      display: none;
+    }
+    .chip {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      cursor: pointer;
+      min-height: 42px;
+    }
+    .chip.active {
+      background: linear-gradient(135deg, rgba(138,125,255,.34), rgba(88,166,255,.24));
+      border-color: rgba(138,125,255,.5);
+      box-shadow: 0 0 0 3px rgba(138,125,255,.12);
+    }
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      margin: 20px 0 14px;
+      flex-wrap: wrap;
+      padding: 14px;
+      position: sticky;
+      top: 12px;
+      z-index: 5;
+      background: rgba(13, 18, 36, 0.82);
+    }
+    .search {
+      width: min(420px, 100%);
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+    }
+    .search:focus {
+      border-color: rgba(138,125,255,.55);
+      box-shadow: 0 0 0 4px rgba(138,125,255,.16);
+    }
+    .toolbar-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .meta { color: var(--muted); font-size: 14px; }
+    .inline-button,
+    a.button,
+    button.button {
+      text-decoration: none;
+      color: var(--text);
+      background: linear-gradient(135deg, #111111, #262626);
+      padding: 12px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      cursor: pointer;
+    }
+    .inline-button.secondary,
+    a.button.secondary,
+    button.button.secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 16px;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 12px;
+      margin: 28px 0 14px;
+      flex-wrap: wrap;
+    }
+    .section-title {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -.02em;
+    }
+    .section-copy {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 720px;
+    }
+    .lots-panel {
+      padding: 18px;
+      margin-top: 28px;
+    }
+    .lots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .lot-card {
+      padding: 16px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025)), var(--panel-2);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .lot-top {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .lot-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      flex: 0 0 auto;
+    }
+    .lot-title {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .badge {
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+    }
+    .badge.review { background: rgba(61,220,151,.14); color: #8cf5bf; border-color: rgba(61,220,151,.3); }
+    .badge.watch { background: rgba(255,204,102,.14); color: #ffd98d; border-color: rgba(255,204,102,.28); }
+    .badge.genuine_lot { background: rgba(88,166,255,.14); color: #9bc8ff; border-color: rgba(88,166,255,.28); }
+    .badge.weak_evidence { background: rgba(255,255,255,.08); color: var(--text); }
+    .badge.low { background: rgba(61,220,151,.14); color: #8cf5bf; border-color: rgba(61,220,151,.3); }
+    .badge.medium { background: rgba(255,204,102,.14); color: #ffd98d; border-color: rgba(255,204,102,.28); }
+    .badge.high { background: rgba(255,107,107,.14); color: #ff9a9a; border-color: rgba(255,107,107,.28); }
+    .badge.tracked { background: rgba(88,166,255,.14); color: #9bc8ff; border-color: rgba(88,166,255,.28); }
+    .badge.closed { background: rgba(138,125,255,.2); color: #bcb1ff; border-color: rgba(138,125,255,.35); }
+    .lot-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .lot-note {
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    .lot-reason {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .lot-bullets {
+      display: grid;
+      gap: 8px;
+    }
+    .lot-bullet-group {
+      display: grid;
+      gap: 6px;
+    }
+    .lot-bullet-label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .lot-bullet-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .lot-pill {
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+    }
+    .lot-pill.risk {
+      color: #ffd98d;
+    }
+    .lot-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .card {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025)),
+        var(--panel);
+    }
+    .card.review-available {
+      box-shadow: inset 0 0 0 1px rgba(255, 162, 0, 0.45), 0 0 0 1px rgba(255, 162, 0, 0.12);
+      background:
+        linear-gradient(180deg, rgba(255,193,7,.08), rgba(255,255,255,.025)),
+        var(--panel);
+    }
+    .media {
+      width: 100%;
+      aspect-ratio: 1 / 1.35;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      display: grid;
+      place-items: center;
+      position: relative;
+      isolation: isolate;
+    }
+    .media::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 16px;
+      padding: 3px;
+      background: transparent;
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      mask-composite: exclude;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .media.candidate-ring-silver::before,
+    .media.candidate-ring-gold::before {
+      opacity: 1;
+      animation: ringFlow 3.2s linear infinite;
+      box-shadow: 0 0 16px rgba(255,255,255,.15);
+    }
+    .media.candidate-ring-silver::before {
+      background: conic-gradient(from 0deg, rgba(255,255,255,.2), #f7f7f7, #9ea7b3, #ffffff, rgba(255,255,255,.2));
+      box-shadow: 0 0 18px rgba(214,224,237,.35);
+    }
+    .media.candidate-ring-gold::before {
+      background: conic-gradient(from 0deg, rgba(255,210,84,.25), #ffd54f, #ffef9a, #ffb300, #fff2b3, rgba(255,210,84,.25));
+      box-shadow: 0 0 20px rgba(255,209,102,.45);
+    }
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .media-fallback {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      padding: 16px;
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .card-head {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      min-width: 0;
+    }
+    .rank {
+      min-width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(88,166,255,.15);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+    .status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+    }
+    .badge-watch {
+      background: rgba(255, 204, 102, 0.12);
+      color: var(--warn);
+      border-color: rgba(255, 204, 102, 0.28);
+    }
+    .badge-review {
+      background: rgba(88,166,255,.12);
+      color: var(--accent-2);
+      border-color: rgba(88,166,255,.28);
+    }
+    .badge-buy {
+      background: rgba(61,220,151,.12);
+      color: var(--good);
+      border-color: rgba(61,220,151,.28);
+    }
+    .badge-risk {
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+    }
+    .badge-manual-review {
+      background: rgba(255, 162, 0, 0.14);
+      color: #ffd27a;
+      border-color: rgba(255, 162, 0, 0.35);
+    }
+    .watch-note {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--warn);
+    }
+    .roi {
+      color: var(--good);
+      font-weight: 800;
+      font-size: 24px;
+      white-space: nowrap;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 10px;
+    }
+    .metric {
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+    .metric .label { color: var(--muted); font-size: 12px; }
+    .metric .value { margin-top: 5px; font-weight: 700; }
+    .links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .candidate-list {
+      display: grid;
+      gap: 10px;
+    }
+    .candidate {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .candidate-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .candidate-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .candidate-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .candidate-meta .metric {
+      padding: 8px 10px;
+    }
+    .candidate-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 8px;
+      line-height: 1.35;
+    }
+    .candidate-photo-strip {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .candidate-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .candidate-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .dock {
+      display: none;
+    }
+    .dock-btn {
+      flex: 1 1 0;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 999px;
+      min-height: 44px;
+      padding: 10px 12px;
+      cursor: pointer;
+    }
+    .dock-btn.active {
+      background: rgba(255,255,255,.08);
+      color: var(--text);
+    }
+    .empty {
+      padding: 32px;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed var(--border);
+      border-radius: 16px;
+    }
+    @media (max-width: 720px) {
+      .wrap {
+        padding: 12px;
+      }
+      .ticker-shell {
+        border-radius: 20px;
+        padding: 8px 0;
+      }
+      .ticker-item {
+        width: 60px;
+        height: 82px;
+      }
+      .hero {
+        padding: 18px;
+        border-radius: 28px;
+      }
+      .hero-head {
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .hero-copy {
+        flex-basis: 100%;
+      }
+      .app-logo {
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 6px;
+      }
+      .stats-wrap {
+        overflow-x: auto;
+        margin: 18px -4px 0;
+        padding: 0 4px 2px;
+        scrollbar-width: none;
+      }
+      .stats-wrap::-webkit-scrollbar {
+        display: none;
+      }
+      .stats {
+        display: flex;
+        gap: 10px;
+        width: max-content;
+        min-width: 100%;
+      }
+      .stats .panel {
+        min-width: 148px;
+        scroll-snap-align: start;
+      }
+      .chip-row {
+        margin-top: 14px;
+      }
+      .toolbar {
+        top: 8px;
+        padding: 12px;
+        border-radius: 20px;
+      }
+      .search {
+        width: 100%;
+      }
+      .meta {
+        width: 100%;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-bottom: 84px;
+      }
+      .card {
+        padding: 14px;
+        border-radius: 26px;
+      }
+      .topline {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .card-head {
+        width: 100%;
+      }
+      .roi {
+        font-size: 22px;
+      }
+      .metrics {
+        gap: 8px;
+      }
+      .metric {
+        border-radius: 14px;
+      }
+      .candidate-head {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .candidate-meta {
+        grid-template-columns: 1fr;
+      }
+      .links, .links .button, .candidate-head .button {
+        width: 100%;
+      }
+      .lot-top {
+        flex-direction: column;
+      }
+      .lot-thumb {
+        width: 100%;
+        height: 180px;
+      }
+      .lot-metrics {
+        grid-template-columns: 1fr;
+      }
+      .dock {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: max(12px, env(safe-area-inset-bottom));
+        display: flex;
+        gap: 8px;
+        padding: 8px;
+        border-radius: 999px;
+        background: rgba(10,14,24,.92);
+        border: 1px solid rgba(255,255,255,.08);
+        box-shadow: 0 18px 35px rgba(0,0,0,.38);
+        z-index: 12;
+        backdrop-filter: blur(16px);
+      }
+    }
+    @keyframes ringFlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="ticker-shell">
+      <div id="tickerTrack" class="ticker-track"></div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-head">
+        <img class="app-logo" src="./assets/logo.jpg" alt="App logo" />
+        <div class="hero-copy">
+          <h1>One Piece PSA 10 ROI Board Test</h1>
+        </div>
+      </div>
+      <div class="stats-wrap">
+        <div class="stats">
+        <div class="panel"><div class="stat-label">Qualified cards</div><div id="qualifiedCount" class="stat-value">-</div></div>
+        <div class="panel"><div class="stat-label">Best ROI</div><div id="bestRoi" class="stat-value">-</div></div>
+        <div class="panel"><div class="stat-label">Max profit this week</div><div id="maxProfitWeek" class="stat-value">-</div></div>
+        <div class="panel"><div class="stat-label">Realistic profit this week</div><div id="realisticProfitWeek" class="stat-value">-</div></div>
+        <div class="panel"><div class="stat-label">Generated</div><div id="generatedAt" class="stat-value" style="font-size:18px">-</div></div>
+        <div class="panel"><div class="stat-label">Rules</div><div id="rulesSummary" class="stat-value" style="font-size:18px">80%+ ROI</div></div>
+        </div>
+      </div>
+      <div id="chipRow" class="chip-row">
+        <button class="chip active" data-filter="all">All cards</button>
+        <button class="chip" data-filter="double">2 candidates</button>
+        <button class="chip" data-filter="single">1 candidate</button>
+        <button class="chip" data-filter="review">Manual review</button>
+        <button class="chip" data-filter="none">No candidates</button>
+        <button class="chip" data-filter="heat">Hot ROI</button>
+      </div>
+    </section>
+
+    <div class="toolbar" id="searchZone">
+      <input id="search" class="search" placeholder="Filter by card code, name, or set" />
+      <div class="toolbar-actions">
+        <button id="refreshButton" class="button secondary" type="button">Refresh data</button>
+        <div id="meta" class="meta">Loading latest scan...</div>
+      </div>
+    </div>
+
+    <div class="section-head" id="resultsHead">
+      <div>
+        <h2 class="section-title">Singles board</h2>
+        <div class="section-copy">Your main sniper board stays focused on card-by-card ROI.</div>
+      </div>
+    </div>
+    <div id="results" class="grid"></div>
+
+    <section class="panel lots-panel" id="lotsSection">
+      <div class="section-head" style="margin-top:0">
+        <div>
+          <h2 class="section-title">Lots worth checking</h2>
+          <div class="section-copy">Only cleaner lot candidates make it in here. This stays simple: review now or ignore.</div>
+        </div>
+        <div id="lotsMeta" class="meta">Loading lot feed...</div>
+      </div>
+      <div id="lotsResults" class="lots-grid"></div>
+    </section>
+
+    <div class="dock">
+      <button class="dock-btn active" data-jump="top">Top</button>
+      <button class="dock-btn" data-jump="search">Search</button>
+      <button class="dock-btn" data-jump="results">Cards</button>
+      <button class="dock-btn" data-jump="lots">Lots</button>
+      <button class="dock-btn" data-jump="hot">Hot</button>
+    </div>
+  </div>
+
+  <script>
+    const fmtMoney = (n) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(Number(n || 0));
+    const fmtPct = (n) => `${Number(n || 0).toFixed(2)}%`;
+    const fmtDate = (value) => {
+      if (!value) return '-';
+      const d = new Date(value);
+      return Number.isNaN(d.getTime()) ? value : d.toLocaleString();
+    };
+
+    let allRows = [];
+    let lotRows = [];
+    let tickerFrame = null;
+    let activeFilter = 'all';
+    let tradePlanMap = new Map();
+    let refreshStatus = null;
+
+    function productImageUrl(productId, ext = 'jpg') {
+      return `https://public.getcollectr.com/public-assets/products/product_${productId}.${ext}?optimizer=image&format=webp&width=1200&quality=80&strip=metadata`;
+    }
+
+    function buildTickerRows(rows) {
+      const items = rows.slice(0, Math.min(rows.length, 24));
+      if (!items.length) return '';
+      const groupHtml = items.map((row) => `
+        <a class="ticker-item" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer" title="${row.code} ${row.name}">
+          <img
+            src="${productImageUrl(row.productId, 'jpg')}"
+            data-fallback-src="${productImageUrl(row.productId, 'png')}"
+            alt="${row.code} ${row.name}"
+            loading="eager"
+            onerror="if(!this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}"
+          />
+        </a>
+      `).join('');
+      return `<div class="ticker-group">${groupHtml}</div><div class="ticker-group" aria-hidden="true">${groupHtml}</div>`;
+    }
+
+    function initTicker() {
+      const shell = document.querySelector('.ticker-shell');
+      const track = document.getElementById('tickerTrack');
+      if (!shell || !track) return;
+
+      if (tickerFrame) cancelAnimationFrame(tickerFrame);
+
+      const groups = track.querySelectorAll('.ticker-group');
+      if (groups.length < 2) return;
+
+      const groupWidth = groups[0].offsetWidth + 12;
+      if (!groupWidth) return;
+
+      let offset = 0;
+      let paused = false;
+      let lastTs = 0;
+      const speed = 28;
+
+      shell.onmouseenter = () => { paused = true; };
+      shell.onmouseleave = () => { paused = false; };
+
+      const step = (ts) => {
+        if (!lastTs) lastTs = ts;
+        const dt = (ts - lastTs) / 1000;
+        lastTs = ts;
+        if (!paused) {
+          offset += speed * dt;
+          if (offset >= groupWidth) offset -= groupWidth;
+          track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+        }
+        tickerFrame = requestAnimationFrame(step);
+      };
+
+      track.style.transform = 'translate3d(0, 0, 0)';
+      tickerFrame = requestAnimationFrame(step);
+    }
+
+    function statusBadgeClass(action) {
+      if (action === 'buy-now') return 'badge badge-buy';
+      if (action === 'manual-review') return 'badge badge-review';
+      return 'badge badge-watch';
+    }
+
+    function riskLabel(flag) {
+      const labels = {
+        no_live_listing: 'No live listing',
+        weak_photos: 'Weak photos',
+        collectr_only_psa_signal: 'Collectr-only PSA signal',
+        listing_above_collectr_raw: 'Above Collectr raw',
+        seller_feedback_below_98: 'Seller <98%',
+        high_shipping: 'High shipping',
+        strong_live_discount: 'Strong live discount',
+      };
+      return labels[flag] || flag.replace(/_/g, ' ');
+    }
+
+    function renderStatusRow(row) {
+      const plan = tradePlanMap.get(row.code);
+      if (!plan) return '';
+      const riskBadges = Array.isArray(plan.riskFlags)
+        ? plan.riskFlags.slice(0, 3).map((flag) => `<span class="badge badge-risk">${riskLabel(flag)}</span>`).join('')
+        : '';
+      return `
+        <div class="status-row">
+          <span class="${statusBadgeClass(plan.action)}">${plan.action.replace(/-/g, ' ')}</span>
+          <span class="badge">Tier ${plan.confidenceTier}</span>
+          <span class="badge">Score ${Number(plan.buyScore || 0).toFixed(0)}</span>
+          ${riskBadges}
+        </div>
+      `;
+    }
+
+    function renderWatchNote(row) {
+      const plan = tradePlanMap.get(row.code);
+      if (!plan || plan.action !== 'watch' || !Array.isArray(row.ebayCandidates) || !row.ebayCandidates.length) return '';
+      return '<div class="watch-note">Watch tier only — candidates are still shown so you can inspect them without treating them as buy-now.</div>';
+    }
+
+    function renderCandidatePhotos(candidate) {
+      const urls = [candidate.imageUrl, ...(Array.isArray(candidate.additionalImages) ? candidate.additionalImages : [])]
+        .filter(Boolean)
+        .slice(0, 4);
+      if (!urls.length) return '';
+      return `<div class="candidate-photo-strip">${urls.map((url, index) => `
+        <a class="candidate-photo" href="${url}" target="_blank" rel="noopener noreferrer" title="Candidate photo ${index + 1}">
+          <img src="${url}" alt="Candidate photo ${index + 1}" loading="lazy">
+        </a>
+      `).join('')}</div>`;
+    }
+
+    function renderCandidateCard(candidate, index, labelPrefix = 'Candidate') {
+      return `
+        <div class="candidate">
+          <div class="candidate-head">
+            <div class="candidate-title">${labelPrefix} ${index + 1}</div>
+            <a class="button secondary" href="${candidate.itemWebUrl}" target="_blank" rel="noopener noreferrer">Open eBay</a>
+          </div>
+          <div class="candidate-meta">
+            <div class="metric"><div class="label">Listing total</div><div class="value">${fmtMoney(candidate.total)}</div></div>
+            <div class="metric"><div class="label">Listing ROI</div><div class="value">${fmtPct(candidate.roi?.roiPercent)}</div></div>
+            <div class="metric"><div class="label">Photo score</div><div class="value">${Number(candidate.photoScore?.score || 0).toFixed(0)}/100</div></div>
+          </div>
+          ${renderCandidatePhotos(candidate)}
+          <div class="candidate-note">${candidate.title || ''}</div>
+          <div class="candidate-note">${candidate.photoScore?.notes || ''}</div>
+          ${candidate.reviewReason ? `<div class="candidate-note">${candidate.reviewReason}</div>` : ''}
+        </div>
+      `;
+    }
+
+    function renderCandidates(row) {
+      const live = Array.isArray(row.ebayCandidates) ? row.ebayCandidates : [];
+      const review = Array.isArray(row.reviewCandidates) ? row.reviewCandidates : [];
+      if (!live.length && !review.length) {
+        return '<div class="candidate"><div class="candidate-title">No eBay candidates yet</div><div class="candidate-note">The weekly scan will populate the best 2 raw listings here.</div></div>';
+      }
+      const reviewBlock = review.length
+        ? `<div class="candidate"><div class="candidate-title">Manual review bucket</div><div class="candidate-note">Borderline listings kept here for feedback. They were not confident enough for the main English-only bucket.</div></div><div class="candidate-list">${review.map((candidate, index) => renderCandidateCard(candidate, index, 'Review')).join('')}</div>`
+        : '';
+      const liveBlock = live.length
+        ? `<div class="candidate-list">${live.map((candidate, index) => renderCandidateCard(candidate, index, 'Candidate')).join('')}</div>`
+        : '';
+      return `${renderWatchNote(row)}${liveBlock}${reviewBlock}`;
+    }
+
+    function mediaRingClass(row) {
+      const count = Array.isArray(row.ebayCandidates) ? row.ebayCandidates.length : 0;
+      if (count >= 2) return 'candidate-ring-gold';
+      if (count === 1) return 'candidate-ring-silver';
+      return '';
+    }
+
+    function hasReviewCandidates(row) {
+      return Array.isArray(row.reviewCandidates) && row.reviewCandidates.length > 0;
+    }
+
+    function matchesQuickFilter(row, filter) {
+      const count = Array.isArray(row.ebayCandidates) ? row.ebayCandidates.length : 0;
+      if (filter === 'double') return count >= 2;
+      if (filter === 'single') return count === 1;
+      if (filter === 'review') return hasReviewCandidates(row);
+      if (filter === 'none') return count === 0;
+      if (filter === 'heat') return Number(row.roiPercent || 0) >= 200;
+      return true;
+    }
+
+    function render(rows) {
+      const container = document.getElementById('results');
+      if (!rows.length) {
+        container.innerHTML = '<div class="empty">No matching cards.</div>';
+        return;
+      }
+      container.innerHTML = rows.map((row, index) => `
+        <article class="card ${hasReviewCandidates(row) ? 'review-available' : ''}">
+          <div class="media ${mediaRingClass(row)}">
+            <img
+              src="${productImageUrl(row.productId, 'jpg')}"
+              data-fallback-src="${productImageUrl(row.productId, 'png')}"
+              alt="${row.code} ${row.name}"
+              loading="lazy"
+              onerror="if(!this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}else{this.replaceWith(Object.assign(document.createElement('div'),{className:'media-fallback',textContent:'Image unavailable'}));}"
+            />
+          </div>
+          <div class="topline">
+            <div class="card-head">
+              <div class="rank">${index + 1}</div>
+              <div>
+                <div class="title">${row.code} ${row.name}</div>
+                <div class="subtitle">${row.setName || 'Unknown set'}</div>
+                ${renderStatusRow(row)}
+                ${hasReviewCandidates(row) ? '<div class="status-row"><span class="badge badge-manual-review">Manual review available</span></div>' : ''}
+              </div>
+            </div>
+            <div class="roi">${fmtPct(row.roiPercent)}</div>
+          </div>
+          <div class="metrics">
+            <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
+            <div class="metric"><div class="label">PSA 10</div><div class="value">${fmtMoney(row.psa10Market)}</div></div>
+            <div class="metric"><div class="label">Net exit</div><div class="value">${fmtMoney(row.netPsa10Exit)}</div></div>
+            <div class="metric"><div class="label">Profit</div><div class="value">${fmtMoney(row.profit)}</div></div>
+          </div>
+          <div class="links">
+            <a class="button" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>
+          </div>
+          ${renderCandidates(row)}
+        </article>
+      `).join('');
+    }
+
+
+    function clampNumber(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function candidateConfidenceWeight(row) {
+      const candidates = Array.isArray(row.ebayCandidates) ? row.ebayCandidates : [];
+      const candidateCount = Number(row.ebayCandidateCount ?? candidates.length ?? 0);
+      const avgPhotoScore = candidates.length
+        ? candidates.reduce((sum, candidate) => sum + Number(candidate?.photoScore?.score || 45), 0) / candidates.length
+        : 45;
+      const avgSeller = candidates.length
+        ? candidates.reduce((sum, candidate) => sum + Number(candidate?.seller?.feedbackPercentage || 98), 0) / candidates.length
+        : 98;
+
+      const countWeight = candidateCount >= 3 ? 1 : candidateCount === 2 ? 0.78 : candidateCount === 1 ? 0.52 : 0.18;
+      const photoWeight = clampNumber(avgPhotoScore / 100, 0.2, 0.95);
+      const sellerWeight = clampNumber((avgSeller - 90) / 10, 0.25, 1);
+
+      const blendedWeight = (countWeight * 0.45) + (photoWeight * 0.35) + (sellerWeight * 0.20);
+      return clampNumber(blendedWeight, 0.1, 0.95);
+    }
+
+    function updateTopProfitStats(rows) {
+      const validRows = Array.isArray(rows) ? rows : [];
+      const maxProfit = validRows.reduce((sum, row) => sum + Math.max(0, Number(row.profit || 0)), 0);
+      const realisticProfit = validRows.reduce((sum, row) => sum + (Math.max(0, Number(row.profit || 0)) * candidateConfidenceWeight(row)), 0);
+      document.getElementById('maxProfitWeek').textContent = fmtMoney(maxProfit);
+      document.getElementById('realisticProfitWeek').textContent = fmtMoney(realisticProfit);
+    }
+
+    function renderLots(rows) {
+      const container = document.getElementById('lotsResults');
+      const meta = document.getElementById('lotsMeta');
+      if (!rows.length) {
+        meta.textContent = 'No reviewed lot candidates right now.';
+        container.innerHTML = '<div class="empty">No lot candidates survived the clean filter yet. That is intentional — this section only shows cleaner opportunities.</div>';
+        return;
+      }
+      const reviewCount = rows.filter((row) => row.tier === 'review').length;
+      const watchCount = rows.filter((row) => row.tier === 'watch').length;
+      const avgScore = rows.length ? (rows.reduce((sum, row) => sum + Number(row.score || 0), 0) / rows.length).toFixed(1) : '0.0';
+      const avgProfit = rows.length ? fmtMoney(rows.reduce((sum, row) => sum + Number(row.predictedProfit || 0), 0) / rows.length) : '$0';
+      meta.textContent = `${reviewCount} review • ${watchCount} watch • avg score ${avgScore} • avg profit ${avgProfit}`;
+      container.innerHTML = rows.map((row) => {
+        const reasons = Array.isArray(row.topReasons) ? row.topReasons : [];
+        const risks = Array.isArray(row.topRisks) ? row.topRisks : [];
+        const outcomeLabel = row.outcomeStatus && row.outcomeStatus !== 'untracked' ? row.outcomeStatus.replace(/_/g, ' ') : 'untracked';
+        return `
+        <article class="lot-card">
+          <div class="lot-top">
+            ${row.imageUrl ? `<img class="lot-thumb" src="${row.imageUrl}" alt="${row.title}" loading="lazy" />` : ''}
+            <div>
+              <div class="badge-row">
+                <span class="badge ${row.tier}">${row.tier === 'review' ? 'review now' : 'watch'}</span>
+                <span class="badge ${row.imageVerdict}">${row.imageVerdict.replace(/_/g, ' ')}</span>
+                <span class="badge ${row.riskLevel || 'medium'}">${row.riskLevel || 'risk'}</span>
+                <span class="badge ${row.outcomeStatus === 'closed' ? 'closed' : 'tracked'}">${outcomeLabel}</span>
+              </div>
+              <div class="lot-title">${row.title}</div>
+            </div>
+          </div>
+          <div class="lot-metrics">
+            <div class="metric"><div class="label">Total</div><div class="value">${fmtMoney(row.total)}</div></div>
+            <div class="metric"><div class="label">Expected</div><div class="value">${fmtMoney(row.expectedValue)}</div></div>
+            <div class="metric"><div class="label">Profit</div><div class="value">${fmtMoney(row.predictedProfit)}</div></div>
+            <div class="metric"><div class="label">Max buy</div><div class="value">${fmtMoney(row.maxBuyPrice)}</div></div>
+            <div class="metric"><div class="label">Score</div><div class="value">${Number(row.score || 0).toFixed(0)}</div></div>
+            <div class="metric"><div class="label">Image conf</div><div class="value">${row.imageConfidence != null ? `${Number(row.imageConfidence).toFixed(0)}%` : '-'}</div></div>
+          </div>
+          <div class="lot-note">${row.note}</div>
+          <div class="lot-reason">${row.reason}</div>
+          <div class="lot-bullets">
+            <div class="lot-bullet-group">
+              <div class="lot-bullet-label">Why it matters</div>
+              <div class="lot-bullet-list">${reasons.length ? reasons.map((reason) => `<span class="lot-pill">${reason}</span>`).join('') : '<span class="lot-pill">No reasons yet</span>'}</div>
+            </div>
+            <div class="lot-bullet-group">
+              <div class="lot-bullet-label">Main risks</div>
+              <div class="lot-bullet-list">${risks.length ? risks.map((risk) => `<span class="lot-pill risk">${risk}</span>`).join('') : '<span class="lot-pill risk">No major risks tagged</span>'}</div>
+            </div>
+          </div>
+          <div class="lot-links">
+            <a class="button" href="${row.url}" target="_blank" rel="noopener noreferrer">Open listing</a>
+          </div>
+        </article>
+      `;
+      }).join('');
+    }
+
+    async function loadRefreshMeta() {
+      try {
+        const res = await fetch('./api/health', { cache: 'no-store' });
+        if (!res.ok) return null;
+        refreshStatus = await res.json();
+        return refreshStatus;
+      } catch {
+        return null;
+      }
+    }
+
+    function formatGradingSummary(filters) {
+      if (filters?.gradingCostBase != null && filters?.gradingCostHighEnd != null && filters?.gradingCostHighEndThreshold != null) {
+        return `$${filters.gradingCostBase} < $${filters.gradingCostHighEndThreshold}, $${filters.gradingCostHighEnd} @ $${filters.gradingCostHighEndThreshold}+`;
+      }
+      return `$${filters?.gradingCost ?? 33}`;
+    }
+
+    async function triggerManualRefresh() {
+      const button = document.getElementById('refreshButton');
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Starting refresh...';
+      }
+      try {
+        const res = await fetch('./api/refresh', { method: 'POST' });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data?.message || `Refresh failed (${res.status})`);
+        document.getElementById('meta').textContent = 'Refresh started. Give it a minute, then reload.';
+      } catch (error) {
+        document.getElementById('meta').textContent = error.message;
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = 'Refresh data';
+        }
+      }
+    }
+
+    function applyFilter() {
+      const q = document.getElementById('search').value.trim().toLowerCase();
+      const filtered = allRows.filter((row) => {
+        const matchesSearch = !q || [row.code, row.name, row.setName].some((v) => String(v || '').toLowerCase().includes(q));
+        return matchesSearch && matchesQuickFilter(row, activeFilter);
+      });
+      render(filtered);
+    }
+
+    function setActiveChip(filter) {
+      activeFilter = filter;
+      document.querySelectorAll('.chip').forEach((chip) => chip.classList.toggle('active', chip.dataset.filter === filter));
+      applyFilter();
+    }
+
+    function initChips() {
+      document.querySelectorAll('.chip').forEach((chip) => {
+        chip.addEventListener('click', () => setActiveChip(chip.dataset.filter || 'all'));
+      });
+      document.getElementById('refreshButton')?.addEventListener('click', triggerManualRefresh);
+    }
+
+    function initDock() {
+      document.querySelectorAll('.dock-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.dock-btn').forEach((node) => node.classList.toggle('active', node === btn));
+          const jump = btn.dataset.jump;
+          if (jump === 'top') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+          }
+          if (jump === 'search') {
+            document.getElementById('searchZone')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.getElementById('search')?.focus();
+            return;
+          }
+          if (jump === 'results') {
+            setActiveChip('all');
+            document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return;
+          }
+          if (jump === 'hot') {
+            setActiveChip('heat');
+            document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return;
+          }
+          if (jump === 'lots') {
+            document.getElementById('lotsSection')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    }
+
+    async function boot() {
+      const [res, tradePlanRes, lotsRes] = await Promise.all([
+        fetch('./data/latest.json', { cache: 'no-store' }),
+        fetch('./data/trade-plan.json', { cache: 'no-store' }).catch(() => null),
+        fetch('./data/app-ready.json', { cache: 'no-store' }).catch(() => null),
+      ]);
+      if (!res.ok) throw new Error(`Failed to load latest.json (${res.status})`);
+      const data = await res.json();
+      if (tradePlanRes && tradePlanRes.ok) {
+        const tradePlan = await tradePlanRes.json();
+        tradePlanMap = new Map((Array.isArray(tradePlan.plans) ? tradePlan.plans : []).map((plan) => [plan.code, plan]));
+      } else {
+        tradePlanMap = new Map();
+      }
+      allRows = Array.isArray(data.rows) ? data.rows : [];
+      if (lotsRes && lotsRes.ok) {
+        const lotsData = await lotsRes.json();
+        lotRows = Array.isArray(lotsData.rows) ? lotsData.rows : [];
+      } else {
+        lotRows = [];
+      }
+      document.getElementById('qualifiedCount').textContent = data.qualifiedCount ?? allRows.length;
+      document.getElementById('bestRoi').textContent = allRows.length ? fmtPct(allRows[0].roiPercent) : '-';
+      updateTopProfitStats(allRows);
+      document.getElementById('generatedAt').textContent = fmtDate(data.generatedAt);
+      document.getElementById('rulesSummary').textContent = `${data.filters?.minRoiPercent ?? 80}%+ ROI`;
+      const health = await loadRefreshMeta();
+      const refreshLine = health?.lastRefresh?.finishedAt ? ` | Refresh: ${fmtDate(health.lastRefresh.finishedAt)}` : '';
+      const runningLine = health?.refreshRunning ? ' | Refresh running now' : '';
+      document.getElementById('meta').textContent = `Source: ${data.filters?.source || 'Collectr'} | Grading: ${formatGradingSummary(data.filters)} | Haircut: ${Math.round((data.filters?.liquidityHaircut ?? 0.12) * 100)}%${refreshLine}${runningLine}`;
+      document.getElementById('tickerTrack').innerHTML = buildTickerRows(allRows);
+      initTicker();
+      initChips();
+      initDock();
+      render(allRows);
+      renderLots(lotRows);
+      document.getElementById('search').addEventListener('input', applyFilter);
+    }
+
+    boot().catch((error) => {
+      document.getElementById('meta').textContent = error.message;
+      document.getElementById('maxProfitWeek').textContent = '-';
+      document.getElementById('realisticProfitWeek').textContent = '-';
+      document.getElementById('results').innerHTML = '<div class="empty">No weekly scan data yet. Once the cron job runs, latest.json will appear here.</div>';
+      document.getElementById('lotsMeta').textContent = 'Lot feed unavailable';
+      document.getElementById('lotsResults').innerHTML = '<div class="empty">Lots will show up here once app-ready.json is published.</div>';
+    });
+  </script>
+</body>
+</html>

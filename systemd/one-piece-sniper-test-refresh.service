@@ -1,0 +1,13 @@
+[Unit]
+Description=Refresh One Piece Sniper Test data
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=OPENCLAW_WORKSPACE=/home/deck/.openclaw/workspace
+Environment=ONE_PIECE_SNIPER_TEST_DIR=/home/deck/.openclaw/workspace/one-piece-sniper-test
+Environment=NODE_BIN=/home/deck/.nvm/versions/node/v24.15.0/bin/node
+Environment=PATH=/home/deck/.nvm/versions/node/v24.15.0/bin:/usr/bin:/bin
+WorkingDirectory=/home/deck/.openclaw/workspace/one-piece-sniper-test
+ExecStart=/usr/bin/bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/refresh-data.sh

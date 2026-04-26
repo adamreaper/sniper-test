@@ -1,0 +1,19 @@
+[Unit]
+Description=One Piece Sniper Test web app
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+Environment=OPENCLAW_WORKSPACE=/home/deck/.openclaw/workspace
+Environment=ONE_PIECE_SNIPER_TEST_DIR=/home/deck/.openclaw/workspace/one-piece-sniper-test
+Environment=PORT=8787
+WorkingDirectory=/home/deck/.openclaw/workspace/one-piece-sniper-test
+Environment=NODE_BIN=/home/deck/.nvm/versions/node/v24.15.0/bin/node
+Environment=PATH=/home/deck/.nvm/versions/node/v24.15.0/bin:/usr/bin:/bin
+ExecStart=/home/deck/.nvm/versions/node/v24.15.0/bin/node /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/serve-static.mjs
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
