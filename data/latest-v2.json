@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-26T20:22:04.735Z",
+  "generatedAt": "2026-04-26T20:31:05.216Z",
   "dateStamp": "2026-04-26",
   "filters": {
-    "source": "PriceCharting English One Piece full-price guide + eBay photo-enriched raw candidates",
+    "source": "PriceCharting One Piece full-price guide (all languages) + eBay photo-enriched raw candidates",
     "gradingCostBase": 33,
     "gradingCostHighEnd": 79.99,
     "gradingCostHighEndThreshold": 500,
@@ -28,7 +28,7 @@
       "roiPercent": 134.36,
       "rawMarket": 2525,
       "psa10Market": 6937.5,
-      "lastSeenAt": "2026-04-26T18:28:29.001Z",
+      "lastSeenAt": "2026-04-26T20:22:04.735Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|397401320935|0",
@@ -116,7 +116,7 @@
       "roiPercent": 83.67,
       "rawMarket": 1155,
       "psa10Market": 2577.57,
-      "lastSeenAt": "2026-04-26T18:28:29.001Z",
+      "lastSeenAt": "2026-04-26T20:22:04.735Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|366338499840|0",
