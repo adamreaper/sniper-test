@@ -103,11 +103,11 @@
       width: 92px;
       height: 156px;
       flex: 0 0 auto;
-      object-fit: contain;
       image-rendering: pixelated;
       transform: scale(1.05);
       transform-origin: center bottom;
       filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
+      display: block;
     }
     .ticker-shell {
       margin-bottom: 18px;
@@ -797,7 +797,7 @@
         <div class="hero-copy">
           <h1>One Piece PSA 10 ROI Board Test</h1>
         </div>
-        <img class="hero-mascot" id="heroMascot" src="./assets/sprites/nami-victory-js-frames/frame-0.png" alt="" aria-hidden="true" />
+        <canvas class="hero-mascot" id="heroMascot" width="88" height="156" aria-hidden="true"></canvas>
       </div>
       <div class="stats-wrap">
         <div class="stats">
@@ -1329,24 +1329,59 @@
     }
 
     function initHeroMascotAnimation() {
-      const mascot = document.getElementById('heroMascot');
-      if (!mascot) return;
-      const frames = [
-        './assets/sprites/nami-victory-js-frames/frame-0.png',
-        './assets/sprites/nami-victory-js-frames/frame-1.png',
-        './assets/sprites/nami-victory-js-frames/frame-2.png',
-        './assets/sprites/nami-victory-js-frames/frame-1.png',
-      ];
-      frames.forEach((src) => {
-        const img = new Image();
-        img.src = src;
-      });
+      const canvas = document.getElementById('heroMascot');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d', { alpha: true });
+      if (!ctx) return;
+
+      const sheet = new Image();
+      sheet.src = './assets/sprites/nami-victory-framesheet-clean.png';
+
+      const frameWidth = 88;
+      const frameHeight = 156;
+      const frameCount = 5;
+      const frameDelayMs = 180;
       let frameIndex = 0;
-      mascot.src = frames[0];
-      window.setInterval(() => {
-        frameIndex = (frameIndex + 1) % frames.length;
-        mascot.src = frames[frameIndex];
-      }, 180);
+      let lastTick = 0;
+
+      const offscreen = document.createElement('canvas');
+      offscreen.width = frameWidth;
+      offscreen.height = frameHeight;
+      const offCtx = offscreen.getContext('2d', { alpha: true, willReadFrequently: true });
+
+      function drawFrame(index) {
+        if (!offCtx) return;
+        offCtx.clearRect(0, 0, frameWidth, frameHeight);
+        offCtx.drawImage(sheet, index * frameWidth, 0, frameWidth, frameHeight, 0, 0, frameWidth, frameHeight);
+
+        const imageData = offCtx.getImageData(0, 0, frameWidth, frameHeight);
+        const data = imageData.data;
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          if (r < 18 && g < 18 && b < 18) {
+            data[i + 3] = 0;
+          }
+        }
+        ctx.clearRect(0, 0, frameWidth, frameHeight);
+        ctx.putImageData(imageData, 0, 0);
+      }
+
+      function tick(ts) {
+        if (!lastTick) lastTick = ts;
+        if (ts - lastTick >= frameDelayMs) {
+          frameIndex = (frameIndex + 1) % frameCount;
+          drawFrame(frameIndex);
+          lastTick = ts;
+        }
+        window.requestAnimationFrame(tick);
+      }
+
+      sheet.onload = () => {
+        drawFrame(0);
+        window.requestAnimationFrame(tick);
+      };
     }
 
     async function boot() {
