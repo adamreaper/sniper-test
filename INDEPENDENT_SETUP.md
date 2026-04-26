@@ -42,6 +42,10 @@ That installs and starts:
 - `one-piece-sniper-test-refresh.timer`
 - `one-piece-sniper-test-refresh.service` (oneshot refresh job)
 
+Current schedule:
+- one full refresh every `1d` after the last successful run
+- plus a boot catch-up after `5min`
+
 Useful commands:
 ```bash
 systemctl --user status one-piece-sniper-test-web.service
@@ -57,6 +61,19 @@ The local server exposes:
 - `GET /api/logs/refresh` — refresh log output
 
 The UI also has a `Refresh data` button wired to `POST /api/refresh`.
+
+## GitHub auto-push
+`refresh-data.sh` now auto-pushes refreshed data back to the repo by default after a successful run:
+- `data/latest.json`
+- `data/latest-v2.json`
+- `data/weekly-base.json`
+- `data/trade-plan.json`
+- `data/app-ready.json`
+
+You can disable that behavior by running with:
+```bash
+AUTO_PUSH_TO_GITHUB=0 bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/refresh-data.sh
+```
 
 ## Run it without Jerome online
 Use the installed systemd user timer, or fall back to cron if you prefer:

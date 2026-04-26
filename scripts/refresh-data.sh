@@ -11,6 +11,11 @@ LOG_DIR="$APP_DIR/logs"
 LOCK_DIR="$STATE_DIR/refresh.lock"
 STATUS_PATH="$DATA_DIR/refresh-status.json"
 LOG_PATH="$LOG_DIR/refresh.log"
+AUTO_PUSH_TO_GITHUB="${AUTO_PUSH_TO_GITHUB:-1}"
+GIT_REMOTE_NAME="${GIT_REMOTE_NAME:-origin}"
+GIT_BRANCH_NAME="${GIT_BRANCH_NAME:-main}"
+SSH_KEY_PATH="${SSH_KEY_PATH:-$HOME/.ssh/id_ed25519_sniper_test}"
+export GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -i $SSH_KEY_PATH -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes}"
 
 export OPENCLAW_WORKSPACE="$WORKSPACE"
 export ONE_PIECE_DASHBOARD_DIR="$DATA_DIR"
@@ -61,6 +66,22 @@ trap cleanup EXIT
   "$NODE_BIN" "$WORKSPACE/scanners/one-piece/generate-trade-plan.mjs"
   "$NODE_BIN" "$WORKSPACE/scanners/one-piece-lots/ebay-one-piece-lot-scan.mjs"
   cp "$WORKSPACE/reports/one-piece-lots/app-ready.json" "$DATA_DIR/app-ready.json"
+
+  if [[ "$AUTO_PUSH_TO_GITHUB" == "1" ]]; then
+    cd "$APP_DIR"
+    git pull --rebase "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
+    git add data/latest.json data/latest-v2.json data/weekly-base.json data/trade-plan.json data/app-ready.json
+    if ! git diff --cached --quiet; then
+      git commit -m "Refresh sniper test data $(date +%F' '%H:%M)"
+      git push "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
+      echo "[$(date -Iseconds)] Git push complete"
+    else
+      echo "[$(date -Iseconds)] No Git-tracked data changes to push"
+    fi
+  else
+    echo "[$(date -Iseconds)] AUTO_PUSH_TO_GITHUB disabled"
+  fi
+
   echo "[$(date -Iseconds)] Refresh complete"
 } >> "$LOG_PATH" 2>&1
 

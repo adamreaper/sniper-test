@@ -1,9 +1,9 @@
 [Unit]
-Description=Hourly refresh timer for One Piece Sniper Test
+Description=Daily refresh timer for One Piece Sniper Test
 
 [Timer]
-OnBootSec=2min
-OnUnitActiveSec=1h
+OnBootSec=5min
+OnUnitActiveSec=1d
 Persistent=true
 Unit=one-piece-sniper-test-refresh.service
 
