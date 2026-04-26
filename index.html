@@ -797,7 +797,7 @@
         <div class="hero-copy">
           <h1>One Piece PSA 10 ROI Board Test</h1>
         </div>
-        <img class="hero-mascot" src="./assets/sprites/nami-victory-cleanest.gif" alt="" aria-hidden="true" />
+        <img class="hero-mascot" id="heroMascot" src="./assets/sprites/nami-victory-js-frames/frame-0.png" alt="" aria-hidden="true" />
       </div>
       <div class="stats-wrap">
         <div class="stats">
@@ -1328,6 +1328,27 @@
       });
     }
 
+    function initHeroMascotAnimation() {
+      const mascot = document.getElementById('heroMascot');
+      if (!mascot) return;
+      const frames = [
+        './assets/sprites/nami-victory-js-frames/frame-0.png',
+        './assets/sprites/nami-victory-js-frames/frame-1.png',
+        './assets/sprites/nami-victory-js-frames/frame-2.png',
+        './assets/sprites/nami-victory-js-frames/frame-1.png',
+      ];
+      frames.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+      let frameIndex = 0;
+      mascot.src = frames[0];
+      window.setInterval(() => {
+        frameIndex = (frameIndex + 1) % frames.length;
+        mascot.src = frames[frameIndex];
+      }, 180);
+    }
+
     async function boot() {
       const [res, tradePlanRes, lotsRes] = await Promise.all([
         fetch('./data/latest.json', { cache: 'no-store' }),
@@ -1363,6 +1384,7 @@
       initTicker();
       initChips();
       initDock();
+      initHeroMascotAnimation();
       render(allRows);
       renderLastSeenReviewRows(lastSeenReviewRows);
       renderLots(lotRows);
