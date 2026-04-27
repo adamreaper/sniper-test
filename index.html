@@ -90,74 +90,6 @@
       flex: 1 1 320px;
       min-width: 0;
     }
-    .countdown-banner {
-      display: grid;
-      grid-template-columns: minmax(220px, 300px) minmax(220px, 1fr);
-      gap: 16px;
-      align-items: center;
-      margin-bottom: 18px;
-      padding: 16px;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border: 1px solid var(--border);
-      border-radius: 22px;
-    }
-    .countdown-visual {
-      position: relative;
-      width: 100%;
-      max-width: 360px;
-      justify-self: center;
-    }
-    .countdown-visual img {
-      width: 100%;
-      height: auto;
-      display: block;
-      image-rendering: pixelated;
-    }
-    .countdown-overlay {
-      position: absolute;
-      left: 9.5%;
-      top: 21%;
-      width: 43%;
-      height: 27%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #6aff4d;
-      font-family: "Courier New", monospace;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-shadow: 0 0 8px rgba(106,255,77,.45);
-      font-size: clamp(16px, 2.6vw, 32px);
-    }
-    .countdown-copy {
-      display: grid;
-      gap: 10px;
-      align-content: center;
-    }
-    .countdown-kicker {
-      color: var(--warn);
-      font-size: 12px;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      font-weight: 800;
-    }
-    .countdown-title {
-      margin: 0;
-      font-size: clamp(28px, 4vw, 42px);
-      line-height: .98;
-      letter-spacing: -.04em;
-    }
-    .countdown-note {
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.45;
-      max-width: 520px;
-    }
-    .countdown-subline {
-      color: var(--text);
-      font-size: 14px;
-      font-weight: 700;
-    }
     .hero-mascot {
       display: none;
     }
@@ -722,35 +654,6 @@
       .hero-copy {
         flex-basis: 100%;
       }
-      .countdown-banner {
-        grid-template-columns: 1fr;
-        gap: 8px;
-        padding: 10px;
-      }
-      .countdown-visual {
-        max-width: 180px;
-        margin: 0 auto;
-      }
-      .countdown-overlay {
-        font-size: 16px;
-      }
-      .countdown-copy {
-        text-align: center;
-        justify-items: center;
-        gap: 6px;
-      }
-      .countdown-kicker {
-        font-size: 10px;
-      }
-      .countdown-title {
-        font-size: 18px;
-      }
-      .countdown-note {
-        display: none;
-      }
-      .countdown-subline {
-        font-size: 12px;
-      }
       .hero-mascot {
         display: none;
       }
@@ -867,18 +770,6 @@
     </section>
 
     <section class="hero">
-      <div class="countdown-banner">
-        <div class="countdown-visual">
-          <img src="./assets/nami-refresh-banner.png" alt="Nami holding a next refresh countdown sign" />
-          <div class="countdown-overlay" id="countdownClock">--:--:--</div>
-        </div>
-        <div class="countdown-copy">
-          <div class="countdown-kicker">Next scheduled refresh</div>
-          <h2 class="countdown-title">Live refresh countdown</h2>
-          <div class="countdown-note">This timer tracks the next daily sniper-test refresh in Eastern time so you can see exactly when the board is due to update.</div>
-          <div class="countdown-subline" id="countdownSubline">Loading refresh schedule...</div>
-        </div>
-      </div>
       <div class="hero-head">
         <div class="hero-copy">
           <h1>One Piece PSA 10 ROI Board Test</h1>
@@ -967,7 +858,6 @@
     let activeFilter = 'all';
     let tradePlanMap = new Map();
     let refreshStatus = null;
-    let countdownTimer = null;
 
     function productImageUrl(productId, ext = 'jpg') {
       return `https://public.getcollectr.com/public-assets/products/product_${productId}.${ext}?optimizer=image&format=webp&width=1200&quality=80&strip=metadata`;
@@ -1414,80 +1304,6 @@
       });
     }
 
-    function getEasternParts(date = new Date()) {
-      const parts = new Intl.DateTimeFormat('en-US', {
-        timeZone: 'America/New_York',
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false,
-      }).formatToParts(date);
-      return Object.fromEntries(parts.filter((part) => part.type !== 'literal').map((part) => [part.type, Number(part.value)]));
-    }
-
-    function getEasternOffsetMinutes(date = new Date()) {
-      const tzDate = new Date(date.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-      return Math.round((tzDate.getTime() - date.getTime()) / 60000);
-    }
-
-    function easternDateToUtc(year, month, day, hour, minute, second = 0) {
-      const guess = new Date(Date.UTC(year, month - 1, day, hour, minute, second));
-      return new Date(guess.getTime() - getEasternOffsetMinutes(guess) * 60000);
-    }
-
-    function getNextRefreshTime(now = new Date()) {
-      const parts = getEasternParts(now);
-      let target = easternDateToUtc(parts.year, parts.month, parts.day, 5, 45, 0);
-      if (target.getTime() <= now.getTime()) {
-        const tomorrow = new Date(Date.UTC(parts.year, parts.month - 1, parts.day + 1, 12, 0, 0));
-        const nextParts = getEasternParts(tomorrow);
-        target = easternDateToUtc(nextParts.year, nextParts.month, nextParts.day, 5, 45, 0);
-      }
-      return target;
-    }
-
-    function formatCountdown(ms) {
-      const totalSeconds = Math.max(0, Math.floor(ms / 1000));
-      const hours = Math.floor(totalSeconds / 3600);
-      const minutes = Math.floor((totalSeconds % 3600) / 60);
-      const seconds = totalSeconds % 60;
-      return [hours, minutes, seconds].map((value) => String(value).padStart(2, '0')).join(':');
-    }
-
-    function initRefreshCountdown(health) {
-      const clock = document.getElementById('countdownClock');
-      const subline = document.getElementById('countdownSubline');
-      if (!clock || !subline) return;
-
-      const update = () => {
-        if (health?.refreshRunning) {
-          clock.textContent = 'LIVE';
-          subline.textContent = 'Refresh is running right now.';
-          return;
-        }
-        const now = new Date();
-        const nextRefresh = getNextRefreshTime(now);
-        clock.textContent = formatCountdown(nextRefresh.getTime() - now.getTime());
-        const nextLabel = nextRefresh.toLocaleString('en-US', {
-          timeZone: 'America/New_York',
-          weekday: 'short',
-          month: 'short',
-          day: 'numeric',
-          hour: 'numeric',
-          minute: '2-digit',
-        });
-        const lastDone = health?.lastRefresh?.finishedAt ? ` Last completed: ${fmtDate(health.lastRefresh.finishedAt)}.` : '';
-        subline.textContent = `Next refresh: ${nextLabel} ET.${lastDone}`;
-      };
-
-      if (countdownTimer) window.clearInterval(countdownTimer);
-      update();
-      countdownTimer = window.setInterval(update, 1000);
-    }
-
     function initHeroMascotAnimation() {}
 
     async function boot() {
@@ -1521,7 +1337,6 @@
       const refreshLine = health?.lastRefresh?.finishedAt ? ` | Refresh: ${fmtDate(health.lastRefresh.finishedAt)}` : '';
       const runningLine = health?.refreshRunning ? ' | Refresh running now' : '';
       document.getElementById('meta').textContent = `Source: ${data.filters?.source || 'Collectr'} | Grading: ${formatGradingSummary(data.filters)} | Haircut: ${Math.round((data.filters?.liquidityHaircut ?? 0.12) * 100)}%${refreshLine}${runningLine}`;
-      initRefreshCountdown(health);
       document.getElementById('tickerTrack').innerHTML = buildTickerRows(allRows);
       initTicker();
       initChips();
