@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-04-26T20:54:51.453Z",
-  "sourceFeedUpdatedAt": "2026-04-26T20:54:51.389Z",
+  "generatedAt": "2026-04-27T01:24:59.259Z",
+  "sourceFeedUpdatedAt": "2026-04-27T01:24:59.187Z",
   "sourceMode": "rows",
   "summary": {
-    "totalPlans": 16,
+    "totalPlans": 22,
     "buyNowCount": 0,
     "manualReviewCount": 0,
-    "watchCount": 16
+    "watchCount": 22
   },
   "plans": [
     {
@@ -70,6 +70,36 @@
       "rank": 2
     },
     {
+      "sourceRank": 6,
+      "name": "Gol.D.Roger (Manga)",
+      "code": "OP09-118",
+      "setName": "Emperors in the New World",
+      "rawMarket": 4500,
+      "psa10Market": 14837.75,
+      "costBasis": 4579.99,
+      "netPsa10Exit": 13057.22,
+      "expectedPsaNet": 8477.23,
+      "roiPercent": 185.09,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/597065",
+      "priceEdgePercent": 0,
+      "buyScore": 16.5,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 3
+    },
+    {
       "sourceRank": 5,
       "name": "Perona (SPR)",
       "code": "OP06-021",
@@ -97,10 +127,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 3
+      "rank": 4
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 7,
       "name": "Monkey.D.Luffy (061) (Manga)",
       "code": "EB02-061",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -127,10 +157,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 4
+      "rank": 5
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 8,
       "name": "Tony Tony.Chopper (SPR)",
       "code": "OP08-001",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -157,10 +187,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 5
+      "rank": 6
     },
     {
-      "sourceRank": 14,
+      "sourceRank": 18,
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "code": "OP05-119",
       "setName": "A Fist of Divine Speed",
@@ -187,7 +217,7 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 6
+      "rank": 7
     },
     {
       "sourceRank": 3,
@@ -217,10 +247,70 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 7
+      "rank": 8
     },
     {
-      "sourceRank": 13,
+      "sourceRank": 16,
+      "name": "Buggy (051) (Manga)",
+      "code": "OP09-051",
+      "setName": "Emperors in the New World",
+      "rawMarket": 805.39,
+      "psa10Market": 2056.5,
+      "costBasis": 885.38,
+      "netPsa10Exit": 1809.72,
+      "expectedPsaNet": 924.34,
+      "roiPercent": 104.4,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/596984",
+      "priceEdgePercent": 0,
+      "buyScore": 3.8,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 9
+    },
+    {
+      "sourceRank": 21,
+      "name": "Marshall.D.Teach (093) (Manga)",
+      "code": "OP09-093",
+      "setName": "Emperors in the New World",
+      "rawMarket": 1155,
+      "psa10Market": 2577.57,
+      "costBasis": 1234.99,
+      "netPsa10Exit": 2268.26,
+      "expectedPsaNet": 1033.27,
+      "roiPercent": 83.67,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/597035",
+      "priceEdgePercent": 0,
+      "buyScore": 3.6,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 10
+    },
+    {
+      "sourceRank": 17,
       "name": "Uta (SPR)",
       "code": "OP06-001",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -247,7 +337,7 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 8
+      "rank": 11
     },
     {
       "sourceRank": 4,
@@ -277,10 +367,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 9
+      "rank": 12
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 9,
+      "name": "Koala (SP)",
+      "code": "EB03-042",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rawMarket": 140,
+      "psa10Market": 443.25,
+      "costBasis": 173,
+      "netPsa10Exit": 390.06,
+      "expectedPsaNet": 217.06,
+      "roiPercent": 125.47,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672825",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 13
+    },
+    {
+      "sourceRank": 10,
       "name": "Monkey.D.Luffy (SPR)",
       "code": "OP05-060",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -307,10 +427,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 10
+      "rank": 14
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 11,
+      "name": "Vinsmoke Reiju (SP)",
+      "code": "EB03-031",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rawMarket": 202.32,
+      "psa10Market": 570,
+      "costBasis": 235.32,
+      "netPsa10Exit": 501.6,
+      "expectedPsaNet": 266.28,
+      "roiPercent": 113.16,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672824",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 15
+    },
+    {
+      "sourceRank": 12,
       "name": "Sabo (120) (3rd Anniversary)",
       "code": "OP13-120",
       "setName": "Carrying On His Will",
@@ -337,10 +487,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 11
+      "rank": 16
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 13,
       "name": "Sabo (120) (Super Alternate Art)",
       "code": "OP13-120",
       "setName": "Carrying On His Will",
@@ -367,10 +517,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 12
+      "rank": 17
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 14,
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "code": "OP13-119",
       "setName": "Carrying On His Will",
@@ -397,10 +547,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 13
+      "rank": 18
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 15,
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "code": "OP13-119",
       "setName": "Carrying On His Will",
@@ -427,10 +577,10 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 14
+      "rank": 19
     },
     {
-      "sourceRank": 15,
+      "sourceRank": 19,
       "name": "Shanks - OP09-004 (SP) (Silver)",
       "code": "OP09-004",
       "setName": "Carrying On His Will",
@@ -457,10 +607,40 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 15
+      "rank": 20
     },
     {
-      "sourceRank": 16,
+      "sourceRank": 20,
+      "name": "Nefeltari Vivi - 024 (SP)",
+      "code": "EB03-024",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rawMarket": 377.5,
+      "psa10Market": 862,
+      "costBasis": 410.5,
+      "netPsa10Exit": 758.56,
+      "expectedPsaNet": 348.06,
+      "roiPercent": 84.79,
+      "compCount": 0,
+      "ebayCandidateCount": 0,
+      "bestListingTotal": 0,
+      "bestListingUrl": null,
+      "bestListingPhotoScore": 0,
+      "bestSellerFeedbackPercent": 0,
+      "bestShipping": 0,
+      "candidateRankScore": 0,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672822",
+      "priceEdgePercent": 0,
+      "buyScore": 0,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "no_live_listing",
+        "collectr_only_psa_signal"
+      ],
+      "rank": 21
+    },
+    {
+      "sourceRank": 22,
       "name": "Vegapunk (SPR)",
       "code": "OP07-097",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -487,7 +667,7 @@
         "no_live_listing",
         "collectr_only_psa_signal"
       ],
-      "rank": 16
+      "rank": 22
     }
   ]
 }
