@@ -954,7 +954,7 @@
         <div class="status-row">
           <span class="${statusBadgeClass(plan.action)}">${actionLabel(plan.action)}</span>
           <span class="badge">Tier ${plan.confidenceTier}</span>
-          <span class="badge">Score ${Number(plan.discoveryScore ?? plan.buyScore || 0).toFixed(0)}</span>
+          <span class="badge">Score ${Number((plan.discoveryScore ?? plan.buyScore) || 0).toFixed(0)}</span>
         </div>
       `;
     }
