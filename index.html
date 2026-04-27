@@ -394,7 +394,7 @@
         var(--panel);
     }
     .media {
-      width: 100%;
+      width: min(44%, 160px);
       aspect-ratio: 1 / 1.35;
       border-radius: 14px;
       overflow: hidden;
@@ -1231,7 +1231,7 @@
       const health = await loadRefreshMeta();
       const refreshLine = health?.lastRefresh?.finishedAt ? ` | Refresh: ${fmtDate(health.lastRefresh.finishedAt)}` : '';
       const runningLine = health?.refreshRunning ? ' | Refresh running now' : '';
-      document.getElementById('meta').textContent = `Source: ${data.filters?.source || 'Collectr'} | Grading: ${formatGradingSummary(data.filters)} | Haircut: ${Math.round((data.filters?.liquidityHaircut ?? 0.12) * 100)}%${refreshLine}${runningLine}`;
+      document.getElementById('meta').textContent = `${refreshLine || ''}${runningLine || ''}`.replace(/^\s*\|\s*/, '') || ' '; 
       document.getElementById('tickerTrack').innerHTML = buildTickerRows(allRows);
       initTicker();
       initChips();
