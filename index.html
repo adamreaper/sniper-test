@@ -92,11 +92,11 @@
     }
     .countdown-banner {
       display: grid;
-      grid-template-columns: minmax(280px, 360px) minmax(220px, 1fr);
-      gap: 20px;
+      grid-template-columns: minmax(220px, 300px) minmax(220px, 1fr);
+      gap: 16px;
       align-items: center;
       margin-bottom: 18px;
-      padding: 18px;
+      padding: 16px;
       background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
       border: 1px solid var(--border);
       border-radius: 22px;
@@ -724,29 +724,32 @@
       }
       .countdown-banner {
         grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 14px;
+        gap: 8px;
+        padding: 10px;
       }
       .countdown-visual {
-        max-width: 250px;
+        max-width: 180px;
         margin: 0 auto;
       }
       .countdown-overlay {
-        font-size: clamp(14px, 4.8vw, 22px);
+        font-size: 16px;
       }
       .countdown-copy {
         text-align: center;
         justify-items: center;
-        gap: 8px;
+        gap: 6px;
+      }
+      .countdown-kicker {
+        font-size: 10px;
       }
       .countdown-title {
-        font-size: 22px;
+        font-size: 18px;
       }
       .countdown-note {
-        font-size: 14px;
+        display: none;
       }
       .countdown-subline {
-        font-size: 13px;
+        font-size: 12px;
       }
       .hero-mascot {
         display: none;
