@@ -33,6 +33,10 @@ function money(value) {
   return Number.isFinite(n) ? n : 0;
 }
 
+function envFlag(...names) {
+  return names.some((name) => /^(1|true|yes|on)$/i.test(String(process.env[name] || '')));
+}
+
 function parseEnv(raw) {
   const env = {};
   for (const line of raw.split(/\r?\n/)) {
@@ -377,15 +381,16 @@ function filterRawMatches(items, card) {
 
 async function scoreListingPhotos(card, listing) {
   await loadEnv();
+  const llmVisionEnabled = envFlag('ONE_PIECE_ENABLE_LLM_VISION', 'ENABLE_LLM_VISION');
   const apiKey = process.env.OPENAI_API_KEY;
   const model = process.env.OPENAI_MODEL || 'gpt-4.1-mini';
   const imageUrls = [listing.imageUrl, ...(listing.additionalImages || [])].filter(Boolean).slice(0, 4);
-  if (!apiKey || !imageUrls.length) {
+  if (!llmVisionEnabled || !apiKey || !imageUrls.length) {
     return {
       score: 50,
       psa10Probability: 50,
       confidence: 30,
-      notes: 'No photo AI score available.',
+      notes: llmVisionEnabled ? 'No photo AI score available.' : 'LLM photo scoring disabled.',
       visibleLanguage: 'unknown',
       rejectForLanguage: false,
       rejectForStockImage: false,

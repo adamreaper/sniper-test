@@ -14,6 +14,7 @@ const REPORT_DIR = path.join(APP_DIR, 'reports', 'one-piece-hybrid');
 const DASHBOARD_DIR = process.env.ONE_PIECE_DASHBOARD_DIR || path.join(APP_DIR, 'data');
 const DATE_STAMP = new Date().toISOString().slice(0, 10);
 const RESULTS_JSON = path.join(REPORT_DIR, `pricecharting-psa10-scan-results-${DATE_STAMP}.json`);
+const LLM_VISION_ENABLED = /^(1|true|yes|on)$/i.test(String(process.env.ONE_PIECE_ENABLE_LLM_VISION || process.env.ENABLE_LLM_VISION || ''));
 const DASHBOARD_JSON = path.join(DASHBOARD_DIR, 'latest.json');
 const DASHBOARD_TEST_JSON = path.join(DASHBOARD_DIR, 'latest-v2.json');
 const WEEKLY_BASE_JSON = path.join(DASHBOARD_DIR, 'weekly-base.json');
@@ -243,7 +244,10 @@ async function main() {
     generatedAt: new Date().toISOString(),
     dateStamp: DATE_STAMP,
     filters: {
-      source: 'PriceCharting One Piece full-price guide (all languages) + eBay photo-enriched raw candidates',
+      source: LLM_VISION_ENABLED
+        ? 'PriceCharting One Piece full-price guide (all languages) + eBay photo-enriched raw candidates'
+        : 'PriceCharting One Piece full-price guide (all languages) + eBay raw candidates',
+      llmVisionEnabled: LLM_VISION_ENABLED,
       gradingCostBase: 33,
       gradingCostHighEnd: 79.99,
       gradingCostHighEndThreshold: 500,

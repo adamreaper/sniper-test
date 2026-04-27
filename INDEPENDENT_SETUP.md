@@ -42,6 +42,12 @@ Then open:
 Put any needed API credentials in repo-local `.env.local` if you want the vendored helper scripts to use them.
 That includes things like eBay and OpenAI keys used by the scanner helpers.
 
+LLM photo scoring is now opt-in. To enable the OpenAI listing-photo pass, set:
+```bash
+ONE_PIECE_ENABLE_LLM_VISION=1
+```
+If you leave that flag unset, the scanner stays fully non-LLM for photo scoring even if an OpenAI key exists.
+
 ## Local steady-state services
 Install the user services:
 ```bash
