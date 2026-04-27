@@ -8,7 +8,8 @@ NODE_BIN="${NODE_BIN:-/home/deck/.nvm/versions/node/v24.15.0/bin/node}"
 export PATH="$(dirname "$NODE_BIN"):${PATH:-/usr/bin:/bin}"
 STATE_DIR="$APP_DIR/state"
 LOG_DIR="$APP_DIR/logs"
-LOCK_DIR="$STATE_DIR/refresh.lock"
+LEGACY_LOCK_DIR="$STATE_DIR/refresh.lock"
+LOCK_FILE="$STATE_DIR/refresh.lockfile"
 STATUS_PATH="$DATA_DIR/refresh-status.json"
 LOG_PATH="$LOG_DIR/refresh.log"
 AUTO_PUSH_TO_GITHUB="${AUTO_PUSH_TO_GITHUB:-1}"
@@ -24,8 +25,13 @@ export SKIP_GIT_PUSH=1
 
 mkdir -p "$DATA_DIR" "$STATE_DIR" "$LOG_DIR"
 
-if ! mkdir "$LOCK_DIR" 2>/dev/null; then
-  echo "Refresh already running; lock exists at $LOCK_DIR" >&2
+if [[ -d "$LEGACY_LOCK_DIR" ]]; then
+  rmdir "$LEGACY_LOCK_DIR" 2>/dev/null || true
+fi
+
+exec {LOCK_FD}>"$LOCK_FILE"
+if ! flock -n "$LOCK_FD"; then
+  echo "Refresh already running; lock held at $LOCK_FILE" >&2
   exit 17
 fi
 
@@ -55,7 +61,6 @@ payload = {
 }
 Path(os.environ['STATUS_PATH']).write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 PY
-  rmdir "$LOCK_DIR" 2>/dev/null || true
 }
 trap cleanup EXIT
 
