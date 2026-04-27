@@ -35,9 +35,13 @@ function fmt(n) {
   return `$${money(n).toFixed(2)}`;
 }
 
-function deriveTargetBuyPrice(netExit, gradingCost, targetRoiPercent) {
+function deriveTargetBuyPrice(netExit, gradingCost, targetRoiPercent, modifiers = {}) {
   if (netExit <= 0) return 0;
-  const maxAllIn = netExit / (1 + (targetRoiPercent / 100));
+  const liquidityBump = Number(modifiers.liquidityBump || 0);
+  const entryPenalty = Number(modifiers.entryPenalty || 0);
+  const spreadBonus = Number(modifiers.spreadBonus || 0);
+  const adjustedRoi = Math.max(45, targetRoiPercent - spreadBonus + entryPenalty - liquidityBump);
+  const maxAllIn = netExit / (1 + (adjustedRoi / 100));
   return round(Math.max(0, maxAllIn - gradingCost));
 }
 
@@ -108,6 +112,15 @@ function reasonLabel(reason) {
   return reason;
 }
 
+function reviewTags(plan) {
+  const tags = [];
+  if (plan.rawMarket <= 75) tags.push('low-entry');
+  if (plan.psa10SalesCount >= 8 && plan.ungradedSalesCount >= 10) tags.push('liquid');
+  if (/manga|silver|sp|spr/i.test(`${plan.name} ${plan.setName} ${plan.rarity || ''}`)) tags.push('chase');
+  if (plan.psa10SpreadMultiple >= 4) tags.push('wide-spread');
+  return tags;
+}
+
 function scorePlan(plan) {
   const roiScore = clamp(plan.roiPercent / 12, 0, 18);
   const spreadScore = clamp((plan.psa10SpreadMultiple - 1.25) * 5.5, 0, 18);
@@ -136,23 +149,29 @@ function scorePlan(plan) {
 
   let action = 'pass';
   if (
-    score >= 72 &&
+    score >= 76 &&
     plan.psa10SalesCount >= 5 &&
     plan.ungradedSalesCount >= 8 &&
-    plan.expectedPsaNet >= 175 &&
-    !riskFlags.includes('collectr_raw_drift')
+    plan.expectedPsaNet >= 225 &&
+    !riskFlags.includes('collectr_raw_drift') &&
+    !riskFlags.includes('roi_outlier')
   ) {
     action = 'priority-search';
-  } else if (score >= 48 && plan.expectedPsaNet >= 100) {
+  } else if (score >= 50 && plan.expectedPsaNet >= 100) {
     action = 'watch';
   }
 
   const confidenceTier = mapConfidenceTier(score);
   const gradingCost = plan.gradingCost > 0 ? plan.gradingCost : 33;
-  const idealBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 200);
-  const targetBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 150);
-  const stretchBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 110);
-  const maxBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 90);
+  const pricingModifiers = {
+    liquidityBump: plan.psa10SalesCount >= 8 ? 12 : plan.psa10SalesCount >= 5 ? 6 : 0,
+    entryPenalty: plan.rawMarket >= 500 ? 28 : plan.rawMarket >= 200 ? 14 : plan.rawMarket >= 100 ? 6 : 0,
+    spreadBonus: plan.psa10SpreadMultiple >= 4 ? 18 : plan.psa10SpreadMultiple >= 2.75 ? 10 : plan.psa10SpreadMultiple >= 2 ? 4 : 0,
+  };
+  const idealBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 210, pricingModifiers);
+  const targetBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 160, pricingModifiers);
+  const stretchBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 120, pricingModifiers);
+  const maxBuyPrice = deriveTargetBuyPrice(plan.netPsa10Exit, gradingCost, 95, pricingModifiers);
   const exitZoneLow = round(plan.netPsa10Exit * 0.92);
   const exitZoneHigh = round(plan.netPsa10Exit * 1.03);
 
@@ -171,6 +190,7 @@ function scorePlan(plan) {
     maxBuyPrice,
     exitZoneLow,
     exitZoneHigh,
+    reviewTags: reviewTags(plan),
     reviewSummary: action === 'priority-search'
       ? 'Search this one first.'
       : action === 'watch'
@@ -242,8 +262,8 @@ function sortPlans(plans) {
 
 function buildReviewQueue(plans) {
   return plans
-    .filter((plan) => plan.action !== 'pass')
-    .slice(0, 8)
+    .filter((plan) => plan.action === 'priority-search' || (plan.action === 'watch' && plan.discoveryScore >= 68))
+    .slice(0, 5)
     .map((plan, index) => ({
       queueRank: index + 1,
       code: plan.code,
@@ -261,6 +281,7 @@ function buildReviewQueue(plans) {
       whyInteresting: plan.topReasons[0] || 'Signal stack is decent enough to investigate manually.',
       biggestRisk: riskLabel(plan.biggestRisk),
       reviewSummary: plan.reviewSummary,
+      reviewTags: plan.reviewTags,
       collectrLink: plan.collectrLink,
       priceChartingUrl: plan.priceChartingUrl || (plan.priceChartingPath ? `https://www.pricecharting.com${plan.priceChartingPath}` : null)
     }));

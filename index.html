@@ -275,6 +275,39 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 14px;
     }
+    .queue-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .queue-grid.rail {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scroll-snap-type: x proximity;
+      scrollbar-width: none;
+    }
+    .queue-grid.rail::-webkit-scrollbar { display: none; }
+    .queue-grid.rail .lot-card {
+      min-width: min(86vw, 360px);
+      scroll-snap-align: start;
+    }
+    .queue-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .queue-tag {
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 11px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
     .lot-card {
       padding: 16px;
       border-radius: 20px;
@@ -524,6 +557,72 @@
       margin-top: 8px;
       font-size: 12px;
       color: var(--warn);
+      line-height: 1.45;
+    }
+    .card-summary {
+      display: grid;
+      gap: 8px;
+    }
+    .card-details {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 10px;
+    }
+    .card-details summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 700;
+      color: var(--accent-2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .card-details summary::-webkit-details-marker { display: none; }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .detail-list {
+      display: grid;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .detail-item {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .outcome-panel {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .outcome-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .outcome-select, .outcome-input {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-size: 14px;
+    }
+    .outcome-select { max-width: 180px; }
+    .outcome-save {
+      min-width: 112px;
+    }
+    .outcome-status {
+      color: var(--muted);
+      font-size: 12px;
     }
     .roi {
       color: var(--good);
@@ -545,6 +644,9 @@
     .metric .label { color: var(--muted); font-size: 12px; }
     .metric .value { margin-top: 5px; font-weight: 700; }
     .links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .links .button {
+      flex: 1 1 140px;
+    }
     .candidate-list {
       display: grid;
       gap: 10px;
@@ -682,6 +784,12 @@
       }
       .chip-row {
         margin-top: 14px;
+        position: sticky;
+        top: 78px;
+        z-index: 6;
+        background: linear-gradient(180deg, rgba(8,17,31,.96), rgba(8,17,31,.72));
+        backdrop-filter: blur(10px);
+        padding: 6px 0;
       }
       .toolbar {
         top: 8px;
@@ -705,6 +813,9 @@
         padding: 14px;
         border-radius: 26px;
       }
+      .queue-grid.rail .lot-card {
+        min-width: 88vw;
+      }
       .topline {
         flex-direction: column;
         align-items: stretch;
@@ -717,9 +828,14 @@
       }
       .metrics {
         gap: 8px;
+        grid-template-columns: repeat(2, minmax(0,1fr));
       }
       .metric {
         border-radius: 14px;
+        padding: 10px;
+      }
+      .detail-grid {
+        grid-template-columns: 1fr;
       }
       .candidate-head {
         flex-direction: column;
@@ -756,6 +872,9 @@
         z-index: 12;
         backdrop-filter: blur(16px);
       }
+      .dock-btn {
+        font-size: 11px;
+      }
     }
     @keyframes ringFlow {
       from { transform: rotate(0deg); }
@@ -787,6 +906,12 @@
       </div>
       <div id="chipRow" class="chip-row">
         <button class="chip active" data-filter="all">All cards</button>
+        <button class="chip" data-filter="queue">Queue only</button>
+        <button class="chip" data-filter="priority">Priority only</button>
+        <button class="chip" data-filter="watch">Watch only</button>
+        <button class="chip" data-filter="liquid">Liquid only</button>
+        <button class="chip" data-filter="low-entry">Low entry</button>
+        <button class="chip" data-filter="chase">Manga / SP / chase</button>
         <button class="chip" data-filter="heat">Hot ROI</button>
       </div>
     </section>
@@ -802,7 +927,7 @@
     <div class="section-head" id="resultsHead">
       <div>
         <h2 class="section-title">Singles board</h2>
-        <div class="section-copy">Your main sniper board stays focused on card-by-card ROI.</div>
+        <div class="section-copy">Mobile-first manual sniper board. Search order comes from the queue, then the board helps you sanity-check target buys, liquidity, and risk.</div>
       </div>
     </div>
     <div id="results" class="grid"></div>
@@ -830,11 +955,11 @@
     </section>
 
     <div class="dock">
-      <button class="dock-btn active" data-jump="top">Top</button>
-      <button class="dock-btn" data-jump="search">Search</button>
-      <button class="dock-btn" data-jump="results">Cards</button>
+      <button class="dock-btn active" data-jump="queue">Queue</button>
+      <button class="dock-btn" data-jump="results">Board</button>
+      <button class="dock-btn" data-jump="filters">Filters</button>
       <button class="dock-btn" data-jump="lots">Lots</button>
-      <button class="dock-btn" data-jump="hot">Hot</button>
+      <button class="dock-btn" data-jump="top">Top</button>
     </div>
   </div>
 
@@ -853,6 +978,7 @@
     let tickerFrame = null;
     let activeFilter = 'all';
     let tradePlanMap = new Map();
+    let signalOutcomesMap = new Map();
     let refreshStatus = null;
 
     function productImageUrl(productId, ext = 'jpg') {
@@ -967,6 +1093,97 @@
       return `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(query)}`;
     }
 
+    function getOutcome(row) {
+      return signalOutcomesMap.get(row.code) || {
+        outcomeStatus: 'unreviewed',
+        outcomeTag: '',
+        notes: '',
+        lastReviewedAt: null
+      };
+    }
+
+    function reviewedLabel(row) {
+      const outcome = getOutcome(row);
+      if (!outcome.outcomeStatus || outcome.outcomeStatus === 'unreviewed') return 'unreviewed';
+      return outcome.outcomeStatus.replace(/_/g, ' ');
+    }
+
+    async function saveOutcome(row, scope = 'card') {
+      const statusEl = document.querySelector(`[data-outcome-status="${scope}:${row.code}"]`);
+      const statusSelect = document.querySelector(`[data-outcome-select="${scope}:${row.code}"]`);
+      const tagInput = document.querySelector(`[data-outcome-tag="${scope}:${row.code}"]`);
+      const notesInput = document.querySelector(`[data-outcome-notes="${scope}:${row.code}"]`);
+      const entry = {
+        ...(signalOutcomesMap.get(row.code) || {}),
+        code: row.code,
+        name: row.name,
+        setName: row.setName,
+        action: row.action,
+        confidenceTier: row.confidenceTier,
+        discoveryScore: row.discoveryScore,
+        targetBuyPrice: row.targetBuyPrice,
+        maxBuyPrice: row.maxBuyPrice,
+        exitZoneLow: row.exitZoneLow,
+        exitZoneHigh: row.exitZoneHigh,
+        outcomeStatus: statusSelect?.value || 'unreviewed',
+        outcomeTag: tagInput?.value?.trim() || '',
+        notes: notesInput?.value?.trim() || '',
+        lastReviewedAt: new Date().toISOString()
+      };
+      if (statusEl) statusEl.textContent = 'Saving…';
+      try {
+        const res = await fetch('./api/signal-outcomes', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ entry })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data?.message || `Save failed (${res.status})`);
+        signalOutcomesMap.set(row.code, entry);
+        if (statusEl) statusEl.textContent = `Saved ${fmtDate(entry.lastReviewedAt)}`;
+        renderLastSeenReviewRows(lastSeenReviewRows);
+        applyFilter();
+      } catch (error) {
+        if (statusEl) statusEl.textContent = error.message;
+      }
+    }
+
+    function hydrateOutcomeButtons(root = document) {
+      root.querySelectorAll('[data-save-outcome]').forEach((button) => {
+        if (button.dataset.bound === '1') return;
+        button.dataset.bound = '1';
+        button.addEventListener('click', () => {
+          const code = button.dataset.saveOutcome;
+          const scope = button.dataset.saveScope || 'card';
+          const plan = tradePlanMap.get(code) || lastSeenReviewRows.find((row) => row.code === code) || allRows.find((row) => row.code === code) || { code };
+          const baseRow = allRows.find((row) => row.code === code) || {};
+          saveOutcome({ ...baseRow, ...plan }, scope);
+        });
+      });
+    }
+
+    function renderOutcomeControls(row, scope = 'card') {
+      const outcome = getOutcome(row);
+      const key = `${scope}:${row.code}`;
+      return `
+        <div class="outcome-panel">
+          <div class="outcome-row">
+            <select class="outcome-select" data-outcome-select="${key}">
+              <option value="unreviewed" ${outcome.outcomeStatus === 'unreviewed' ? 'selected' : ''}>Unreviewed</option>
+              <option value="checked" ${outcome.outcomeStatus === 'checked' ? 'selected' : ''}>Checked</option>
+              <option value="bought" ${outcome.outcomeStatus === 'bought' ? 'selected' : ''}>Bought</option>
+              <option value="missed" ${outcome.outcomeStatus === 'missed' ? 'selected' : ''}>Missed</option>
+              <option value="rejected" ${outcome.outcomeStatus === 'rejected' ? 'selected' : ''}>Rejected</option>
+            </select>
+            <button class="button secondary outcome-save" type="button" data-save-outcome="${row.code}" data-save-scope="${scope}">Save review</button>
+          </div>
+          <input class="outcome-input" data-outcome-tag="${key}" value="${String(outcome.outcomeTag || '').replace(/"/g, '&quot;')}" placeholder="Outcome tag: found_real_opportunity / overpriced / fake_spread" />
+          <input class="outcome-input" data-outcome-notes="${key}" value="${String(outcome.notes || '').replace(/"/g, '&quot;')}" placeholder="Quick note" />
+          <div class="outcome-status" data-outcome-status="${key}">${outcome.lastReviewedAt ? `Saved ${fmtDate(outcome.lastReviewedAt)}` : 'Not reviewed yet'}</div>
+        </div>
+      `;
+    }
+
     function mediaRingClass() {
       return '';
     }
@@ -976,23 +1193,35 @@
     }
 
     function matchesQuickFilter(row, filter) {
+      const plan = tradePlanMap.get(row.code) || row;
+      const tags = Array.isArray(plan.reviewTags) ? plan.reviewTags : [];
       if (filter === 'heat') return Number(row.roiPercent || 0) >= 200;
+      if (filter === 'queue') return lastSeenReviewRows.some((queueRow) => queueRow.code === row.code);
+      if (filter === 'priority') return plan.action === 'priority-search';
+      if (filter === 'watch') return plan.action === 'watch';
+      if (filter === 'liquid') return tags.includes('liquid');
+      if (filter === 'low-entry') return tags.includes('low-entry');
+      if (filter === 'chase') return tags.includes('chase');
       return true;
     }
 
     function render(rows) {
       const container = document.getElementById('results');
+      const countLabel = document.getElementById('meta');
       if (!rows.length) {
         container.innerHTML = '<div class="empty">No matching cards.</div>';
         return;
       }
+      if (countLabel && allRows.length) countLabel.textContent = `${rows.length}/${allRows.length} cards shown`;
       container.innerHTML = rows.map((row, index) => {
         const plan = tradePlanMap.get(row.code);
         const priceChartingLink = row.priceChartingUrl || (row.priceChartingPath ? `https://www.pricecharting.com${row.priceChartingPath}` : '');
-        const reasons = Array.isArray(plan?.topReasons) ? plan.topReasons.slice(0, 2) : [];
-        const risks = Array.isArray(plan?.riskFlags) ? plan.riskFlags.slice(0, 2).map(riskLabel) : [];
+        const reasons = Array.isArray(plan?.topReasons) ? plan.topReasons.slice(0, 3) : [];
+        const risks = Array.isArray(plan?.riskFlags) ? plan.riskFlags.slice(0, 3).map(riskLabel) : [];
+        const tags = Array.isArray(plan?.reviewTags) ? plan.reviewTags : [];
+        const outcome = getOutcome(row);
         return `
-        <article class="card">
+        <article class="card ${lastSeenReviewRows.some((queueRow) => queueRow.code === row.code) ? 'review-available' : ''}">
           <div class="media ${mediaRingClass(row)}">
             <img
               src="${productImageUrl(row.productId, 'jpg')}"
@@ -1008,29 +1237,51 @@
               <div>
                 <div class="title">${row.code} ${row.name}</div>
                 <div class="subtitle">${row.setName || 'Unknown set'}</div>
-                ${renderStatusRow(row)}
+                ${renderStatusRow({ ...row, action: plan?.action, confidenceTier: plan?.confidenceTier })}
               </div>
             </div>
             <div class="roi">${fmtPct(row.roiPercent)}</div>
           </div>
-          <div class="metrics">
-            <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
-            <div class="metric"><div class="label">PSA 10</div><div class="value">${fmtMoney(row.psa10Market)}</div></div>
-            <div class="metric"><div class="label">Target buy</div><div class="value">${fmtMoney(plan?.targetBuyPrice || 0)}</div></div>
-            <div class="metric"><div class="label">Max buy</div><div class="value">${fmtMoney(plan?.maxBuyPrice || 0)}</div></div>
-            <div class="metric"><div class="label">Exit zone</div><div class="value">${plan ? `${fmtMoney(plan.exitZoneLow)}–${fmtMoney(plan.exitZoneHigh)}` : '-'}</div></div>
-            <div class="metric"><div class="label">Profit</div><div class="value">${fmtMoney(row.profit)}</div></div>
+          <div class="card-summary">
+            ${reasons.length ? `<div class="watch-note"><strong>Why it made the board:</strong> ${reasons.join(' • ')}</div>` : ''}
+            ${risks.length ? `<div class="watch-note"><strong>Main risk:</strong> ${risks.join(' • ')}</div>` : ''}
+            ${tags.length ? `<div class="queue-tags">${tags.map((tag) => `<span class="queue-tag">${tag}</span>`).join('')}</div>` : ''}
+            <div class="metrics">
+              <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
+              <div class="metric"><div class="label">PSA 10</div><div class="value">${fmtMoney(row.psa10Market)}</div></div>
+              <div class="metric"><div class="label">Target buy</div><div class="value">${fmtMoney(plan?.targetBuyPrice || 0)}</div></div>
+              <div class="metric"><div class="label">Max buy</div><div class="value">${fmtMoney(plan?.maxBuyPrice || 0)}</div></div>
+            </div>
           </div>
-          ${reasons.length ? `<div class="watch-note"><strong>Why:</strong> ${reasons.join(' • ')}</div>` : ''}
-          ${risks.length ? `<div class="watch-note"><strong>Risk:</strong> ${risks.join(' • ')}</div>` : ''}
+          <details class="card-details">
+            <summary>
+              <span>Show deeper check</span>
+              <span>${outcome.outcomeStatus && outcome.outcomeStatus !== 'unreviewed' ? reviewedLabel(row) : 'not reviewed'}</span>
+            </summary>
+            <div class="detail-grid">
+              <div class="metric"><div class="label">Ideal buy</div><div class="value">${fmtMoney(plan?.idealBuyPrice || 0)}</div></div>
+              <div class="metric"><div class="label">Stretch buy</div><div class="value">${fmtMoney(plan?.stretchBuyPrice || 0)}</div></div>
+              <div class="metric"><div class="label">Exit zone</div><div class="value">${plan ? `${fmtMoney(plan.exitZoneLow)}–${fmtMoney(plan.exitZoneHigh)}` : '-'}</div></div>
+              <div class="metric"><div class="label">Expected profit</div><div class="value">${fmtMoney(row.profit)}</div></div>
+              <div class="metric"><div class="label">PSA 10 sales</div><div class="value">${Number(row.psa10SalesCount || 0)}</div></div>
+              <div class="metric"><div class="label">Raw sales</div><div class="value">${Number(row.ungradedSalesCount || 0)}</div></div>
+            </div>
+            <div class="detail-list">
+              <div class="detail-item"><strong>Set:</strong> ${row.setName || 'Unknown set'}</div>
+              <div class="detail-item"><strong>Collectr raw:</strong> ${fmtMoney(plan?.collectrRawMarket || row.collectrRawMarket || 0)}</div>
+              <div class="detail-item"><strong>Review note:</strong> ${plan?.reviewSummary || 'Manual search workflow'}</div>
+            </div>
+            ${renderOutcomeControls({ ...row, ...plan }, 'card')}
+          </details>
           <div class="links">
-            <a class="button" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>
-            ${priceChartingLink ? `<a class="button secondary" href="${priceChartingLink}" target="_blank" rel="noopener noreferrer">Open PriceCharting</a>` : ''}
-            <a class="button secondary" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+            <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+            ${row.collectrLink ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>` : ''}
+            ${priceChartingLink ? `<a class="button secondary" href="${priceChartingLink}" target="_blank" rel="noopener noreferrer">PriceCharting</a>` : ''}
           </div>
         </article>
       `;
       }).join('');
+      hydrateOutcomeButtons(container);
     }
 
 
@@ -1062,8 +1313,10 @@
         return;
       }
       section.style.display = '';
+      container.className = 'queue-grid rail';
       const priorityCount = rows.filter((row) => row.action === 'priority-search').length;
-      meta.textContent = `${priorityCount} priority • ${rows.length - priorityCount} watch`;
+      const reviewedCount = rows.filter((row) => getOutcome(row).outcomeStatus && getOutcome(row).outcomeStatus !== 'unreviewed').length;
+      meta.textContent = `${priorityCount} priority • ${rows.length - priorityCount} watch • ${reviewedCount} reviewed`;
       container.innerHTML = rows.map((row) => `
         <article class="lot-card">
           <div class="lot-top">
@@ -1072,10 +1325,12 @@
                 <span class="${statusBadgeClass(row.action)}">${actionLabel(row.action)}</span>
                 <span class="badge">Tier ${row.confidenceTier}</span>
                 <span class="badge">Score ${Number(row.discoveryScore || 0).toFixed(0)}</span>
+                <span class="badge ${getOutcome(row).outcomeStatus === 'bought' ? 'closed' : 'tracked'}">${reviewedLabel(row)}</span>
               </div>
               <div class="lot-title">#${row.queueRank} ${row.code} ${row.name}</div>
             </div>
           </div>
+          ${Array.isArray(row.reviewTags) && row.reviewTags.length ? `<div class="queue-tags">${row.reviewTags.map((tag) => `<span class="queue-tag">${tag}</span>`).join('')}</div>` : ''}
           <div class="lot-metrics">
             <div class="metric"><div class="label">Ideal</div><div class="value">${fmtMoney(row.idealBuyPrice)}</div></div>
             <div class="metric"><div class="label">Target</div><div class="value">${fmtMoney(row.targetBuyPrice)}</div></div>
@@ -1087,13 +1342,15 @@
           <div class="lot-note"><strong>Why:</strong> ${row.whyInteresting}</div>
           <div class="lot-reason"><strong>Main risk:</strong> ${row.biggestRisk}</div>
           <div class="lot-note">${row.reviewSummary}</div>
+          ${renderOutcomeControls(row, 'queue')}
           <div class="lot-links">
-            ${row.collectrLink ? `<a class="button" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>` : ''}
-            ${row.priceChartingUrl ? `<a class="button secondary" href="${row.priceChartingUrl}" target="_blank" rel="noopener noreferrer">Open PriceCharting</a>` : ''}
-            <a class="button secondary" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+            <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+            ${row.collectrLink ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Collectr</a>` : ''}
+            ${row.priceChartingUrl ? `<a class="button secondary" href="${row.priceChartingUrl}" target="_blank" rel="noopener noreferrer">PriceCharting</a>` : ''}
           </div>
         </article>
       `).join('');
+      hydrateOutcomeButtons(container);
     }
 
     function renderLots(rows) {
@@ -1157,9 +1414,15 @@
 
     async function loadRefreshMeta() {
       try {
-        const res = await fetch('./api/health', { cache: 'no-store' });
-        if (!res.ok) return null;
-        refreshStatus = await res.json();
+        const [healthRes, outcomesRes] = await Promise.all([
+          fetch('./api/health', { cache: 'no-store' }),
+          fetch('./api/signal-outcomes', { cache: 'no-store' }).catch(() => null)
+        ]);
+        if (healthRes.ok) refreshStatus = await healthRes.json();
+        if (outcomesRes && outcomesRes.ok) {
+          const outcomes = await outcomesRes.json();
+          signalOutcomesMap = new Map((Array.isArray(outcomes.entries) ? outcomes.entries : []).map((entry) => [entry.code, entry]));
+        }
         return refreshStatus;
       } catch {
         return null;
@@ -1214,6 +1477,8 @@
         return matchesSearch && matchesQuickFilter(row, activeFilter);
       });
       render(filtered);
+      const refreshLine = refreshStatus?.lastRefresh?.finishedAt ? ` • refresh ${fmtDate(refreshStatus.lastRefresh.finishedAt)}` : '';
+      document.getElementById('meta').textContent = `${filtered.length}/${allRows.length} cards shown${refreshLine}`;
     }
 
     function setActiveChip(filter) {
@@ -1239,19 +1504,17 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
             return;
           }
-          if (jump === 'search') {
-            document.getElementById('searchZone')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            document.getElementById('search')?.focus();
+          if (jump === 'queue') {
+            document.getElementById('lastSeenReviewSection')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             return;
           }
           if (jump === 'results') {
             setActiveChip('all');
-            document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.getElementById('resultsHead')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             return;
           }
-          if (jump === 'hot') {
-            setActiveChip('heat');
-            document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (jump === 'filters') {
+            document.getElementById('chipRow')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
             return;
           }
           if (jump === 'lots') {
@@ -1286,24 +1549,24 @@
       } else {
         lotRows = [];
       }
+      const health = await loadRefreshMeta();
       document.getElementById('qualifiedCount').textContent = data.qualifiedCount ?? allRows.length;
       document.getElementById('bestRoi').textContent = allRows.length ? fmtPct(allRows[0].roiPercent) : '-';
       updateTopProfitStats(allRows);
       document.getElementById('generatedAt').textContent = fmtDate(data.generatedAt);
-      document.getElementById('rulesSummary').textContent = `${data.filters?.minRoiPercent ?? 80}%+ ROI`;
-      const health = await loadRefreshMeta();
-      const refreshLine = health?.lastRefresh?.finishedAt ? ` | Refresh: ${fmtDate(health.lastRefresh.finishedAt)}` : '';
-      const runningLine = health?.refreshRunning ? ' | Refresh running now' : '';
-      document.getElementById('meta').textContent = `${refreshLine || ''}${runningLine || ''}`.replace(/^\s*\|\s*/, '') || ' '; 
+      document.getElementById('rulesSummary').textContent = `${data.filters?.minRoiPercent ?? 80}%+ ROI • ${lastSeenReviewRows.length} in queue`;
       document.getElementById('tickerTrack').innerHTML = buildTickerRows(allRows);
       initTicker();
       initChips();
       initDock();
       initHeroMascotAnimation();
-      render(allRows);
       renderLastSeenReviewRows(lastSeenReviewRows);
       renderLots(lotRows);
       document.getElementById('search').addEventListener('input', applyFilter);
+      applyFilter();
+      if (health?.refreshRunning) {
+        document.getElementById('meta').textContent += ' • refresh running now';
+      }
     }
 
     boot().catch((error) => {

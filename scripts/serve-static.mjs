@@ -11,7 +11,8 @@ const LOG_DIR = path.join(ROOT, 'logs');
 const STATE_DIR = path.join(ROOT, 'state');
 const REFRESH_SCRIPT = path.join(ROOT, 'scripts', 'refresh-data.sh');
 const REFRESH_STATUS = path.join(DATA_DIR, 'refresh-status.json');
-const REFRESH_LOCK = path.join(STATE_DIR, 'refresh.lock');
+const REFRESH_LOCK = path.join(STATE_DIR, 'refresh.lockfile');
+const SIGNAL_OUTCOMES = path.join(DATA_DIR, 'signal-outcomes.json');
 const MIME = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
@@ -42,6 +43,12 @@ async function exists(filePath) {
   }
 }
 
+async function readBody(req) {
+  const chunks = [];
+  for await (const chunk of req) chunks.push(chunk);
+  return Buffer.concat(chunks).toString('utf8');
+}
+
 function safePath(urlPath) {
   const clean = decodeURIComponent((urlPath || '/').split('?')[0]);
   const rel = clean === '/' ? 'index.html' : clean.replace(/^\/+/, '');
@@ -59,10 +66,11 @@ function sendJson(res, statusCode, payload) {
 }
 
 async function refreshMeta() {
-  const [status, latest, tradePlan, lockExists] = await Promise.all([
+  const [status, latest, tradePlan, outcomes, lockExists] = await Promise.all([
     readJsonSafe(REFRESH_STATUS, {}),
     readJsonSafe(path.join(DATA_DIR, 'latest.json'), {}),
     readJsonSafe(path.join(DATA_DIR, 'trade-plan.json'), {}),
+    readJsonSafe(SIGNAL_OUTCOMES, {}),
     exists(REFRESH_LOCK),
   ]);
   return {
@@ -72,8 +80,9 @@ async function refreshMeta() {
     generatedAt: latest?.generatedAt || null,
     qualifiedCount: Number(latest?.qualifiedCount || 0),
     rowsWithEbayCandidates: Number(latest?.rowsWithEbayCandidates || 0),
-    reviewRows: Array.isArray(latest?.rows) ? latest.rows.filter((row) => Array.isArray(row.reviewCandidates) && row.reviewCandidates.length).map((row) => row.code) : [],
+    reviewRows: Array.isArray(tradePlan?.reviewQueue) ? tradePlan.reviewQueue.map((row) => row.code) : [],
     manualReviewCount: Number(tradePlan?.summary?.manualReviewCount || 0),
+    reviewedCount: Array.isArray(outcomes?.entries) ? outcomes.entries.filter((entry) => entry.outcomeStatus && entry.outcomeStatus !== 'unreviewed').length : 0,
   };
 }
 
@@ -130,6 +139,35 @@ const server = http.createServer(async (req, res) => {
         'Cache-Control': 'no-store',
       });
       return res.end(body);
+    }
+
+    if (method === 'GET' && url.pathname === '/api/signal-outcomes') {
+      return sendJson(res, 200, await readJsonSafe(SIGNAL_OUTCOMES, { entries: [] }));
+    }
+
+    if (method === 'POST' && url.pathname === '/api/signal-outcomes') {
+      const raw = await readBody(req);
+      const payload = JSON.parse(raw || '{}');
+      const current = await readJsonSafe(SIGNAL_OUTCOMES, { entries: [] });
+      const currentEntries = Array.isArray(current?.entries) ? current.entries : [];
+      const nextEntry = payload?.entry;
+      if (!nextEntry?.code) return sendJson(res, 400, { ok: false, message: 'Missing entry.code' });
+      const nextEntries = currentEntries.filter((entry) => entry.code !== nextEntry.code);
+      nextEntries.push({
+        ...nextEntry,
+        lastReviewedAt: nextEntry.lastReviewedAt || new Date().toISOString(),
+      });
+      const nextPayload = {
+        generatedAt: new Date().toISOString(),
+        instructions: current?.instructions || {
+          purpose: 'Manual review ledger for sniper-test signals.',
+          outcomeStatusOptions: ['unreviewed', 'checked', 'bought', 'missed', 'rejected'],
+          outcomeTagExamples: ['found_real_opportunity', 'overpriced', 'fake_spread', 'low_liquidity', 'not_clean_enough']
+        },
+        entries: nextEntries.sort((a, b) => String(a.code).localeCompare(String(b.code)))
+      };
+      await fs.writeFile(SIGNAL_OUTCOMES, `${JSON.stringify(nextPayload, null, 2)}\n`, 'utf8');
+      return sendJson(res, 200, { ok: true, entry: nextEntry, reviewedCount: nextEntries.filter((entry) => entry.outcomeStatus && entry.outcomeStatus !== 'unreviewed').length });
     }
 
     const filePath = safePath(url.pathname);

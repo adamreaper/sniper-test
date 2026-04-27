@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-27T12:50:29.200Z",
-  "sourceFeedUpdatedAt": "2026-04-27T12:50:29.085Z",
+  "generatedAt": "2026-04-27T13:15:58.165Z",
+  "sourceFeedUpdatedAt": "2026-04-27T13:14:54.154Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -9,10 +9,10 @@
   ],
   "summary": {
     "totalPlans": 24,
-    "prioritySearchCount": 4,
+    "prioritySearchCount": 3,
     "watchCount": 14,
-    "passCount": 6,
-    "manualReviewCount": 4,
+    "passCount": 7,
+    "manualReviewCount": 3,
     "buyNowCount": 0
   },
   "reviewQueue": [
@@ -24,15 +24,19 @@
       "action": "priority-search",
       "confidenceTier": "A",
       "discoveryScore": 83.4,
-      "targetBuyPrice": 2316.43,
-      "idealBuyPrice": 1917.02,
-      "stretchBuyPrice": 2772.89,
-      "maxBuyPrice": 3073.19,
+      "targetBuyPrice": 2122.6,
+      "idealBuyPrice": 1780.58,
+      "stretchBuyPrice": 2502.35,
+      "maxBuyPrice": 2814.23,
       "exitZoneLow": 5511.76,
       "exitZoneHigh": 6170.77,
       "whyInteresting": "PSA 10 sales are liquid enough to matter",
       "biggestRisk": "Raw entry price is high enough to slow turnover",
       "reviewSummary": "Search this one first.",
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "collectrLink": "https://app.getcollectr.com/explore/product/632503",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-fist-of-divine-speed/monkeydluffy-sp-silver-op05-119"
     },
@@ -44,15 +48,19 @@
       "action": "priority-search",
       "confidenceTier": "B",
       "discoveryScore": 78.6,
-      "targetBuyPrice": 827.31,
-      "idealBuyPrice": 676.1,
-      "stretchBuyPrice": 1000.13,
-      "maxBuyPrice": 1113.83,
+      "targetBuyPrice": 753.93,
+      "idealBuyPrice": 624.44,
+      "stretchBuyPrice": 897.71,
+      "maxBuyPrice": 1015.79,
       "exitZoneLow": 2086.8,
       "exitZoneHigh": 2336.31,
       "whyInteresting": "PSA 10 sales are liquid enough to matter",
       "biggestRisk": "Raw entry price is high enough to slow turnover",
       "reviewSummary": "Search this one first.",
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "collectrLink": "https://app.getcollectr.com/explore/product/597035",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-emperors-in-the-new-world/marshalldteach-manga-op09-093"
     },
@@ -64,117 +72,68 @@
       "action": "priority-search",
       "confidenceTier": "B",
       "discoveryScore": 77.4,
-      "targetBuyPrice": 646.47,
-      "idealBuyPrice": 525.39,
-      "stretchBuyPrice": 784.84,
-      "maxBuyPrice": 875.87,
+      "targetBuyPrice": 587.71,
+      "idealBuyPrice": 484.03,
+      "stretchBuyPrice": 702.83,
+      "maxBuyPrice": 797.37,
       "exitZoneLow": 1670.85,
       "exitZoneHigh": 1870.62,
       "whyInteresting": "PSA 10 sales are liquid enough to matter",
       "biggestRisk": "Raw entry price is high enough to slow turnover",
       "reviewSummary": "Search this one first.",
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "collectrLink": "https://app.getcollectr.com/explore/product/596984",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-emperors-in-the-new-world/buggy-alternate-art-manga-op09-051"
     },
     {
       "queueRank": 4,
-      "code": "EB03-031",
-      "name": "Vinsmoke Reiju (SP)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "action": "priority-search",
-      "confidenceTier": "B",
-      "discoveryScore": 73,
-      "targetBuyPrice": 167.64,
-      "idealBuyPrice": 134.2,
-      "stretchBuyPrice": 205.86,
-      "maxBuyPrice": 231,
-      "exitZoneLow": 461.47,
-      "exitZoneHigh": 516.65,
-      "whyInteresting": "PSA 10 comp depth is acceptable",
-      "biggestRisk": "No verified eBay pull yet — this is still a manual search workflow",
-      "reviewSummary": "Search this one first.",
-      "collectrLink": "https://app.getcollectr.com/explore/product/672824",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-heroines-edition/vinsmoke-reiju-sp-eb03-031"
-    },
-    {
-      "queueRank": 5,
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
       "action": "watch",
       "confidenceTier": "A",
       "discoveryScore": 90.8,
-      "targetBuyPrice": 575.78,
-      "idealBuyPrice": 474.32,
-      "stretchBuyPrice": 691.74,
-      "maxBuyPrice": 768.03,
+      "targetBuyPrice": 595.91,
+      "idealBuyPrice": 488.22,
+      "stretchBuyPrice": 720.45,
+      "maxBuyPrice": 826.86,
       "exitZoneLow": 1400.2,
       "exitZoneHigh": 1567.62,
       "whyInteresting": "PSA 10 spread is huge versus raw market",
       "biggestRisk": "PSA 10 comp depth is still thin",
       "reviewSummary": "Worth checking, but not first in line.",
+      "reviewTags": [
+        "wide-spread"
+      ],
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-heroines-edition/nami-alternate-art-eb03-053"
     },
     {
-      "queueRank": 6,
+      "queueRank": 5,
       "code": "EB01-040",
       "name": "Kyros (SPR)",
       "setName": "Extra Booster: Anime 25th Collection",
       "action": "watch",
       "confidenceTier": "A",
       "discoveryScore": 83.8,
-      "targetBuyPrice": 452.76,
-      "idealBuyPrice": 371.8,
-      "stretchBuyPrice": 545.29,
-      "maxBuyPrice": 606.16,
+      "targetBuyPrice": 441.38,
+      "idealBuyPrice": 363.86,
+      "stretchBuyPrice": 529.22,
+      "maxBuyPrice": 602.81,
       "exitZoneLow": 1117.25,
       "exitZoneHigh": 1250.83,
       "whyInteresting": "PSA 10 spread is huge versus raw market",
       "biggestRisk": "PSA 10 comp depth is still thin",
       "reviewSummary": "Worth checking, but not first in line.",
+      "reviewTags": [
+        "chase",
+        "wide-spread"
+      ],
       "collectrLink": "https://app.getcollectr.com/explore/product/629088",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/kyros-eb01-040"
-    },
-    {
-      "queueRank": 7,
-      "code": "OP08-058",
-      "name": "Charlotte Pudding (SPR)",
-      "setName": "Extra Booster: Anime 25th Collection",
-      "action": "watch",
-      "confidenceTier": "B",
-      "discoveryScore": 79.4,
-      "targetBuyPrice": 503.8,
-      "idealBuyPrice": 414.33,
-      "stretchBuyPrice": 606.05,
-      "maxBuyPrice": 673.32,
-      "exitZoneLow": 1234.64,
-      "exitZoneHigh": 1382.26,
-      "whyInteresting": "PSA 10 spread is huge versus raw market",
-      "biggestRisk": "Collectr raw market drifts too far from board pricing",
-      "reviewSummary": "Worth checking, but not first in line.",
-      "collectrLink": "https://app.getcollectr.com/explore/product/629189",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/charlotte-pudding-op08-058"
-    },
-    {
-      "queueRank": 8,
-      "code": "OP06-021",
-      "name": "Perona (SPR)",
-      "setName": "Extra Booster: Anime 25th Collection",
-      "action": "watch",
-      "confidenceTier": "B",
-      "discoveryScore": 78.6,
-      "targetBuyPrice": 547.8,
-      "idealBuyPrice": 451,
-      "stretchBuyPrice": 658.43,
-      "maxBuyPrice": 731.21,
-      "exitZoneLow": 1335.84,
-      "exitZoneHigh": 1495.56,
-      "whyInteresting": "Raw sales volume supports manual searching",
-      "biggestRisk": "PSA 10 comp depth is still thin",
-      "reviewSummary": "Worth checking, but not first in line.",
-      "collectrLink": "https://app.getcollectr.com/explore/product/629175",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-anime-25th-collection/perona-op06-021"
     }
   ],
   "plans": [
@@ -220,12 +179,16 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "high_raw_entry_price",
-      "idealBuyPrice": 1917.02,
-      "targetBuyPrice": 2316.43,
-      "stretchBuyPrice": 2772.89,
-      "maxBuyPrice": 3073.19,
+      "idealBuyPrice": 1780.58,
+      "targetBuyPrice": 2122.6,
+      "stretchBuyPrice": 2502.35,
+      "maxBuyPrice": 2814.23,
       "exitZoneLow": 5511.76,
       "exitZoneHigh": 6170.77,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Search this one first.",
       "rank": 1
     },
@@ -271,12 +234,16 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "high_raw_entry_price",
-      "idealBuyPrice": 676.1,
-      "targetBuyPrice": 827.31,
-      "stretchBuyPrice": 1000.13,
-      "maxBuyPrice": 1113.83,
+      "idealBuyPrice": 624.44,
+      "targetBuyPrice": 753.93,
+      "stretchBuyPrice": 897.71,
+      "maxBuyPrice": 1015.79,
       "exitZoneLow": 2086.8,
       "exitZoneHigh": 2336.31,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Search this one first.",
       "rank": 2
     },
@@ -322,64 +289,18 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "high_raw_entry_price",
-      "idealBuyPrice": 525.39,
-      "targetBuyPrice": 646.47,
-      "stretchBuyPrice": 784.84,
-      "maxBuyPrice": 875.87,
+      "idealBuyPrice": 484.03,
+      "targetBuyPrice": 587.71,
+      "stretchBuyPrice": 702.83,
+      "maxBuyPrice": 797.37,
       "exitZoneLow": 1670.85,
       "exitZoneHigh": 1870.62,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Search this one first.",
       "rank": 3
-    },
-    {
-      "sourceRank": 12,
-      "code": "EB03-031",
-      "name": "Vinsmoke Reiju (SP)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "rarity": "SR",
-      "productId": "672824",
-      "priceChartingPath": "/game/one-piece-extra-booster-heroines-edition/vinsmoke-reiju-sp-eb03-031",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-heroines-edition/vinsmoke-reiju-sp-eb03-031",
-      "collectrLink": "https://app.getcollectr.com/explore/product/672824",
-      "searchScore": 137,
-      "rawMarket": 202.32,
-      "psa10Market": 570,
-      "netPsa10Exit": 501.6,
-      "gradingCost": 33,
-      "costBasis": 235.32,
-      "expectedPsaNet": 266.28,
-      "profit": 266.28,
-      "roiPercent": 113.16,
-      "psa10SalesCount": 5,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 1,
-      "collectrRawMarket": 192.77,
-      "collectrRawDeltaPercent": 4.72,
-      "psa10SpreadMultiple": 2.82,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 73,
-      "buyScore": 73,
-      "confidenceTier": "B",
-      "action": "priority-search",
-      "riskFlags": [
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 comp depth is acceptable",
-        "Raw sales volume supports manual searching",
-        "Profit potential clears a solid bar after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "search_only_no_live_pull",
-      "idealBuyPrice": 134.2,
-      "targetBuyPrice": 167.64,
-      "stretchBuyPrice": 205.86,
-      "maxBuyPrice": 231,
-      "exitZoneLow": 461.47,
-      "exitZoneHigh": 516.65,
-      "reviewSummary": "Search this one first.",
-      "rank": 4
     },
     {
       "sourceRank": 1,
@@ -423,14 +344,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 474.32,
-      "targetBuyPrice": 575.78,
-      "stretchBuyPrice": 691.74,
-      "maxBuyPrice": 768.03,
+      "idealBuyPrice": 488.22,
+      "targetBuyPrice": 595.91,
+      "stretchBuyPrice": 720.45,
+      "maxBuyPrice": 826.86,
       "exitZoneLow": 1400.2,
       "exitZoneHigh": 1567.62,
+      "reviewTags": [
+        "wide-spread"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 4
     },
     {
       "sourceRank": 3,
@@ -474,14 +398,18 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 371.8,
-      "targetBuyPrice": 452.76,
-      "stretchBuyPrice": 545.29,
-      "maxBuyPrice": 606.16,
+      "idealBuyPrice": 363.86,
+      "targetBuyPrice": 441.38,
+      "stretchBuyPrice": 529.22,
+      "maxBuyPrice": 602.81,
       "exitZoneLow": 1117.25,
       "exitZoneHigh": 1250.83,
+      "reviewTags": [
+        "chase",
+        "wide-spread"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 5
     },
     {
       "sourceRank": 2,
@@ -525,14 +453,18 @@
         "Absolute upside is meaningful after fees"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 414.33,
-      "targetBuyPrice": 503.8,
-      "stretchBuyPrice": 606.05,
-      "maxBuyPrice": 673.32,
+      "idealBuyPrice": 426.59,
+      "targetBuyPrice": 521.55,
+      "stretchBuyPrice": 631.36,
+      "maxBuyPrice": 725.19,
       "exitZoneLow": 1234.64,
       "exitZoneHigh": 1382.26,
+      "reviewTags": [
+        "chase",
+        "wide-spread"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 6
     },
     {
       "sourceRank": 6,
@@ -577,12 +509,68 @@
         "Collectr raw market is reasonably aligned with the board"
       ],
       "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 451,
-      "targetBuyPrice": 547.8,
-      "stretchBuyPrice": 658.43,
-      "maxBuyPrice": 731.21,
+      "idealBuyPrice": 429.42,
+      "targetBuyPrice": 517,
+      "stretchBuyPrice": 615.21,
+      "maxBuyPrice": 696.65,
       "exitZoneLow": 1335.84,
       "exitZoneHigh": 1495.56,
+      "reviewTags": [
+        "chase"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 7
+    },
+    {
+      "sourceRank": 12,
+      "code": "EB03-031",
+      "name": "Vinsmoke Reiju (SP)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rarity": "SR",
+      "productId": "672824",
+      "priceChartingPath": "/game/one-piece-extra-booster-heroines-edition/vinsmoke-reiju-sp-eb03-031",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-heroines-edition/vinsmoke-reiju-sp-eb03-031",
+      "collectrLink": "https://app.getcollectr.com/explore/product/672824",
+      "searchScore": 137,
+      "rawMarket": 202.32,
+      "psa10Market": 570,
+      "netPsa10Exit": 501.6,
+      "gradingCost": 33,
+      "costBasis": 235.32,
+      "expectedPsaNet": 266.28,
+      "profit": 266.28,
+      "roiPercent": 113.16,
+      "psa10SalesCount": 5,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 1,
+      "collectrRawMarket": 192.77,
+      "collectrRawDeltaPercent": 4.72,
+      "psa10SpreadMultiple": 2.82,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 73,
+      "buyScore": 73,
+      "confidenceTier": "B",
+      "action": "watch",
+      "riskFlags": [
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 comp depth is acceptable",
+        "Raw sales volume supports manual searching",
+        "Profit potential clears a solid bar after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "search_only_no_live_pull",
+      "idealBuyPrice": 129.86,
+      "targetBuyPrice": 161.42,
+      "stretchBuyPrice": 197.09,
+      "maxBuyPrice": 226.9,
+      "exitZoneLow": 461.47,
+      "exitZoneHigh": 516.65,
+      "reviewTags": [
+        "chase"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 8
     },
@@ -629,12 +617,15 @@
         "Collectr raw market is reasonably aligned with the board"
       ],
       "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 719.49,
-      "targetBuyPrice": 879.39,
-      "stretchBuyPrice": 1062.12,
-      "maxBuyPrice": 1182.35,
+      "idealBuyPrice": 651.24,
+      "targetBuyPrice": 782.76,
+      "stretchBuyPrice": 927.76,
+      "maxBuyPrice": 1046.04,
       "exitZoneLow": 2206.56,
       "exitZoneHigh": 2470.39,
+      "reviewTags": [
+        "chase"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 9
     },
@@ -681,12 +672,16 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 4272.42,
-      "targetBuyPrice": 5142.9,
-      "stretchBuyPrice": 6137.73,
-      "maxBuyPrice": 6792.23,
+      "idealBuyPrice": 4052.04,
+      "targetBuyPrice": 4828.74,
+      "stretchBuyPrice": 5697.54,
+      "maxBuyPrice": 6416.14,
       "exitZoneLow": 12012.64,
       "exitZoneHigh": 13448.94,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 10
     },
@@ -732,12 +727,16 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "high_raw_entry_price",
-      "idealBuyPrice": 219.85,
-      "targetBuyPrice": 270.42,
-      "stretchBuyPrice": 328.22,
-      "maxBuyPrice": 366.24,
+      "idealBuyPrice": 213.29,
+      "targetBuyPrice": 261.02,
+      "stretchBuyPrice": 314.96,
+      "maxBuyPrice": 360.04,
       "exitZoneLow": 697.88,
       "exitZoneHigh": 781.32,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 11
     },
@@ -783,12 +782,18 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 59.69,
-      "targetBuyPrice": 78.23,
-      "stretchBuyPrice": 99.42,
-      "maxBuyPrice": 113.36,
+      "idealBuyPrice": 66.31,
+      "targetBuyPrice": 87.9,
+      "stretchBuyPrice": 113.36,
+      "maxBuyPrice": 135.53,
       "exitZoneLow": 255.83,
       "exitZoneHigh": 286.42,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "chase",
+        "wide-spread"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 12
     },
@@ -834,12 +839,15 @@
         "Collectr raw market is reasonably aligned with the board"
       ],
       "biggestRisk": "low_absolute_profit",
-      "idealBuyPrice": 44.57,
-      "targetBuyPrice": 60.09,
-      "stretchBuyPrice": 77.82,
-      "maxBuyPrice": 89.48,
+      "idealBuyPrice": 47.81,
+      "targetBuyPrice": 64.78,
+      "stretchBuyPrice": 84.54,
+      "maxBuyPrice": 101.52,
       "exitZoneLow": 214.1,
       "exitZoneHigh": 239.7,
+      "reviewTags": [
+        "liquid"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 13
     },
@@ -885,12 +893,15 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "high_raw_entry_price",
-      "idealBuyPrice": 441.18,
-      "targetBuyPrice": 545.42,
-      "stretchBuyPrice": 664.54,
-      "maxBuyPrice": 742.92,
+      "idealBuyPrice": 396.69,
+      "targetBuyPrice": 482.43,
+      "stretchBuyPrice": 576.95,
+      "maxBuyPrice": 654.06,
       "exitZoneLow": 1438.44,
       "exitZoneHigh": 1610.43,
+      "reviewTags": [
+        "chase"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 14
     },
@@ -937,12 +948,16 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 1955.01,
-      "targetBuyPrice": 2362.01,
-      "stretchBuyPrice": 2827.15,
-      "maxBuyPrice": 3133.17,
+      "idealBuyPrice": 1851.97,
+      "targetBuyPrice": 2215.12,
+      "stretchBuyPrice": 2621.34,
+      "maxBuyPrice": 2957.32,
       "exitZoneLow": 5616.6,
       "exitZoneHigh": 6288.15,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 15
     },
@@ -989,12 +1004,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 31.53,
-      "targetBuyPrice": 44.44,
-      "stretchBuyPrice": 59.19,
-      "maxBuyPrice": 68.89,
+      "idealBuyPrice": 36.14,
+      "targetBuyPrice": 51.17,
+      "stretchBuyPrice": 68.89,
+      "maxBuyPrice": 84.33,
       "exitZoneLow": 178.11,
       "exitZoneHigh": 199.41,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 16
     },
@@ -1040,12 +1060,15 @@
         "Collectr raw market is reasonably aligned with the board"
       ],
       "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 97.02,
-      "targetBuyPrice": 123.02,
-      "stretchBuyPrice": 152.74,
-      "maxBuyPrice": 172.29,
+      "idealBuyPrice": 94.47,
+      "targetBuyPrice": 119.37,
+      "stretchBuyPrice": 147.58,
+      "maxBuyPrice": 171.22,
       "exitZoneLow": 358.86,
       "exitZoneHigh": 401.76,
+      "reviewTags": [
+        "chase"
+      ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 17
     },
@@ -1079,7 +1102,7 @@
       "discoveryScore": 48.6,
       "buyScore": 48.6,
       "confidenceTier": "D",
-      "action": "watch",
+      "action": "pass",
       "riskFlags": [
         "low_psa10_liquidity",
         "high_raw_entry_price",
@@ -1091,13 +1114,16 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 452.59,
-      "targetBuyPrice": 559.11,
-      "stretchBuyPrice": 680.84,
-      "maxBuyPrice": 760.93,
+      "idealBuyPrice": 398.38,
+      "targetBuyPrice": 482.6,
+      "stretchBuyPrice": 574.83,
+      "maxBuyPrice": 649.58,
       "exitZoneLow": 1469.93,
       "exitZoneHigh": 1645.68,
-      "reviewSummary": "Worth checking, but not first in line.",
+      "reviewTags": [
+        "chase"
+      ],
+      "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 18
     },
     {
@@ -1143,12 +1169,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 7.71,
-      "targetBuyPrice": 15.86,
-      "stretchBuyPrice": 25.16,
-      "maxBuyPrice": 31.28,
+      "idealBuyPrice": 10.62,
+      "targetBuyPrice": 20.1,
+      "stretchBuyPrice": 31.28,
+      "maxBuyPrice": 41.02,
       "exitZoneLow": 112.37,
       "exitZoneHigh": 125.8,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 19
     },
@@ -1195,12 +1226,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 7.71,
-      "targetBuyPrice": 15.86,
-      "stretchBuyPrice": 25.16,
-      "maxBuyPrice": 31.28,
+      "idealBuyPrice": 10.62,
+      "targetBuyPrice": 20.1,
+      "stretchBuyPrice": 31.28,
+      "maxBuyPrice": 41.02,
       "exitZoneLow": 112.37,
       "exitZoneHigh": 125.8,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 20
     },
@@ -1247,12 +1283,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 7.16,
-      "targetBuyPrice": 15.19,
-      "stretchBuyPrice": 24.37,
-      "maxBuyPrice": 30.41,
+      "idealBuyPrice": 10.03,
+      "targetBuyPrice": 19.38,
+      "stretchBuyPrice": 30.41,
+      "maxBuyPrice": 40.02,
       "exitZoneLow": 110.84,
       "exitZoneHigh": 124.09,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 21
     },
@@ -1299,12 +1340,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 7.16,
-      "targetBuyPrice": 15.19,
-      "stretchBuyPrice": 24.37,
-      "maxBuyPrice": 30.41,
+      "idealBuyPrice": 10.03,
+      "targetBuyPrice": 19.38,
+      "stretchBuyPrice": 30.41,
+      "maxBuyPrice": 40.02,
       "exitZoneLow": 110.84,
       "exitZoneHigh": 124.09,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 22
     },
@@ -1350,12 +1396,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 35.33,
-      "targetBuyPrice": 48.99,
-      "stretchBuyPrice": 64.61,
-      "maxBuyPrice": 74.88,
+      "idealBuyPrice": 38.17,
+      "targetBuyPrice": 53.13,
+      "stretchBuyPrice": 70.53,
+      "maxBuyPrice": 85.49,
       "exitZoneLow": 188.58,
       "exitZoneHigh": 211.13,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 23
     },
@@ -1401,12 +1452,17 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 13.64,
-      "targetBuyPrice": 22.97,
-      "stretchBuyPrice": 33.63,
-      "maxBuyPrice": 40.64,
+      "idealBuyPrice": 15.58,
+      "targetBuyPrice": 25.79,
+      "stretchBuyPrice": 37.67,
+      "maxBuyPrice": 47.88,
       "exitZoneLow": 128.73,
       "exitZoneHigh": 144.12,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "chase"
+      ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 24
     }
