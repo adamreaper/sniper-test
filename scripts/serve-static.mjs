@@ -2,9 +2,11 @@ import http from 'node:http';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = process.env.ONE_PIECE_SNIPER_TEST_DIR || path.resolve(process.cwd(), 'one-piece-sniper-test');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = process.env.ONE_PIECE_SNIPER_TEST_DIR || path.resolve(__dirname, '..');
 const PORT = Number(process.env.PORT || 8787);
 const DATA_DIR = path.join(ROOT, 'data');
 const LOG_DIR = path.join(ROOT, 'logs');
@@ -49,6 +51,18 @@ async function readBody(req) {
   return Buffer.concat(chunks).toString('utf8');
 }
 
+function shellQuote(value) {
+  return `'${String(value).replace(/'/g, `'\\''`)}'`;
+}
+
+async function isRefreshRunning() {
+  if (!(await exists(REFRESH_LOCK))) return false;
+  const probe = spawnSync('bash', ['-lc', `exec 9>${shellQuote(REFRESH_LOCK)}; flock -n 9`], {
+    stdio: 'ignore',
+  });
+  return probe.status !== 0;
+}
+
 function safePath(urlPath) {
   const clean = decodeURIComponent((urlPath || '/').split('?')[0]);
   const rel = clean === '/' ? 'index.html' : clean.replace(/^\/+/, '');
@@ -66,16 +80,16 @@ function sendJson(res, statusCode, payload) {
 }
 
 async function refreshMeta() {
-  const [status, latest, tradePlan, outcomes, lockExists] = await Promise.all([
+  const [status, latest, tradePlan, outcomes, refreshRunning] = await Promise.all([
     readJsonSafe(REFRESH_STATUS, {}),
     readJsonSafe(path.join(DATA_DIR, 'latest.json'), {}),
     readJsonSafe(path.join(DATA_DIR, 'trade-plan.json'), {}),
     readJsonSafe(SIGNAL_OUTCOMES, {}),
-    exists(REFRESH_LOCK),
+    isRefreshRunning(),
   ]);
   return {
     ok: Boolean(status?.ok ?? false),
-    refreshRunning: lockExists,
+    refreshRunning,
     lastRefresh: status || null,
     generatedAt: latest?.generatedAt || null,
     qualifiedCount: Number(latest?.qualifiedCount || 0),
@@ -94,7 +108,7 @@ function triggerRefresh() {
     env: {
       ...process.env,
       ONE_PIECE_SNIPER_TEST_DIR: ROOT,
-      OPENCLAW_WORKSPACE: process.env.OPENCLAW_WORKSPACE || '/home/deck/.openclaw/workspace',
+      AUTO_PUSH_TO_GITHUB: '0',
     },
   });
   child.unref();
@@ -115,7 +129,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     if ((method === 'POST' || method === 'GET') && url.pathname === '/api/refresh') {
-      if (await exists(REFRESH_LOCK)) {
+      if (await isRefreshRunning()) {
         return sendJson(res, 409, {
           ok: false,
           message: 'Refresh already running',

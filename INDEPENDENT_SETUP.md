@@ -8,13 +8,14 @@ This copy is the independent version scaffold.
 - Refresh flow can run without chat-agent involvement
 - Git sync can be skipped entirely
 - The copied `.git` folder and old root-level JSON payloads were moved into `archive/`
+- Refresh now defaults to repo-local vendored scanner scripts under `scripts/vendor/`
 
 ## Data flow
 1. `scripts/refresh-data.sh`
    - runs the PriceCharting board refresh
    - runs the trade-plan generator
    - runs the lot scan
-   - writes the app payloads into `one-piece-sniper-test/data/`
+   - writes the app payloads into `./data/`
 2. `scripts/serve-static.mjs`
    - serves the app locally on a port
    - serves JSON with `Cache-Control: no-store`
@@ -30,16 +31,22 @@ Current board thresholds:
 
 ## Run it manually
 ```bash
-bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/refresh-data.sh
-node /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/serve-static.mjs
+cd /path/to/one-piece-sniper-test
+bash ./scripts/refresh-data.sh
+node ./scripts/serve-static.mjs
 ```
 Then open:
 - `http://localhost:8787`
 
+## Credentials
+Put any needed API credentials in repo-local `.env.local` if you want the vendored helper scripts to use them.
+That includes things like eBay and OpenAI keys used by the scanner helpers.
+
 ## Local steady-state services
 Install the user services:
 ```bash
-bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/install-user-services.sh
+cd /path/to/one-piece-sniper-test
+bash ./scripts/install-user-services.sh
 ```
 
 That installs and starts:
@@ -68,7 +75,7 @@ The local server exposes:
 The UI also has a `Refresh data` button wired to `POST /api/refresh`.
 
 ## GitHub auto-push
-`refresh-data.sh` now auto-pushes refreshed data back to the repo by default after a successful run:
+`refresh-data.sh` auto-pushes refreshed data back to the repo by default after a successful run:
 - `data/latest.json`
 - `data/latest-v2.json`
 - `data/weekly-base.json`
@@ -77,20 +84,20 @@ The UI also has a `Refresh data` button wired to `POST /api/refresh`.
 
 You can disable that behavior by running with:
 ```bash
-AUTO_PUSH_TO_GITHUB=0 bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/refresh-data.sh
+AUTO_PUSH_TO_GITHUB=0 bash ./scripts/refresh-data.sh
 ```
 
 ## Run it without Jerome online
 Use the installed systemd user timer, or fall back to cron if you prefer:
 ```bash
-bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/refresh-data.sh
+bash ./scripts/refresh-data.sh
 ```
 Example cron:
 ```cron
-15 * * * * bash /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/refresh-data.sh >> /home/deck/.openclaw/workspace/logs/one-piece-sniper-test-refresh.log 2>&1
+15 * * * * cd /path/to/one-piece-sniper-test && bash ./scripts/refresh-data.sh >> ./logs/one-piece-sniper-test-refresh.log 2>&1
 ```
 
 ## Notes
-- The refresh script sets `NO_DASHBOARD_GIT=1` and `SKIP_GIT_PUSH=1`, so it does not require repo pushes.
-- The scanner code was updated so the dashboard output directory can be overridden with `ONE_PIECE_DASHBOARD_DIR`.
-- If you later create a dedicated repo for this app, this copy is ready to be the base.
+- The refresh script sets `NO_DASHBOARD_GIT=1` and `SKIP_GIT_PUSH=1`, so it does not require repo pushes inside the vendored scanner flow.
+- The dashboard output directory can still be overridden with `ONE_PIECE_DASHBOARD_DIR`.
+- If you later move this repo, the scripts now derive paths from the repo itself instead of assuming the OpenClaw workspace layout.

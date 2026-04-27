@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-WORKSPACE="${OPENCLAW_WORKSPACE:-/home/deck/.openclaw/workspace}"
-APP_DIR="${ONE_PIECE_SNIPER_TEST_DIR:-$WORKSPACE/one-piece-sniper-test}"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+APP_DIR="${ONE_PIECE_SNIPER_TEST_DIR:-$(cd -- "$SCRIPT_DIR/.." && pwd)}"
 DATA_DIR="$APP_DIR/data"
-NODE_BIN="${NODE_BIN:-/home/deck/.nvm/versions/node/v24.15.0/bin/node}"
+NODE_BIN="${NODE_BIN:-$(command -v node || true)}"
+if [[ -z "$NODE_BIN" ]]; then
+  echo "node not found in PATH; set NODE_BIN explicitly" >&2
+  exit 2
+fi
 export PATH="$(dirname "$NODE_BIN"):${PATH:-/usr/bin:/bin}"
 STATE_DIR="$APP_DIR/state"
 LOG_DIR="$APP_DIR/logs"
@@ -18,10 +22,14 @@ GIT_BRANCH_NAME="${GIT_BRANCH_NAME:-main}"
 SSH_KEY_PATH="${SSH_KEY_PATH:-$HOME/.ssh/id_ed25519_sniper_test}"
 export GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -i $SSH_KEY_PATH -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes}"
 
-export OPENCLAW_WORKSPACE="$WORKSPACE"
+export ONE_PIECE_SNIPER_TEST_DIR="$APP_DIR"
 export ONE_PIECE_DASHBOARD_DIR="$DATA_DIR"
 export NO_DASHBOARD_GIT=1
 export SKIP_GIT_PUSH=1
+
+SINGLES_SCRIPT="${ONE_PIECE_SINGLES_SCRIPT:-$APP_DIR/scripts/vendor/one-piece/weekly-pricecharting-psa10-report-v1.mjs}"
+LOTS_SCRIPT="${ONE_PIECE_LOTS_SCRIPT:-$APP_DIR/scripts/vendor/one-piece-lots/ebay-one-piece-lot-scan.mjs}"
+LOTS_APP_READY_PATH="${ONE_PIECE_LOTS_APP_READY_PATH:-$APP_DIR/reports/one-piece-lots/app-ready.json}"
 
 mkdir -p "$DATA_DIR" "$STATE_DIR" "$LOG_DIR"
 
@@ -66,15 +74,15 @@ trap cleanup EXIT
 
 {
   echo "[$(date -Iseconds)] Refresh start"
-  cd "$WORKSPACE"
-  "$NODE_BIN" "$WORKSPACE/scanners/one-piece/weekly-pricecharting-psa10-report-v1.mjs"
+  cd "$APP_DIR"
+  "$NODE_BIN" "$SINGLES_SCRIPT"
   "$NODE_BIN" "$APP_DIR/scripts/generate-trade-plan.mjs"
-  "$NODE_BIN" "$WORKSPACE/scanners/one-piece-lots/ebay-one-piece-lot-scan.mjs"
-  cp "$WORKSPACE/reports/one-piece-lots/app-ready.json" "$DATA_DIR/app-ready.json"
+  "$NODE_BIN" "$LOTS_SCRIPT"
+  cp "$LOTS_APP_READY_PATH" "$DATA_DIR/app-ready.json"
 
   if [[ "$AUTO_PUSH_TO_GITHUB" == "1" ]]; then
     cd "$APP_DIR"
-    git add data/latest.json data/latest-v2.json data/weekly-base.json data/trade-plan.json data/signal-outcomes.json data/app-ready.json scripts/generate-trade-plan.mjs scripts/refresh-data.sh index.html
+    git add data/latest.json data/latest-v2.json data/weekly-base.json data/trade-plan.json data/signal-outcomes.json data/app-ready.json scripts/generate-trade-plan.mjs scripts/refresh-data.sh scripts/serve-static.mjs scripts/install-user-services.sh scripts/vendor index.html INDEPENDENT_SETUP.md
     if ! git diff --cached --quiet; then
       git commit -m "Refresh sniper test data $(date +%F' '%H:%M)"
       git pull --rebase "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"

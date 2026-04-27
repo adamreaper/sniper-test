@@ -5,13 +5,13 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-Environment=OPENCLAW_WORKSPACE=/home/deck/.openclaw/workspace
-Environment=ONE_PIECE_SNIPER_TEST_DIR=/home/deck/.openclaw/workspace/one-piece-sniper-test
+# Template only. Prefer scripts/install-user-services.sh to write concrete units.
+Environment=ONE_PIECE_SNIPER_TEST_DIR=/ABSOLUTE/PATH/TO/one-piece-sniper-test
 Environment=PORT=8787
-WorkingDirectory=/home/deck/.openclaw/workspace/one-piece-sniper-test
-Environment=NODE_BIN=/home/deck/.nvm/versions/node/v24.15.0/bin/node
-Environment=PATH=/home/deck/.nvm/versions/node/v24.15.0/bin:/usr/bin:/bin
-ExecStart=/home/deck/.nvm/versions/node/v24.15.0/bin/node /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/serve-static.mjs
+WorkingDirectory=/ABSOLUTE/PATH/TO/one-piece-sniper-test
+Environment=NODE_BIN=/usr/bin/node
+Environment=PATH=/usr/bin:/bin
+ExecStart=/usr/bin/node /ABSOLUTE/PATH/TO/one-piece-sniper-test/scripts/serve-static.mjs
 Restart=always
 RestartSec=3
 

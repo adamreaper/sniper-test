@@ -5,12 +5,11 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const APP_DIR = path.resolve(__dirname, '..');
-const WORKSPACE = process.env.OPENCLAW_WORKSPACE || path.resolve(APP_DIR, '..');
 const DASHBOARD_DIR = process.env.ONE_PIECE_DASHBOARD_DIR || path.join(APP_DIR, 'data');
 const FEED_PATH = path.join(DASHBOARD_DIR, 'latest.json');
 const JSON_OUT = path.join(DASHBOARD_DIR, 'trade-plan.json');
 const REVIEW_OUT = path.join(DASHBOARD_DIR, 'signal-outcomes.json');
-const OUTPUT_DIR = path.join(WORKSPACE, 'reports', 'one-piece-hybrid');
+const OUTPUT_DIR = path.join(APP_DIR, 'reports', 'one-piece-hybrid');
 
 function money(n) {
   const value = Number(n);
