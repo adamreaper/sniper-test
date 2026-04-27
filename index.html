@@ -787,10 +787,6 @@
       </div>
       <div id="chipRow" class="chip-row">
         <button class="chip active" data-filter="all">All cards</button>
-        <button class="chip" data-filter="double">2 candidates</button>
-        <button class="chip" data-filter="single">1 candidate</button>
-        <button class="chip" data-filter="review">Manual review</button>
-        <button class="chip" data-filter="none">No candidates</button>
         <button class="chip" data-filter="heat">Hot ROI</button>
       </div>
     </section>
@@ -811,13 +807,13 @@
     </div>
     <div id="results" class="grid"></div>
 
-    <section class="panel lots-panel" id="lastSeenReviewSection">
+    <section class="panel lots-panel" id="lastSeenReviewSection" style="display:none">
       <div class="section-head" style="margin-top:0">
         <div>
           <h2 class="section-title">Last seen review candidates</h2>
-          <div class="section-copy">Borderline review listings from earlier refreshes that fell off the current board or no longer passed the live review gate.</div>
+          <div class="section-copy">Hidden for the simplified sniper test view.</div>
         </div>
-        <div id="lastSeenReviewMeta" class="meta">Loading review history...</div>
+        <div id="lastSeenReviewMeta" class="meta"></div>
       </div>
       <div id="lastSeenReviewResults" class="grid"></div>
     </section>
@@ -939,89 +935,31 @@
     function renderStatusRow(row) {
       const plan = tradePlanMap.get(row.code);
       if (!plan) return '';
-      const riskBadges = Array.isArray(plan.riskFlags)
-        ? plan.riskFlags.slice(0, 3).map((flag) => `<span class="badge badge-risk">${riskLabel(flag)}</span>`).join('')
-        : '';
       return `
         <div class="status-row">
-          <span class="${statusBadgeClass(plan.action)}">${plan.action.replace(/-/g, ' ')}</span>
           <span class="badge">Tier ${plan.confidenceTier}</span>
           <span class="badge">Score ${Number(plan.buyScore || 0).toFixed(0)}</span>
-          ${riskBadges}
         </div>
       `;
     }
 
-    function renderWatchNote(row) {
-      const plan = tradePlanMap.get(row.code);
-      if (!plan || plan.action !== 'watch' || !Array.isArray(row.ebayCandidates) || !row.ebayCandidates.length) return '';
-      return '<div class="watch-note">Watch tier only — candidates are still shown so you can inspect them without treating them as buy-now.</div>';
-    }
-
-    function renderCandidatePhotos(candidate) {
-      const urls = [candidate.imageUrl, ...(Array.isArray(candidate.additionalImages) ? candidate.additionalImages : [])]
+    function buildEbaySearchUrl(row) {
+      const query = [row.code, row.name, 'One Piece']
         .filter(Boolean)
-        .slice(0, 4);
-      if (!urls.length) return '';
-      return `<div class="candidate-photo-strip">${urls.map((url, index) => `
-        <a class="candidate-photo" href="${url}" target="_blank" rel="noopener noreferrer" title="Candidate photo ${index + 1}">
-          <img src="${url}" alt="Candidate photo ${index + 1}" loading="lazy">
-        </a>
-      `).join('')}</div>`;
+        .join(' ')
+        .trim();
+      return `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(query)}`;
     }
 
-    function renderCandidateCard(candidate, index, labelPrefix = 'Candidate') {
-      return `
-        <div class="candidate">
-          <div class="candidate-head">
-            <div class="candidate-title">${labelPrefix} ${index + 1}</div>
-            <a class="button secondary" href="${candidate.itemWebUrl}" target="_blank" rel="noopener noreferrer">Open eBay</a>
-          </div>
-          <div class="candidate-meta">
-            <div class="metric"><div class="label">Listing total</div><div class="value">${fmtMoney(candidate.total)}</div></div>
-            <div class="metric"><div class="label">Listing ROI</div><div class="value">${fmtPct(candidate.roi?.roiPercent)}</div></div>
-            <div class="metric"><div class="label">Photo score</div><div class="value">${Number(candidate.photoScore?.score || 0).toFixed(0)}/100</div></div>
-          </div>
-          ${renderCandidatePhotos(candidate)}
-          <div class="candidate-note">${candidate.title || ''}</div>
-          <div class="candidate-note">${candidate.photoScore?.notes || ''}</div>
-          ${candidate.reviewReason ? `<div class="candidate-note">${candidate.reviewReason}</div>` : ''}
-        </div>
-      `;
-    }
-
-    function renderCandidates(row) {
-      const live = Array.isArray(row.ebayCandidates) ? row.ebayCandidates : [];
-      const review = Array.isArray(row.reviewCandidates) ? row.reviewCandidates : [];
-      if (!live.length && !review.length) {
-        return '<div class="candidate"><div class="candidate-title">No eBay candidates yet</div><div class="candidate-note">The weekly scan will populate the best 2 raw listings here.</div></div>';
-      }
-      const reviewBlock = review.length
-        ? `<div class="candidate"><div class="candidate-title">Manual review bucket</div><div class="candidate-note">Borderline listings kept here for feedback. They were not confident enough for the main English-only bucket.</div></div><div class="candidate-list">${review.map((candidate, index) => renderCandidateCard(candidate, index, 'Review')).join('')}</div>`
-        : '';
-      const liveBlock = live.length
-        ? `<div class="candidate-list">${live.map((candidate, index) => renderCandidateCard(candidate, index, 'Candidate')).join('')}</div>`
-        : '';
-      return `${renderWatchNote(row)}${liveBlock}${reviewBlock}`;
-    }
-
-    function mediaRingClass(row) {
-      const count = Array.isArray(row.ebayCandidates) ? row.ebayCandidates.length : 0;
-      if (count >= 2) return 'candidate-ring-gold';
-      if (count === 1) return 'candidate-ring-silver';
+    function mediaRingClass() {
       return '';
     }
 
-    function hasReviewCandidates(row) {
-      return Array.isArray(row.reviewCandidates) && row.reviewCandidates.length > 0;
+    function hasReviewCandidates() {
+      return false;
     }
 
     function matchesQuickFilter(row, filter) {
-      const count = Array.isArray(row.ebayCandidates) ? row.ebayCandidates.length : 0;
-      if (filter === 'double') return count >= 2;
-      if (filter === 'single') return count === 1;
-      if (filter === 'review') return hasReviewCandidates(row);
-      if (filter === 'none') return count === 0;
       if (filter === 'heat') return Number(row.roiPercent || 0) >= 200;
       return true;
     }
@@ -1035,7 +973,7 @@
       container.innerHTML = rows.map((row, index) => {
         const priceChartingLink = row.priceChartingUrl || (row.priceChartingPath ? `https://www.pricecharting.com${row.priceChartingPath}` : '');
         return `
-        <article class="card ${hasReviewCandidates(row) ? 'review-available' : ''}">
+        <article class="card">
           <div class="media ${mediaRingClass(row)}">
             <img
               src="${productImageUrl(row.productId, 'jpg')}"
@@ -1052,7 +990,6 @@
                 <div class="title">${row.code} ${row.name}</div>
                 <div class="subtitle">${row.setName || 'Unknown set'}</div>
                 ${renderStatusRow(row)}
-                ${hasReviewCandidates(row) ? '<div class="status-row"><span class="badge badge-manual-review">Manual review available</span></div>' : ''}
               </div>
             </div>
             <div class="roi">${fmtPct(row.roiPercent)}</div>
@@ -1066,8 +1003,8 @@
           <div class="links">
             <a class="button" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>
             ${priceChartingLink ? `<a class="button secondary" href="${priceChartingLink}" target="_blank" rel="noopener noreferrer">Open PriceCharting</a>` : ''}
+            <a class="button secondary" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
           </div>
-          ${renderCandidates(row)}
         </article>
       `;
       }).join('');
@@ -1079,21 +1016,9 @@
     }
 
     function candidateConfidenceWeight(row) {
-      const candidates = Array.isArray(row.ebayCandidates) ? row.ebayCandidates : [];
-      const candidateCount = Number(row.ebayCandidateCount ?? candidates.length ?? 0);
-      const avgPhotoScore = candidates.length
-        ? candidates.reduce((sum, candidate) => sum + Number(candidate?.photoScore?.score || 45), 0) / candidates.length
-        : 45;
-      const avgSeller = candidates.length
-        ? candidates.reduce((sum, candidate) => sum + Number(candidate?.seller?.feedbackPercentage || 98), 0) / candidates.length
-        : 98;
-
-      const countWeight = candidateCount >= 3 ? 1 : candidateCount === 2 ? 0.78 : candidateCount === 1 ? 0.52 : 0.18;
-      const photoWeight = clampNumber(avgPhotoScore / 100, 0.2, 0.95);
-      const sellerWeight = clampNumber((avgSeller - 90) / 10, 0.25, 1);
-
-      const blendedWeight = (countWeight * 0.45) + (photoWeight * 0.35) + (sellerWeight * 0.20);
-      return clampNumber(blendedWeight, 0.1, 0.95);
+      const compWeight = clampNumber(Number(row.marketStats?.compCount || 0) / 3, 0.35, 1);
+      const roiWeight = clampNumber(Number(row.roiPercent || 0) / 250, 0.35, 1);
+      return clampNumber((compWeight * 0.55) + (roiWeight * 0.45), 0.35, 1);
     }
 
     function updateTopProfitStats(rows) {
@@ -1104,39 +1029,9 @@
       document.getElementById('realisticProfitWeek').textContent = fmtMoney(realisticProfit);
     }
 
-    function renderLastSeenReviewRows(rows) {
-      const container = document.getElementById('lastSeenReviewResults');
-      const meta = document.getElementById('lastSeenReviewMeta');
+    function renderLastSeenReviewRows() {
       const section = document.getElementById('lastSeenReviewSection');
-      if (!rows.length) {
-        meta.textContent = 'No older review candidates saved right now.';
-        container.innerHTML = '<div class="empty">When a review candidate disappears on a later refresh, it will show up here instead of vanishing.</div>';
-        section.style.display = 'none';
-        return;
-      }
-      section.style.display = 'block';
-      meta.textContent = `${rows.length} row${rows.length === 1 ? '' : 's'} remembered from earlier refreshes`;
-      container.innerHTML = rows.map((row) => `
-        <article class="card review-available">
-          <div class="topline">
-            <div class="card-head">
-              <div class="rank">⏱</div>
-              <div>
-                <div class="title">${row.code} ${row.name}</div>
-                <div class="subtitle">${row.setName || 'Unknown set'} • last seen ${fmtDate(row.lastSeenAt)}</div>
-                <div class="status-row"><span class="badge badge-manual-review">Last seen review candidates</span></div>
-              </div>
-            </div>
-            <div class="roi">${fmtPct(row.roiPercent)}</div>
-          </div>
-          <div class="metrics">
-            <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
-            <div class="metric"><div class="label">PSA 10</div><div class="value">${fmtMoney(row.psa10Market)}</div></div>
-          </div>
-          <div class="candidate"><div class="candidate-title">Last seen manual review bucket</div><div class="candidate-note">These were seen on an earlier refresh but did not survive the latest live scan.</div></div>
-          <div class="candidate-list">${(Array.isArray(row.lastSeenReviewCandidates) ? row.lastSeenReviewCandidates : []).map((candidate, index) => renderCandidateCard(candidate, index, 'Last seen review')).join('')}</div>
-        </article>
-      `).join('');
+      if (section) section.style.display = 'none';
     }
 
     function renderLots(rows) {
