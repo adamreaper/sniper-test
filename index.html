@@ -810,8 +810,8 @@
     <section class="panel lots-panel" id="lastSeenReviewSection" style="display:none">
       <div class="section-head" style="margin-top:0">
         <div>
-          <h2 class="section-title">Last seen review candidates</h2>
-          <div class="section-copy">Hidden for the simplified sniper test view.</div>
+          <h2 class="section-title">Priority search queue</h2>
+          <div class="section-copy">Start here first. These are the strongest manual-search signals with target buy zones and the main thing that could break the thesis.</div>
         </div>
         <div id="lastSeenReviewMeta" class="meta"></div>
       </div>
@@ -914,9 +914,16 @@
     }
 
     function statusBadgeClass(action) {
-      if (action === 'buy-now') return 'badge badge-buy';
+      if (action === 'priority-search' || action === 'buy-now') return 'badge badge-buy';
       if (action === 'manual-review') return 'badge badge-review';
       return 'badge badge-watch';
+    }
+
+    function actionLabel(action) {
+      if (action === 'priority-search') return 'priority search';
+      if (action === 'manual-review') return 'manual review';
+      if (action === 'buy-now') return 'buy now';
+      return action === 'pass' ? 'pass' : 'watch';
     }
 
     function riskLabel(flag) {
@@ -928,6 +935,14 @@
         seller_feedback_below_98: 'Seller <98%',
         high_shipping: 'High shipping',
         strong_live_discount: 'Strong live discount',
+        low_psa10_liquidity: 'Thin PSA 10 comp depth',
+        thin_raw_sales: 'Thin raw sales',
+        missing_collectr_raw_anchor: 'Missing Collectr raw anchor',
+        collectr_raw_drift: 'Collectr raw drift',
+        roi_outlier: 'ROI outlier',
+        high_raw_entry_price: 'High raw entry price',
+        low_absolute_profit: 'Low absolute profit',
+        search_only_no_live_pull: 'Search button only'
       };
       return labels[flag] || flag.replace(/_/g, ' ');
     }
@@ -937,8 +952,9 @@
       if (!plan) return '';
       return `
         <div class="status-row">
+          <span class="${statusBadgeClass(plan.action)}">${actionLabel(plan.action)}</span>
           <span class="badge">Tier ${plan.confidenceTier}</span>
-          <span class="badge">Score ${Number(plan.buyScore || 0).toFixed(0)}</span>
+          <span class="badge">Score ${Number(plan.discoveryScore ?? plan.buyScore || 0).toFixed(0)}</span>
         </div>
       `;
     }
@@ -971,7 +987,10 @@
         return;
       }
       container.innerHTML = rows.map((row, index) => {
+        const plan = tradePlanMap.get(row.code);
         const priceChartingLink = row.priceChartingUrl || (row.priceChartingPath ? `https://www.pricecharting.com${row.priceChartingPath}` : '');
+        const reasons = Array.isArray(plan?.topReasons) ? plan.topReasons.slice(0, 2) : [];
+        const risks = Array.isArray(plan?.riskFlags) ? plan.riskFlags.slice(0, 2).map(riskLabel) : [];
         return `
         <article class="card">
           <div class="media ${mediaRingClass(row)}">
@@ -997,9 +1016,13 @@
           <div class="metrics">
             <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
             <div class="metric"><div class="label">PSA 10</div><div class="value">${fmtMoney(row.psa10Market)}</div></div>
-            <div class="metric"><div class="label">Net exit</div><div class="value">${fmtMoney(row.netPsa10Exit)}</div></div>
+            <div class="metric"><div class="label">Target buy</div><div class="value">${fmtMoney(plan?.targetBuyPrice || 0)}</div></div>
+            <div class="metric"><div class="label">Max buy</div><div class="value">${fmtMoney(plan?.maxBuyPrice || 0)}</div></div>
+            <div class="metric"><div class="label">Exit zone</div><div class="value">${plan ? `${fmtMoney(plan.exitZoneLow)}–${fmtMoney(plan.exitZoneHigh)}` : '-'}</div></div>
             <div class="metric"><div class="label">Profit</div><div class="value">${fmtMoney(row.profit)}</div></div>
           </div>
+          ${reasons.length ? `<div class="watch-note"><strong>Why:</strong> ${reasons.join(' • ')}</div>` : ''}
+          ${risks.length ? `<div class="watch-note"><strong>Risk:</strong> ${risks.join(' • ')}</div>` : ''}
           <div class="links">
             <a class="button" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>
             ${priceChartingLink ? `<a class="button secondary" href="${priceChartingLink}" target="_blank" rel="noopener noreferrer">Open PriceCharting</a>` : ''}
@@ -1029,9 +1052,48 @@
       document.getElementById('realisticProfitWeek').textContent = fmtMoney(realisticProfit);
     }
 
-    function renderLastSeenReviewRows() {
+    function renderLastSeenReviewRows(rows) {
       const section = document.getElementById('lastSeenReviewSection');
-      if (section) section.style.display = 'none';
+      const meta = document.getElementById('lastSeenReviewMeta');
+      const container = document.getElementById('lastSeenReviewResults');
+      if (!section || !meta || !container) return;
+      if (!Array.isArray(rows) || !rows.length) {
+        section.style.display = 'none';
+        return;
+      }
+      section.style.display = '';
+      const priorityCount = rows.filter((row) => row.action === 'priority-search').length;
+      meta.textContent = `${priorityCount} priority • ${rows.length - priorityCount} watch`;
+      container.innerHTML = rows.map((row) => `
+        <article class="lot-card">
+          <div class="lot-top">
+            <div>
+              <div class="badge-row">
+                <span class="${statusBadgeClass(row.action)}">${actionLabel(row.action)}</span>
+                <span class="badge">Tier ${row.confidenceTier}</span>
+                <span class="badge">Score ${Number(row.discoveryScore || 0).toFixed(0)}</span>
+              </div>
+              <div class="lot-title">#${row.queueRank} ${row.code} ${row.name}</div>
+            </div>
+          </div>
+          <div class="lot-metrics">
+            <div class="metric"><div class="label">Ideal</div><div class="value">${fmtMoney(row.idealBuyPrice)}</div></div>
+            <div class="metric"><div class="label">Target</div><div class="value">${fmtMoney(row.targetBuyPrice)}</div></div>
+            <div class="metric"><div class="label">Stretch</div><div class="value">${fmtMoney(row.stretchBuyPrice)}</div></div>
+            <div class="metric"><div class="label">Max</div><div class="value">${fmtMoney(row.maxBuyPrice)}</div></div>
+            <div class="metric"><div class="label">Exit low</div><div class="value">${fmtMoney(row.exitZoneLow)}</div></div>
+            <div class="metric"><div class="label">Exit high</div><div class="value">${fmtMoney(row.exitZoneHigh)}</div></div>
+          </div>
+          <div class="lot-note"><strong>Why:</strong> ${row.whyInteresting}</div>
+          <div class="lot-reason"><strong>Main risk:</strong> ${row.biggestRisk}</div>
+          <div class="lot-note">${row.reviewSummary}</div>
+          <div class="lot-links">
+            ${row.collectrLink ? `<a class="button" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>` : ''}
+            ${row.priceChartingUrl ? `<a class="button secondary" href="${row.priceChartingUrl}" target="_blank" rel="noopener noreferrer">Open PriceCharting</a>` : ''}
+            <a class="button secondary" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+          </div>
+        </article>
+      `).join('');
     }
 
     function renderLots(rows) {
@@ -1212,11 +1274,12 @@
       if (tradePlanRes && tradePlanRes.ok) {
         const tradePlan = await tradePlanRes.json();
         tradePlanMap = new Map((Array.isArray(tradePlan.plans) ? tradePlan.plans : []).map((plan) => [plan.code, plan]));
+        lastSeenReviewRows = Array.isArray(tradePlan.reviewQueue) ? tradePlan.reviewQueue : [];
       } else {
         tradePlanMap = new Map();
+        lastSeenReviewRows = [];
       }
       allRows = Array.isArray(data.rows) ? data.rows : [];
-      lastSeenReviewRows = Array.isArray(data.lastSeenReviewRows) ? data.lastSeenReviewRows : [];
       if (lotsRes && lotsRes.ok) {
         const lotsData = await lotsRes.json();
         lotRows = Array.isArray(lotsData.rows) ? lotsData.rows : [];
@@ -1248,8 +1311,8 @@
       document.getElementById('maxProfitWeek').textContent = '-';
       document.getElementById('realisticProfitWeek').textContent = '-';
       document.getElementById('results').innerHTML = '<div class="empty">No weekly scan data yet. Once the cron job runs, latest.json will appear here.</div>';
-      document.getElementById('lastSeenReviewMeta').textContent = 'Review history unavailable';
-      document.getElementById('lastSeenReviewResults').innerHTML = '<div class="empty">Review history will show up here once at least one candidate drops off a later refresh.</div>';
+      document.getElementById('lastSeenReviewMeta').textContent = 'Priority queue unavailable';
+      document.getElementById('lastSeenReviewResults').innerHTML = '<div class="empty">Priority search queue will show up here once trade-plan.json is generated.</div>';
       document.getElementById('lotsMeta').textContent = 'Lot feed unavailable';
       document.getElementById('lotsResults').innerHTML = '<div class="empty">Lots will show up here once app-ready.json is published.</div>';
     });

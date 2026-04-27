@@ -68,13 +68,13 @@ trap cleanup EXIT
   echo "[$(date -Iseconds)] Refresh start"
   cd "$WORKSPACE"
   "$NODE_BIN" "$WORKSPACE/scanners/one-piece/weekly-pricecharting-psa10-report-v1.mjs"
-  "$NODE_BIN" "$WORKSPACE/scanners/one-piece/generate-trade-plan.mjs"
+  "$NODE_BIN" "$APP_DIR/scripts/generate-trade-plan.mjs"
   "$NODE_BIN" "$WORKSPACE/scanners/one-piece-lots/ebay-one-piece-lot-scan.mjs"
   cp "$WORKSPACE/reports/one-piece-lots/app-ready.json" "$DATA_DIR/app-ready.json"
 
   if [[ "$AUTO_PUSH_TO_GITHUB" == "1" ]]; then
     cd "$APP_DIR"
-    git add data/latest.json data/latest-v2.json data/weekly-base.json data/trade-plan.json data/app-ready.json
+    git add data/latest.json data/latest-v2.json data/weekly-base.json data/trade-plan.json data/signal-outcomes.json data/app-ready.json scripts/generate-trade-plan.mjs scripts/refresh-data.sh index.html
     if ! git diff --cached --quiet; then
       git commit -m "Refresh sniper test data $(date +%F' '%H:%M)"
       git pull --rebase "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
