@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-04-27T13:15:51.884Z",
+  "instructions": {
+    "purpose": "Manual review ledger for sniper-test signals.",
+    "outcomeStatusOptions": [
+      "unreviewed",
+      "checked",
+      "bought",
+      "missed",
+      "rejected"
+    ],
+    "outcomeTagExamples": [
+      "found_real_opportunity",
+      "overpriced",
+      "fake_spread",
+      "low_liquidity",
+      "not_clean_enough"
+    ]
+  },
+  "entries": [
+    {
+      "code": "TEST-CARD",
+      "name": "Test Card",
+      "setName": "Test Set",
+      "outcomeStatus": "checked",
+      "outcomeTag": "smoke_test",
+      "notes": "ok",
+      "lastReviewedAt": "2026-04-27T13:15:51.884Z"
+    }
+  ]
+}

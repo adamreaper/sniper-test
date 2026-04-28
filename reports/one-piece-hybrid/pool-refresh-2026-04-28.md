@@ -1,0 +1,110 @@
+# One Piece Collectr Universe Refresh
+Generated: 2026-04-28T18:12:03.557Z
+Collectr sets scanned: 20
+Cards kept at raw floor $15.00+: 263
+Previous active pool size: 263
+Active pool backup: /home/deck/.openclaw/workspace/one-piece-sniper-test/scripts/vendor/one-piece/candidates-active.backup.json
+
+## Sets scanned
+- Adventure on Kami's Island (202 cards)
+- Extra Booster: One Piece Heroine's Edition (102 cards)
+- The Azure Sea's Seven (211 cards)
+- Carrying On His Will (177 cards)
+- Premium Booster -The Best- Vol. 2 (376 cards)
+- Legacy of the Master (158 cards)
+- A Fist of Divine Speed (159 cards)
+- Extra Booster: Anime 25th Collection (105 cards)
+- Royal Blood (152 cards)
+- Emperors in the New World (162 cards)
+- Premium Booster (326 cards)
+- Two Legends (154 cards)
+- 500 Years in the Future (154 cards)
+- Extra Booster: Memorial Collection (80 cards)
+- Wings of the Captain (154 cards)
+- Awakening of the New Era (158 cards)
+- Kingdoms of Intrigue (158 cards)
+- Pillars of Strength (155 cards)
+- Paramount War (156 cards)
+- Romance Dawn (156 cards)
+
+## Universe snapshot
+- OP09-118 | Gol.D.Roger (Manga) | Emperors in the New World | raw 29995.00 | https://app.getcollectr.com/explore/product/597065
+- OP05-119 | Monkey.D.Luffy (SP) (Gold) | A Fist of Divine Speed | raw 9459.11 | https://app.getcollectr.com/explore/product/632504
+- OP13-118 | Monkey.D.Luffy (118) (3rd Anniversary) | Carrying On His Will | raw 8489.98 | https://app.getcollectr.com/explore/product/657401
+- OP13-119 | Portgas.D.Ace (119) (3rd Anniversary) | Carrying On His Will | raw 5900.00 | https://app.getcollectr.com/explore/product/657406
+- OP13-120 | Sabo (120) (3rd Anniversary) | Carrying On His Will | raw 4018.00 | https://app.getcollectr.com/explore/product/657411
+- EB02-061 | Monkey.D.Luffy (061) (Manga) | Extra Booster: Anime 25th Collection | raw 3971.99 | https://app.getcollectr.com/explore/product/629167
+- OP05-119 | Monkey.D.Luffy (SP) (Silver) | A Fist of Divine Speed | raw 3072.87 | https://app.getcollectr.com/explore/product/632503
+- EB01-006 | Tony Tony.Chopper (Alternate Art) (Manga) | Extra Booster: Memorial Collection | raw 2427.43 | https://app.getcollectr.com/explore/product/544532
+- OP13-118 | Monkey.D.Luffy (118) (Manga) | Carrying On His Will | raw 2025.62 | https://app.getcollectr.com/explore/product/657402
+- OP09-119 | Monkey.D.Luffy (Manga) | Emperors in the New World | raw 2024.78 | https://app.getcollectr.com/explore/product/597068
+- OP06-118 | Roronoa Zoro (Alternate Art) (Manga) | Wings of the Captain | raw 1986.35 | https://app.getcollectr.com/explore/product/541660
+- OP06-119 | Sanji (Manga) | Premium Booster -The Best- Vol. 2 | raw 1945.19 | https://app.getcollectr.com/explore/product/654637
+- OP09-004 | Shanks - OP09-004 (SP) (Gold) | Carrying On His Will | raw 1585.04 | https://app.getcollectr.com/explore/product/657442
+- OP02-013 | Portgas.D.Ace (Manga Alternate Art) | Paramount War | raw 1446.05 | https://app.getcollectr.com/explore/product/485862
+- OP09-093 | Marshall.D.Teach (SP) (Gold) | Legacy of the Master | raw 1434.25 | https://app.getcollectr.com/explore/product/646573
+- OP11-118 | Monkey.D.Luffy (Manga) | A Fist of Divine Speed | raw 1359.02 | https://app.getcollectr.com/explore/product/632499
+- EB03-061 | Uta (061) (Manga) | Extra Booster: One Piece Heroine's Edition | raw 1302.07 | https://app.getcollectr.com/explore/product/672817
+- OP09-093 | Marshall.D.Teach (093) (Manga) | Emperors in the New World | raw 1298.87 | https://app.getcollectr.com/explore/product/597035
+- OP09-004 | Shanks (Manga) | Emperors in the New World | raw 1288.98 | https://app.getcollectr.com/explore/product/596925
+- OP05-060 | Monkey.D.Luffy (SPR) | Extra Booster: Anime 25th Collection | raw 1241.00 | https://app.getcollectr.com/explore/product/629171
+- OP13-119 | Portgas.D.Ace (119) (Super Alternate Art) | Carrying On His Will | raw 1217.59 | https://app.getcollectr.com/explore/product/657407
+- OP15-118 | Enel (OP15-118) (Manga) | Adventure on Kami's Island | raw 1159.50 | https://app.getcollectr.com/explore/product/685479
+- EB03-053 | Nami (SP) | Extra Booster: One Piece Heroine's Edition | raw 1117.62 | https://app.getcollectr.com/explore/product/672827
+- OP09-051 | Buggy (051) (Manga) | Emperors in the New World | raw 1000.00 | https://app.getcollectr.com/explore/product/596984
+- OP09-004 | Shanks - OP09-004 (SP) (Silver) | Carrying On His Will | raw 995.29 | https://app.getcollectr.com/explore/product/657443
+- EB03-055 | Nico Robin - 055 (SP) | Extra Booster: One Piece Heroine's Edition | raw 969.19 | https://app.getcollectr.com/explore/product/672828
+- OP08-106 | Nami (SP) | Emperors in the New World | raw 953.86 | https://app.getcollectr.com/explore/product/596918
+- OP12-118 | Jewelry Bonney (118) (Manga) | Legacy of the Master | raw 948.62 | https://app.getcollectr.com/explore/product/643867
+- OP08-001 | Tony Tony.Chopper (SPR) | Extra Booster: Anime 25th Collection | raw 915.89 | https://app.getcollectr.com/explore/product/629185
+- EB02-010 | Monkey.D.Luffy (010) (Alternate Art) | Extra Booster: Anime 25th Collection | raw 803.60 | https://app.getcollectr.com/explore/product/629101
+- EB04-044 | Koby (EB04-044) (Manga) | Adventure on Kami's Island | raw 773.74 | https://app.getcollectr.com/explore/product/685313
+- OP05-119 | Monkey.D.Luffy (Wanted Poster) | Emperors in the New World | raw 762.17 | https://app.getcollectr.com/explore/product/596915
+- OP07-051 | Boa Hancock (SP) | Emperors in the New World | raw 752.38 | https://app.getcollectr.com/explore/product/596917
+- OP09-093 | Marshall.D.Teach (SP) (Silver) | Legacy of the Master | raw 745.24 | https://app.getcollectr.com/explore/product/646572
+- OP07-038 | Boa Hancock (SPR) | Extra Booster: Anime 25th Collection | raw 717.60 | https://app.getcollectr.com/explore/product/629181
+- EB03-026 | Boa Hancock (SP) | Extra Booster: One Piece Heroine's Edition | raw 704.19 | https://app.getcollectr.com/explore/product/672823
+- OP09-078 | Gum-Gum Giant (Alternate Art) | Premium Booster -The Best- Vol. 2 | raw 698.47 | https://app.getcollectr.com/explore/product/653835
+- OP13-120 | Sabo (120) (Super Alternate Art) | Carrying On His Will | raw 686.52 | https://app.getcollectr.com/explore/product/657412
+- OP06-022 | Yamato (SPR) | Extra Booster: Anime 25th Collection | raw 661.01 | https://app.getcollectr.com/explore/product/629176
+- OP08-118 | Silvers Rayleigh (Parallel) (Manga) | Two Legends | raw 647.59 | https://app.getcollectr.com/explore/product/558162
+- OP13-119 | Portgas.D.Ace (119) (Wanted Poster) | Carrying On His Will | raw 636.21 | https://app.getcollectr.com/explore/product/657409
+- OP07-019 | Jewelry Bonney (SPR) | Extra Booster: Anime 25th Collection | raw 581.17 | https://app.getcollectr.com/explore/product/629180
+- OP05-067 | Zoro-Juurou (SP) | Emperors in the New World | raw 572.71 | https://app.getcollectr.com/explore/product/596913
+- OP13-080 | St. Ethanbaron V. Nusjuro (Parallel) | Carrying On His Will | raw 548.19 | https://app.getcollectr.com/explore/product/657348
+- EB02-061 | Monkey.D.Luffy - EB02-061 (SP) | Premium Booster -The Best- Vol. 2 | raw 544.00 | https://app.getcollectr.com/explore/product/654533
+- OP06-042 | Vinsmoke Reiju (SPR) | Extra Booster: Anime 25th Collection | raw 523.67 | https://app.getcollectr.com/explore/product/629177
+- OP13-083 | St. Jaygarcia Saturn (Parallel) | Carrying On His Will | raw 523.60 | https://app.getcollectr.com/explore/product/657354
+- OP13-091 | St. Marcus Mars (Parallel) | Carrying On His Will | raw 520.26 | https://app.getcollectr.com/explore/product/657368
+- OP13-084 | St. Shepherd Ju Peter (Parallel) | Carrying On His Will | raw 497.48 | https://app.getcollectr.com/explore/product/657357
+- OP06-001 | Uta (SPR) | Extra Booster: Anime 25th Collection | raw 491.90 | https://app.getcollectr.com/explore/product/629173
+- OP13-089 | St. Topman Warcury (Parallel) | Carrying On His Will | raw 468.33 | https://app.getcollectr.com/explore/product/657364
+- OP06-021 | Perona (SPR) | Extra Booster: Anime 25th Collection | raw 447.01 | https://app.getcollectr.com/explore/product/629175
+- OP08-057 | King (SPR) | Extra Booster: Anime 25th Collection | raw 433.81 | https://app.getcollectr.com/explore/product/629188
+- OP05-098 | Enel (SPR) | Extra Booster: Anime 25th Collection | raw 433.77 | https://app.getcollectr.com/explore/product/629172
+- OP07-097 | Vegapunk (SPR) | Extra Booster: Anime 25th Collection | raw 421.24 | https://app.getcollectr.com/explore/product/629184
+- OP08-058 | Charlotte Pudding (SPR) | Extra Booster: Anime 25th Collection | raw 416.00 | https://app.getcollectr.com/explore/product/629189
+- OP09-119 | Monkey.D.Luffy - OP09-119 (SP) | Carrying On His Will | raw 404.43 | https://app.getcollectr.com/explore/product/657448
+- OP13-118 | Monkey.D.Luffy (118) (Wanted Poster) | Carrying On His Will | raw 402.15 | https://app.getcollectr.com/explore/product/657404
+- ST18-005 | Luffy-Tarou (SP) | A Fist of Divine Speed | raw 396.42 | https://app.getcollectr.com/explore/product/632509
+- OP08-021 | Carrot (SPR) | Extra Booster: Anime 25th Collection | raw 392.03 | https://app.getcollectr.com/explore/product/629187
+- OP11-106 | Zeus (SP) | Adventure on Kami's Island | raw 387.02 | https://app.getcollectr.com/explore/product/685009
+- ST26-005 | Monkey.D.Luffy (SP) | Adventure on Kami's Island | raw 377.63 | https://app.getcollectr.com/explore/product/685194
+- OP12-014 | Boa Hancock (SP) | Adventure on Kami's Island | raw 352.49 | https://app.getcollectr.com/explore/product/685011
+- OP04-064 | Ms. All Sunday (SP) | Wings of the Captain | raw 343.03 | https://app.getcollectr.com/explore/product/541668
+- OP05-001 | Sabo (SPR) | Extra Booster: Anime 25th Collection | raw 334.94 | https://app.getcollectr.com/explore/product/629168
+- OP06-080 | Gecko Moria (SPR) | Extra Booster: Anime 25th Collection | raw 334.35 | https://app.getcollectr.com/explore/product/629178
+- EB01-001 | Kouzuki Oden (SPR) | Extra Booster: Anime 25th Collection | raw 331.83 | https://app.getcollectr.com/explore/product/629086
+- OP08-002 | Marco (SPR) | Extra Booster: Anime 25th Collection | raw 329.45 | https://app.getcollectr.com/explore/product/629186
+- EB03-024 | Nefeltari Vivi - 024 (SP) | Extra Booster: One Piece Heroine's Edition | raw 327.64 | https://app.getcollectr.com/explore/product/672822
+- OP05-002 | Belo Betty (SPR) | Extra Booster: Anime 25th Collection | raw 316.99 | https://app.getcollectr.com/explore/product/629169
+- OP07-001 | Monkey.D.Dragon (SPR) | Extra Booster: Anime 25th Collection | raw 305.75 | https://app.getcollectr.com/explore/product/629179
+- EB03-003 | Uta - 003 (SP) | Extra Booster: One Piece Heroine's Edition | raw 300.66 | https://app.getcollectr.com/explore/product/672820
+- EB03-045 | Perona (SP) | Extra Booster: One Piece Heroine's Edition | raw 295.97 | https://app.getcollectr.com/explore/product/672826
+- OP05-022 | Donquixote Rosinante (SPR) | Extra Booster: Anime 25th Collection | raw 289.18 | https://app.getcollectr.com/explore/product/629170
+- OP09-057 | Cross Guild (Alternate Art) | Premium Booster -The Best- Vol. 2 | raw 282.81 | https://app.getcollectr.com/explore/product/653834
+- OP07-079 | Rob Lucci (SPR) | Extra Booster: Anime 25th Collection | raw 269.89 | https://app.getcollectr.com/explore/product/629183
+- OP09-096 | My Era...Begins!! (Alternate Art) | Premium Booster -The Best- Vol. 2 | raw 264.56 | https://app.getcollectr.com/explore/product/653836
+- ST02-007 | Jewelry Bonney (SP) | Two Legends | raw 252.72 | https://app.getcollectr.com/explore/product/558165
+- OP02-013 | Portgas.D.Ace (SP) | Two Legends | raw 252.10 | https://app.getcollectr.com/explore/product/558019
+- OP09-004 | Shanks (004) (Wanted Poster) | Emperors in the New World | raw 251.28 | https://app.getcollectr.com/explore/product/596927
