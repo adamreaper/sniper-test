@@ -982,20 +982,46 @@
     let refreshStatus = null;
 
     function productImageUrl(productId, ext = 'jpg') {
-      return `https://public.getcollectr.com/public-assets/products/product_${productId}.${ext}?optimizer=image&format=webp&width=1200&quality=80&strip=metadata`;
+      return productId
+        ? `https://public.getcollectr.com/public-assets/products/product_${productId}.${ext}?optimizer=image&format=webp&width=1200&quality=80&strip=metadata`
+        : '';
+    }
+
+    function isJapaneseContext(row) {
+      return row?.marketContext === 'japanese' || /\/game\/one-piece-japanese-/i.test(String(row?.priceChartingUrl || row?.priceChartingPath || ''));
+    }
+
+    function primaryCardImageUrl(row) {
+      if (isJapaneseContext(row) && row?.priceChartingImageUrl) return row.priceChartingImageUrl;
+      if (row?.collectrImageUrl) return row.collectrImageUrl;
+      if (row?.productId) return productImageUrl(row.productId, 'jpg');
+      return row?.priceChartingImageUrl || '';
+    }
+
+    function fallbackCardImageUrl(row) {
+      if (row?.productId) return productImageUrl(row.productId, 'png');
+      return '';
+    }
+
+    function primaryCardLink(row) {
+      return isJapaneseContext(row) ? (row?.priceChartingUrl || row?.collectrLink || '#') : (row?.collectrLink || row?.priceChartingUrl || '#');
+    }
+
+    function showCollectrLink(row) {
+      return Boolean(row?.collectrLink) && !isJapaneseContext(row);
     }
 
     function buildTickerRows(rows) {
       const items = rows.slice(0, Math.min(rows.length, 24));
       if (!items.length) return '';
       const groupHtml = items.map((row) => `
-        <a class="ticker-item" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer" title="${row.code} ${row.name}">
+        <a class="ticker-item" href="${primaryCardLink(row)}" target="_blank" rel="noopener noreferrer" title="${row.code} ${row.name}">
           <img
-            src="${productImageUrl(row.productId, 'jpg')}"
-            data-fallback-src="${productImageUrl(row.productId, 'png')}"
+            src="${primaryCardImageUrl(row)}"
+            data-fallback-src="${fallbackCardImageUrl(row)}"
             alt="${row.code} ${row.name}"
             loading="eager"
-            onerror="if(!this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}"
+            onerror="if(this.dataset.fallbackSrc && !this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}"
           />
         </a>
       `).join('');
@@ -1216,6 +1242,8 @@
       container.innerHTML = rows.map((row, index) => {
         const plan = tradePlanMap.get(row.code);
         const priceChartingLink = row.priceChartingUrl || (row.priceChartingPath ? `https://www.pricecharting.com${row.priceChartingPath}` : '');
+        const cardImageUrl = primaryCardImageUrl(row);
+        const cardImageFallbackUrl = fallbackCardImageUrl(row);
         const reasons = Array.isArray(plan?.topReasons) ? plan.topReasons.slice(0, 3) : [];
         const risks = Array.isArray(plan?.riskFlags) ? plan.riskFlags.slice(0, 3).map(riskLabel) : [];
         const tags = Array.isArray(plan?.reviewTags) ? plan.reviewTags : [];
@@ -1224,11 +1252,11 @@
         <article class="card ${lastSeenReviewRows.some((queueRow) => queueRow.code === row.code) ? 'review-available' : ''}">
           <div class="media ${mediaRingClass(row)}">
             <img
-              src="${productImageUrl(row.productId, 'jpg')}"
-              data-fallback-src="${productImageUrl(row.productId, 'png')}"
+              src="${cardImageUrl}"
+              data-fallback-src="${cardImageFallbackUrl}"
               alt="${row.code} ${row.name}"
               loading="lazy"
-              onerror="if(!this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}else{this.replaceWith(Object.assign(document.createElement('div'),{className:'media-fallback',textContent:'Image unavailable'}));}"
+              onerror="if(this.dataset.fallbackSrc && !this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}else{this.replaceWith(Object.assign(document.createElement('div'),{className:'media-fallback',textContent:'Image unavailable'}));}"
             />
           </div>
           <div class="topline">
@@ -1275,7 +1303,7 @@
           </details>
           <div class="links">
             <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
-            ${row.collectrLink ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>` : ''}
+            ${showCollectrLink(row) ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>` : ''}
             ${priceChartingLink ? `<a class="button secondary" href="${priceChartingLink}" target="_blank" rel="noopener noreferrer">PriceCharting</a>` : ''}
           </div>
         </article>
@@ -1345,7 +1373,7 @@
           ${renderOutcomeControls(row, 'queue')}
           <div class="lot-links">
             <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
-            ${row.collectrLink ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Collectr</a>` : ''}
+            ${showCollectrLink(row) ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Collectr</a>` : ''}
             ${row.priceChartingUrl ? `<a class="button secondary" href="${row.priceChartingUrl}" target="_blank" rel="noopener noreferrer">PriceCharting</a>` : ''}
           </div>
         </article>

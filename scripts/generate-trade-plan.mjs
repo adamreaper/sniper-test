@@ -223,6 +223,8 @@ function normalizeRows(feed) {
       productId: row.productId || null,
       priceChartingPath: row.priceChartingPath || null,
       priceChartingUrl: row.priceChartingUrl || null,
+      priceChartingImageUrl: row.priceChartingImageUrl || null,
+      marketContext: row.marketContext || null,
       collectrLink: row.collectrLink || null,
       searchScore: Number(row.searchScore || 0),
       rawMarket,
