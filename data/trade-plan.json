@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-27T13:47:42.488Z",
-  "sourceFeedUpdatedAt": "2026-04-27T13:47:42.414Z",
+  "generatedAt": "2026-04-28T09:46:15.150Z",
+  "sourceFeedUpdatedAt": "2026-04-28T09:46:15.043Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -10,8 +10,8 @@
   "summary": {
     "totalPlans": 15,
     "prioritySearchCount": 0,
-    "watchCount": 10,
-    "passCount": 5,
+    "watchCount": 11,
+    "passCount": 4,
     "manualReviewCount": 0,
     "buyNowCount": 0
   },
@@ -42,12 +42,37 @@
     },
     {
       "queueRank": 2,
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 72.5,
+      "targetBuyPrice": 168.44,
+      "idealBuyPrice": 132.47,
+      "stretchBuyPrice": 210.85,
+      "maxBuyPrice": 247.8,
+      "exitZoneLow": 426.25,
+      "exitZoneHigh": 477.22,
+      "whyInteresting": "PSA 10 spread is huge versus raw market",
+      "biggestRisk": "Collectr raw market drifts too far from board pricing",
+      "reviewSummary": "Worth checking, but not first in line.",
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
+      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053"
+    },
+    {
+      "queueRank": 3,
       "code": "OP15-118",
       "name": "Enel (OP15-118) (Manga)",
       "setName": "Adventure on Kami's Island",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 71.7,
+      "discoveryScore": 71.6,
       "targetBuyPrice": 689.91,
       "idealBuyPrice": 572.55,
       "stretchBuyPrice": 819.3,
@@ -64,7 +89,7 @@
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-adventure-on-kami%27s-island/enel-manga-op15-118"
     },
     {
-      "queueRank": 3,
+      "queueRank": 4,
       "code": "OP06-001",
       "name": "Uta (SPR)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -90,7 +115,7 @@
   ],
   "plans": [
     {
-      "sourceRank": 5,
+      "sourceRank": 6,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -111,8 +136,8 @@
       "psa10SalesCount": 25,
       "ungradedSalesCount": 21,
       "bgs10SalesCount": 6,
-      "collectrRawMarket": 8100,
-      "collectrRawDeltaPercent": 269.86,
+      "collectrRawMarket": 9459.69,
+      "collectrRawDeltaPercent": 331.95,
       "psa10SpreadMultiple": 3.7,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -146,7 +171,63 @@
       "rank": 1
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 2,
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rarity": "SR",
+      "productId": "672805",
+      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
+      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
+      "searchScore": 157,
+      "rawMarket": 47.79,
+      "psa10Market": 526.5,
+      "netPsa10Exit": 463.32,
+      "gradingCost": 33,
+      "costBasis": 80.79,
+      "expectedPsaNet": 382.53,
+      "profit": 382.53,
+      "roiPercent": 473.49,
+      "psa10SalesCount": 10,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 103,
+      "collectrRawDeltaPercent": 115.53,
+      "psa10SpreadMultiple": 11.02,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 72.5,
+      "buyScore": 72.5,
+      "confidenceTier": "B",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 spread is huge versus raw market",
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Profit potential clears a solid bar after fees"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 132.47,
+      "targetBuyPrice": 168.44,
+      "stretchBuyPrice": 210.85,
+      "maxBuyPrice": 247.8,
+      "exitZoneLow": 426.25,
+      "exitZoneHigh": 477.22,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 2
+    },
+    {
+      "sourceRank": 9,
       "code": "OP15-118",
       "name": "Enel (OP15-118) (Manga)",
       "setName": "Adventure on Kami's Island",
@@ -167,13 +248,13 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 17,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 1157.74,
-      "collectrRawDeltaPercent": 18.18,
+      "collectrRawMarket": 1159.5,
+      "collectrRawDeltaPercent": 18.36,
       "psa10SpreadMultiple": 2.48,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 71.7,
-      "buyScore": 71.7,
+      "discoveryScore": 71.6,
+      "buyScore": 71.6,
       "confidenceTier": "B",
       "action": "watch",
       "riskFlags": [
@@ -197,10 +278,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 2
+      "rank": 3
     },
     {
-      "sourceRank": 2,
+      "sourceRank": 3,
       "code": "OP06-001",
       "name": "Uta (SPR)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -252,10 +333,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 3
+      "rank": 4
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 5,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -276,8 +357,8 @@
       "psa10SalesCount": 8,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 1213.59,
-      "collectrRawDeltaPercent": 6811.1,
+      "collectrRawMarket": 1217.59,
+      "collectrRawDeltaPercent": 6833.88,
       "psa10SpreadMultiple": 12.7,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -309,10 +390,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
+      "rank": 5
     },
     {
-      "sourceRank": 3,
+      "sourceRank": 4,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -366,18 +447,74 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 6
+    },
+    {
+      "sourceRank": 11,
+      "code": "OP09-119",
+      "name": "Monkey.D.Luffy (Manga)",
+      "setName": "Emperors in the New World",
+      "rarity": "SEC",
+      "productId": "597068",
+      "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
+      "collectrLink": "https://app.getcollectr.com/explore/product/597068",
+      "searchScore": 155,
+      "rawMarket": 689.51,
+      "psa10Market": 1746.04,
+      "netPsa10Exit": 1536.52,
+      "gradingCost": 79.99,
+      "costBasis": 769.5,
+      "expectedPsaNet": 767.02,
+      "profit": 767.02,
+      "roiPercent": 99.68,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 20,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 2024.78,
+      "collectrRawDeltaPercent": 193.65,
+      "psa10SpreadMultiple": 2.53,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 56.4,
+      "buyScore": 56.4,
+      "confidenceTier": "C",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "high_raw_entry_price",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Absolute upside is meaningful after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 397.19,
+      "targetBuyPrice": 484.91,
+      "stretchBuyPrice": 582.3,
+      "maxBuyPrice": 662.29,
+      "exitZoneLow": 1413.6,
+      "exitZoneHigh": 1582.62,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 7
     },
     {
       "sourceRank": 1,
       "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
       "rarity": "SEC",
-      "productId": "657401",
+      "productId": "657403",
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
       "searchScore": 139,
       "rawMarket": 59.58,
       "psa10Market": 692.5,
@@ -390,8 +527,8 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 8489.98,
-      "collectrRawDeltaPercent": 14149.71,
+      "collectrRawMarket": 86.15,
+      "collectrRawDeltaPercent": 44.6,
       "psa10SpreadMultiple": 11.62,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -422,10 +559,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 8
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 10,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -446,8 +583,8 @@
       "psa10SalesCount": 15,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 1250,
-      "collectrRawDeltaPercent": 91,
+      "collectrRawMarket": 1483.33,
+      "collectrRawDeltaPercent": 126.65,
       "psa10SpreadMultiple": 2.55,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -478,63 +615,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
-    },
-    {
-      "sourceRank": 10,
-      "code": "OP09-119",
-      "name": "Monkey.D.Luffy (Manga)",
-      "setName": "Emperors in the New World",
-      "rarity": "SEC",
-      "productId": "597068",
-      "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
-      "collectrLink": "https://app.getcollectr.com/explore/product/597068",
-      "searchScore": 155,
-      "rawMarket": 687,
-      "psa10Market": 1699.99,
-      "netPsa10Exit": 1495.99,
-      "gradingCost": 79.99,
-      "costBasis": 766.99,
-      "expectedPsaNet": 729,
-      "profit": 729,
-      "roiPercent": 95.05,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 19,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 1965.18,
-      "collectrRawDeltaPercent": 186.05,
-      "psa10SpreadMultiple": 2.47,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 54.8,
-      "buyScore": 54.8,
-      "confidenceTier": "C",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "high_raw_entry_price",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Absolute upside is meaningful after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 384.6,
-      "targetBuyPrice": 470.01,
-      "stretchBuyPrice": 564.83,
-      "maxBuyPrice": 642.71,
-      "exitZoneLow": 1376.31,
-      "exitZoneHigh": 1540.87,
-      "reviewTags": [
-        "liquid",
-        "chase"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
+      "rank": 9
     },
     {
       "sourceRank": 15,
@@ -558,8 +639,8 @@
       "psa10SalesCount": 8,
       "ungradedSalesCount": 22,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 3150,
-      "collectrRawDeltaPercent": 191.59,
+      "collectrRawMarket": 3072.87,
+      "collectrRawDeltaPercent": 184.45,
       "psa10SpreadMultiple": 2.21,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -590,10 +671,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 9
+      "rank": 10
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 12,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy (061) (Manga)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -645,10 +726,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 10
+      "rank": 11
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 8,
       "code": "OP13-120",
       "name": "Sabo (120) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -702,10 +783,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 11
+      "rank": 12
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 7,
       "code": "OP13-120",
       "name": "Sabo (120) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -759,64 +840,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 12
-    },
-    {
-      "sourceRank": 13,
-      "code": "OP09-004",
-      "name": "Shanks - OP09-004 (SP) (Silver)",
-      "setName": "Carrying On His Will",
-      "rarity": "SR",
-      "productId": "657443",
-      "priceChartingPath": "/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "collectrLink": "https://app.getcollectr.com/explore/product/657443",
-      "searchScore": 139,
-      "rawMarket": 772.45,
-      "psa10Market": 1815.62,
-      "netPsa10Exit": 1597.75,
-      "gradingCost": 79.99,
-      "costBasis": 852.44,
-      "expectedPsaNet": 745.31,
-      "profit": 745.31,
-      "roiPercent": 87.43,
-      "psa10SalesCount": 3,
-      "ungradedSalesCount": 60,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 995.29,
-      "collectrRawDeltaPercent": 28.85,
-      "psa10SpreadMultiple": 2.35,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 48.6,
-      "buyScore": 48.6,
-      "confidenceTier": "D",
-      "action": "pass",
-      "riskFlags": [
-        "low_psa10_liquidity",
-        "high_raw_entry_price",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "Raw sales volume supports manual searching",
-        "Absolute upside is meaningful after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 398.38,
-      "targetBuyPrice": 482.6,
-      "stretchBuyPrice": 574.83,
-      "maxBuyPrice": 649.58,
-      "exitZoneLow": 1469.93,
-      "exitZoneHigh": 1645.68,
-      "reviewTags": [
-        "chase"
-      ],
-      "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 13
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 13,
       "code": "ST18-004",
       "name": "Zoro-Juurou (SP)",
       "setName": "Legacy of the Master",
