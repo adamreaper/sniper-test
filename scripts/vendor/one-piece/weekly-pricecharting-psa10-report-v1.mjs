@@ -249,6 +249,7 @@ async function main() {
         : 'PriceCharting One Piece full-price guide (all languages) + eBay raw candidates',
       llmVisionEnabled: LLM_VISION_ENABLED,
       gradingCostBase: 33,
+      shippingCostBase: 33,
       gradingCostHighEnd: 79.99,
       gradingCostHighEndThreshold: 500,
       liquidityHaircut: 0.12,
@@ -282,7 +283,7 @@ async function main() {
   const lines = [];
   lines.push('Weekly One Piece raw to PSA 10 ROI scan is done.');
   lines.push('');
-  lines.push('Filters: PriceCharting One Piece pages (all languages), no raw floor, grading cost $33 under $500 / $79.99 at $500+, 12% liquidity haircut, ROI >= 80%, PSA10 sales >= 3.');
+  lines.push('Filters: PriceCharting One Piece pages (all languages), no raw floor, grading cost $33 under $500 / $79.99 at $500+, fixed shipping cost $33, 12% liquidity haircut, ROI >= 80%, PSA10 sales >= 3.');
   lines.push(`Qualified cards: ${enrichedRows.length}`);
   lines.push(`eBay scout skipped: ${skipEbayScout ? 'yes' : 'no'}`);
   lines.push(`Rows with eBay field: ${rowsWithEbayField}`);

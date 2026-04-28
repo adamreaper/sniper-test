@@ -486,18 +486,21 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
+const SHIPPING_COST = 33;
+
 function gradingCostForValue(value) {
   return money(value) >= HIGH_END_GRADING_THRESHOLD ? HIGH_END_GRADING_COST : BASE_GRADING_COST;
 }
 
 function computeListingRoi(card, listingTotal) {
   const gradingCost = gradingCostForValue(listingTotal);
-  const costBasis = money(listingTotal) + gradingCost;
+  const costBasis = money(listingTotal) + gradingCost + SHIPPING_COST;
   const netExit = money(card.psa10Market) * LIQUIDITY_HAIRCUT;
   const profit = netExit - costBasis;
   const roi = costBasis > 0 ? profit / costBasis : -1;
   return {
     gradingCost: Math.round(gradingCost * 100) / 100,
+    shippingCost: Math.round(SHIPPING_COST * 100) / 100,
     costBasis: Math.round(costBasis * 100) / 100,
     netExit: Math.round(netExit * 100) / 100,
     profit: Math.round(profit * 100) / 100,

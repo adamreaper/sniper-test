@@ -60,6 +60,8 @@ function formatMoney(value) {
   return `$${money(value).toFixed(2)}`;
 }
 
+const SHIPPING_COST = 33;
+
 function gradingCostForRaw(rawMarket) {
   return money(rawMarket) >= HIGH_END_GRADING_THRESHOLD ? HIGH_END_GRADING_COST : BASE_GRADING_COST;
 }
@@ -255,7 +257,7 @@ function computeRow(card, pathMatch, table, counts) {
   const rawMarket = money(table.get('Ungraded'));
   const psa10Market = money(table.get('PSA 10'));
   const gradingCost = gradingCostForRaw(rawMarket);
-  const costBasis = rawMarket + gradingCost;
+  const costBasis = rawMarket + gradingCost + SHIPPING_COST;
   const netPsa10Exit = psa10Market * LIQUIDITY_HAIRCUT;
   const profit = netPsa10Exit - costBasis;
   const roi = costBasis > 0 ? profit / costBasis : -1;
@@ -274,6 +276,7 @@ function computeRow(card, pathMatch, table, counts) {
     psa10Market: Math.round(psa10Market * 100) / 100,
     netPsa10Exit: Math.round(netPsa10Exit * 100) / 100,
     gradingCost: Math.round(gradingCost * 100) / 100,
+    shippingCost: Math.round(SHIPPING_COST * 100) / 100,
     costBasis: Math.round(costBasis * 100) / 100,
     profit: Math.round(profit * 100) / 100,
     roi: Math.round(roi * 10000) / 10000,

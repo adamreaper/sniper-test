@@ -1431,7 +1431,8 @@
 
     function formatGradingSummary(filters) {
       if (filters?.gradingCostBase != null && filters?.gradingCostHighEnd != null && filters?.gradingCostHighEndThreshold != null) {
-        return `$${filters.gradingCostBase} < $${filters.gradingCostHighEndThreshold}, $${filters.gradingCostHighEnd} @ $${filters.gradingCostHighEndThreshold}+`;
+        const shipping = filters?.shippingCostBase != null ? ` + $${filters.shippingCostBase} ship` : '';
+        return `$${filters.gradingCostBase} < $${filters.gradingCostHighEndThreshold}, $${filters.gradingCostHighEnd} @ $${filters.gradingCostHighEndThreshold}+${shipping}`;
       }
       return `$${filters?.gradingCost ?? 33}`;
     }
