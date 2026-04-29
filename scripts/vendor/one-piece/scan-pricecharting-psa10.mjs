@@ -253,7 +253,24 @@ function parseCompletedSalesCounts(html) {
   return counts;
 }
 
-function computeRow(card, pathMatch, table, counts) {
+function parsePriceChartingImageUrl(html) {
+  const urls = [];
+  for (const match of html.matchAll(/https:\/\/storage\.googleapis\.com\/images\.pricecharting\.com\/[^"'\s<>()]+/g)) {
+    const url = String(match[0] || '').trim();
+    if (/\/(?:240|480|960|1200|1600)\.(?:jpg|jpeg|png|webp)(?:\?|$)/i.test(url)) {
+      urls.push(url);
+    }
+  }
+  if (!urls.length) return null;
+  urls.sort((a, b) => {
+    const aw = Number((a.match(/\/(\d+)\.(?:jpg|jpeg|png|webp)(?:\?|$)/i) || [])[1] || 0);
+    const bw = Number((b.match(/\/(\d+)\.(?:jpg|jpeg|png|webp)(?:\?|$)/i) || [])[1] || 0);
+    return bw - aw;
+  });
+  return urls[0];
+}
+
+function computeRow(card, pathMatch, table, counts, priceChartingImageUrl) {
   const rawMarket = money(table.get('Ungraded'));
   const psa10Market = money(table.get('PSA 10'));
   const gradingCost = gradingCostForRaw(rawMarket);
@@ -287,6 +304,7 @@ function computeRow(card, pathMatch, table, counts) {
     collectrRawMarket: money(card.rawMarket),
     collectrLink: card.collectrLink,
     collectrSetUrl: card.collectrSetUrl || null,
+    priceChartingImageUrl: priceChartingImageUrl || null,
     collectrImageUrl: card.productId ? `https://public.getcollectr.com/public-assets/products/product_${card.productId}.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata` : null,
   };
 }
@@ -328,10 +346,11 @@ async function saveCachedPage(card, payload) {
 
 async function getPageData(card, pathMatch) {
   const cached = await loadCachedPage(card);
-  if (cached?.href === pathMatch.href && cached?.table) {
+  if (cached?.href === pathMatch.href && cached?.table && cached?.priceChartingImageUrl) {
     return {
       table: new Map(Object.entries(cached.table)),
       counts: new Map(Object.entries(cached.counts || {})),
+      priceChartingImageUrl: cached.priceChartingImageUrl || null,
       fromCache: true,
     };
   }
@@ -339,12 +358,14 @@ async function getPageData(card, pathMatch) {
   const html = await fetchText(`https://www.pricecharting.com${pathMatch.href}`);
   const table = parsePriceTable(html);
   const counts = parseCompletedSalesCounts(html);
+  const priceChartingImageUrl = parsePriceChartingImageUrl(html);
   await saveCachedPage(card, {
     href: pathMatch.href,
     table: Object.fromEntries(table.entries()),
     counts: Object.fromEntries(counts.entries()),
+    priceChartingImageUrl,
   });
-  return { table, counts, fromCache: false };
+  return { table, counts, priceChartingImageUrl, fromCache: false };
 }
 
 async function run() {
@@ -385,7 +406,7 @@ async function run() {
       }
 
       const counts = pageData.counts;
-      const row = computeRow(card, pathMatch, table, counts);
+      const row = computeRow(card, pathMatch, table, counts, pageData.priceChartingImageUrl || null);
       matched += 1;
       if (pathMatch.cached || pageData.fromCache) cacheHits += 1;
 

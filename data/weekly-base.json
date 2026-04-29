@@ -1,9 +1,37 @@
 {
-  "generatedAt": "2026-04-29T13:03:36.790Z",
+  "generatedAt": "2026-04-29T13:10:17.340Z",
   "dateStamp": "2026-04-29",
-  "qualifiedCount": 11,
+  "qualifiedCount": 12,
   "reusedExistingBoard": null,
   "rows": [
+    {
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "setName": "Carrying On His Will",
+      "productId": "657401",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "searchScore": 139,
+      "rawMarket": 59.58,
+      "psa10Market": 692.5,
+      "netPsa10Exit": 609.4,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 125.58,
+      "profit": 483.82,
+      "roi": 3.8527,
+      "roiPercent": 385.27,
+      "psa10SalesCount": 4,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 8489.98,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657401.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
+    },
     {
       "code": "OP13-118",
       "name": "Monkey.D.Luffy (118) (Parallel)",
@@ -29,6 +57,7 @@
       "collectrRawMarket": 87.64,
       "collectrLink": "https://app.getcollectr.com/explore/product/657403",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657403.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -56,6 +85,7 @@
       "collectrRawMarket": 104.52,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672805.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -78,11 +108,12 @@
       "roi": 2.4563,
       "roiPercent": 245.63,
       "psa10SalesCount": 6,
-      "ungradedSalesCount": 17,
+      "ungradedSalesCount": 18,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 542.01,
       "collectrLink": "https://app.getcollectr.com/explore/product/629173",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/sp56gpoucw74j2st/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629173.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -110,6 +141,7 @@
       "collectrRawMarket": 9459.11,
       "collectrLink": "https://app.getcollectr.com/explore/product/632504",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/pfa3b3bcgxrtsggz/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632504.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -137,6 +169,7 @@
       "collectrRawMarket": 5900,
       "collectrLink": "https://app.getcollectr.com/explore/product/657406",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ksjriwcc42kw6its/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657406.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -164,6 +197,7 @@
       "collectrRawMarket": 1217.59,
       "collectrLink": "https://app.getcollectr.com/explore/product/657407",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ksjriwcc42kw6its/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657407.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -191,6 +225,7 @@
       "collectrRawMarket": 1159.5,
       "collectrLink": "https://app.getcollectr.com/explore/product/685479",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/gvjtrs2rbk7mo3vo/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685479.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -218,6 +253,7 @@
       "collectrRawMarket": 1434.25,
       "collectrLink": "https://app.getcollectr.com/explore/product/646573",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/legacy-of-the-master?cardType=cards&groupId=24302&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/hh72dbt75lf3h33t/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_646573.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -245,6 +281,7 @@
       "collectrRawMarket": 2024.78,
       "collectrLink": "https://app.getcollectr.com/explore/product/597068",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/4ypzweq6uizvmx62/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597068.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -272,6 +309,7 @@
       "collectrRawMarket": 995.29,
       "collectrLink": "https://app.getcollectr.com/explore/product/657443",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4dab4wymc3pqwjw/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657443.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
@@ -299,6 +337,7 @@
       "collectrRawMarket": 3971.99,
       "collectrLink": "https://app.getcollectr.com/explore/product/629167",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/fd6bdj554r6yzplx/1600.jpg",
       "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629167.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     }
   ]

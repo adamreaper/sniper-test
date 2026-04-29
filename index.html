@@ -992,10 +992,10 @@
     }
 
     function primaryCardImageUrl(row) {
-      if (isJapaneseContext(row) && row?.priceChartingImageUrl) return row.priceChartingImageUrl;
+      if (row?.priceChartingImageUrl) return row.priceChartingImageUrl;
       if (row?.collectrImageUrl) return row.collectrImageUrl;
       if (row?.productId) return productImageUrl(row.productId, 'jpg');
-      return row?.priceChartingImageUrl || '';
+      return '';
     }
 
     function fallbackCardImageUrl(row) {

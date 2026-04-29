@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:03:36.897Z",
+  "generatedAt": "2026-04-29T13:10:17.458Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -77,6 +77,22 @@
       "maxBuyPrice": 266.15,
       "exitZoneLow": 470.62,
       "exitZoneHigh": 526.89,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "setName": "Carrying On His Will",
+      "action": "watch",
+      "confidenceTier": "C",
+      "discoveryScore": 55.6,
+      "targetBuyPrice": 218.82,
+      "maxBuyPrice": 311.29,
+      "exitZoneLow": 560.65,
+      "exitZoneHigh": 627.68,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
