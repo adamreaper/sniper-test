@@ -21,6 +21,24 @@ GIT_REMOTE_NAME="${GIT_REMOTE_NAME:-origin}"
 GIT_BRANCH_NAME="${GIT_BRANCH_NAME:-main}"
 SSH_KEY_PATH="${SSH_KEY_PATH:-$HOME/.ssh/id_ed25519_sniper_test}"
 export GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -i $SSH_KEY_PATH -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes}"
+PUBLISH_PATHS=(
+  data/latest.json
+  data/latest-v2.json
+  data/weekly-base.json
+  data/trade-plan.json
+  data/signal-outcomes.json
+  data/app-ready.json
+  scripts/generate-trade-plan.mjs
+  scripts/refresh-data.sh
+  scripts/serve-static.mjs
+  scripts/install-user-services.sh
+  scripts/vendor
+  index.html
+  INDEPENDENT_SETUP.md
+  manifest.webmanifest
+  assets
+)
+TEMP_STASH_REF=""
 
 export ONE_PIECE_SNIPER_TEST_DIR="$APP_DIR"
 export ONE_PIECE_DASHBOARD_DIR="$DATA_DIR"
@@ -48,6 +66,15 @@ cleanup() {
   local exit_code=$?
   local finished_at
   finished_at="$(date -Iseconds)"
+
+  if [[ -n "$TEMP_STASH_REF" ]]; then
+    if git -C "$APP_DIR" stash pop --index --quiet "$TEMP_STASH_REF"; then
+      echo "[$finished_at] Restored temporary git stash $TEMP_STASH_REF" >> "$LOG_PATH" 2>&1 || true
+    else
+      echo "[$finished_at] WARNING: failed to restore temporary git stash $TEMP_STASH_REF" >> "$LOG_PATH" 2>&1 || true
+    fi
+  fi
+
   STARTED_AT="$STARTED_AT" \
   FINISHED_AT="$finished_at" \
   EXIT_CODE="$exit_code" \
@@ -82,14 +109,21 @@ trap cleanup EXIT
 
   if [[ "$AUTO_PUSH_TO_GITHUB" == "1" ]]; then
     cd "$APP_DIR"
-    git add data/latest.json data/latest-v2.json data/weekly-base.json data/trade-plan.json data/signal-outcomes.json data/app-ready.json scripts/generate-trade-plan.mjs scripts/refresh-data.sh scripts/serve-static.mjs scripts/install-user-services.sh scripts/vendor index.html INDEPENDENT_SETUP.md
+    git add "${PUBLISH_PATHS[@]}"
     if ! git diff --cached --quiet; then
       git commit -m "Refresh sniper test data $(date +%F' '%H:%M)"
+
+      if ! git diff --quiet || [[ -n "$(git ls-files --others --exclude-standard)" ]]; then
+        git stash push --include-untracked --message "sniper-test-refresh-temp-$(date +%s)" >/dev/null
+        TEMP_STASH_REF="stash@{0}"
+        echo "[$(date -Iseconds)] Temporarily stashed non-publish changes before sync"
+      fi
+
       git pull --rebase "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
       git push "$GIT_REMOTE_NAME" "$GIT_BRANCH_NAME"
       echo "[$(date -Iseconds)] Git push complete"
     else
-      echo "[$(date -Iseconds)] No Git-tracked data changes to push"
+      echo "[$(date -Iseconds)] No publishable board changes to push"
     fi
   else
     echo "[$(date -Iseconds)] AUTO_PUSH_TO_GITHUB disabled"
