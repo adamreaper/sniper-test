@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-04-28T18:12:25.981Z",
-  "dateStamp": "2026-04-28",
-  "qualifiedCount": 9,
+  "generatedAt": "2026-04-29T09:46:16.922Z",
+  "dateStamp": "2026-04-29",
+  "qualifiedCount": 11,
   "reusedExistingBoard": null,
   "rows": [
     {
       "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
-      "productId": "657401",
+      "productId": "657403",
       "rarity": "SEC",
       "productSubType": "Foil",
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
@@ -26,12 +26,37 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 8489.98,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
+      "collectrRawMarket": 87.64,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657401.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657403.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
+    },
+    {
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "productId": "672805",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
+      "searchScore": 157,
+      "rawMarket": 47.79,
+      "psa10Market": 526.5,
+      "netPsa10Exit": 463.32,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 113.79,
+      "profit": 349.53,
+      "roi": 3.0717,
+      "roiPercent": 307.17,
+      "psa10SalesCount": 11,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 104.52,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672805.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "OP06-001",
@@ -55,12 +80,10 @@
       "psa10SalesCount": 6,
       "ungradedSalesCount": 17,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 491.9,
+      "collectrRawMarket": 542.01,
       "collectrLink": "https://app.getcollectr.com/explore/product/629173",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629173.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/sp56gpoucw74j2st/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629173.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "OP05-119",
@@ -87,9 +110,7 @@
       "collectrRawMarket": 9459.11,
       "collectrLink": "https://app.getcollectr.com/explore/product/632504",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632504.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/pfa3b3bcgxrtsggz/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632504.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "OP13-119",
@@ -116,9 +137,7 @@
       "collectrRawMarket": 5900,
       "collectrLink": "https://app.getcollectr.com/explore/product/657406",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657406.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ksjriwcc42kw6its/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657406.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "OP13-119",
@@ -145,9 +164,7 @@
       "collectrRawMarket": 1217.59,
       "collectrLink": "https://app.getcollectr.com/explore/product/657407",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657407.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ksjriwcc42kw6its/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657407.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "OP15-118",
@@ -174,9 +191,7 @@
       "collectrRawMarket": 1159.5,
       "collectrLink": "https://app.getcollectr.com/explore/product/685479",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685479.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/gvjtrs2rbk7mo3vo/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685479.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "OP09-093",
@@ -203,9 +218,7 @@
       "collectrRawMarket": 1434.25,
       "collectrLink": "https://app.getcollectr.com/explore/product/646573",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/legacy-of-the-master?cardType=cards&groupId=24302&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_646573.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/hh72dbt75lf3h33t/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_646573.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "OP09-119",
@@ -232,9 +245,34 @@
       "collectrRawMarket": 2024.78,
       "collectrLink": "https://app.getcollectr.com/explore/product/597068",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597068.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/4ypzweq6uizvmx62/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597068.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
+    },
+    {
+      "code": "OP09-004",
+      "name": "Shanks - OP09-004 (SP) (Silver)",
+      "setName": "Carrying On His Will",
+      "productId": "657443",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
+      "searchScore": 139,
+      "rawMarket": 775.76,
+      "psa10Market": 1875,
+      "netPsa10Exit": 1650,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 888.75,
+      "profit": 761.25,
+      "roi": 0.8565,
+      "roiPercent": 85.65,
+      "psa10SalesCount": 3,
+      "ungradedSalesCount": 60,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 995.29,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657443",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657443.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     },
     {
       "code": "EB02-061",
@@ -261,9 +299,7 @@
       "collectrRawMarket": 3971.99,
       "collectrLink": "https://app.getcollectr.com/explore/product/629167",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-anime-25th-collection?cardType=cards&groupId=23834&sortType=price&sortOrder=desc",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629167.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/fd6bdj554r6yzplx/240.jpg",
-      "marketContext": "japanese"
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_629167.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata"
     }
   ]
 }

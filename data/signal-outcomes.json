@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T18:12:26.094Z",
+  "generatedAt": "2026-04-29T09:46:17.020Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -29,6 +29,22 @@
       "maxBuyPrice": 3464.64,
       "exitZoneLow": 6554.73,
       "exitZoneHigh": 7338.45,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 71.8,
+      "targetBuyPrice": 168.44,
+      "maxBuyPrice": 247.8,
+      "exitZoneLow": 426.25,
+      "exitZoneHigh": 477.22,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
@@ -68,7 +84,7 @@
     },
     {
       "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
       "action": "watch",
       "confidenceTier": "C",
@@ -157,6 +173,22 @@
       "maxBuyPrice": 775.86,
       "exitZoneLow": 1629.88,
       "exitZoneHigh": 1824.76,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "OP09-004",
+      "name": "Shanks - OP09-004 (SP) (Silver)",
+      "setName": "Carrying On His Will",
+      "action": "pass",
+      "confidenceTier": "D",
+      "discoveryScore": 49.4,
+      "targetBuyPrice": 501,
+      "maxBuyPrice": 673.43,
+      "exitZoneLow": 1518,
+      "exitZoneHigh": 1699.5,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
