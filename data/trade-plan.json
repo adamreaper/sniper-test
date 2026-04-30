@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-29T23:46:09.609Z",
-  "sourceFeedUpdatedAt": "2026-04-29T23:46:09.510Z",
+  "generatedAt": "2026-04-30T09:46:22.624Z",
+  "sourceFeedUpdatedAt": "2026-04-30T09:46:22.527Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,10 +8,10 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 10,
+    "totalPlans": 11,
     "prioritySearchCount": 0,
-    "watchCount": 8,
-    "passCount": 2,
+    "watchCount": 7,
+    "passCount": 4,
     "manualReviewCount": 0,
     "buyNowCount": 0
   },
@@ -66,7 +66,7 @@
   ],
   "plans": [
     {
-      "sourceRank": 3,
+      "sourceRank": 2,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -89,8 +89,8 @@
       "psa10SalesCount": 25,
       "ungradedSalesCount": 21,
       "bgs10SalesCount": 6,
-      "collectrRawMarket": 9459.11,
-      "collectrRawDeltaPercent": 331.92,
+      "collectrRawMarket": 8977.53,
+      "collectrRawDeltaPercent": 309.93,
       "psa10SpreadMultiple": 3.72,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -124,7 +124,7 @@
       "rank": 1
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 7,
       "code": "OP15-118",
       "name": "Enel (OP15-118) (Manga)",
       "setName": "Adventure on Kami's Island",
@@ -180,7 +180,7 @@
       "rank": 2
     },
     {
-      "sourceRank": 2,
+      "sourceRank": 1,
       "code": "OP06-001",
       "name": "Uta (SPR)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -237,65 +237,7 @@
       "rank": 3
     },
     {
-      "sourceRank": 1,
-      "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
-      "setName": "Carrying On His Will",
-      "rarity": "SEC",
-      "productId": "657401",
-      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
-      "searchScore": 139,
-      "rawMarket": 59.58,
-      "psa10Market": 692.5,
-      "netPsa10Exit": 609.4,
-      "gradingCost": 33,
-      "costBasis": 125.58,
-      "expectedPsaNet": 483.82,
-      "profit": 483.82,
-      "roiPercent": 385.27,
-      "psa10SalesCount": 4,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 8489.98,
-      "collectrRawDeltaPercent": 14149.71,
-      "psa10SpreadMultiple": 11.62,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 55.6,
-      "buyScore": 55.6,
-      "confidenceTier": "C",
-      "action": "watch",
-      "riskFlags": [
-        "low_psa10_liquidity",
-        "collectr_raw_drift",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 spread is huge versus raw market",
-        "Raw sales volume supports manual searching",
-        "Profit potential clears a solid bar after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 175.7,
-      "targetBuyPrice": 218.82,
-      "stretchBuyPrice": 268.68,
-      "maxBuyPrice": 311.29,
-      "exitZoneLow": 560.65,
-      "exitZoneHigh": 627.68,
-      "reviewTags": [
-        "low-entry",
-        "wide-spread"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
-    },
-    {
-      "sourceRank": 8,
+      "sourceRank": 9,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy (Manga)",
       "setName": "Emperors in the New World",
@@ -350,10 +292,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 4
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 8,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -375,7 +317,7 @@
       "roiPercent": 91.56,
       "psa10SalesCount": 15,
       "ungradedSalesCount": 16,
-      "bgs10SalesCount": 2,
+      "bgs10SalesCount": 3,
       "collectrRawMarket": 1434.25,
       "collectrRawDeltaPercent": 119.15,
       "psa10SpreadMultiple": 2.55,
@@ -408,10 +350,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 5
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 4,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -467,10 +409,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 6
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 3,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -526,10 +468,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
+      "rank": 7
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 11,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy (061) (Manga)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -583,10 +525,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 9
+      "rank": 8
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 10,
       "code": "OP09-004",
       "name": "Shanks - OP09-004 (SP) (Silver)",
       "setName": "Carrying On His Will",
@@ -639,7 +581,123 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
+      "rank": 9
+    },
+    {
+      "sourceRank": 5,
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "setName": "Carrying On His Will",
+      "rarity": "SEC",
+      "productId": "657401",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
+      "searchScore": 139,
+      "rawMarket": 52.59,
+      "psa10Market": 295,
+      "netPsa10Exit": 259.6,
+      "gradingCost": 33,
+      "costBasis": 118.59,
+      "expectedPsaNet": 141.01,
+      "profit": 141.01,
+      "roiPercent": 118.91,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 8489.98,
+      "collectrRawDeltaPercent": 16043.72,
+      "psa10SpreadMultiple": 5.61,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 48.4,
+      "buyScore": 48.4,
+      "confidenceTier": "D",
+      "action": "pass",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "low_absolute_profit",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "Strong PSA 10 spread versus raw market",
+        "PSA 10 comp depth is acceptable",
+        "Raw sales volume supports manual searching",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 57.77,
+      "targetBuyPrice": 77,
+      "stretchBuyPrice": 99.45,
+      "maxBuyPrice": 118.81,
+      "exitZoneLow": 238.83,
+      "exitZoneHigh": 267.39,
+      "reviewTags": [
+        "low-entry",
+        "wide-spread"
+      ],
+      "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 10
+    },
+    {
+      "sourceRank": 6,
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "setName": "Carrying On His Will",
+      "rarity": "SEC",
+      "productId": "657403",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "searchScore": 139,
+      "rawMarket": 52.59,
+      "psa10Market": 295,
+      "netPsa10Exit": 259.6,
+      "gradingCost": 33,
+      "costBasis": 118.59,
+      "expectedPsaNet": 141.01,
+      "profit": 141.01,
+      "roiPercent": 118.91,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 87.64,
+      "collectrRawDeltaPercent": 66.65,
+      "psa10SpreadMultiple": 5.61,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 48.4,
+      "buyScore": 48.4,
+      "confidenceTier": "D",
+      "action": "pass",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "low_absolute_profit",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "Strong PSA 10 spread versus raw market",
+        "PSA 10 comp depth is acceptable",
+        "Raw sales volume supports manual searching",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 57.77,
+      "targetBuyPrice": 77,
+      "stretchBuyPrice": 99.45,
+      "maxBuyPrice": 118.81,
+      "exitZoneLow": 238.83,
+      "exitZoneHigh": 267.39,
+      "reviewTags": [
+        "low-entry",
+        "wide-spread"
+      ],
+      "reviewSummary": "Pass for now unless the market shifts.",
+      "rank": 11
     }
   ]
 }
