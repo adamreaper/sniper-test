@@ -15,19 +15,22 @@
   <style>
     :root {
       color-scheme: dark;
-      --bg: #08111f;
-      --bg-2: #11152c;
-      --panel: rgba(17, 24, 43, 0.88);
-      --panel-2: rgba(26, 35, 61, 0.92);
-      --panel-soft: rgba(255,255,255,0.05);
-      --text: #ebf2ff;
-      --muted: #a9b5d6;
-      --accent: #8a7dff;
-      --accent-2: #58a6ff;
-      --good: #3ddc97;
-      --warn: #ffcc66;
-      --border: rgba(255,255,255,0.08);
-      --shadow: 0 18px 40px rgba(0,0,0,.28);
+      --bg: #060b18;
+      --bg-2: #0b1430;
+      --panel: rgba(9, 18, 42, 0.94);
+      --panel-2: rgba(8, 14, 34, 0.98);
+      --panel-soft: rgba(116, 171, 255, 0.05);
+      --text: #e8f1ff;
+      --muted: #7f95c6;
+      --accent: #6de4ff;
+      --accent-2: #7ea4ff;
+      --good: #85ff78;
+      --warn: #ffc85a;
+      --danger: #ff7878;
+      --border: rgba(98, 148, 255, 0.18);
+      --border-strong: rgba(110, 224, 255, 0.48);
+      --shadow: 0 24px 60px rgba(0,0,0,.42);
+      --panel-line: linear-gradient(90deg, rgba(109,228,255,.65), rgba(126,164,255,.1) 38%, rgba(255,200,90,.45));
     }
     * { box-sizing: border-box; }
     html {
@@ -35,32 +38,65 @@
     }
     body {
       margin: 0;
-      font-family: Inter, Segoe UI, Arial, sans-serif;
+      font-family: Inter, Rajdhani, "Segoe UI", Arial, sans-serif;
       background:
-        radial-gradient(circle at top, rgba(138,125,255,.22), transparent 28%),
-        linear-gradient(180deg, #0d1020 0%, #101731 38%, #0a1325 100%);
+        radial-gradient(circle at top, rgba(97, 168, 255, .18), transparent 22%),
+        linear-gradient(180deg, #030816 0%, #081125 26%, #08132d 48%, #050b1b 100%);
       color: var(--text);
       min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(117, 190, 255, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(117, 190, 255, .03) 1px, transparent 1px),
+        repeating-linear-gradient(180deg, rgba(255,255,255,.018) 0 1px, transparent 1px 4px);
+      background-size: 100% 32px, 32px 100%, 100% 4px;
+      opacity: .45;
+      mix-blend-mode: screen;
+      z-index: 0;
     }
     .wrap {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
       padding-bottom: max(20px, env(safe-area-inset-bottom));
+      position: relative;
+      z-index: 1;
     }
     .hero, .panel, .card, .ticker-shell, .toolbar {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 24px;
-      backdrop-filter: blur(14px);
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
       box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before, .panel::before, .card::before, .ticker-shell::before, .toolbar::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      top: 0;
+      height: 1px;
+      background: var(--panel-line);
+      opacity: .8;
+      z-index: 1;
+      pointer-events: none;
     }
     .hero {
-      padding: 24px;
+      padding: 20px;
       margin-bottom: 20px;
       background:
-        radial-gradient(circle at top right, rgba(138,125,255,.24), transparent 34%),
-        radial-gradient(circle at bottom left, rgba(88,166,255,.12), transparent 28%),
+        linear-gradient(180deg, rgba(7,18,44,.98), rgba(8,17,39,.98)),
+        radial-gradient(circle at top right, rgba(109,228,255,.12), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(255,200,90,.08), transparent 24%),
         var(--panel);
     }
     .hero-head {
@@ -70,7 +106,15 @@
       margin-bottom: 8px;
       flex-wrap: wrap;
     }
-    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.02; letter-spacing: -.03em; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 5vw, 44px);
+      line-height: 1.02;
+      letter-spacing: -.03em;
+      text-transform: uppercase;
+      font-family: Rajdhani, Inter, sans-serif;
+      text-shadow: 0 0 16px rgba(126,164,255,.14);
+    }
     p { margin: 0; color: var(--muted); }
     .stats-wrap {
       margin-top: 18px;
@@ -95,12 +139,13 @@
     }
     .ticker-shell {
       margin-bottom: 18px;
-      padding: 10px 0;
+      padding: 14px 0 12px;
       overflow: hidden;
       position: relative;
+      background: linear-gradient(180deg, rgba(6,14,33,.98), rgba(9,18,42,.98));
     }
-    .ticker-shell::before,
-    .ticker-shell::after {
+    .ticker-shell::after,
+    .ticker-fade {
       content: '';
       position: absolute;
       top: 0;
@@ -109,20 +154,46 @@
       z-index: 2;
       pointer-events: none;
     }
-    .ticker-shell::before {
+    .ticker-fade.left {
       left: 0;
       background: linear-gradient(90deg, rgba(8,17,31,1), rgba(8,17,31,0));
     }
-    .ticker-shell::after {
+    .ticker-shell::after,
+    .ticker-fade.right {
       right: 0;
       background: linear-gradient(270deg, rgba(8,17,31,1), rgba(8,17,31,0));
+    }
+    .ticker-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 0 16px 10px;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      position: relative;
+      z-index: 3;
+    }
+    .ticker-topbar strong {
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .ticker-topbar .live {
+      color: #9dff8e;
+      border: 1px solid rgba(133,255,120,.25);
+      padding: 5px 8px;
+      border-radius: 6px;
+      background: rgba(133,255,120,.06);
     }
     .ticker-track {
       display: flex;
       width: max-content;
-      gap: 24px;
+      gap: 28px;
       will-change: transform;
       transform: translate3d(0, 0, 0);
+      padding: 0 16px;
     }
     .ticker-group {
       display: flex;
@@ -130,20 +201,89 @@
       flex: 0 0 auto;
     }
     .ticker-item {
-      width: 72px;
-      height: 96px;
+      width: 118px;
+      min-height: 178px;
       border-radius: 12px;
       overflow: hidden;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(120,170,255,.22);
+      background: linear-gradient(180deg, rgba(11,19,44,.95), rgba(8,14,31,.96));
       flex: 0 0 auto;
-      box-shadow: 0 0 16px rgba(0,0,0,.18);
+      box-shadow: 0 0 22px rgba(0,0,0,.24), inset 0 0 0 1px rgba(255,255,255,.02);
+      text-decoration: none;
+      color: var(--text);
+      padding: 8px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 8px;
+      position: relative;
+    }
+    .ticker-item::before {
+      content: attr(data-slot);
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      font-size: 10px;
+      letter-spacing: .12em;
+      color: var(--muted);
+      z-index: 2;
+    }
+    .ticker-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 2;
+      font-size: 10px;
+      letter-spacing: .12em;
+      border: 1px solid rgba(255,120,120,.28);
+      color: #ff9a84;
+      background: rgba(255,120,120,.08);
+      padding: 4px 6px;
+      border-radius: 6px;
+    }
+    .ticker-thumb {
+      width: 100%;
+      aspect-ratio: 1 / 1.32;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.04);
+      margin-top: 12px;
     }
     .ticker-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+    .ticker-caption {
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+    }
+    .ticker-name {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ticker-code {
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .ticker-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .ticker-meta .roi-mini {
+      color: var(--good);
+      font-weight: 800;
     }
     .chip-row {
       display: flex;
@@ -158,20 +298,23 @@
     }
     .chip {
       border: 1px solid var(--border);
-      background: rgba(255,255,255,.05);
+      background: rgba(10,19,43,.94);
       color: var(--text);
-      border-radius: 999px;
+      border-radius: 8px;
       padding: 10px 14px;
       font-size: 13px;
       font-weight: 700;
       white-space: nowrap;
       cursor: pointer;
       min-height: 42px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
     }
     .chip.active {
-      background: linear-gradient(135deg, rgba(138,125,255,.34), rgba(88,166,255,.24));
-      border-color: rgba(138,125,255,.5);
-      box-shadow: 0 0 0 3px rgba(138,125,255,.12);
+      background: linear-gradient(135deg, rgba(18,57,97,.9), rgba(14,87,113,.85));
+      border-color: rgba(109,228,255,.55);
+      box-shadow: inset 0 0 0 1px rgba(109,228,255,.25), 0 0 0 3px rgba(109,228,255,.1);
+      color: #d9fdff;
     }
     .toolbar {
       display: flex;
@@ -184,21 +327,21 @@
       position: sticky;
       top: 12px;
       z-index: 5;
-      background: rgba(13, 18, 36, 0.82);
+      background: rgba(8, 15, 35, 0.9);
     }
     .search {
       width: min(420px, 100%);
       padding: 14px 16px;
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      background: var(--panel-2);
+      border-radius: 10px;
+      border: 1px solid rgba(139, 255, 120, .4);
+      background: rgba(10,19,29,.92);
       color: var(--text);
       font-size: 15px;
       outline: none;
     }
     .search:focus {
-      border-color: rgba(138,125,255,.55);
-      box-shadow: 0 0 0 4px rgba(138,125,255,.16);
+      border-color: rgba(109,228,255,.7);
+      box-shadow: 0 0 0 4px rgba(109,228,255,.12);
     }
     .toolbar-actions {
       display: flex;
@@ -213,9 +356,9 @@
     button.button {
       text-decoration: none;
       color: var(--text);
-      background: linear-gradient(135deg, #111111, #262626);
+      background: linear-gradient(180deg, #15395f, #0d243f);
       padding: 12px 14px;
-      border-radius: 999px;
+      border-radius: 10px;
       font-weight: 700;
       font-size: 14px;
       text-align: center;
@@ -223,15 +366,15 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border: 0;
+      border: 1px solid rgba(109,228,255,.35);
       cursor: pointer;
     }
     .inline-button.secondary,
     a.button.secondary,
     button.button.secondary {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--muted);
+      background: rgba(9,20,45,.7);
+      border: 1px solid rgba(126,164,255,.24);
+      color: #cfe2ff;
     }
     .inline-button:disabled,
     a.button.disabled,
@@ -259,7 +402,10 @@
     .section-title {
       margin: 0;
       font-size: 22px;
-      letter-spacing: -.02em;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #b8f3ff;
+      font-family: Rajdhani, Inter, sans-serif;
     }
     .section-copy {
       color: var(--muted);
@@ -310,9 +456,9 @@
     }
     .lot-card {
       padding: 16px;
-      border-radius: 20px;
+      border-radius: 16px;
       border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025)), var(--panel-2);
+      background: linear-gradient(180deg, rgba(12,23,52,.98), rgba(8,15,35,.98));
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -417,7 +563,7 @@
       flex-direction: column;
       gap: 12px;
       background:
-        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025)),
+        linear-gradient(180deg, rgba(10,19,45,.98), rgba(8,14,31,.98)),
         var(--panel);
     }
     .card.review-available {
@@ -427,11 +573,11 @@
         var(--panel);
     }
     .media {
-      width: min(44%, 160px);
+      width: min(48%, 172px);
       aspect-ratio: 1 / 1.35;
       border-radius: 14px;
       overflow: hidden;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(110,224,255,.3);
       background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       display: grid;
       place-items: center;
@@ -483,7 +629,7 @@
       display: flex;
       justify-content: space-between;
       gap: 12px;
-      align-items: flex-start;
+      align-items: stretch;
     }
     .card-head {
       display: flex;
@@ -492,14 +638,17 @@
       min-width: 0;
     }
     .rank {
-      min-width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(88,166,255,.15);
-      color: var(--accent);
+      min-width: 54px;
+      height: 74px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(32,44,76,.95), rgba(16,24,44,.98));
+      color: #ffd978;
       display: grid;
       place-items: center;
       font-weight: 800;
+      border: 1px solid rgba(255,200,90,.35);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+      font-size: 24px;
     }
     .title {
       font-size: 18px;
@@ -522,12 +671,14 @@
       align-items: center;
       gap: 6px;
       padding: 6px 10px;
-      border-radius: 999px;
+      border-radius: 8px;
       border: 1px solid var(--border);
       font-size: 12px;
       font-weight: 700;
-      background: rgba(255,255,255,.05);
+      background: rgba(15,23,46,.88);
       color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: .08em;
     }
     .badge-watch {
       background: rgba(255, 204, 102, 0.12);
@@ -556,8 +707,10 @@
     .watch-note {
       margin-top: 8px;
       font-size: 12px;
-      color: var(--warn);
+      color: #d8e7ff;
       line-height: 1.45;
+      border-left: 2px solid rgba(109,228,255,.35);
+      padding-left: 10px;
     }
     .card-summary {
       display: grid;
@@ -626,9 +779,26 @@
     }
     .roi {
       color: var(--good);
-      font-weight: 800;
-      font-size: 24px;
+      font-weight: 900;
+      font-size: clamp(28px, 4vw, 54px);
       white-space: nowrap;
+      min-width: 150px;
+      border: 1px solid rgba(133,255,120,.35);
+      border-radius: 12px;
+      padding: 14px 14px 10px;
+      text-align: right;
+      line-height: 1;
+      background: linear-gradient(180deg, rgba(18,33,28,.92), rgba(9,17,24,.98));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+      position: relative;
+    }
+    .roi::before {
+      content: 'EST. ROI';
+      display: block;
+      color: #b0ff9f;
+      font-size: 11px;
+      letter-spacing: .14em;
+      margin-bottom: 8px;
     }
     .metrics {
       display: grid;
@@ -638,7 +808,7 @@
     .metric {
       background: rgba(255,255,255,.03);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       padding: 10px 12px;
     }
     .metric .label { color: var(--muted); font-size: 12px; }
@@ -723,8 +893,10 @@
       cursor: pointer;
     }
     .dock-btn.active {
-      background: rgba(255,255,255,.08);
-      color: var(--text);
+      background: linear-gradient(180deg, rgba(24,67,101,.95), rgba(11,42,72,.95));
+      color: #bff8ff;
+      border: 1px solid rgba(109,228,255,.28);
+      box-shadow: 0 0 18px rgba(109,228,255,.12);
     }
     .empty {
       padding: 32px;
@@ -742,8 +914,8 @@
         padding: 8px 0;
       }
       .ticker-item {
-        width: 60px;
-        height: 82px;
+        width: 104px;
+        min-height: 160px;
       }
       .hero {
         padding: 18px;
@@ -865,9 +1037,9 @@
         display: flex;
         gap: 8px;
         padding: 8px;
-        border-radius: 999px;
-        background: rgba(10,14,24,.92);
-        border: 1px solid rgba(255,255,255,.08);
+        border-radius: 18px;
+        background: rgba(7, 13, 30, .95);
+        border: 1px solid rgba(109,228,255,.2);
         box-shadow: 0 18px 35px rgba(0,0,0,.38);
         z-index: 12;
         backdrop-filter: blur(16px);
@@ -885,7 +1057,14 @@
 <body>
   <div class="wrap">
     <section class="ticker-shell">
+      <div class="ticker-topbar">
+        <span><strong>Bounty Scanner</strong> v2.0</span>
+        <span>Database Sync</span>
+        <span class="live">Target Acquired</span>
+      </div>
+      <div class="ticker-fade left"></div>
       <div id="tickerTrack" class="ticker-track"></div>
+      <div class="ticker-fade right"></div>
     </section>
 
     <section class="hero">
@@ -917,9 +1096,9 @@
     </section>
 
     <div class="toolbar" id="searchZone">
-      <input id="search" class="search" placeholder="Filter by card code, name, or set" />
+      <input id="search" class="search" placeholder=">_ Search card, set, character, or scan command..." />
       <div class="toolbar-actions">
-        <button id="refreshButton" class="button secondary" type="button">Refresh data</button>
+        <button id="refreshButton" class="button" type="button">Refresh</button>
         <div id="meta" class="meta">Loading latest scan...</div>
       </div>
     </div>
@@ -1014,15 +1193,23 @@
     function buildTickerRows(rows) {
       const items = rows.slice(0, Math.min(rows.length, 24));
       if (!items.length) return '';
-      const groupHtml = items.map((row) => `
-        <a class="ticker-item" href="${primaryCardLink(row)}" target="_blank" rel="noopener noreferrer" title="${row.code} ${row.name}">
-          <img
-            src="${primaryCardImageUrl(row)}"
-            data-fallback-src="${fallbackCardImageUrl(row)}"
-            alt="${row.code} ${row.name}"
-            loading="eager"
-            onerror="if(this.dataset.fallbackSrc && !this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}"
-          />
+      const groupHtml = items.map((row, index) => `
+        <a class="ticker-item" data-slot="${String(index + 1).padStart(2, '0')}" href="${primaryCardLink(row)}" target="_blank" rel="noopener noreferrer" title="${row.code} ${row.name}">
+          <span class="ticker-badge">PSA 10</span>
+          <div class="ticker-thumb">
+            <img
+              src="${primaryCardImageUrl(row)}"
+              data-fallback-src="${fallbackCardImageUrl(row)}"
+              alt="${row.code} ${row.name}"
+              loading="eager"
+              onerror="if(this.dataset.fallbackSrc && !this.dataset.failedOnce){this.dataset.failedOnce='1';this.src=this.dataset.fallbackSrc;}"
+            />
+          </div>
+          <div class="ticker-caption">
+            <div class="ticker-name">${row.name}</div>
+            <div class="ticker-code">${row.code}</div>
+          </div>
+          <div class="ticker-meta"><span>${fmtMoney(row.rawMarket)}</span><span class="roi-mini">ROI ${Math.round(Number(row.roiPercent || 0))}%</span></div>
         </a>
       `).join('');
       return `<div class="ticker-group">${groupHtml}</div><div class="ticker-group" aria-hidden="true">${groupHtml}</div>`;
@@ -1263,12 +1450,12 @@
             <div class="card-head">
               <div class="rank">${index + 1}</div>
               <div>
-                <div class="title">${row.code} ${row.name}</div>
-                <div class="subtitle">${row.setName || 'Unknown set'}</div>
+                <div class="title">${row.name}</div>
+                <div class="subtitle">${row.code} • ${row.setName || 'Unknown set'}</div>
                 ${renderStatusRow({ ...row, action: plan?.action, confidenceTier: plan?.confidenceTier })}
               </div>
             </div>
-            <div class="roi">${fmtPct(row.roiPercent)}</div>
+            <div class="roi">${Math.round(Number(row.roiPercent || 0))}%</div>
           </div>
           <div class="card-summary">
             ${reasons.length ? `<div class="watch-note"><strong>Why it made the board:</strong> ${reasons.join(' • ')}</div>` : ''}
