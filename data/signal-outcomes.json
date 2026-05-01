@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T09:46:22.627Z",
+  "generatedAt": "2026-05-01T09:46:17.592Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -29,6 +29,22 @@
       "maxBuyPrice": 3482.97,
       "exitZoneLow": 6588.63,
       "exitZoneHigh": 7376.4,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 71.7,
+      "targetBuyPrice": 166.34,
+      "maxBuyPrice": 244.87,
+      "exitZoneLow": 421.8,
+      "exitZoneHigh": 472.23,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
@@ -67,22 +83,6 @@
       "lastReviewedAt": null
     },
     {
-      "code": "OP09-119",
-      "name": "Monkey.D.Luffy (Manga)",
-      "setName": "Emperors in the New World",
-      "action": "watch",
-      "confidenceTier": "C",
-      "discoveryScore": 55,
-      "targetBuyPrice": 484.91,
-      "maxBuyPrice": 662.29,
-      "exitZoneLow": 1413.6,
-      "exitZoneHigh": 1582.62,
-      "outcomeStatus": "unreviewed",
-      "outcomeTag": "",
-      "notes": "",
-      "lastReviewedAt": null
-    },
-    {
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -93,6 +93,22 @@
       "maxBuyPrice": 630.21,
       "exitZoneLow": 1352.51,
       "exitZoneHigh": 1514.22,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "OP09-119",
+      "name": "Monkey.D.Luffy (Manga)",
+      "setName": "Emperors in the New World",
+      "action": "watch",
+      "confidenceTier": "D",
+      "discoveryScore": 53.1,
+      "targetBuyPrice": 489.33,
+      "maxBuyPrice": 668.1,
+      "exitZoneLow": 1424.66,
+      "exitZoneHigh": 1595,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
@@ -165,22 +181,6 @@
     {
       "code": "OP13-118",
       "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
-      "setName": "Carrying On His Will",
-      "action": "pass",
-      "confidenceTier": "D",
-      "discoveryScore": 48.4,
-      "targetBuyPrice": 77,
-      "maxBuyPrice": 118.81,
-      "exitZoneLow": 238.83,
-      "exitZoneHigh": 267.39,
-      "outcomeStatus": "unreviewed",
-      "outcomeTag": "",
-      "notes": "",
-      "lastReviewedAt": null
-    },
-    {
-      "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
       "action": "pass",
       "confidenceTier": "D",
