@@ -364,7 +364,7 @@ async function run() {
   await updateSignalOutcomes(plans);
 
   const lines = [];
-  lines.push('# One Piece Sniper Test — Manual Search Plan');
+  lines.push('# One Piece Sniper — Manual Search Plan');
   lines.push(`Generated: ${payload.generatedAt}`);
   lines.push(`Feed updated: ${payload.sourceFeedUpdatedAt || 'unknown'}`);
   lines.push(`Mode: ${payload.workflowMode}`);

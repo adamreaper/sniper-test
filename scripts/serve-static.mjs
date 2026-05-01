@@ -203,5 +203,5 @@ await fs.mkdir(LOG_DIR, { recursive: true });
 await fs.mkdir(STATE_DIR, { recursive: true });
 
 server.listen(PORT, () => {
-  console.log(`One Piece sniper test serving ${ROOT} on http://0.0.0.0:${PORT}`);
+  console.log(`One Piece Sniper serving ${ROOT} on http://0.0.0.0:${PORT}`);
 });

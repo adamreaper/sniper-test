@@ -1,9 +1,9 @@
-# One Piece PSA 10 ROI Board Test
+# One Piece Sniper
 
-This copy is the independent version scaffold.
+This copy is the independent official app scaffold.
 
 ## What changed
-- App name updated to `One Piece PSA 10 ROI Board Test`
+- App name updated to `One Piece Sniper`
 - Frontend reads live data from `./data/` instead of repo-root JSON files
 - Refresh flow can run without chat-agent involvement
 - Git sync can be skipped entirely
@@ -59,6 +59,8 @@ That installs and starts:
 - `one-piece-sniper-test-web.service`
 - `one-piece-sniper-test-refresh.timer`
 - `one-piece-sniper-test-refresh.service` (oneshot refresh job)
+
+The service filenames stay on the legacy `sniper-test` naming for compatibility, but they now run the official app.
 
 Current schedule:
 - one full refresh every day at `5:45 AM`

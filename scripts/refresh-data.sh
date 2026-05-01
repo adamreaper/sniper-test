@@ -111,7 +111,7 @@ trap cleanup EXIT
     cd "$APP_DIR"
     git add "${PUBLISH_PATHS[@]}"
     if ! git diff --cached --quiet; then
-      git commit -m "Refresh sniper test data $(date +%F' '%H:%M)"
+      git commit -m "Refresh One Piece Sniper data $(date +%F' '%H:%M)"
 
       if ! git diff --quiet || [[ -n "$(git ls-files --others --exclude-standard)" ]]; then
         git stash push --include-untracked --message "sniper-test-refresh-temp-$(date +%s)" >/dev/null
@@ -132,4 +132,4 @@ trap cleanup EXIT
   echo "[$(date -Iseconds)] Refresh complete"
 } >> "$LOG_PATH" 2>&1
 
-echo "Independent sniper test data refreshed into $DATA_DIR"
+echo "Official One Piece Sniper data refreshed into $DATA_DIR"

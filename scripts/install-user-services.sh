@@ -15,7 +15,7 @@ mkdir -p "$UNIT_DST"
 
 cat > "$UNIT_DST/one-piece-sniper-test-web.service" <<EOF
 [Unit]
-Description=One Piece Sniper Test web app
+Description=One Piece Sniper web app
 After=network-online.target
 Wants=network-online.target
 
@@ -36,7 +36,7 @@ EOF
 
 cat > "$UNIT_DST/one-piece-sniper-test-refresh.service" <<EOF
 [Unit]
-Description=Refresh One Piece Sniper Test data
+Description=Refresh One Piece Sniper data
 After=network-online.target
 Wants=network-online.target
 

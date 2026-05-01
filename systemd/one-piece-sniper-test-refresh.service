@@ -1,5 +1,5 @@
 [Unit]
-Description=Refresh One Piece Sniper Test data
+Description=Refresh One Piece Sniper data
 After=network-online.target
 Wants=network-online.target
 
