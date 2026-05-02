@@ -1306,6 +1306,14 @@
       return `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(query)}`;
     }
 
+    function buildTcgPlayerSearchUrl(row) {
+      const query = [row.code, row.name]
+        .filter(Boolean)
+        .join(' ')
+        .trim();
+      return `https://www.tcgplayer.com/search/one-piece-card-game/product?productLineName=one-piece-card-game&q=${encodeURIComponent(query)}&view=grid`;
+    }
+
     function getOutcome(row) {
       return signalOutcomesMap.get(row.code) || {
         outcomeStatus: 'unreviewed',
@@ -1490,6 +1498,7 @@
           </details>
           <div class="links">
             <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+            <a class="button secondary" href="${buildTcgPlayerSearchUrl(row)}" target="_blank" rel="noopener noreferrer">Open in TCGplayer</a>
             ${showCollectrLink(row) ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Open Collectr</a>` : ''}
             ${priceChartingLink ? `<a class="button secondary" href="${priceChartingLink}" target="_blank" rel="noopener noreferrer">PriceCharting</a>` : ''}
           </div>
@@ -1560,6 +1569,7 @@
           ${renderOutcomeControls(row, 'queue')}
           <div class="lot-links">
             <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+            <a class="button secondary" href="${buildTcgPlayerSearchUrl(row)}" target="_blank" rel="noopener noreferrer">Open in TCGplayer</a>
             ${showCollectrLink(row) ? `<a class="button secondary" href="${row.collectrLink}" target="_blank" rel="noopener noreferrer">Collectr</a>` : ''}
             ${row.priceChartingUrl ? `<a class="button secondary" href="${row.priceChartingUrl}" target="_blank" rel="noopener noreferrer">PriceCharting</a>` : ''}
           </div>
