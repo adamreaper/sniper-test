@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-01T09:46:17.589Z",
-  "sourceFeedUpdatedAt": "2026-05-01T09:46:17.489Z",
+  "generatedAt": "2026-05-02T09:46:13.970Z",
+  "sourceFeedUpdatedAt": "2026-05-02T09:46:13.877Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,10 +8,10 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 11,
+    "totalPlans": 12,
     "prioritySearchCount": 0,
     "watchCount": 8,
-    "passCount": 3,
+    "passCount": 4,
     "manualReviewCount": 0,
     "buyNowCount": 0
   },
@@ -172,8 +172,8 @@
       "psa10SalesCount": 11,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 105.22,
-      "collectrRawDeltaPercent": 119.67,
+      "collectrRawMarket": 103.35,
+      "collectrRawDeltaPercent": 115.76,
       "psa10SpreadMultiple": 10.88,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -207,7 +207,7 @@
       "rank": 2
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 8,
       "code": "OP15-118",
       "name": "Enel (OP15-118) (Manga)",
       "setName": "Adventure on Kami's Island",
@@ -286,8 +286,8 @@
       "psa10SalesCount": 6,
       "ungradedSalesCount": 18,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 542.01,
-      "collectrRawDeltaPercent": 560.99,
+      "collectrRawMarket": 564.01,
+      "collectrRawDeltaPercent": 587.82,
       "psa10SpreadMultiple": 7.09,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -320,7 +320,7 @@
       "rank": 4
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 9,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -343,8 +343,8 @@
       "psa10SalesCount": 16,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 1434.25,
-      "collectrRawDeltaPercent": 119.15,
+      "collectrRawMarket": 1315.56,
+      "collectrRawDeltaPercent": 101.01,
       "psa10SpreadMultiple": 2.55,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -378,7 +378,7 @@
       "rank": 5
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 11,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy (Manga)",
       "setName": "Emperors in the New World",
@@ -554,7 +554,7 @@
       "rank": 8
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 12,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy (061) (Manga)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -611,7 +611,7 @@
       "rank": 9
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 10,
       "code": "OP09-004",
       "name": "Shanks - OP09-004 (SP) (Silver)",
       "setName": "Carrying On His Will",
@@ -687,7 +687,7 @@
       "expectedPsaNet": 141.01,
       "profit": 141.01,
       "roiPercent": 118.91,
-      "psa10SalesCount": 7,
+      "psa10SalesCount": 6,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 8489.98,
@@ -695,8 +695,8 @@
       "psa10SpreadMultiple": 5.61,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 48.4,
-      "buyScore": 48.4,
+      "discoveryScore": 46.2,
+      "buyScore": 46.2,
       "confidenceTier": "D",
       "action": "pass",
       "riskFlags": [
@@ -723,6 +723,64 @@
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 11
+    },
+    {
+      "sourceRank": 7,
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "setName": "Carrying On His Will",
+      "rarity": "SEC",
+      "productId": "657403",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "searchScore": 139,
+      "rawMarket": 52.59,
+      "psa10Market": 295,
+      "netPsa10Exit": 259.6,
+      "gradingCost": 33,
+      "costBasis": 118.59,
+      "expectedPsaNet": 141.01,
+      "profit": 141.01,
+      "roiPercent": 118.91,
+      "psa10SalesCount": 6,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 88.89,
+      "collectrRawDeltaPercent": 69.02,
+      "psa10SpreadMultiple": 5.61,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 46.2,
+      "buyScore": 46.2,
+      "confidenceTier": "D",
+      "action": "pass",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "low_absolute_profit",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "Strong PSA 10 spread versus raw market",
+        "PSA 10 comp depth is acceptable",
+        "Raw sales volume supports manual searching",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 57.77,
+      "targetBuyPrice": 77,
+      "stretchBuyPrice": 99.45,
+      "maxBuyPrice": 118.81,
+      "exitZoneLow": 238.83,
+      "exitZoneHigh": 267.39,
+      "reviewTags": [
+        "low-entry",
+        "wide-spread"
+      ],
+      "reviewSummary": "Pass for now unless the market shifts.",
+      "rank": 12
     }
   ]
 }

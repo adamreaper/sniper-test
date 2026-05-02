@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T09:46:17.592Z",
+  "generatedAt": "2026-05-02T09:46:13.973Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -184,7 +184,23 @@
       "setName": "Carrying On His Will",
       "action": "pass",
       "confidenceTier": "D",
-      "discoveryScore": 48.4,
+      "discoveryScore": 46.2,
+      "targetBuyPrice": 77,
+      "maxBuyPrice": 118.81,
+      "exitZoneLow": 238.83,
+      "exitZoneHigh": 267.39,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "setName": "Carrying On His Will",
+      "action": "pass",
+      "confidenceTier": "D",
+      "discoveryScore": 46.2,
       "targetBuyPrice": 77,
       "maxBuyPrice": 118.81,
       "exitZoneLow": 238.83,
