@@ -26,9 +26,11 @@ PUBLISH_PATHS=(
   data/latest-v2.json
   data/weekly-base.json
   data/trade-plan.json
+  data/meta-flips.json
   data/signal-outcomes.json
   data/app-ready.json
   scripts/generate-trade-plan.mjs
+  scripts/generate-meta-flips.mjs
   scripts/refresh-data.sh
   scripts/serve-static.mjs
   scripts/install-user-services.sh
@@ -104,6 +106,9 @@ trap cleanup EXIT
   cd "$APP_DIR"
   "$NODE_BIN" "$SINGLES_SCRIPT"
   "$NODE_BIN" "$APP_DIR/scripts/generate-trade-plan.mjs"
+  if ! "$NODE_BIN" "$APP_DIR/scripts/generate-meta-flips.mjs"; then
+    echo "[$(date -Iseconds)] WARNING: meta/raw flip generator failed; keeping previous data/meta-flips.json"
+  fi
   "$NODE_BIN" "$LOTS_SCRIPT"
   cp "$LOTS_APP_READY_PATH" "$DATA_DIR/app-ready.json"
 
