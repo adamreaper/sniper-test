@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-02T09:46:13.970Z",
-  "sourceFeedUpdatedAt": "2026-05-02T09:46:13.877Z",
+  "generatedAt": "2026-05-03T09:46:14.605Z",
+  "sourceFeedUpdatedAt": "2026-05-03T09:46:14.515Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,9 +8,9 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 12,
+    "totalPlans": 13,
     "prioritySearchCount": 0,
-    "watchCount": 8,
+    "watchCount": 9,
     "passCount": 4,
     "manualReviewCount": 0,
     "buyNowCount": 0
@@ -112,10 +112,10 @@
       "profit": 4858.56,
       "roiPercent": 210.97,
       "psa10SalesCount": 25,
-      "ungradedSalesCount": 21,
+      "ungradedSalesCount": 22,
       "bgs10SalesCount": 6,
-      "collectrRawMarket": 8977.53,
-      "collectrRawDeltaPercent": 309.93,
+      "collectrRawMarket": 8474.98,
+      "collectrRawDeltaPercent": 286.99,
       "psa10SpreadMultiple": 3.72,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -320,7 +320,65 @@
       "rank": 4
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 4,
+      "code": "OP05-119",
+      "name": "Monkey.D.Luffy (SP) (Silver)",
+      "setName": "A Fist of Divine Speed",
+      "rarity": "SEC",
+      "productId": "632503",
+      "priceChartingPath": "/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-silver-op05-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-silver-op05-119",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/6qbn7lbtlejdxnqp/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/632503",
+      "searchScore": 157,
+      "rawMarket": 1094.25,
+      "psa10Market": 3474,
+      "netPsa10Exit": 3057.12,
+      "gradingCost": 79.99,
+      "costBasis": 1207.24,
+      "expectedPsaNet": 1849.88,
+      "profit": 1849.88,
+      "roiPercent": 153.23,
+      "psa10SalesCount": 8,
+      "ungradedSalesCount": 22,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 3072.87,
+      "collectrRawDeltaPercent": 180.82,
+      "psa10SpreadMultiple": 3.17,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 64.9,
+      "buyScore": 64.9,
+      "confidenceTier": "C",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "high_raw_entry_price",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Absolute upside is meaningful after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 887.45,
+      "targetBuyPrice": 1069.3,
+      "stretchBuyPrice": 1272.72,
+      "maxBuyPrice": 1440.97,
+      "exitZoneLow": 2812.55,
+      "exitZoneHigh": 3148.83,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 5
+    },
+    {
+      "sourceRank": 10,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -375,10 +433,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 6
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 12,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy (Manga)",
       "setName": "Emperors in the New World",
@@ -401,8 +459,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 21,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 2072.49,
-      "collectrRawDeltaPercent": 184.25,
+      "collectrRawMarket": 2089.74,
+      "collectrRawDeltaPercent": 186.62,
       "psa10SpreadMultiple": 2.41,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -433,10 +491,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 7
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 6,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -492,10 +550,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 8
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 5,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -551,10 +609,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
+      "rank": 9
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 13,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy (061) (Manga)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -608,10 +666,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 9
+      "rank": 10
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 11,
       "code": "OP09-004",
       "name": "Shanks - OP09-004 (SP) (Silver)",
       "setName": "Carrying On His Will",
@@ -664,10 +722,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 10
+      "rank": 11
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 7,
       "code": "OP13-118",
       "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -722,10 +780,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 11
+      "rank": 12
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 9,
       "code": "OP13-118",
       "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
@@ -737,24 +795,24 @@
       "marketContext": null,
       "collectrLink": "https://app.getcollectr.com/explore/product/657403",
       "searchScore": 139,
-      "rawMarket": 52.59,
-      "psa10Market": 295,
-      "netPsa10Exit": 259.6,
+      "rawMarket": 53.42,
+      "psa10Market": 265,
+      "netPsa10Exit": 233.2,
       "gradingCost": 33,
-      "costBasis": 118.59,
-      "expectedPsaNet": 141.01,
-      "profit": 141.01,
-      "roiPercent": 118.91,
+      "costBasis": 119.42,
+      "expectedPsaNet": 113.78,
+      "profit": 113.78,
+      "roiPercent": 95.28,
       "psa10SalesCount": 6,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 88.89,
-      "collectrRawDeltaPercent": 69.02,
-      "psa10SpreadMultiple": 5.61,
+      "collectrRawMarket": 89.12,
+      "collectrRawDeltaPercent": 66.83,
+      "psa10SpreadMultiple": 4.96,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 46.2,
-      "buyScore": 46.2,
+      "discoveryScore": 43.7,
+      "buyScore": 43.7,
       "confidenceTier": "D",
       "action": "pass",
       "riskFlags": [
@@ -769,18 +827,18 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 57.77,
-      "targetBuyPrice": 77,
-      "stretchBuyPrice": 99.45,
-      "maxBuyPrice": 118.81,
-      "exitZoneLow": 238.83,
-      "exitZoneHigh": 267.39,
+      "idealBuyPrice": 48.54,
+      "targetBuyPrice": 65.81,
+      "stretchBuyPrice": 85.98,
+      "maxBuyPrice": 103.37,
+      "exitZoneLow": 214.54,
+      "exitZoneHigh": 240.2,
       "reviewTags": [
         "low-entry",
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 12
+      "rank": 13
     }
   ]
 }
