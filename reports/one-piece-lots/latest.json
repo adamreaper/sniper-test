@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T18:12:26.152Z",
+  "generatedAt": "2026-05-03T14:56:27.159Z",
   "marketplace": "EBAY_US",
   "searches": [
     "one piece card lot",
@@ -10,6 +10,1068 @@
     "one piece 50 cards lot",
     "one piece 100 cards bulk"
   ],
-  "listingCount": 0,
-  "rows": []
+  "listingCount": 28,
+  "rows": [
+    {
+      "sourceQuery": "one piece 50 cards lot",
+      "itemId": "v1|178093508658|0",
+      "title": "One Piece TCG 50 Card Lot All Rare R Cards Mixed Lot NM+ Bulk (Lot 101)",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "itemWebUrl": "https://www.ebay.com/itm/178093508658?_skw=one+piece+50+cards+lot&hash=item2977334832:g:-7QAAeSw0k5p7oKZ",
+      "imageUrl": "https://i.ebayimg.com/images/g/-7QAAeSw0k5p7oKZ/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "thebridgeporttradingco",
+        "feedbackPercentage": "99.9",
+        "feedbackScore": 5560
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 22,
+      "cardCountGuess": 50,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 80,
+      "upsideValue": 190,
+      "sellerWeaknessScore": 11,
+      "hiddenValueScore": 10,
+      "priceDislocationScore": 3,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 39,
+      "appScore": 39,
+      "maxBuyPrice": 57.6,
+      "maxBidPrice": 52,
+      "recommendation": "ignore",
+      "appTier": "watch",
+      "predictedProfit": 79.01,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 99.9,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 79 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece cards mixed lot",
+      "itemId": "v1|188332647117|0",
+      "title": "Bandai One Piece Card Game Japanese Mixed Card Lot 80 + Foil And 9 Don",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "itemWebUrl": "https://www.ebay.com/itm/188332647117?_skw=one+piece+cards+mixed+lot&hash=item2bd98022cd:g:DV0AAeSw73lp82Fv",
+      "imageUrl": "https://i.ebayimg.com/images/g/DV0AAeSw73lp82Fv/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "tcg_titan54",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 9
+      },
+      "listingType": "mixed_lot",
+      "imageCount": 10,
+      "cardCountGuess": 80,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 80,
+      "upsideValue": 190,
+      "sellerWeaknessScore": 11,
+      "hiddenValueScore": 10,
+      "priceDislocationScore": 3,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 39,
+      "appScore": 39,
+      "maxBuyPrice": 57.6,
+      "maxBidPrice": 52,
+      "recommendation": "ignore",
+      "appTier": "watch",
+      "predictedProfit": 79.01,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 79 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece 50 cards lot",
+      "itemId": "v1|178081940828|0",
+      "title": "One Piece TCG 50 Card Lot 1 SR + 49 Common Cards Mixed Bulk NM+ (Lot 117)",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "itemWebUrl": "https://www.ebay.com/itm/178081940828?_skw=one+piece+50+cards+lot&hash=item297682c55c:g:6mIAAeSwJk1p7pGN",
+      "imageUrl": "https://i.ebayimg.com/images/g/6mIAAeSwJk1p7pGN/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "thebridgeporttradingco",
+        "feedbackPercentage": "99.9",
+        "feedbackScore": 5560
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 24,
+      "cardCountGuess": 50,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 80,
+      "upsideValue": 190,
+      "sellerWeaknessScore": 11,
+      "hiddenValueScore": 10,
+      "priceDislocationScore": 3,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 39,
+      "appScore": 39,
+      "maxBuyPrice": 57.6,
+      "maxBidPrice": 52,
+      "recommendation": "ignore",
+      "appTier": "watch",
+      "predictedProfit": 79.01,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 99.9,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 79 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece cards mixed lot",
+      "itemId": "v1|157876096623|0",
+      "title": "One Piece, Yugioh, Japanese Pokemon TCG Bulk Lot Mixed Lot NM 1250 Cards Read!!!",
+      "price": 2.99,
+      "shipping": 0,
+      "total": 2.99,
+      "itemWebUrl": "https://www.ebay.com/itm/157876096623?_skw=one+piece+cards+mixed+lot&hash=item24c2260e6f:g:9VAAAeSwYbhp5TAu",
+      "imageUrl": "https://i.ebayimg.com/images/g/9VAAAeSwYbhp5TAu/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "falcons_king1990",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 663
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 6,
+      "cardCountGuess": 1250,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 87,
+      "upsideValue": 205.5,
+      "sellerWeaknessScore": 11,
+      "hiddenValueScore": 12,
+      "priceDislocationScore": 1,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 7.5,
+      "frictionPenalty": 0,
+      "lotScore": 36.5,
+      "appScore": 36.5,
+      "maxBuyPrice": 62.64,
+      "maxBidPrice": 56.55,
+      "recommendation": "ignore",
+      "appTier": "watch",
+      "predictedProfit": 84.01,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 84 over ask",
+        "large lot estimate around 1250 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece cards mixed lot",
+      "itemId": "v1|206241445140|0",
+      "title": "One Piece tcg Card Game 100 Cards Collection Mixed Lot w/ 10 FOILS Included",
+      "price": 15,
+      "shipping": 0,
+      "total": 15,
+      "itemWebUrl": "https://www.ebay.com/itm/206241445140?_skw=one+piece+cards+mixed+lot&hash=item3004f2b514:g:oTQAAeSwKRRp8qn5",
+      "imageUrl": "https://i.ebayimg.com/images/g/oTQAAeSwKRRp8qn5/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "seller": {
+        "username": "dmcollectiblesandmore",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 2686
+      },
+      "listingType": "collection_lot",
+      "imageCount": 9,
+      "cardCountGuess": 100,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 140,
+      "upsideValue": 330,
+      "sellerWeaknessScore": 11,
+      "hiddenValueScore": 20,
+      "priceDislocationScore": -10,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 36,
+      "appScore": 36,
+      "maxBuyPrice": 100.8,
+      "maxBidPrice": 91,
+      "recommendation": "ignore",
+      "appTier": "watch",
+      "predictedProfit": 125,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 125 over ask",
+        "large lot estimate around 100 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece 100 cards bulk",
+      "itemId": "v1|147276285795|0",
+      "title": "One Piece Card Game 450+ Cards Bulk Lot | 60 Holo Foils Included - MINT fresh",
+      "price": 5.5,
+      "shipping": 0,
+      "total": 5.5,
+      "itemWebUrl": "https://www.ebay.com/itm/147276285795?_skw=one+piece+100+cards+bulk&hash=item224a59c763:g:ALsAAeSwkXBp663V",
+      "imageUrl": "https://i.ebayimg.com/images/g/ALsAAeSwkXBp663V/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "cryfshr",
+        "feedbackPercentage": "99.8",
+        "feedbackScore": 482
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 11,
+      "cardCountGuess": 450,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 92,
+      "upsideValue": 218,
+      "sellerWeaknessScore": 6,
+      "hiddenValueScore": 12,
+      "priceDislocationScore": -1.5,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 31.5,
+      "appScore": 31.5,
+      "maxBuyPrice": 66.24,
+      "maxBidPrice": 59.8,
+      "recommendation": "ignore",
+      "appTier": "watch",
+      "predictedProfit": 86.5,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 99.8,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 87 over ask",
+        "large lot estimate around 450 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece bulk cards",
+      "itemId": "v1|389962385516|0",
+      "title": "One Piece (OP) TCG English Card Bulk Lot 1000+ NM Cards Instant Collection",
+      "price": 500,
+      "shipping": 0,
+      "total": 500,
+      "itemWebUrl": "https://www.ebay.com/itm/389962385516?_skw=one+piece+bulk+cards&hash=item5acb91c86c:g:mD8AAeSwNIpp9I9C",
+      "imageUrl": "https://i.ebayimg.com/images/g/mD8AAeSwNIpp9I9C/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "seller": {
+        "username": "aris_collectibles",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 285
+      },
+      "listingType": "collection_lot",
+      "imageCount": 13,
+      "cardCountGuess": 1000,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 140,
+      "upsideValue": 330,
+      "sellerWeaknessScore": 6,
+      "hiddenValueScore": 20,
+      "priceDislocationScore": -10,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 3,
+      "lotScore": 28,
+      "appScore": 28,
+      "maxBuyPrice": 100.8,
+      "maxBidPrice": 91,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": -360,
+      "scoreBreakdown": {
+        "profitScore": 0,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 11.1
+      },
+      "riskLevel": "medium",
+      "topReasons": [
+        "large lot estimate around 1000 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "ask is above current max buy",
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": false,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece cards mixed lot",
+      "itemId": "v1|188340043880|0",
+      "title": "Bandai One Piece CCG Foil Mixed Lot 7  Cards Nami Monkey D. Luffy",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "itemWebUrl": "https://www.ebay.com/itm/188340043880?_skw=one+piece+cards+mixed+lot&hash=item2bd9f10068:g:3l0AAeSw3w1p9gPJ",
+      "imageUrl": "https://i.ebayimg.com/images/g/3l0AAeSw3w1p9gPJ/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "tcg_titan54",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 9
+      },
+      "listingType": "mixed_lot",
+      "imageCount": 7,
+      "cardCountGuess": 7,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 42,
+      "upsideValue": 101,
+      "sellerWeaknessScore": 11,
+      "hiddenValueScore": 4,
+      "priceDislocationScore": -1,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 9,
+      "frictionPenalty": 0,
+      "lotScore": 28,
+      "appScore": 28,
+      "maxBuyPrice": 30.24,
+      "maxBidPrice": 27.3,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": 41.01,
+      "scoreBreakdown": {
+        "profitScore": 82,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 41 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Low conviction lot.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value"
+      ]
+    },
+    {
+      "sourceQuery": "one piece cards mixed lot",
+      "itemId": "v1|257488470234|0",
+      "title": "One Piece CCG Lot Of 10 Alt Art Mixed Set Cards NM L5",
+      "price": 49.99,
+      "shipping": 5,
+      "total": 54.99,
+      "itemWebUrl": "https://www.ebay.com/itm/257488470234?_skw=one+piece+cards+mixed+lot&hash=item3bf38240da:g:dw0AAeSweUpp9six",
+      "imageUrl": "https://i.ebayimg.com/images/g/dw0AAeSweUpp9six/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "seller": {
+        "username": "dancer465",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 3837
+      },
+      "listingType": "mixed_lot",
+      "imageCount": 10,
+      "cardCountGuess": 10,
+      "visibleHits": [
+        {
+          "label": "alt-art signal",
+          "floorValue": 35,
+          "confidence": 0.65
+        }
+      ],
+      "visibleFloorValue": 35,
+      "expectedValue": 79,
+      "upsideValue": 141,
+      "sellerWeaknessScore": 11,
+      "hiddenValueScore": 4,
+      "priceDislocationScore": -7.3,
+      "liquidityScore": 5,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 27.1,
+      "appScore": 27.1,
+      "maxBuyPrice": 56.88,
+      "maxBidPrice": 51.35,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": 24.01,
+      "scoreBreakdown": {
+        "profitScore": 17.5,
+        "confidenceScore": 50,
+        "evidenceScore": 63.6,
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "visible signals: alt-art signal",
+        "expected spread 24 over ask"
+      ],
+      "topRisks": [],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": true,
+        "shippingOk": true,
+        "passed": true
+      },
+      "uiNote": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "imageReview": null,
+      "scoreNotes": [
+        "title mentions alt art"
+      ],
+      "flags": []
+    },
+    {
+      "sourceQuery": "one piece tcg lot",
+      "itemId": "v1|188341321006|0",
+      "title": "One Piece TCG - Yellow Bulk Lot - Japanese [OP-09, Emperors In The New World]",
+      "price": 9.99,
+      "shipping": 0,
+      "total": 9.99,
+      "itemWebUrl": "https://www.ebay.com/itm/188341321006?_skw=one+piece+tcg+lot&hash=item2bda047d2e:g:YrcAAeSwLQ1p9nTz",
+      "imageUrl": "https://i.ebayimg.com/images/g/YrcAAeSwLQ1p9nTz/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "seller": {
+        "username": "seonch2018",
+        "feedbackPercentage": "0.0",
+        "feedbackScore": 3
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 8,
+      "cardCountGuess": 72,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 80,
+      "upsideValue": 190,
+      "sellerWeaknessScore": 6,
+      "hiddenValueScore": 10,
+      "priceDislocationScore": -6,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 25,
+      "appScore": 25,
+      "maxBuyPrice": 57.6,
+      "maxBidPrice": 52,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": 70.01,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 0,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "medium",
+      "topReasons": [
+        "expected spread 70 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof",
+        "seller feedback is below 98%"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece 50 cards lot",
+      "itemId": "v1|298265502283|0",
+      "title": "One Piece OP14-15 50 Card Bulk Lot Near Mint",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "itemWebUrl": "https://www.ebay.com/itm/298265502283?_skw=one+piece+50+cards+lot&hash=item457202624b:g:pdoAAeSwrHRp7nmn",
+      "imageUrl": "https://i.ebayimg.com/images/g/pdoAAeSwrHRp7nmn/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "gabriel_1758",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 35
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 5,
+      "cardCountGuess": 60,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 48,
+      "upsideValue": 114,
+      "sellerWeaknessScore": 4,
+      "hiddenValueScore": 6,
+      "priceDislocationScore": 3,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 6,
+      "frictionPenalty": 0,
+      "lotScore": 24,
+      "appScore": 24,
+      "maxBuyPrice": 34.56,
+      "maxBidPrice": 31.2,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": 47.01,
+      "scoreBreakdown": {
+        "profitScore": 94,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 47 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece 100 cards bulk",
+      "itemId": "v1|227298087931|0",
+      "title": "One Piece Card Game Bulk Lot 100 Count Common and Uncommon Cards ENG OP Lot 1",
+      "price": 18.5,
+      "shipping": 5.99,
+      "total": 24.490000000000002,
+      "itemWebUrl": "https://www.ebay.com/itm/227298087931?_skw=one+piece+100+cards+bulk&hash=item34ec0593fb:g:OaQAAeSwr75p3A77",
+      "imageUrl": "https://i.ebayimg.com/images/g/OaQAAeSwr75p3A77/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "seller": {
+        "username": "collectwithj",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 3921
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 11,
+      "cardCountGuess": 100,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 92,
+      "upsideValue": 218,
+      "sellerWeaknessScore": 6,
+      "hiddenValueScore": 12,
+      "priceDislocationScore": -10,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 23,
+      "appScore": 23,
+      "maxBuyPrice": 66.24,
+      "maxBidPrice": 59.8,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": 67.51,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 68 over ask",
+        "large lot estimate around 100 cards"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece bulk cards",
+      "itemId": "v1|318233918911|0",
+      "title": "BULK LOT OF ANIME CARDS- ONE PIECE, HxH, KAIJU NO.8, NARUTO, + MORE",
+      "price": 60,
+      "shipping": 0,
+      "total": 60,
+      "itemWebUrl": "https://www.ebay.com/itm/318233918911?_skw=one+piece+bulk+cards&hash=item4a18383dbf:g:f78AAeSwzRxp9RVC",
+      "imageUrl": "https://i.ebayimg.com/images/g/f78AAeSwzRxp9RVC/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "lnjthr54",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 358
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 13,
+      "cardCountGuess": 200,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 92,
+      "upsideValue": 218,
+      "sellerWeaknessScore": 6,
+      "hiddenValueScore": 12,
+      "priceDislocationScore": -10,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 10,
+      "frictionPenalty": 0,
+      "lotScore": 23,
+      "appScore": 23,
+      "maxBuyPrice": 66.24,
+      "maxBidPrice": 59.8,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": 32,
+      "scoreBreakdown": {
+        "profitScore": 21.3,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 32 over ask",
+        "large lot estimate around 200 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece bulk cards",
+      "itemId": "v1|397905126023|0",
+      "title": "One Piece Card Game Manga Parallel Retired Item Ace And More 2500 Cards Bulk",
+      "price": 2130.45,
+      "shipping": 30,
+      "total": 2160.45,
+      "itemWebUrl": "https://www.ebay.com/itm/397905126023?_skw=one+piece+bulk+cards&hash=item5ca4fe6287:g:dV4AAeSwN~xp9pZV",
+      "imageUrl": "https://i.ebayimg.com/images/g/dV4AAeSwN~xp9pZV/s-l225.jpg",
+      "condition": "Ungraded",
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "seller": {
+        "username": "ssk.japan.shop",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 270
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 5,
+      "cardCountGuess": 2500,
+      "visibleHits": [
+        {
+          "label": "manga signal",
+          "floorValue": 120,
+          "confidence": 0.7
+        },
+        {
+          "label": "parallel signal",
+          "floorValue": 20,
+          "confidence": 0.55
+        }
+      ],
+      "visibleFloorValue": 140,
+      "expectedValue": 200,
+      "upsideValue": 282,
+      "sellerWeaknessScore": 2,
+      "hiddenValueScore": 8,
+      "priceDislocationScore": -10,
+      "liquidityScore": 9,
+      "gradingUpsideScore": 6,
+      "frictionPenalty": 10,
+      "lotScore": 22.5,
+      "appScore": 22.5,
+      "maxBuyPrice": 144,
+      "maxBidPrice": 130,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": -1960.45,
+      "scoreBreakdown": {
+        "profitScore": 0,
+        "confidenceScore": 50,
+        "evidenceScore": 6.5,
+        "liquidityScore": 100,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 37
+      },
+      "riskLevel": "medium",
+      "topReasons": [
+        "visible signals: manga signal, parallel signal",
+        "large lot estimate around 2500 cards"
+      ],
+      "topRisks": [
+        "ask is above current max buy",
+        "shipping eats margin"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": false,
+        "evidenceOk": true,
+        "shippingOk": false,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [
+        "title mentions manga",
+        "title mentions parallel"
+      ],
+      "flags": [
+        "high_shipping",
+        "large_lot"
+      ]
+    },
+    {
+      "sourceQuery": "one piece 100 cards bulk",
+      "itemId": "v1|327099529026|0",
+      "title": "One Piece Card Game Bulk Lot 100 Count Common and Uncommon Cards ENG OP Lot 3",
+      "price": 18.5,
+      "shipping": 5.99,
+      "total": 24.490000000000002,
+      "itemWebUrl": "https://www.ebay.com/itm/327099529026?_skw=one+piece+100+cards+bulk&hash=item4c28a6b742:g:E3MAAeSwxChp3BDG",
+      "imageUrl": "https://i.ebayimg.com/images/g/E3MAAeSwxChp3BDG/s-l225.jpg",
+      "condition": "Used",
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "BEST_OFFER"
+      ],
+      "seller": {
+        "username": "collectwithj",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 3921
+      },
+      "listingType": "bulk_lot",
+      "imageCount": 7,
+      "cardCountGuess": 100,
+      "visibleHits": [],
+      "visibleFloorValue": 0,
+      "expectedValue": 90,
+      "upsideValue": 213,
+      "sellerWeaknessScore": 6,
+      "hiddenValueScore": 12,
+      "priceDislocationScore": -10,
+      "liquidityScore": 3,
+      "gradingUpsideScore": 9,
+      "frictionPenalty": 0,
+      "lotScore": 22,
+      "appScore": 22,
+      "maxBuyPrice": 64.8,
+      "maxBidPrice": 58.5,
+      "recommendation": "ignore",
+      "appTier": "skip",
+      "predictedProfit": 65.51,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "expected spread 66 over ask",
+        "large lot estimate around 100 cards"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": false,
+        "shippingOk": true,
+        "passed": false
+      },
+      "uiNote": "Large lot watch; value depends on manual photo review.",
+      "imageReview": null,
+      "scoreNotes": [],
+      "flags": [
+        "low_visible_value",
+        "large_lot"
+      ]
+    }
+  ]
 }

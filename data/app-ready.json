@@ -1,11 +1,285 @@
 {
-  "generatedAt": "2026-05-03T09:46:16.438Z",
-  "listingCount": 0,
+  "generatedAt": "2026-05-03T14:56:27.159Z",
+  "listingCount": 6,
   "summary": {
     "reviewCount": 0,
-    "watchCount": 0,
-    "avgScore": 0,
-    "avgPredictedProfit": 0
+    "watchCount": 6,
+    "avgScore": 36.8,
+    "avgPredictedProfit": 88.76
   },
-  "rows": []
+  "rows": [
+    {
+      "rank": 1,
+      "itemId": "v1|178093508658|0",
+      "title": "One Piece TCG 50 Card Lot All Rare R Cards Mixed Lot NM+ Bulk (Lot 101)",
+      "url": "https://www.ebay.com/itm/178093508658?_skw=one+piece+50+cards+lot&hash=item2977334832:g:-7QAAeSw0k5p7oKZ",
+      "imageUrl": "https://i.ebayimg.com/images/g/-7QAAeSw0k5p7oKZ/s-l225.jpg",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 50,
+      "score": 39,
+      "tier": "watch",
+      "predictedProfit": 79.01,
+      "maxBuyPrice": 57.6,
+      "expectedValue": 80,
+      "sellerFeedbackPercent": "99.9",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 99.9,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 79 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 2,
+      "itemId": "v1|188332647117|0",
+      "title": "Bandai One Piece Card Game Japanese Mixed Card Lot 80 + Foil And 9 Don",
+      "url": "https://www.ebay.com/itm/188332647117?_skw=one+piece+cards+mixed+lot&hash=item2bd98022cd:g:DV0AAeSw73lp82Fv",
+      "imageUrl": "https://i.ebayimg.com/images/g/DV0AAeSw73lp82Fv/s-l225.jpg",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "lotType": "mixed_lot",
+      "cardCountGuess": 80,
+      "score": 39,
+      "tier": "watch",
+      "predictedProfit": 79.01,
+      "maxBuyPrice": 57.6,
+      "expectedValue": 80,
+      "sellerFeedbackPercent": "100.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 79 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 3,
+      "itemId": "v1|178081940828|0",
+      "title": "One Piece TCG 50 Card Lot 1 SR + 49 Common Cards Mixed Bulk NM+ (Lot 117)",
+      "url": "https://www.ebay.com/itm/178081940828?_skw=one+piece+50+cards+lot&hash=item297682c55c:g:6mIAAeSwJk1p7pGN",
+      "imageUrl": "https://i.ebayimg.com/images/g/6mIAAeSwJk1p7pGN/s-l225.jpg",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 50,
+      "score": 39,
+      "tier": "watch",
+      "predictedProfit": 79.01,
+      "maxBuyPrice": 57.6,
+      "expectedValue": 80,
+      "sellerFeedbackPercent": "99.9",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 99.9,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 79 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 4,
+      "itemId": "v1|157876096623|0",
+      "title": "One Piece, Yugioh, Japanese Pokemon TCG Bulk Lot Mixed Lot NM 1250 Cards Read!!!",
+      "url": "https://www.ebay.com/itm/157876096623?_skw=one+piece+cards+mixed+lot&hash=item24c2260e6f:g:9VAAAeSwYbhp5TAu",
+      "imageUrl": "https://i.ebayimg.com/images/g/9VAAAeSwYbhp5TAu/s-l225.jpg",
+      "price": 2.99,
+      "shipping": 0,
+      "total": 2.99,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 1250,
+      "score": 36.5,
+      "tier": "watch",
+      "predictedProfit": 84.01,
+      "maxBuyPrice": 62.64,
+      "expectedValue": 87,
+      "sellerFeedbackPercent": "100.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 84 over ask",
+        "large lot estimate around 1250 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 5,
+      "itemId": "v1|206241445140|0",
+      "title": "One Piece tcg Card Game 100 Cards Collection Mixed Lot w/ 10 FOILS Included",
+      "url": "https://www.ebay.com/itm/206241445140?_skw=one+piece+cards+mixed+lot&hash=item3004f2b514:g:oTQAAeSwKRRp8qn5",
+      "imageUrl": "https://i.ebayimg.com/images/g/oTQAAeSwKRRp8qn5/s-l225.jpg",
+      "price": 15,
+      "shipping": 0,
+      "total": 15,
+      "lotType": "collection_lot",
+      "cardCountGuess": 100,
+      "score": 36,
+      "tier": "watch",
+      "predictedProfit": 125,
+      "maxBuyPrice": 100.8,
+      "expectedValue": 140,
+      "sellerFeedbackPercent": "100.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 125 over ask",
+        "large lot estimate around 100 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 6,
+      "itemId": "v1|147276285795|0",
+      "title": "One Piece Card Game 450+ Cards Bulk Lot | 60 Holo Foils Included - MINT fresh",
+      "url": "https://www.ebay.com/itm/147276285795?_skw=one+piece+100+cards+bulk&hash=item224a59c763:g:ALsAAeSwkXBp663V",
+      "imageUrl": "https://i.ebayimg.com/images/g/ALsAAeSwkXBp663V/s-l225.jpg",
+      "price": 5.5,
+      "shipping": 0,
+      "total": 5.5,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 450,
+      "score": 31.5,
+      "tier": "watch",
+      "predictedProfit": 86.5,
+      "maxBuyPrice": 66.24,
+      "expectedValue": 92,
+      "sellerFeedbackPercent": "99.8",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 99.8,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 87 over ask",
+        "large lot estimate around 450 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    }
+  ]
 }

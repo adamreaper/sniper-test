@@ -6,6 +6,10 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const APP_DIR = process.env.ONE_PIECE_SNIPER_TEST_DIR || path.resolve(__dirname, '..', '..', '..');
 const ENV_PATH = process.env.ONE_PIECE_SNIPER_ENV || path.join(APP_DIR, '.env.local');
+const FALLBACK_ENV_PATHS = [
+  path.join(APP_DIR, '..', 'psa-app', '.env.local'),
+  '/home/deck/.openclaw/workspace/psa-app/.env.local',
+];
 const REPORT_DIR = path.join(APP_DIR, 'reports', 'one-piece-lots');
 const DATE_STAMP = new Date().toISOString().slice(0, 10);
 const OUT_JSON = path.join(REPORT_DIR, `one-piece-lot-scan-${DATE_STAMP}.json`);
@@ -93,15 +97,20 @@ function parseEnv(raw) {
 
 async function loadEnv() {
   if (envLoaded) return;
-  let raw = '';
-  try {
-    raw = await fs.readFile(ENV_PATH, 'utf8');
-  } catch (error) {
-    if (error?.code !== 'ENOENT') throw error;
-  }
-  const env = parseEnv(raw);
-  for (const [k, v] of Object.entries(env)) {
-    if (!(k in process.env)) process.env[k] = v;
+  const envPaths = [ENV_PATH, ...FALLBACK_ENV_PATHS];
+  for (const envPath of envPaths) {
+    let raw = '';
+    try {
+      raw = await fs.readFile(envPath, 'utf8');
+    } catch (error) {
+      if (error?.code !== 'ENOENT') throw error;
+      continue;
+    }
+    const env = parseEnv(raw);
+    for (const [k, v] of Object.entries(env)) {
+      if (!(k in process.env)) process.env[k] = v.replace(/^['\"]|['\"]$/g, '');
+    }
+    if (process.env.EBAY_CLIENT_ID && process.env.EBAY_CLIENT_SECRET) break;
   }
   envLoaded = true;
 }
@@ -196,7 +205,7 @@ function isLotLike(listing) {
   const t = titleLower(listing);
   const strongPositive = [' card lot', ' bulk', ' collection', ' mixed lot', ' assorted', ' random', ' lots ', ' 50 cards', ' 100 cards'];
   const weakPositive = [' cards', ' lot', ' mixed'];
-  const negative = ['proxy', 'custom', 'reprint', 'graded', 'psa', 'bgs', 'cgc', 'single card', 'binder promo', 'premium card collection', 'starter deck', 'playmat'];
+  const negative = ['proxy', 'custom', 'reprint', 'graded', 'psa', 'bgs', 'cgc', 'single card', 'binder promo', 'premium card collection', 'starter deck', 'playmat', 'gift collection'];
   if (negative.some((token) => t.includes(token))) return false;
   const strongCount = strongPositive.filter((token) => t.includes(token)).length;
   const weakCount = weakPositive.filter((token) => t.includes(token)).length;
@@ -236,6 +245,9 @@ function isJunkLot(listing, detail, cardCountGuess) {
     'bundle',
     'sealed bandai new',
     'pack fresh bundle',
+    'gift collection',
+    'promotion cards',
+    'promo card',
     'repack',
   ];
   if (negatives.some((token) => t.includes(token))) return true;
@@ -424,12 +436,16 @@ function appTierFor(row) {
   if (row.imageReview?.verdict === 'manufactured_bundle') return 'skip';
   if (row.imageReview?.verdict === 'genuine_lot' && row.appScore >= 45) return 'review';
   if (row.imageReview?.verdict === 'weak_evidence' && row.appScore >= 55) return 'watch';
+  if (!row.imageReview && row.hardGates?.passed && row.riskLevel === 'low' && row.appScore >= 42) return 'review';
+  if (!row.imageReview && row.hardGates?.priceOk && row.cardCountGuess >= 50 && row.appScore >= 30) return 'watch';
   return 'skip';
 }
 
 function uiNoteFor(row) {
   if (row.imageReview?.verdict === 'genuine_lot') return 'Real-lot signal from image check.';
   if (row.imageReview?.verdict === 'weak_evidence') return 'Possible lot, but photos still need manual review.';
+  if (!row.imageReview && row.hardGates?.passed) return 'No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.';
+  if (!row.imageReview && row.cardCountGuess >= 50) return 'Large lot watch; value depends on manual photo review.';
   return 'Low conviction lot.';
 }
 
@@ -462,7 +478,9 @@ function buildLotAnalysis(listing, detail) {
   const imageReview = imageReviewFor(listing.itemId);
   const appScore = scoreWithImageReview(lotScore, imageReview);
   const recommendation = recommendationFor(lotScore);
-  const appTier = appTierFor({ appScore, imageReview });
+  const provisionalHardGates = hardGatesFor({ total: listing.total, maxBuyPrice, visibleFloorValue, shipping: listing.shipping, imageReview });
+  const provisionalRiskLevel = riskLevelFor({ total: listing.total, maxBuyPrice, visibleFloorValue, shipping: listing.shipping, seller: detail?.seller || listing.seller, imageReview });
+  const appTier = appTierFor({ appScore, imageReview, hardGates: provisionalHardGates, riskLevel: provisionalRiskLevel, cardCountGuess });
   const seller = detail?.seller ? {
     username: detail.seller.username || detail.seller.sellerUsername || null,
     feedbackPercentage: detail.seller.feedbackPercentage || listing.seller?.feedbackPercentage || null,
@@ -470,10 +488,10 @@ function buildLotAnalysis(listing, detail) {
   } : listing.seller || null;
   const predictedProfit = Math.round((expectedValue - listing.total) * 100) / 100;
   const scoreBreakdown = scoreBreakdownFor({ total: listing.total, expectedValue, visibleFloorValue, liquidityScore: liquidity, frictionPenalty: friction, seller, imageReview });
-  const riskLevel = riskLevelFor({ total: listing.total, maxBuyPrice, visibleFloorValue, shipping: listing.shipping, seller, imageReview });
+  const riskLevel = provisionalRiskLevel;
   const topReasons = topReasonsFor({ expectedValue, total: listing.total, imageReview, visibleHits, cardCountGuess, shipping: listing.shipping });
   const topRisks = topRisksFor({ total: listing.total, maxBuyPrice, visibleFloorValue, shipping: listing.shipping, seller, imageReview });
-  const hardGates = hardGatesFor({ total: listing.total, maxBuyPrice, visibleFloorValue, shipping: listing.shipping, imageReview });
+  const hardGates = provisionalHardGates;
   return {
     ...listing,
     listingType,
@@ -501,7 +519,7 @@ function buildLotAnalysis(listing, detail) {
     topReasons,
     topRisks,
     hardGates,
-    uiNote: uiNoteFor({ appScore, imageReview }),
+    uiNote: uiNoteFor({ appScore, imageReview, hardGates, cardCountGuess }),
     imageReview,
     scoreNotes,
     flags,
@@ -515,7 +533,10 @@ async function main() {
   const outcomesByItemId = new Map((Array.isArray(outcomes) ? outcomes : []).map((row) => [normalizeItemId(row.itemId || row.listingId), row]));
   const all = [];
   for (const query of SEARCHES) {
-    const results = await searchLots(query).catch(() => []);
+    const results = await searchLots(query).catch((error) => {
+      console.warn(`lot search failed for ${query}: ${error?.message || error}`);
+      return [];
+    });
     all.push(...results.filter(isLotLike));
   }
   const deduped = Array.from(new Map(all.filter((item) => item.itemId).map((item) => [item.itemId, item])).values());
