@@ -499,7 +499,9 @@
       color: var(--muted);
     }
     .badge.review { background: rgba(61,220,151,.14); color: #8cf5bf; border-color: rgba(61,220,151,.3); }
+    .badge.hot { background: rgba(61,220,151,.16); color: #8cf5bf; border-color: rgba(61,220,151,.35); }
     .badge.watch { background: rgba(255,204,102,.14); color: #ffd98d; border-color: rgba(255,204,102,.28); }
+    .badge.avoid { background: rgba(255,107,107,.14); color: #ff9a9a; border-color: rgba(255,107,107,.28); }
     .badge.genuine_lot { background: rgba(88,166,255,.14); color: #9bc8ff; border-color: rgba(88,166,255,.28); }
     .badge.weak_evidence { background: rgba(255,255,255,.08); color: var(--text); }
     .badge.low { background: rgba(61,220,151,.14); color: #8cf5bf; border-color: rgba(61,220,151,.3); }
@@ -1111,6 +1113,17 @@
     </div>
     <div id="results" class="grid"></div>
 
+    <section class="panel lots-panel" id="metaFlipSection">
+      <div class="section-head" style="margin-top:0">
+        <div>
+          <h2 class="section-title">Meta / raw flip board</h2>
+          <div class="section-copy">Cards the grading sniper can miss: high-usage staples, bundle pieces, cheap condition plays, and immature PSA markets. These do not need to pass the PSA 10 sales gate.</div>
+        </div>
+        <div id="metaFlipMeta" class="meta">Loading meta board...</div>
+      </div>
+      <div id="metaFlipResults" class="lots-grid"></div>
+    </section>
+
     <section class="panel lots-panel" id="lastSeenReviewSection" style="display:none">
       <div class="section-head" style="margin-top:0">
         <div>
@@ -1137,6 +1150,7 @@
       <button class="dock-btn active" data-jump="queue">Queue</button>
       <button class="dock-btn" data-jump="results">Board</button>
       <button class="dock-btn" data-jump="filters">Filters</button>
+      <button class="dock-btn" data-jump="meta-flips">Meta</button>
       <button class="dock-btn" data-jump="lots">Lots</button>
       <button class="dock-btn" data-jump="top">Top</button>
     </div>
@@ -1152,6 +1166,7 @@
     };
 
     let allRows = [];
+    let metaFlipRows = [];
     let lotRows = [];
     let lastSeenReviewRows = [];
     let tickerFrame = null;
@@ -1578,6 +1593,58 @@
       hydrateOutcomeButtons(container);
     }
 
+
+    function renderMetaFlips(rows, metaData = {}) {
+      const section = document.getElementById('metaFlipSection');
+      const container = document.getElementById('metaFlipResults');
+      const meta = document.getElementById('metaFlipMeta');
+      if (!section || !container || !meta) return;
+      if (!Array.isArray(rows) || !rows.length) {
+        meta.textContent = 'No meta/raw flip rows yet.';
+        container.innerHTML = '<div class="empty">Meta/raw flip candidates will show here once meta-flips.json is published.</div>';
+        return;
+      }
+      const hotCount = rows.filter((row) => row.tier === 'HOT').length;
+      const watchCount = rows.filter((row) => row.tier === 'WATCH').length;
+      const avoidCount = rows.filter((row) => row.tier === 'AVOID').length;
+      meta.textContent = `${hotCount} hot • ${watchCount} watch • ${avoidCount} avoid`;
+      container.innerHTML = rows.map((row) => {
+        const tierClass = String(row.tier || 'watch').toLowerCase();
+        const usage = row.usagePercent != null ? `${Number(row.usagePercent).toFixed(0)}%` : '-';
+        const psaValue = Number(row.psa10Market || 0) > 0 ? fmtMoney(row.psa10Market) : 'Thin / n/a';
+        const actionLabel = String(row.action || 'watch').replace(/_/g, ' ');
+        return `
+        <article class="lot-card">
+          <div class="lot-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge ${tierClass}">${row.tier || 'WATCH'}</span>
+                <span class="badge">${row.angle || 'Meta flip'}</span>
+                <span class="badge">${actionLabel}</span>
+              </div>
+              <div class="lot-title">${row.code} ${row.name}</div>
+              <div class="subtitle">${row.setName || 'Unknown set'}</div>
+            </div>
+          </div>
+          <div class="lot-metrics">
+            <div class="metric"><div class="label">Usage</div><div class="value">${usage}</div></div>
+            <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
+            <div class="metric"><div class="label">PSA 10</div><div class="value">${psaValue}</div></div>
+            <div class="metric"><div class="label">Target</div><div class="value">${fmtMoney(row.targetBuyPrice)}</div></div>
+            <div class="metric"><div class="label">Max buy</div><div class="value">${fmtMoney(row.maxBuyPrice)}</div></div>
+          </div>
+          <div class="lot-note"><strong>Why it matters:</strong> ${row.whyItMatters || 'Manual meta signal.'}</div>
+          <div class="lot-reason"><strong>Main risk:</strong> ${row.mainRisk || 'Verify comps and condition before buying.'}</div>
+          <div class="lot-links">
+            <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
+            <a class="button secondary" href="${buildTcgPlayerSearchUrl(row)}" target="_blank" rel="noopener noreferrer">TCGplayer</a>
+            ${row.priceChartingUrl ? `<a class="button secondary" href="${row.priceChartingUrl}" target="_blank" rel="noopener noreferrer">PriceCharting</a>` : ''}
+          </div>
+        </article>
+      `;
+      }).join('');
+    }
+
     function renderLots(rows) {
       const container = document.getElementById('lotsResults');
       const meta = document.getElementById('lotsMeta');
@@ -1743,6 +1810,10 @@
             document.getElementById('chipRow')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
             return;
           }
+          if (jump === 'meta-flips') {
+            document.getElementById('metaFlipSection')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return;
+          }
           if (jump === 'lots') {
             document.getElementById('lotsSection')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
@@ -1753,10 +1824,11 @@
     function initHeroMascotAnimation() {}
 
     async function boot() {
-      const [res, tradePlanRes, lotsRes] = await Promise.all([
+      const [res, tradePlanRes, lotsRes, metaFlipRes] = await Promise.all([
         fetch('./data/latest.json', { cache: 'no-store' }),
         fetch('./data/trade-plan.json', { cache: 'no-store' }).catch(() => null),
         fetch('./data/app-ready.json', { cache: 'no-store' }).catch(() => null),
+        fetch('./data/meta-flips.json', { cache: 'no-store' }).catch(() => null),
       ]);
       if (!res.ok) throw new Error(`Failed to load latest.json (${res.status})`);
       const data = await res.json();
@@ -1775,6 +1847,13 @@
       } else {
         lotRows = [];
       }
+      let metaFlipData = {};
+      if (metaFlipRes && metaFlipRes.ok) {
+        metaFlipData = await metaFlipRes.json();
+        metaFlipRows = Array.isArray(metaFlipData.rows) ? metaFlipData.rows : [];
+      } else {
+        metaFlipRows = [];
+      }
       const health = await loadRefreshMeta();
       document.getElementById('qualifiedCount').textContent = data.qualifiedCount ?? allRows.length;
       document.getElementById('bestRoi').textContent = allRows.length ? fmtPct(allRows[0].roiPercent) : '-';
@@ -1787,6 +1866,7 @@
       initDock();
       initHeroMascotAnimation();
       renderLastSeenReviewRows(lastSeenReviewRows);
+      renderMetaFlips(metaFlipRows, metaFlipData);
       renderLots(lotRows);
       document.getElementById('search').addEventListener('input', applyFilter);
       applyFilter();
@@ -1802,6 +1882,8 @@
       document.getElementById('results').innerHTML = '<div class="empty">No weekly scan data yet. Once the cron job runs, latest.json will appear here.</div>';
       document.getElementById('lastSeenReviewMeta').textContent = 'Priority queue unavailable';
       document.getElementById('lastSeenReviewResults').innerHTML = '<div class="empty">Priority search queue will show up here once trade-plan.json is generated.</div>';
+      document.getElementById('metaFlipMeta').textContent = 'Meta/raw board unavailable';
+      document.getElementById('metaFlipResults').innerHTML = '<div class="empty">Meta/raw flips will show up here once meta-flips.json is published.</div>';
       document.getElementById('lotsMeta').textContent = 'Lot feed unavailable';
       document.getElementById('lotsResults').innerHTML = '<div class="empty">Lots will show up here once app-ready.json is published.</div>';
     });
