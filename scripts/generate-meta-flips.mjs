@@ -9,43 +9,16 @@ const DATA_DIR = path.join(APP_DIR, 'data');
 const ACTIVE_PATH = process.env.ONE_PIECE_ACTIVE_POOL_PATH || path.join(APP_DIR, 'scripts', 'vendor', 'one-piece', 'candidates-active.json');
 const LATEST_PATH = path.join(DATA_DIR, 'latest.json');
 const OUT_PATH = path.join(DATA_DIR, 'meta-flips.json');
+const SNAPSHOT_PATH = path.join(DATA_DIR, 'meta-flips-snapshots.json');
+const OVERRIDES_PATH = path.join(DATA_DIR, 'meta-flips-overrides.json');
 const API_URL = process.env.OP_LEADERBOARD_CARD_POPULARITY_URL || 'https://op-leaderboard.com/api/card-popularity';
-const MAX_ROWS = Math.max(8, Number(process.env.ONE_PIECE_META_MAX_ROWS || 30));
+const MAX_ROWS = Math.max(12, Number(process.env.ONE_PIECE_META_MAX_ROWS || 60));
 const MIN_USAGE_PERCENT = Math.max(0, Number(process.env.ONE_PIECE_META_MIN_USAGE_PERCENT || 35));
 const EUR_TO_USD = Number(process.env.ONE_PIECE_META_EUR_TO_USD || 1.08);
-
-const MANUAL_WATCHLIST = [
-  {
-    code: 'OP14-112',
-    name: 'Boa Hancock (Alternate Art)',
-    setName: "The Azure Sea's Seven",
-    angle: 'Grading + character demand',
-    action: 'grade_candidate',
-    tier: 'HOT',
-    targetBuyPrice: 78,
-    maxBuyPrice: 85,
-    rawMarket: 89.95,
-    psa10Market: 274.95,
-    whyItMatters: 'Strong raw-to-PSA10 spread and Nate already found one around $78. Treat clean copies as grading candidates.',
-    mainRisk: 'Only works if the card is truly clean; do not chase damaged/edge-worn copies.',
-    priceChartingUrl: 'https://www.pricecharting.com/game/one-piece-azure-sea%27s-seven/boa-hancock-alternate-art-op14-112',
-  },
-  {
-    code: 'OP14-031',
-    name: 'Nami',
-    setName: "The Azure Sea's Seven",
-    angle: 'Cheap grading lottery',
-    action: 'condition_watch',
-    tier: 'WATCH',
-    targetBuyPrice: 4,
-    maxBuyPrice: 6,
-    rawMarket: 4.99,
-    psa10Market: 94,
-    whyItMatters: 'Cheap raw entry with surprisingly strong PSA 10 comps. This is exactly the type the grading sniper can miss because of prefilters.',
-    mainRisk: 'Small cards only make sense if copies are flawless and batched with other submissions.',
-    priceChartingUrl: 'https://www.pricecharting.com/game/one-piece-azure-sea%27s-seven/nami-op14-031',
-  }
-];
+const SNAPSHOT_LIMIT = Math.max(7, Number(process.env.ONE_PIECE_META_SNAPSHOT_LIMIT || 45));
+const PSA10_GRADING_COST = Number(process.env.ONE_PIECE_META_GRADING_COST || 33);
+const PSA10_HAIRCUT = Number(process.env.ONE_PIECE_META_PSA10_HAIRCUT || 0.88);
+const UNDERMARKET_THRESHOLD = Number(process.env.ONE_PIECE_META_UNDERMARKET_THRESHOLD || 0.85);
 
 function money(value) {
   const n = Number(value || 0);
@@ -54,6 +27,10 @@ function money(value) {
 
 function round2(value) {
   return Math.round(money(value) * 100) / 100;
+}
+
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
 }
 
 function stripTags(value) {
@@ -83,7 +60,7 @@ async function fetchPopularityHtml() {
     headers: {
       'Accept': 'text/html,application/xhtml+xml,application/json',
       'HX-Request': 'true',
-      'User-Agent': 'Mozilla/5.0 (compatible; OnePieceMetaFlipScanner/1.0)',
+      'User-Agent': 'Mozilla/5.0 (compatible; OnePieceMetaFlipScanner/2.0)',
     }
   });
   if (!response.ok) throw new Error(`OP Leaderboard request failed (${response.status})`);
@@ -117,7 +94,7 @@ function parsePopularity(html) {
   }
   const seen = new Set();
   return rows.filter((row) => {
-    const key = `${row.code}::${row.name}`;
+    const key = `${row.code}::${normalizeName(row.name)}`;
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -128,8 +105,19 @@ function normalizeName(value) {
   return String(value || '').toLowerCase().replace(/\([^)]*\)/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+function rowKey(row) {
+  return `${row.code}::${normalizeName(row.name).split(' ').slice(0, 4).join(' ')}`;
+}
+
 function isPremiumVariantName(value) {
   return /alternate|parallel|manga|\bsp\b|super alternate|wanted poster|treasure rare|anniversary/i.test(String(value || ''));
+}
+
+function isRecentSet(code) {
+  const match = String(code || '').match(/^(OP|EB)(\d{2})-/i);
+  if (!match) return false;
+  const n = Number(match[2]);
+  return match[1].toUpperCase() === 'OP' ? n >= 14 : n >= 4;
 }
 
 function chooseActiveCard(meta, activeCards) {
@@ -168,90 +156,6 @@ function chooseGradingRow(meta, gradingRows) {
   return best?.score >= 4 ? best.row : null;
 }
 
-function classify(row) {
-  const raw = money(row.rawMarket);
-  const usage = money(row.usagePercent);
-  const psa10 = money(row.psa10Market);
-  const roi = raw > 0 && psa10 > 0 ? ((psa10 * 0.88 - (raw + 33)) / (raw + 33)) * 100 : null;
-  const spreadGood = roi != null && roi >= 80;
-
-  if (row.manualTier) return row.manualTier;
-  if (spreadGood && raw >= 15) return 'HOT';
-  if (usage >= 70) return 'HOT';
-  if (usage >= 45) return 'WATCH';
-  return 'WATCH';
-}
-
-function buildAction(row) {
-  const raw = money(row.rawMarket);
-  const usage = money(row.usagePercent);
-  const psa10 = money(row.psa10Market);
-  const roi = raw > 0 && psa10 > 0 ? ((psa10 * 0.88 - (raw + 33)) / (raw + 33)) * 100 : null;
-  if (row.manualAction) return row.manualAction;
-  if (roi != null && roi >= 80) return raw <= 10 ? 'condition_watch' : 'grade_candidate';
-  if (raw <= 8 && usage >= 45) return 'bundle_flip';
-  if (usage >= 70) return 'raw_flip';
-  return 'watch';
-}
-
-function buildGeneratedRow(meta, activeCard, gradingRow) {
-  const rawMarket = round2(money(activeCard?.rawMarket) || money(gradingRow?.rawMarket) || meta.leaderboardUsdPrice);
-  const psa10Market = round2(money(gradingRow?.psa10Market));
-  const usage = round2(meta.usagePercent);
-  const provisional = {
-    code: meta.code,
-    name: activeCard?.name || gradingRow?.name || meta.name,
-    setName: activeCard?.setName || gradingRow?.setName || 'Meta / OP Leaderboard',
-    usagePercent: usage,
-    rawMarket,
-    psa10Market,
-    imageUrl: meta.imageUrl || gradingRow?.priceChartingImageUrl || gradingRow?.collectrImageUrl || activeCard?.collectrImageUrl || '',
-    priceChartingUrl: safePriceChartingUrl({ ...meta, name: activeCard?.name || gradingRow?.name || meta.name }, gradingRow?.priceChartingUrl) || '',
-    collectrLink: activeCard?.collectrLink || gradingRow?.collectrLink || '',
-    leaderboardEurPrice: meta.leaderboardEurPrice,
-  };
-  const action = buildAction(provisional);
-  const tier = classify(provisional);
-  const targetBuyPrice = round2(rawMarket * (action === 'grade_candidate' ? 0.85 : 0.75));
-  const maxBuyPrice = round2(rawMarket * (action === 'grade_candidate' ? 0.95 : 0.85));
-  const angle = action === 'grade_candidate' ? 'Meta + grading spread'
-    : action === 'condition_watch' ? 'Cheap condition/grading watch'
-    : action === 'bundle_flip' ? 'Deck core bundle piece'
-    : usage >= 70 ? 'High-usage raw staple'
-    : 'Meta usage watch';
-  const whyItMatters = action === 'grade_candidate'
-    ? `Auto-picked: ${usage}% usage signal plus a PSA 10 spread that may clear grading friction.`
-    : action === 'bundle_flip'
-      ? `Auto-picked: ${usage}% usage signal and cheap raw entry make this better as a playset/core bundle piece than a solo card.`
-      : `Auto-picked from OP Leaderboard usage at ${usage}%; watch for raw movement, under-market listings, and bundle demand.`;
-  const mainRisk = action === 'grade_candidate'
-    ? 'Verify English/Japanese variant matching, PSA 10 sales depth, and card condition before buying.'
-    : 'Meta demand can cool quickly; avoid paying market unless you have a clear resale/bundle angle.';
-
-  return {
-    ...provisional,
-    tier,
-    angle,
-    action,
-    targetBuyPrice,
-    maxBuyPrice,
-    whyItMatters,
-    mainRisk,
-    source: 'op-leaderboard-auto',
-  };
-}
-
-function previousLooksCompatible(row, prev) {
-  if (!prev || prev.code !== row.code) return false;
-  const rowPremium = isPremiumVariantName(row.name);
-  const prevPremium = isPremiumVariantName(prev.name);
-  if (rowPremium !== prevPremium) return false;
-  const rowName = normalizeName(row.name);
-  const prevName = normalizeName(prev.name);
-  const first = rowName.split(' ')[0] || '';
-  return Boolean(first) && (prevName.includes(first) || rowName.includes(prevName.split(' ')[0] || ''));
-}
-
 function safePriceChartingUrl(row, candidateUrl = '') {
   const url = String(candidateUrl || '');
   if (!url) return '';
@@ -259,82 +163,294 @@ function safePriceChartingUrl(row, candidateUrl = '') {
   return url;
 }
 
-function mergeManual(row, previousRows) {
-  const prev = previousRows.find((item) => previousLooksCompatible(row, item));
+function previousLooksCompatible(row, prev) {
+  if (!prev || prev.code !== row.code) return false;
+  if (isPremiumVariantName(row.name) !== isPremiumVariantName(prev.name)) return false;
+  const rowName = normalizeName(row.name);
+  const prevName = normalizeName(prev.name);
+  const first = rowName.split(' ')[0] || '';
+  return Boolean(first) && (prevName.includes(first) || rowName.includes(prevName.split(' ')[0] || ''));
+}
+
+function findPrevious(row, previousRows) {
+  return previousRows.find((item) => previousLooksCompatible(row, item)) || null;
+}
+
+function gradingRoi(rawMarket, psa10Market) {
+  const raw = money(rawMarket);
+  const psa = money(psa10Market);
+  if (raw <= 0 || psa <= 0) return null;
+  return ((psa * PSA10_HAIRCUT - (raw + PSA10_GRADING_COST)) / (raw + PSA10_GRADING_COST)) * 100;
+}
+
+function computeUsageDelta(row, previousRows, snapshots) {
+  const prev = findPrevious(row, previousRows);
+  if (prev?.usagePercent != null) return round2(money(row.usagePercent) - money(prev.usagePercent));
+  const previousSnapshots = Array.isArray(snapshots?.snapshots) ? snapshots.snapshots.slice().reverse() : [];
+  for (const snap of previousSnapshots) {
+    const card = Array.isArray(snap.cards) ? snap.cards.find((item) => item.code === row.code && normalizeName(item.name).split(' ')[0] === normalizeName(row.name).split(' ')[0]) : null;
+    if (card?.usagePercent != null) return round2(money(row.usagePercent) - money(card.usagePercent));
+  }
+  return 0;
+}
+
+function computeRawDelta(row, previousRows) {
+  const prev = findPrevious(row, previousRows);
+  if (!prev || !money(prev.rawMarket) || !money(row.rawMarket)) return 0;
+  return round2(((money(row.rawMarket) - money(prev.rawMarket)) / money(prev.rawMarket)) * 100);
+}
+
+function computeScores(row) {
+  const usage = money(row.usagePercent);
+  const usageDelta = money(row.usageDeltaPercent);
+  const raw = money(row.rawMarket);
+  const psa10 = money(row.psa10Market);
+  const roi = gradingRoi(raw, psa10);
+  const reference = Math.max(money(row.leaderboardUsdPrice), money(row.collectrRawMarket), raw);
+  const discountPercent = reference > 0 && raw > 0 ? ((reference - raw) / reference) * 100 : 0;
+  const metaUsageScore = clamp((usage / 90) * 25, 0, 25);
+  const usageDeltaScore = clamp(usageDelta * 2, -15, 20);
+  const rawDiscountScore = clamp(discountPercent / 2, 0, 18);
+  const bundleFitScore = raw > 0 && raw <= 8 && usage >= 45 ? 18 : raw <= 20 && usage >= 60 ? 10 : 0;
+  const gradingSpreadScore = roi == null ? 0 : clamp((roi - 40) / 4, 0, 25);
+  const liquidityScore = clamp((usage / 100) * 8 + Math.min(8, money(row.psa10SalesCount) * 2), 0, 16);
+  const reprintRiskPenalty = isRecentSet(row.code) && raw >= 25 && !isPremiumVariantName(row.name) ? 8 : isRecentSet(row.code) && raw >= 80 ? 6 : 0;
+  const conditionRiskPenalty = (isPremiumVariantName(row.name) && raw >= 75 ? 5 : 0) + (roi != null && money(row.psa10SalesCount) > 0 && money(row.psa10SalesCount) < 3 ? 6 : 0);
+  const rawSpikeScore = money(row.rawDeltaPercent) >= 20 ? 10 : money(row.rawDeltaPercent) >= 10 ? 5 : 0;
+  const total = clamp(metaUsageScore + usageDeltaScore + rawDiscountScore + bundleFitScore + gradingSpreadScore + liquidityScore + rawSpikeScore - reprintRiskPenalty - conditionRiskPenalty, 0, 100);
   return {
-    ...row,
-    priceChartingUrl: safePriceChartingUrl(row, row.priceChartingUrl) || safePriceChartingUrl(row, prev?.priceChartingUrl) || '',
-    imageUrl: row.imageUrl || prev?.imageUrl || '',
+    total: Math.round(total),
+    metaUsageScore: round2(metaUsageScore),
+    usageDeltaScore: round2(usageDeltaScore),
+    rawDiscountScore: round2(rawDiscountScore),
+    bundleFitScore: round2(bundleFitScore),
+    gradingSpreadScore: round2(gradingSpreadScore),
+    liquidityScore: round2(liquidityScore),
+    rawSpikeScore: round2(rawSpikeScore),
+    reprintRiskPenalty: round2(reprintRiskPenalty),
+    conditionRiskPenalty: round2(conditionRiskPenalty),
+    gradingRoiPercent: roi == null ? null : round2(roi),
+    rawDiscountPercent: round2(discountPercent),
   };
+}
+
+function deriveSignals(row) {
+  const scores = row.scores || {};
+  const signals = [];
+  if (money(row.usagePercent) >= 70 || money(scores.metaUsageScore) >= 20) signals.push('meta_momentum');
+  if (money(row.usageDeltaPercent) >= 8) signals.push('usage_delta_spike');
+  if (money(row.rawDeltaPercent) >= 20) signals.push('raw_price_spike');
+  if (money(row.rawMarket) <= 8 && money(row.usagePercent) >= 45) signals.push('deck_core_bundle');
+  if (money(scores.gradingRoiPercent) >= 80) signals.push(money(row.rawMarket) <= 10 ? 'condition_grading_queue' : 'grading_candidate');
+  if (money(scores.rawDiscountPercent) >= (1 - UNDERMARKET_THRESHOLD) * 100) signals.push('under_market_watch');
+  if (money(scores.reprintRiskPenalty) >= 8) signals.push('reprint_risk');
+  if ((money(row.usageDeltaPercent) <= -8 && money(row.rawMarket) >= 20) || (money(row.rawDeltaPercent) >= 25 && money(row.usageDeltaPercent) <= 0)) signals.push('exit_watch');
+  if (!signals.length) signals.push('watch');
+  return signals;
+}
+
+function deriveActionAndTier(row) {
+  const signals = row.signalTypes || [];
+  const score = money(row.score);
+  if (signals.includes('exit_watch')) return { action: 'exit_watch', tier: 'AVOID', angle: 'Exit / risk watch' };
+  if (signals.includes('grading_candidate')) return { action: 'grade_candidate', tier: score >= 55 ? 'HOT' : 'WATCH', angle: 'Meta + grading spread' };
+  if (signals.includes('condition_grading_queue')) return { action: 'condition_watch', tier: 'WATCH', angle: 'Cheap condition/grading queue' };
+  if (signals.includes('deck_core_bundle')) return { action: 'bundle_flip', tier: score >= 45 ? 'HOT' : 'WATCH', angle: 'Deck-core bundle scanner' };
+  if (signals.includes('under_market_watch') || signals.includes('meta_momentum')) return { action: 'raw_flip', tier: score >= 45 ? 'HOT' : 'WATCH', angle: 'Meta/raw flip scanner' };
+  return { action: 'watch', tier: score >= 50 ? 'HOT' : 'WATCH', angle: 'Meta movement watch' };
+}
+
+function explainRow(row) {
+  const bits = [];
+  if (money(row.usagePercent)) bits.push(`${round2(row.usagePercent)}% usage`);
+  if (money(row.usageDeltaPercent)) bits.push(`${money(row.usageDeltaPercent) > 0 ? '+' : ''}${round2(row.usageDeltaPercent)} usage delta`);
+  if (row.scores?.gradingRoiPercent != null) bits.push(`${round2(row.scores.gradingRoiPercent)}% grading ROI`);
+  if (money(row.scores?.rawDiscountPercent) >= 10) bits.push(`${round2(row.scores.rawDiscountPercent)}% raw discount signal`);
+  if (row.signalTypes?.includes('deck_core_bundle')) bits.push('fits playset/core bundle logic');
+  if (row.signalTypes?.includes('reprint_risk')) bits.push('reprint-risk penalty applied');
+  return bits.length ? `Rule-picked: ${bits.join(' • ')}.` : 'Rule-picked by repeatable meta/raw scanner.';
+}
+
+function riskRow(row) {
+  if (row.signalTypes?.includes('exit_watch')) return 'Exit/watch signal: price moved faster than usage or usage is fading.';
+  if (row.signalTypes?.includes('reprint_risk')) return 'Reprint/rotation risk is elevated; do not overpay and prefer faster exits.';
+  if (row.action === 'grade_candidate' || row.action === 'condition_watch') return 'Only grade clean copies and batch submissions to reduce per-card shipping/friction.';
+  if (row.action === 'bundle_flip') return 'Single-card margins are tiny; edge comes from playsets, cores, and fast turns.';
+  return 'Meta demand can cool quickly; buy under market and avoid stale inventory.';
+}
+
+function targetPrices(row) {
+  const raw = money(row.rawMarket);
+  if (row.action === 'grade_candidate') return { targetBuyPrice: round2(raw * 0.85), maxBuyPrice: round2(raw * 0.95) };
+  if (row.action === 'condition_watch') return { targetBuyPrice: round2(raw * 0.80), maxBuyPrice: round2(raw * 0.90) };
+  if (row.action === 'bundle_flip') return { targetBuyPrice: round2(raw * 0.75), maxBuyPrice: round2(raw * 0.85) };
+  if (row.action === 'exit_watch') return { targetBuyPrice: 0, maxBuyPrice: 0 };
+  return { targetBuyPrice: round2(raw * 0.75), maxBuyPrice: round2(raw * 0.85) };
+}
+
+function hydrateRow(base, previousRows, snapshots) {
+  const previous = findPrevious(base, previousRows);
+  const row = {
+    ...base,
+    usageDeltaPercent: computeUsageDelta(base, previousRows, snapshots),
+    rawDeltaPercent: computeRawDelta(base, previousRows),
+    lastSeenScore: previous?.score ?? null,
+    priceChartingUrl: safePriceChartingUrl(base, base.priceChartingUrl) || safePriceChartingUrl(base, previous?.priceChartingUrl) || '',
+    imageUrl: base.imageUrl || previous?.imageUrl || '',
+  };
+  row.scores = computeScores(row);
+  row.score = row.scores.total;
+  row.signalTypes = deriveSignals(row);
+  const derived = deriveActionAndTier(row);
+  Object.assign(row, derived, targetPrices({ ...row, ...derived }));
+  row.whyItMatters = explainRow(row);
+  row.mainRisk = riskRow(row);
+  return row;
+}
+
+function buildPopularityRow(meta, activeCard, gradingRow) {
+  const rawMarket = round2(money(activeCard?.rawMarket) || money(gradingRow?.rawMarket) || meta.leaderboardUsdPrice);
+  return {
+    code: meta.code,
+    name: activeCard?.name || gradingRow?.name || meta.name,
+    setName: activeCard?.setName || gradingRow?.setName || 'Meta / OP Leaderboard',
+    usagePercent: round2(meta.usagePercent),
+    rawMarket,
+    collectrRawMarket: round2(money(activeCard?.rawMarket)),
+    leaderboardEurPrice: meta.leaderboardEurPrice,
+    leaderboardUsdPrice: meta.leaderboardUsdPrice,
+    psa10Market: round2(money(gradingRow?.psa10Market)),
+    psa10SalesCount: Number(gradingRow?.psa10SalesCount || 0),
+    imageUrl: meta.imageUrl || gradingRow?.priceChartingImageUrl || gradingRow?.collectrImageUrl || activeCard?.collectrImageUrl || '',
+    priceChartingUrl: safePriceChartingUrl({ ...meta, name: activeCard?.name || gradingRow?.name || meta.name }, gradingRow?.priceChartingUrl) || '',
+    collectrLink: activeCard?.collectrLink || gradingRow?.collectrLink || '',
+    source: 'op-leaderboard-auto',
+  };
+}
+
+function buildGradingOnlyRows(gradingRows) {
+  return gradingRows
+    .filter((row) => money(row.rawMarket) > 0 && money(row.psa10Market) > 0 && (money(row.roiPercent) >= 80 || (money(row.rawMarket) <= 10 && gradingRoi(row.rawMarket, row.psa10Market) >= 50)))
+    .map((row) => ({
+      code: row.code,
+      name: row.name,
+      setName: row.setName,
+      usagePercent: null,
+      rawMarket: round2(row.rawMarket),
+      collectrRawMarket: round2(row.collectrRawMarket),
+      leaderboardEurPrice: null,
+      leaderboardUsdPrice: null,
+      psa10Market: round2(row.psa10Market),
+      psa10SalesCount: Number(row.psa10SalesCount || 0),
+      imageUrl: row.priceChartingImageUrl || row.collectrImageUrl || '',
+      priceChartingUrl: row.priceChartingUrl || '',
+      collectrLink: row.collectrLink || '',
+      source: 'grading-board-auto',
+    }));
+}
+
+async function writeSnapshots(popularity, rows) {
+  const current = await readJson(SNAPSHOT_PATH, { snapshots: [] });
+  const snapshots = Array.isArray(current?.snapshots) ? current.snapshots : [];
+  snapshots.push({
+    generatedAt: new Date().toISOString(),
+    cards: rows.map((row) => ({
+      code: row.code,
+      name: row.name,
+      usagePercent: row.usagePercent,
+      rawMarket: row.rawMarket,
+      score: row.score,
+      action: row.action,
+      tier: row.tier,
+    })),
+    leaderboardCards: popularity.map((row) => ({ code: row.code, name: row.name, usagePercent: row.usagePercent, leaderboardEurPrice: row.leaderboardEurPrice })),
+  });
+  await fs.writeFile(SNAPSHOT_PATH, JSON.stringify({ snapshots: snapshots.slice(-SNAPSHOT_LIMIT) }, null, 2) + '\n', 'utf8');
+}
+
+function applyOverrides(rows, overrides) {
+  const disabled = new Set(Array.isArray(overrides?.disabledCodes) ? overrides.disabledCodes.map(String) : []);
+  const modifiers = Array.isArray(overrides?.modifiers) ? overrides.modifiers : [];
+  return rows
+    .filter((row) => !disabled.has(row.code))
+    .map((row) => {
+      const mod = modifiers.find((item) => item.code === row.code && (!item.nameContains || normalizeName(row.name).includes(normalizeName(item.nameContains))));
+      if (!mod) return row;
+      return {
+        ...row,
+        score: clamp(money(row.score) + money(mod.scoreDelta), 0, 100),
+        tier: mod.tier || row.tier,
+        action: mod.action || row.action,
+        overrideNote: mod.note || 'Manual modifier applied.',
+      };
+    });
 }
 
 async function run() {
   await fs.mkdir(DATA_DIR, { recursive: true });
-  const [activeCards, latestPayload, previousPayload] = await Promise.all([
+  const [activeCards, latestPayload, previousPayload, snapshotsPayload, overridesPayload] = await Promise.all([
     readJson(ACTIVE_PATH, []),
     readJson(LATEST_PATH, { rows: [] }),
     readJson(OUT_PATH, { rows: [] }),
+    readJson(SNAPSHOT_PATH, { snapshots: [] }),
+    readJson(OVERRIDES_PATH, {}),
   ]);
   const previousRows = Array.isArray(previousPayload?.rows) ? previousPayload.rows : [];
+  const gradingRows = Array.isArray(latestPayload?.rows) ? latestPayload.rows : [];
 
   const html = await fetchPopularityHtml();
   const popularity = parsePopularity(html);
   if (!popularity.length) throw new Error('OP Leaderboard returned no parseable card popularity rows.');
 
-  const gradingRows = Array.isArray(latestPayload?.rows) ? latestPayload.rows : [];
-  const generated = popularity.map((meta) => buildGeneratedRow(meta, chooseActiveCard(meta, activeCards), chooseGradingRow(meta, gradingRows)));
+  const generated = popularity.map((meta) => buildPopularityRow(meta, chooseActiveCard(meta, activeCards), chooseGradingRow(meta, gradingRows)));
+  const gradingOnly = buildGradingOnlyRows(gradingRows);
 
   const byKey = new Map();
-  for (const row of generated) {
-    byKey.set(`${row.code}::${normalizeName(row.name)}`, mergeManual(row, previousRows));
-  }
-  for (const manual of MANUAL_WATCHLIST) {
-    const prior = previousRows.find((row) => row.code === manual.code) || {};
-    const activeCard = chooseActiveCard(manual, activeCards);
-    const gradingRow = chooseGradingRow(manual, gradingRows);
-    const imageUrl = prior.imageUrl || gradingRow?.priceChartingImageUrl || gradingRow?.collectrImageUrl || activeCard?.collectrImageUrl || '';
-    byKey.set(`${manual.code}::${normalizeName(manual.name)}`, {
-      ...manual,
-      manualTier: manual.tier,
-      manualAction: manual.action,
-      usagePercent: generated.find((row) => row.code === manual.code)?.usagePercent ?? manual.usagePercent ?? null,
-      rawMarket: round2(manual.rawMarket || activeCard?.rawMarket || gradingRow?.rawMarket),
-      psa10Market: round2(manual.psa10Market || gradingRow?.psa10Market),
-      imageUrl,
-      collectrLink: activeCard?.collectrLink || gradingRow?.collectrLink || prior.collectrLink || '',
-      source: 'manual-watchlist',
-    });
+  for (const row of [...generated, ...gradingOnly]) {
+    const hydrated = hydrateRow(row, previousRows, snapshotsPayload);
+    const key = rowKey(hydrated);
+    const existing = byKey.get(key);
+    if (!existing || money(hydrated.score) > money(existing.score)) byKey.set(key, hydrated);
   }
 
-  const rows = Array.from(byKey.values())
+  const rows = applyOverrides(Array.from(byKey.values()), overridesPayload)
     .filter((row) => money(row.rawMarket) > 0 || money(row.usagePercent) >= MIN_USAGE_PERCENT)
-    .sort((a, b) => {
-      const tierRank = { HOT: 0, WATCH: 1, AVOID: 2 };
-      return (tierRank[a.tier] ?? 9) - (tierRank[b.tier] ?? 9)
-        || money(b.usagePercent) - money(a.usagePercent)
-        || money(b.psa10Market) - money(a.psa10Market)
-        || a.code.localeCompare(b.code);
-    })
+    .sort((a, b) => money(b.score) - money(a.score) || money(b.usagePercent) - money(a.usagePercent) || money(b.psa10Market) - money(a.psa10Market) || a.code.localeCompare(b.code))
     .slice(0, MAX_ROWS);
+
+  await writeSnapshots(popularity, rows);
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    source: 'Auto-generated from OP Leaderboard card popularity, active Collectr pool, current grading board, and a small manual watchlist.',
-    rules: 'Meta/raw board ignores PSA 10 comp gate. It ranks playability, usage spike, raw liquidity, bundle potential, and grading side-upside separately.',
+    source: 'Auto-generated from OP Leaderboard card popularity, active Collectr pool, current grading board, snapshot deltas, and optional override modifiers.',
+    rules: 'Repeatable scoring engine: meta usage, usage delta, raw discount, bundle fit, grading spread, liquidity, raw spike, reprint risk, condition risk. No hard-picked published rows are required.',
     filters: {
       minUsagePercent: MIN_USAGE_PERCENT,
       maxRows: MAX_ROWS,
       eurToUsd: EUR_TO_USD,
       leaderboardUrl: API_URL,
-      manualWatchlistCount: MANUAL_WATCHLIST.length,
+      snapshotLimit: SNAPSHOT_LIMIT,
+      overridesPath: OVERRIDES_PATH,
     },
     counts: {
       leaderboardRowsParsed: popularity.length,
       generatedRows: generated.length,
+      gradingOnlyRows: gradingOnly.length,
       publishedRows: rows.length,
       hot: rows.filter((row) => row.tier === 'HOT').length,
       watch: rows.filter((row) => row.tier === 'WATCH').length,
       avoid: rows.filter((row) => row.tier === 'AVOID').length,
+      bundleFlip: rows.filter((row) => row.action === 'bundle_flip').length,
+      gradingCandidates: rows.filter((row) => row.action === 'grade_candidate' || row.action === 'condition_watch').length,
+      exitWatch: rows.filter((row) => row.action === 'exit_watch').length,
+    },
+    boardTypes: {
+      deckCoreBundleScanner: rows.filter((row) => row.signalTypes.includes('deck_core_bundle')).length,
+      reprintRiskWarnings: rows.filter((row) => row.signalTypes.includes('reprint_risk')).length,
+      underMarketWatch: rows.filter((row) => row.signalTypes.includes('under_market_watch')).length,
+      conditionGradingQueue: rows.filter((row) => row.signalTypes.includes('condition_grading_queue') || row.signalTypes.includes('grading_candidate')).length,
+      metaMovementDelta: rows.filter((row) => money(row.usageDeltaPercent) !== 0).length,
+      exitBoard: rows.filter((row) => row.signalTypes.includes('exit_watch')).length,
     },
     rows,
   };

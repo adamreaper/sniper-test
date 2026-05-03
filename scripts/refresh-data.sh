@@ -27,6 +27,8 @@ PUBLISH_PATHS=(
   data/weekly-base.json
   data/trade-plan.json
   data/meta-flips.json
+  data/meta-flips-snapshots.json
+  data/meta-flips-overrides.json
   data/signal-outcomes.json
   data/app-ready.json
   scripts/generate-trade-plan.mjs

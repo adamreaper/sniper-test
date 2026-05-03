@@ -1618,12 +1618,28 @@
       const hotCount = rows.filter((row) => row.tier === 'HOT').length;
       const watchCount = rows.filter((row) => row.tier === 'WATCH').length;
       const avoidCount = rows.filter((row) => row.tier === 'AVOID').length;
-      meta.textContent = `${hotCount} hot • ${watchCount} watch • ${avoidCount} avoid`;
+      const boardTypes = metaData.boardTypes || {};
+      const extraMeta = [
+        boardTypes.deckCoreBundleScanner ? `${boardTypes.deckCoreBundleScanner} core` : '',
+        boardTypes.conditionGradingQueue ? `${boardTypes.conditionGradingQueue} grading` : '',
+        boardTypes.exitBoard ? `${boardTypes.exitBoard} exit` : ''
+      ].filter(Boolean).join(' • ');
+      meta.textContent = `${hotCount} hot • ${watchCount} watch • ${avoidCount} avoid${extraMeta ? ` • ${extraMeta}` : ''}`;
       container.innerHTML = rows.map((row) => {
         const tierClass = String(row.tier || 'watch').toLowerCase();
         const usage = row.usagePercent != null ? `${Number(row.usagePercent).toFixed(0)}%` : '-';
+        const delta = Number(row.usageDeltaPercent || 0);
+        const deltaLabel = delta ? `${delta > 0 ? '+' : ''}${delta.toFixed(1)}%` : '-';
         const psaValue = Number(row.psa10Market || 0) > 0 ? fmtMoney(row.psa10Market) : 'Thin / n/a';
         const actionLabel = String(row.action || 'watch').replace(/_/g, ' ');
+        const signalLabels = Array.isArray(row.signalTypes) ? row.signalTypes.slice(0, 4).map((signal) => signal.replace(/_/g, ' ')) : [];
+        const scoreBreakdown = row.scores ? [
+          `meta ${Number(row.scores.metaUsageScore || 0).toFixed(1)}`,
+          `delta ${Number(row.scores.usageDeltaScore || 0).toFixed(1)}`,
+          `bundle ${Number(row.scores.bundleFitScore || 0).toFixed(1)}`,
+          `grade ${Number(row.scores.gradingSpreadScore || 0).toFixed(1)}`,
+          `risk -${(Number(row.scores.reprintRiskPenalty || 0) + Number(row.scores.conditionRiskPenalty || 0)).toFixed(1)}`
+        ].join(' • ') : '';
         return `
         <article class="lot-card">
           <div class="lot-top">
@@ -1631,6 +1647,7 @@
             <div>
               <div class="badge-row">
                 <span class="badge ${tierClass}">${row.tier || 'WATCH'}</span>
+                <span class="badge">Score ${Number(row.score || 0).toFixed(0)}</span>
                 <span class="badge">${row.angle || 'Meta flip'}</span>
                 <span class="badge">${actionLabel}</span>
               </div>
@@ -1639,13 +1656,16 @@
             </div>
           </div>
           <div class="lot-metrics">
+            <div class="metric"><div class="label">Score</div><div class="value">${Number(row.score || 0).toFixed(0)}</div></div>
             <div class="metric"><div class="label">Usage</div><div class="value">${usage}</div></div>
+            <div class="metric"><div class="label">Usage Δ</div><div class="value">${deltaLabel}</div></div>
             <div class="metric"><div class="label">Raw</div><div class="value">${fmtMoney(row.rawMarket)}</div></div>
             <div class="metric"><div class="label">PSA 10</div><div class="value">${psaValue}</div></div>
-            <div class="metric"><div class="label">Target</div><div class="value">${fmtMoney(row.targetBuyPrice)}</div></div>
             <div class="metric"><div class="label">Max buy</div><div class="value">${fmtMoney(row.maxBuyPrice)}</div></div>
           </div>
-          <div class="lot-note"><strong>Why it matters:</strong> ${row.whyItMatters || 'Manual meta signal.'}</div>
+          ${signalLabels.length ? `<div class="queue-tags">${signalLabels.map((tag) => `<span class="queue-tag">${tag}</span>`).join('')}</div>` : ''}
+          <div class="lot-note"><strong>Why it matters:</strong> ${row.whyItMatters || 'Rule-picked meta signal.'}</div>
+          ${scoreBreakdown ? `<div class="lot-reason"><strong>Score:</strong> ${scoreBreakdown}</div>` : ''}
           <div class="lot-reason"><strong>Main risk:</strong> ${row.mainRisk || 'Verify comps and condition before buying.'}</div>
           <div class="lot-links">
             <a class="button" href="${buildEbaySearchUrl(row)}" target="_blank" rel="noopener noreferrer">Search on eBay</a>
