@@ -477,6 +477,17 @@
       background: rgba(255,255,255,.04);
       flex: 0 0 auto;
     }
+    .meta-card-thumb {
+      width: 74px;
+      height: 104px;
+      border-radius: 12px;
+      object-fit: cover;
+      object-position: top center;
+      border: 1px solid rgba(109,228,255,.22);
+      background: rgba(255,255,255,.04);
+      box-shadow: 0 10px 24px rgba(0,0,0,.28);
+      flex: 0 0 auto;
+    }
     .lot-title {
       font-size: 15px;
       font-weight: 700;
@@ -1616,6 +1627,7 @@
         return `
         <article class="lot-card">
           <div class="lot-top">
+            ${row.imageUrl ? `<img class="meta-card-thumb" src="${row.imageUrl}" alt="${row.code} ${row.name}" loading="lazy" />` : ''}
             <div>
               <div class="badge-row">
                 <span class="badge ${tierClass}">${row.tier || 'WATCH'}</span>

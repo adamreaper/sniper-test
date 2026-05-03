@@ -17,7 +17,8 @@
       "action": "grade_candidate",
       "whyItMatters": "Strong raw-to-PSA10 spread and Nate already found one around $78. Treat clean copies as grading candidates.",
       "mainRisk": "Only works if the card is truly clean; do not chase damaged/edge-worn copies.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-azure-sea%27s-seven/boa-hancock-alternate-art-op14-112"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-azure-sea%27s-seven/boa-hancock-alternate-art-op14-112",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/pivhrass6jcg6hlh/240.jpg"
     },
     {
       "code": "OP15-078",
@@ -33,7 +34,8 @@
       "action": "bundle_flip",
       "whyItMatters": "Core Purple Enel card with high usage. Buy playsets cheap and bundle with the rest of the engine.",
       "mainRisk": "Not a grading card; profit depends on bundle pricing and demand staying hot.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-adventure-on-kami%27s-island/mamaragan-op15-078"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-adventure-on-kami%27s-island/mamaragan-op15-078",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/itfwy4tu4jvld5u7/240.jpg"
     },
     {
       "code": "EB04-058",
@@ -49,7 +51,8 @@
       "action": "raw_flip",
       "whyItMatters": "Top usage signal from the current meta read. Good liquidity candidate if bought below market.",
       "mainRisk": "No PSA spread; only buy at a discount because this is raw liquidity, not grading ROI.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-eb04/borsalino-eb04-058"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-eb04/borsalino-eb04-058",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/ixdztdrc4bjln5et/240.jpg"
     },
     {
       "code": "OP14-031",
@@ -65,7 +68,8 @@
       "action": "condition_watch",
       "whyItMatters": "Cheap raw entry with surprisingly strong PSA 10 comps. This is exactly the type the grading sniper used to miss because of prefilters.",
       "mainRisk": "Small cards only make sense if copies are flawless and batched with other submissions.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-azure-sea%27s-seven/nami-op14-031"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-azure-sea%27s-seven/nami-op14-031",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/zvrjmxzlt7ar3jh3/240.jpg"
     },
     {
       "code": "OP13-118",
@@ -81,7 +85,8 @@
       "action": "discount_grade_watch",
       "whyItMatters": "Character demand plus usable spread, but buy-in is high enough that discount matters.",
       "mainRisk": "At full market the spread gets mediocre after grading/shipping/friction.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/monkeydluffy-alternate-art-op13-118"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/6btk3h4h7ovobsgh/240.jpg"
     },
     {
       "code": "OP08-036",
@@ -97,7 +102,8 @@
       "action": "bundle_flip",
       "whyItMatters": "High Enel usage and cheap enough to include in complete engine bundles.",
       "mainRisk": "Single-card margins are tiny; needs playset/bundle sale.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-two-legends/electrical-luna-op08-036"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-two-legends/electrical-luna-op08-036",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/tpvn7ungv3y4i7iv/240.jpg"
     },
     {
       "code": "OP15-077",
@@ -113,7 +119,8 @@
       "action": "raw_hold_watch",
       "whyItMatters": "Meta-relevant Enel card, but the alt-art graded market is still immature.",
       "mainRisk": "Too thin for sniper grading rules; do not treat BGS/odd comps as clean PSA 10 liquidity.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-adventure-on-kami%27s-island/lightning-dragon-alternate-art-op15-077"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-adventure-on-kami%27s-island/lightning-dragon-alternate-art-op15-077",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/wt4nomwh4ad4m62u/240.jpg"
     },
     {
       "code": "OP15-118",
@@ -129,7 +136,8 @@
       "action": "raw_hold_watch",
       "whyItMatters": "Tier 1 deck leader/theme demand, but graded comp depth is not mature enough for the grading board.",
       "mainRisk": "New-set hype can fade; buy only under market.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-adventure-on-kami%27s-island/enel-alternate-art-op15-118"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-adventure-on-kami%27s-island/enel-alternate-art-op15-118",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/2ztz7mqkgnu2tqbt/240.jpg"
     },
     {
       "code": "EB03-053",
@@ -145,7 +153,8 @@
       "action": "avoid_full_price",
       "whyItMatters": "Character/meta signal is real, but the PSA 10 spread is too thin after fees unless bought deeply under market.",
       "mainRisk": "Easy to overpay because Nami name carries demand.",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-heroines-edition/nami-eb03-053"
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-extra-booster-heroines-edition/nami-eb03-053",
+      "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/qwnkgmm7u3n2qsvb/240.jpg"
     }
   ]
 }
