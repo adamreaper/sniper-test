@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T14:56:27.159Z",
+  "generatedAt": "2026-05-03T15:58:16.869Z",
   "marketplace": "EBAY_US",
   "searches": [
     "one piece card lot",
@@ -10,8 +10,176 @@
     "one piece 50 cards lot",
     "one piece 100 cards bulk"
   ],
-  "listingCount": 28,
+  "listingCount": 31,
   "rows": [
+    {
+      "sourceQuery": "one piece collection cards",
+      "itemId": "v1|406901481125|0",
+      "title": "Usopp (Alt Art) EB02-022 R Anime 25th Collection ONE PIECE Card Game Japanese NM",
+      "price": 7.56,
+      "shipping": 1.32,
+      "total": 8.879999999999999,
+      "itemWebUrl": "https://www.ebay.com/itm/406901481125?_skw=one+piece+collection+cards&hash=item5ebd37dea5:g:SEsAAeSwHQBp92UD",
+      "imageUrl": "https://i.ebayimg.com/images/g/SEsAAeSwHQBp92UD/s-l225.jpg",
+      "condition": "Ungraded",
+      "buyingOptions": [
+        "FIXED_PRICE"
+      ],
+      "seller": {
+        "username": "lestatlestrange",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 15
+      },
+      "listingType": "collection_lot",
+      "imageCount": 2,
+      "cardCountGuess": 60,
+      "visibleHits": [
+        {
+          "label": "alt-art signal",
+          "floorValue": 35,
+          "confidence": 0.65
+        },
+        {
+          "label": "specific card EB02-022",
+          "floorValue": 12,
+          "confidence": 0.75
+        }
+      ],
+      "visibleFloorValue": 47,
+      "expectedValue": 134,
+      "upsideValue": 250.5,
+      "sellerWeaknessScore": 4,
+      "hiddenValueScore": 14,
+      "priceDislocationScore": 20,
+      "liquidityScore": 5,
+      "gradingUpsideScore": 1.5,
+      "frictionPenalty": 0,
+      "lotScore": 50.4,
+      "appScore": 50.4,
+      "maxBuyPrice": 96.48,
+      "maxBidPrice": 87.1,
+      "trueBulk": false,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": null,
+      "recommendation": "watch",
+      "appTier": "review",
+      "predictedProfit": 125.12,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 100,
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "visible signals: alt-art signal, specific card EB02-022",
+        "expected spread 125 over ask"
+      ],
+      "topRisks": [],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": true,
+        "shippingOk": true,
+        "passed": true
+      },
+      "uiNote": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "imageReview": null,
+      "scoreNotes": [
+        "title mentions alt art"
+      ],
+      "flags": [
+        "large_lot",
+        "priced_below_visible_floor"
+      ]
+    },
+    {
+      "sourceQuery": "one piece collection cards",
+      "itemId": "v1|306915929264|0",
+      "title": "Sengoku EB02-044\tAlternate Art Anime 25th Collection One Piece Card English",
+      "price": 19.99,
+      "shipping": 0,
+      "total": 19.99,
+      "itemWebUrl": "https://www.ebay.com/itm/306915929264?_skw=one+piece+collection+cards&hash=item47759d6cb0:g:xjgAAeSw0k5p92Vp",
+      "imageUrl": "https://i.ebayimg.com/images/g/xjgAAeSw0k5p92Vp/s-l225.jpg",
+      "condition": "Ungraded",
+      "buyingOptions": [
+        "FIXED_PRICE",
+        "AUCTION"
+      ],
+      "seller": {
+        "username": "destiny.cards.and.gaming",
+        "feedbackPercentage": "100.0",
+        "feedbackScore": 241
+      },
+      "listingType": "collection_lot",
+      "imageCount": 2,
+      "cardCountGuess": 60,
+      "visibleHits": [
+        {
+          "label": "alt-art signal",
+          "floorValue": 35,
+          "confidence": 0.65
+        },
+        {
+          "label": "specific card EB02-044",
+          "floorValue": 12,
+          "confidence": 0.75
+        }
+      ],
+      "visibleFloorValue": 47,
+      "expectedValue": 134,
+      "upsideValue": 250.5,
+      "sellerWeaknessScore": 0,
+      "hiddenValueScore": 14,
+      "priceDislocationScore": 20,
+      "liquidityScore": 5,
+      "gradingUpsideScore": 1.5,
+      "frictionPenalty": 0,
+      "lotScore": 46.4,
+      "appScore": 46.4,
+      "maxBuyPrice": 96.48,
+      "maxBidPrice": 87.1,
+      "trueBulk": false,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": null,
+      "recommendation": "ignore",
+      "appTier": "review",
+      "predictedProfit": 114.01,
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 100,
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "riskLevel": "low",
+      "topReasons": [
+        "visible signals: alt-art signal, specific card EB02-044",
+        "expected spread 114 over ask",
+        "free shipping"
+      ],
+      "topRisks": [],
+      "hardGates": {
+        "imageVerdictOk": true,
+        "priceOk": true,
+        "evidenceOk": true,
+        "shippingOk": true,
+        "passed": true
+      },
+      "uiNote": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "imageReview": null,
+      "scoreNotes": [
+        "title mentions alt art"
+      ],
+      "flags": [
+        "large_lot",
+        "priced_below_visible_floor"
+      ]
+    },
     {
       "sourceQuery": "one piece 50 cards lot",
       "itemId": "v1|178093508658|0",
@@ -45,10 +213,13 @@
       "frictionPenalty": 0,
       "lotScore": 39,
       "appScore": 39,
-      "maxBuyPrice": 57.6,
-      "maxBidPrice": 52,
+      "maxBuyPrice": 0.25,
+      "maxBidPrice": 0.25,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 0.25,
       "recommendation": "ignore",
-      "appTier": "watch",
+      "appTier": "skip",
       "predictedProfit": 79.01,
       "scoreBreakdown": {
         "profitScore": 100,
@@ -58,17 +229,18 @@
         "sellerQualityScore": 99.9,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 79 over ask",
         "free shipping"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -77,6 +249,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -114,10 +287,13 @@
       "frictionPenalty": 0,
       "lotScore": 39,
       "appScore": 39,
-      "maxBuyPrice": 57.6,
-      "maxBidPrice": 52,
+      "maxBuyPrice": 0.4,
+      "maxBidPrice": 0.4,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 0.4,
       "recommendation": "ignore",
-      "appTier": "watch",
+      "appTier": "skip",
       "predictedProfit": 79.01,
       "scoreBreakdown": {
         "profitScore": 100,
@@ -127,17 +303,18 @@
         "sellerQualityScore": 100,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 79 over ask",
         "free shipping"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -146,6 +323,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -183,10 +361,13 @@
       "frictionPenalty": 0,
       "lotScore": 39,
       "appScore": 39,
-      "maxBuyPrice": 57.6,
-      "maxBidPrice": 52,
+      "maxBuyPrice": 0.25,
+      "maxBidPrice": 0.25,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 0.25,
       "recommendation": "ignore",
-      "appTier": "watch",
+      "appTier": "skip",
       "predictedProfit": 79.01,
       "scoreBreakdown": {
         "profitScore": 100,
@@ -196,17 +377,18 @@
         "sellerQualityScore": 99.9,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 79 over ask",
         "free shipping"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -215,6 +397,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -252,8 +435,11 @@
       "frictionPenalty": 0,
       "lotScore": 36.5,
       "appScore": 36.5,
-      "maxBuyPrice": 62.64,
-      "maxBidPrice": 56.55,
+      "maxBuyPrice": 6.25,
+      "maxBidPrice": 6.25,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 6.25,
       "recommendation": "ignore",
       "appTier": "watch",
       "predictedProfit": 84.01,
@@ -285,6 +471,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -322,10 +509,13 @@
       "frictionPenalty": 0,
       "lotScore": 36,
       "appScore": 36,
-      "maxBuyPrice": 100.8,
-      "maxBidPrice": 91,
+      "maxBuyPrice": 0.5,
+      "maxBidPrice": 0.5,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 0.5,
       "recommendation": "ignore",
-      "appTier": "watch",
+      "appTier": "skip",
       "predictedProfit": 125,
       "scoreBreakdown": {
         "profitScore": 100,
@@ -335,18 +525,19 @@
         "sellerQualityScore": 100,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 125 over ask",
         "large lot estimate around 100 cards",
         "free shipping"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -355,6 +546,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -392,10 +584,13 @@
       "frictionPenalty": 0,
       "lotScore": 31.5,
       "appScore": 31.5,
-      "maxBuyPrice": 66.24,
-      "maxBidPrice": 59.8,
+      "maxBuyPrice": 2.25,
+      "maxBidPrice": 2.25,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 2.25,
       "recommendation": "ignore",
-      "appTier": "watch",
+      "appTier": "skip",
       "predictedProfit": 86.5,
       "scoreBreakdown": {
         "profitScore": 100,
@@ -405,18 +600,19 @@
         "sellerQualityScore": 99.8,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 87 over ask",
         "large lot estimate around 450 cards",
         "free shipping"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -425,6 +621,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -462,8 +659,11 @@
       "frictionPenalty": 3,
       "lotScore": 28,
       "appScore": 28,
-      "maxBuyPrice": 100.8,
-      "maxBidPrice": 91,
+      "maxBuyPrice": 5,
+      "maxBidPrice": 5,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 5,
       "recommendation": "ignore",
       "appTier": "skip",
       "predictedProfit": -360,
@@ -495,6 +695,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -532,8 +733,11 @@
       "frictionPenalty": 0,
       "lotScore": 28,
       "appScore": 28,
-      "maxBuyPrice": 30.24,
-      "maxBidPrice": 27.3,
+      "maxBuyPrice": 0.04,
+      "maxBidPrice": 0.04,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 0.04,
       "recommendation": "ignore",
       "appTier": "skip",
       "predictedProfit": 41.01,
@@ -545,17 +749,18 @@
         "sellerQualityScore": 100,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 41 over ask",
         "free shipping"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -564,6 +769,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value"
       ]
     },
@@ -608,6 +814,9 @@
       "appScore": 27.1,
       "maxBuyPrice": 56.88,
       "maxBidPrice": 51.35,
+      "trueBulk": false,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": null,
       "recommendation": "ignore",
       "appTier": "skip",
       "predictedProfit": 24.01,
@@ -673,8 +882,11 @@
       "frictionPenalty": 0,
       "lotScore": 25,
       "appScore": 25,
-      "maxBuyPrice": 57.6,
-      "maxBidPrice": 52,
+      "maxBuyPrice": 0.36,
+      "maxBidPrice": 0.36,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 0.36,
       "recommendation": "ignore",
       "appTier": "skip",
       "predictedProfit": 70.01,
@@ -686,18 +898,19 @@
         "sellerQualityScore": 0,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "medium",
+      "riskLevel": "high",
       "topReasons": [
         "expected spread 70 over ask",
         "free shipping"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof",
         "seller feedback is below 98%"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -706,6 +919,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -745,6 +959,9 @@
       "appScore": 24,
       "maxBuyPrice": 34.56,
       "maxBidPrice": 31.2,
+      "trueBulk": false,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": null,
       "recommendation": "ignore",
       "appTier": "skip",
       "predictedProfit": 47.01,
@@ -813,8 +1030,11 @@
       "frictionPenalty": 0,
       "lotScore": 23,
       "appScore": 23,
-      "maxBuyPrice": 66.24,
-      "maxBidPrice": 59.8,
+      "maxBuyPrice": 0.5,
+      "maxBidPrice": 0.5,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 0.5,
       "recommendation": "ignore",
       "appTier": "skip",
       "predictedProfit": 67.51,
@@ -826,17 +1046,18 @@
         "sellerQualityScore": 100,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 68 over ask",
         "large lot estimate around 100 cards"
       ],
       "topRisks": [
+        "ask is above current max buy",
         "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
-        "priceOk": true,
+        "priceOk": false,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -845,6 +1066,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]
@@ -882,8 +1104,11 @@
       "frictionPenalty": 0,
       "lotScore": 23,
       "appScore": 23,
-      "maxBuyPrice": 66.24,
-      "maxBidPrice": 59.8,
+      "maxBuyPrice": 1,
+      "maxBidPrice": 1,
+      "trueBulk": true,
+      "trueBulkMaxPer1000": 5,
+      "trueBulkMaxBuyPrice": 1,
       "recommendation": "ignore",
       "appTier": "skip",
       "predictedProfit": 32,
@@ -895,172 +1120,19 @@
         "sellerQualityScore": 100,
         "junkRiskPenalty": 0
       },
-      "riskLevel": "low",
+      "riskLevel": "medium",
       "topReasons": [
         "expected spread 32 over ask",
         "large lot estimate around 200 cards",
         "free shipping"
       ],
       "topRisks": [
-        "value depends on hidden hits, not visible proof"
-      ],
-      "hardGates": {
-        "imageVerdictOk": true,
-        "priceOk": true,
-        "evidenceOk": false,
-        "shippingOk": true,
-        "passed": false
-      },
-      "uiNote": "Large lot watch; value depends on manual photo review.",
-      "imageReview": null,
-      "scoreNotes": [],
-      "flags": [
-        "low_visible_value",
-        "large_lot"
-      ]
-    },
-    {
-      "sourceQuery": "one piece bulk cards",
-      "itemId": "v1|397905126023|0",
-      "title": "One Piece Card Game Manga Parallel Retired Item Ace And More 2500 Cards Bulk",
-      "price": 2130.45,
-      "shipping": 30,
-      "total": 2160.45,
-      "itemWebUrl": "https://www.ebay.com/itm/397905126023?_skw=one+piece+bulk+cards&hash=item5ca4fe6287:g:dV4AAeSwN~xp9pZV",
-      "imageUrl": "https://i.ebayimg.com/images/g/dV4AAeSwN~xp9pZV/s-l225.jpg",
-      "condition": "Ungraded",
-      "buyingOptions": [
-        "FIXED_PRICE"
-      ],
-      "seller": {
-        "username": "ssk.japan.shop",
-        "feedbackPercentage": "100.0",
-        "feedbackScore": 270
-      },
-      "listingType": "bulk_lot",
-      "imageCount": 5,
-      "cardCountGuess": 2500,
-      "visibleHits": [
-        {
-          "label": "manga signal",
-          "floorValue": 120,
-          "confidence": 0.7
-        },
-        {
-          "label": "parallel signal",
-          "floorValue": 20,
-          "confidence": 0.55
-        }
-      ],
-      "visibleFloorValue": 140,
-      "expectedValue": 200,
-      "upsideValue": 282,
-      "sellerWeaknessScore": 2,
-      "hiddenValueScore": 8,
-      "priceDislocationScore": -10,
-      "liquidityScore": 9,
-      "gradingUpsideScore": 6,
-      "frictionPenalty": 10,
-      "lotScore": 22.5,
-      "appScore": 22.5,
-      "maxBuyPrice": 144,
-      "maxBidPrice": 130,
-      "recommendation": "ignore",
-      "appTier": "skip",
-      "predictedProfit": -1960.45,
-      "scoreBreakdown": {
-        "profitScore": 0,
-        "confidenceScore": 50,
-        "evidenceScore": 6.5,
-        "liquidityScore": 100,
-        "sellerQualityScore": 100,
-        "junkRiskPenalty": 37
-      },
-      "riskLevel": "medium",
-      "topReasons": [
-        "visible signals: manga signal, parallel signal",
-        "large lot estimate around 2500 cards"
-      ],
-      "topRisks": [
         "ask is above current max buy",
-        "shipping eats margin"
+        "value depends on hidden hits, not visible proof"
       ],
       "hardGates": {
         "imageVerdictOk": true,
         "priceOk": false,
-        "evidenceOk": true,
-        "shippingOk": false,
-        "passed": false
-      },
-      "uiNote": "Large lot watch; value depends on manual photo review.",
-      "imageReview": null,
-      "scoreNotes": [
-        "title mentions manga",
-        "title mentions parallel"
-      ],
-      "flags": [
-        "high_shipping",
-        "large_lot"
-      ]
-    },
-    {
-      "sourceQuery": "one piece 100 cards bulk",
-      "itemId": "v1|327099529026|0",
-      "title": "One Piece Card Game Bulk Lot 100 Count Common and Uncommon Cards ENG OP Lot 3",
-      "price": 18.5,
-      "shipping": 5.99,
-      "total": 24.490000000000002,
-      "itemWebUrl": "https://www.ebay.com/itm/327099529026?_skw=one+piece+100+cards+bulk&hash=item4c28a6b742:g:E3MAAeSwxChp3BDG",
-      "imageUrl": "https://i.ebayimg.com/images/g/E3MAAeSwxChp3BDG/s-l225.jpg",
-      "condition": "Used",
-      "buyingOptions": [
-        "FIXED_PRICE",
-        "BEST_OFFER"
-      ],
-      "seller": {
-        "username": "collectwithj",
-        "feedbackPercentage": "100.0",
-        "feedbackScore": 3921
-      },
-      "listingType": "bulk_lot",
-      "imageCount": 7,
-      "cardCountGuess": 100,
-      "visibleHits": [],
-      "visibleFloorValue": 0,
-      "expectedValue": 90,
-      "upsideValue": 213,
-      "sellerWeaknessScore": 6,
-      "hiddenValueScore": 12,
-      "priceDislocationScore": -10,
-      "liquidityScore": 3,
-      "gradingUpsideScore": 9,
-      "frictionPenalty": 0,
-      "lotScore": 22,
-      "appScore": 22,
-      "maxBuyPrice": 64.8,
-      "maxBidPrice": 58.5,
-      "recommendation": "ignore",
-      "appTier": "skip",
-      "predictedProfit": 65.51,
-      "scoreBreakdown": {
-        "profitScore": 100,
-        "confidenceScore": 50,
-        "evidenceScore": 0,
-        "liquidityScore": 33.3,
-        "sellerQualityScore": 100,
-        "junkRiskPenalty": 0
-      },
-      "riskLevel": "low",
-      "topReasons": [
-        "expected spread 66 over ask",
-        "large lot estimate around 100 cards"
-      ],
-      "topRisks": [
-        "value depends on hidden hits, not visible proof"
-      ],
-      "hardGates": {
-        "imageVerdictOk": true,
-        "priceOk": true,
         "evidenceOk": false,
         "shippingOk": true,
         "passed": false
@@ -1069,6 +1141,7 @@
       "imageReview": null,
       "scoreNotes": [],
       "flags": [
+        "true_bulk_cap",
         "low_visible_value",
         "large_lot"
       ]

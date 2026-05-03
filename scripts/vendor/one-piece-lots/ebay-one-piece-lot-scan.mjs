@@ -32,6 +32,7 @@ const SEARCHES = [
 ];
 const MAX_PER_QUERY = 30;
 const TOP_RESULTS = 15;
+const TRUE_BULK_MAX_PER_1000 = Number(process.env.ONE_PIECE_TRUE_BULK_MAX_PER_1000 || 5);
 
 let envLoaded = false;
 let cachedToken = null;
@@ -317,6 +318,22 @@ function hiddenValueScore(listingType, imageCount, cardCountGuess) {
   return clamp(score, 0, 20);
 }
 
+function hasVisibleValueProof(visibleHits) {
+  return Array.isArray(visibleHits) && visibleHits.length > 0;
+}
+
+function isTrueBulkLot(listing, detail, cardCountGuess, visibleHits) {
+  const blob = textBlob(listing, detail);
+  if (hasVisibleValueProof(visibleHits)) return false;
+  if (/(alt art|alternate art|manga|parallel|sp|leader|sr|sec|op\d{2,}-\d{3}|eb\d{2,}-\d{3}|st\d{2,}-\d{3})/i.test(blob)) return false;
+  if (/(bulk|random|mixed|assorted|common|commons|rare r|don)/i.test(blob)) return true;
+  return cardCountGuess >= 50;
+}
+
+function trueBulkMaxBuy(cardCountGuess) {
+  return Math.round(((Math.max(0, money(cardCountGuess)) / 1000) * TRUE_BULK_MAX_PER_1000) * 100) / 100;
+}
+
 function gradingUpsideScore(detail) {
   const imageCount = 1 + (Array.isArray(detail?.additionalImages) ? detail.additionalImages.length : 0);
   return clamp((imageCount - 1) * 1.5, 0, 10);
@@ -467,9 +484,13 @@ function buildLotAnalysis(listing, detail) {
   const expectedValue = Math.round((visibleFloorValue + (hiddenValue * 6) + (gradingUpside * 2) - manufacturedBundlePenalty) * 100) / 100;
   const upsideValue = Math.round((expectedValue + hiddenValue * 8 + gradingUpside * 3) * 100) / 100;
   const lotScore = Math.round(clamp((visibleFloorValue > 0 ? clamp(visibleFloorValue / 8, 0, 20) : 2) + hiddenValue + sellerWeakness + priceDislocation + liquidity + gradingUpside - friction - manufacturedBundlePenalty - sparseEvidencePenalty, 0, 100) * 10) / 10;
-  const maxBuyPrice = Math.round((expectedValue * 0.72) * 100) / 100;
-  const maxBidPrice = Math.round((expectedValue * 0.65) * 100) / 100;
+  const trueBulk = isTrueBulkLot(listing, detail, cardCountGuess, visibleHits);
+  const bulkMaxBuyPrice = trueBulk ? trueBulkMaxBuy(cardCountGuess) : null;
+  const valueMaxBuyPrice = Math.round((expectedValue * 0.72) * 100) / 100;
+  const maxBuyPrice = trueBulk ? Math.min(valueMaxBuyPrice, bulkMaxBuyPrice) : valueMaxBuyPrice;
+  const maxBidPrice = trueBulk ? maxBuyPrice : Math.round((expectedValue * 0.65) * 100) / 100;
   const flags = [];
+  if (trueBulk) flags.push('true_bulk_cap');
   if (visibleFloorValue === 0) flags.push('low_visible_value');
   if (listing.shipping > 12) flags.push('high_shipping');
   if (cardCountGuess >= 50) flags.push('large_lot');
@@ -511,6 +532,9 @@ function buildLotAnalysis(listing, detail) {
     appScore,
     maxBuyPrice,
     maxBidPrice,
+    trueBulk,
+    trueBulkMaxPer1000: TRUE_BULK_MAX_PER_1000,
+    trueBulkMaxBuyPrice: bulkMaxBuyPrice,
     recommendation,
     appTier,
     predictedProfit,
@@ -590,6 +614,10 @@ async function main() {
         tier: row.appTier,
         predictedProfit: row.predictedProfit,
         maxBuyPrice: row.maxBuyPrice,
+        maxBidPrice: row.maxBidPrice,
+        trueBulk: row.trueBulk || false,
+        trueBulkMaxBuyPrice: row.trueBulkMaxBuyPrice ?? null,
+        trueBulkMaxPer1000: row.trueBulkMaxPer1000 ?? null,
         expectedValue: row.expectedValue,
         sellerFeedbackPercent: row.seller?.feedbackPercentage || null,
         imageVerdict: row.imageReview?.verdict || 'not_reviewed',
@@ -632,7 +660,7 @@ async function main() {
   lines.push('');
   payload.rows.forEach((row, index) => {
     lines.push(`${index + 1}. ${row.title}`);
-    lines.push(`   Score ${row.appScore} | tier ${row.appTier} | total ${row.total.toFixed(2)} | expected ${row.expectedValue.toFixed(2)} | max buy ${row.maxBuyPrice.toFixed(2)}`);
+    lines.push(`   Score ${row.appScore} | tier ${row.appTier} | total ${row.total.toFixed(2)} | expected ${row.expectedValue.toFixed(2)} | max buy ${row.maxBuyPrice.toFixed(2)}${row.trueBulk ? ` | true bulk cap ${row.trueBulkMaxBuyPrice.toFixed(2)}` : ''}`);
     lines.push(`   Type: ${row.listingType} | cards~ ${row.cardCountGuess} | image ${row.imageReview?.verdict || 'not_reviewed'} | seller ${row.seller?.feedbackPercentage || 'n/a'}%`);
     lines.push(`   Note: ${row.uiNote}`);
     if (row.visibleHits.length) lines.push(`   Visible signals: ${row.visibleHits.map((hit) => `${hit.label} ~$${hit.floorValue}`).join(', ')}`);
@@ -647,7 +675,7 @@ async function main() {
   appLines.push('');
   appPayload.rows.forEach((row) => {
     appLines.push(`${row.rank}. [${row.tier}] ${row.title}`);
-    appLines.push(`   Total ${row.total.toFixed(2)} | Max buy ${row.maxBuyPrice.toFixed(2)} | Score ${row.score}`);
+    appLines.push(`   Total ${row.total.toFixed(2)} | Max buy ${row.maxBuyPrice.toFixed(2)} | Score ${row.score}${row.trueBulk ? ` | True bulk cap ${row.trueBulkMaxBuyPrice?.toFixed?.(2) || row.trueBulkMaxBuyPrice}` : ''}`);
     appLines.push(`   ${row.note}`);
     appLines.push(`   ${row.url}`);
     appLines.push('');
