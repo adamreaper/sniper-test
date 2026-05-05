@@ -1,15 +1,117 @@
 {
-  "generatedAt": "2026-05-04T09:46:58.725Z",
-  "listingCount": 1,
+  "generatedAt": "2026-05-05T09:47:13.439Z",
+  "listingCount": 3,
   "summary": {
-    "reviewCount": 0,
-    "watchCount": 1,
-    "avgScore": 36.5,
-    "avgPredictedProfit": 84.01
+    "reviewCount": 1,
+    "watchCount": 2,
+    "avgScore": 40.9,
+    "avgPredictedProfit": 87.34
   },
   "rows": [
     {
       "rank": 1,
+      "itemId": "v1|188349049822|0",
+      "title": "One Piece TCG Yellow Bulk Lot Japanese [OP-11, A Fist of Divine Speed]",
+      "url": "https://www.ebay.com/itm/188349049822?_skw=one+piece+tcg+lot&hash=item2bda7a6bde:g:LIQAAeSwisJp-UHf",
+      "imageUrl": "https://i.ebayimg.com/images/g/LIQAAeSwisJp-UHf/s-l225.jpg",
+      "price": 3,
+      "shipping": 0,
+      "total": 3,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 21,
+      "score": 46.3,
+      "tier": "review",
+      "predictedProfit": 89,
+      "maxBuyPrice": 66.24,
+      "maxBidPrice": 59.8,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 92,
+      "sellerFeedbackPercent": "0.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 100,
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 0,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: SP signal",
+        "expected spread 89 over ask",
+        "free shipping"
+      ],
+      "topRisks": [
+        "seller feedback is below 98%"
+      ],
+      "hardGatesPassed": true,
+      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "SP signal"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 2,
+      "itemId": "v1|227329802689|0",
+      "title": "One Piece TCG HUGE Mixed Bulk UC/C/R SR & HOLOS! GOOD MIX Lot",
+      "url": "https://www.ebay.com/itm/227329802689?_skw=one+piece+tcg+lot&hash=item34ede981c1:g:tyoAAeSwGgVp-OKF",
+      "imageUrl": "https://i.ebayimg.com/images/g/tyoAAeSwGgVp-OKF/s-l225.jpg",
+      "price": 0.99,
+      "shipping": 0,
+      "total": 0.99,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 200,
+      "score": 40,
+      "tier": "watch",
+      "predictedProfit": 89.01,
+      "maxBuyPrice": 1,
+      "maxBidPrice": 1,
+      "trueBulk": true,
+      "trueBulkMaxBuyPrice": 1,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 90,
+      "sellerFeedbackPercent": "99.6",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 99.6,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 89 over ask",
+        "large lot estimate around 200 cards",
+        "free shipping"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 3,
       "itemId": "v1|157876096623|0",
       "title": "One Piece, Yugioh, Japanese Pokemon TCG Bulk Lot Mixed Lot NM 1250 Cards Read!!!",
       "url": "https://www.ebay.com/itm/157876096623?_skw=one+piece+cards+mixed+lot&hash=item24c2260e6f:g:9VAAAeSwYbhp5TAu",
