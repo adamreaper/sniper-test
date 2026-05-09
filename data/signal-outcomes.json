@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T09:46:35.755Z",
+  "generatedAt": "2026-05-09T09:46:23.170Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -19,28 +19,12 @@
   },
   "entries": [
     {
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "action": "watch",
-      "confidenceTier": "B",
-      "discoveryScore": 71.9,
-      "targetBuyPrice": 169.5,
-      "maxBuyPrice": 249.27,
-      "exitZoneLow": 428.48,
-      "exitZoneHigh": 479.71,
-      "outcomeStatus": "unreviewed",
-      "outcomeTag": "",
-      "notes": "",
-      "lastReviewedAt": null
-    },
-    {
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "setName": "A Fist of Divine Speed",
       "action": "watch",
       "confidenceTier": "C",
-      "discoveryScore": 64.9,
+      "discoveryScore": 65.3,
       "targetBuyPrice": 1069.3,
       "maxBuyPrice": 1440.97,
       "exitZoneLow": 2812.55,

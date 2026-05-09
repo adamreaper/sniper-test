@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-08T09:46:35.752Z",
-  "sourceFeedUpdatedAt": "2026-05-08T09:46:35.658Z",
+  "generatedAt": "2026-05-09T09:46:23.166Z",
+  "sourceFeedUpdatedAt": "2026-05-09T09:46:23.070Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,101 +8,17 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 10,
+    "totalPlans": 9,
     "prioritySearchCount": 0,
-    "watchCount": 7,
+    "watchCount": 6,
     "passCount": 3,
     "manualReviewCount": 0,
     "buyNowCount": 0
   },
-  "reviewQueue": [
-    {
-      "queueRank": 1,
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "action": "watch",
-      "confidenceTier": "B",
-      "discoveryScore": 71.9,
-      "targetBuyPrice": 169.5,
-      "idealBuyPrice": 133.34,
-      "stretchBuyPrice": 212.13,
-      "maxBuyPrice": 249.27,
-      "exitZoneLow": 428.48,
-      "exitZoneHigh": 479.71,
-      "whyInteresting": "PSA 10 spread is huge versus raw market",
-      "biggestRisk": "Collectr raw market drifts too far from board pricing",
-      "reviewSummary": "Worth checking, but not first in line.",
-      "reviewTags": [
-        "low-entry",
-        "liquid",
-        "wide-spread"
-      ],
-      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053"
-    }
-  ],
+  "reviewQueue": [],
   "plans": [
     {
       "sourceRank": 1,
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "rarity": "SR",
-      "productId": "672805",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
-      "searchScore": 157,
-      "rawMarket": 44.5,
-      "psa10Market": 529.25,
-      "netPsa10Exit": 465.74,
-      "gradingCost": 33,
-      "costBasis": 110.5,
-      "expectedPsaNet": 355.24,
-      "profit": 355.24,
-      "roiPercent": 321.48,
-      "psa10SalesCount": 9,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 110.22,
-      "collectrRawDeltaPercent": 147.69,
-      "psa10SpreadMultiple": 11.89,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 71.9,
-      "buyScore": 71.9,
-      "confidenceTier": "B",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 spread is huge versus raw market",
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Profit potential clears a solid bar after fees"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 133.34,
-      "targetBuyPrice": 169.5,
-      "stretchBuyPrice": 212.13,
-      "maxBuyPrice": 249.27,
-      "exitZoneLow": 428.48,
-      "exitZoneHigh": 479.71,
-      "reviewTags": [
-        "low-entry",
-        "liquid",
-        "wide-spread"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 1
-    },
-    {
-      "sourceRank": 2,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "setName": "A Fist of Divine Speed",
@@ -122,16 +38,16 @@
       "expectedPsaNet": 1849.88,
       "profit": 1849.88,
       "roiPercent": 153.23,
-      "psa10SalesCount": 8,
+      "psa10SalesCount": 9,
       "ungradedSalesCount": 22,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 2602.28,
-      "collectrRawDeltaPercent": 137.81,
+      "collectrRawMarket": 2599.04,
+      "collectrRawDeltaPercent": 137.52,
       "psa10SpreadMultiple": 3.17,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 64.9,
-      "buyScore": 64.9,
+      "discoveryScore": 65.3,
+      "buyScore": 65.3,
       "confidenceTier": "C",
       "action": "watch",
       "riskFlags": [
@@ -157,10 +73,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 2
+      "rank": 1
     },
     {
-      "sourceRank": 3,
+      "sourceRank": 2,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -215,10 +131,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 3
+      "rank": 2
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 6,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -273,10 +189,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
+      "rank": 3
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 7,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy (Manga)",
       "setName": "Emperors in the New World",
@@ -331,10 +247,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 4
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 4,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -390,10 +306,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 5
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 3,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -449,10 +365,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 6
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 9,
       "code": "OP09-004",
       "name": "Shanks - OP09-004 (SP) (Silver)",
       "setName": "Carrying On His Will",
@@ -505,10 +421,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 8
+      "rank": 7
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 8,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy (061) (Manga)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -562,10 +478,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 9
+      "rank": 8
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 5,
       "code": "OP08-001",
       "name": "Tony Tony.Chopper (SPR)",
       "setName": "Extra Booster: Anime 25th Collection",
@@ -620,7 +536,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 10
+      "rank": 9
     }
   ]
 }
