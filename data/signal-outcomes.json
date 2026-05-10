@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T09:46:23.170Z",
+  "generatedAt": "2026-05-10T09:45:41.355Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -18,6 +18,22 @@
     ]
   },
   "entries": [
+    {
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 72.6,
+      "targetBuyPrice": 182.96,
+      "maxBuyPrice": 268.03,
+      "exitZoneLow": 456.96,
+      "exitZoneHigh": 511.6,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
     {
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
