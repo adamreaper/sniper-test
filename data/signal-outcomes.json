@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T09:45:41.355Z",
+  "generatedAt": "2026-05-11T09:45:39.090Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -136,7 +136,7 @@
       "setName": "Carrying On His Will",
       "action": "pass",
       "confidenceTier": "D",
-      "discoveryScore": 50,
+      "discoveryScore": 49.7,
       "targetBuyPrice": 501,
       "maxBuyPrice": 673.43,
       "exitZoneLow": 1518,
