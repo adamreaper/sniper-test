@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-14T09:45:39.236Z",
-  "sourceFeedUpdatedAt": "2026-05-14T09:45:39.138Z",
+  "generatedAt": "2026-05-15T09:46:24.159Z",
+  "sourceFeedUpdatedAt": "2026-05-15T09:46:24.065Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -10,8 +10,8 @@
   "summary": {
     "totalPlans": 11,
     "prioritySearchCount": 0,
-    "watchCount": 8,
-    "passCount": 3,
+    "watchCount": 9,
+    "passCount": 2,
     "manualReviewCount": 0,
     "buyNowCount": 0
   },
@@ -92,8 +92,8 @@
       "psa10SalesCount": 16,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 83.81,
-      "collectrRawDeltaPercent": 235.24,
+      "collectrRawMarket": 83.99,
+      "collectrRawDeltaPercent": 235.96,
       "psa10SpreadMultiple": 23.75,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -150,8 +150,8 @@
       "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 112.38,
-      "collectrRawDeltaPercent": 136.89,
+      "collectrRawMarket": 115.5,
+      "collectrRawDeltaPercent": 143.47,
       "psa10SpreadMultiple": 12.26,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -185,7 +185,7 @@
       "rank": 2
     },
     {
-      "sourceRank": 3,
+      "sourceRank": 4,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -243,7 +243,7 @@
       "rank": 3
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 5,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "setName": "A Fist of Divine Speed",
@@ -301,6 +301,64 @@
       "rank": 4
     },
     {
+      "sourceRank": 3,
+      "code": "OP08-001",
+      "name": "Tony Tony.Chopper (SPR)",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "rarity": "L",
+      "productId": "629185",
+      "priceChartingPath": "/game/one-piece-japanese-extra-booster-anime-25th-collection/tony-tonychopper-op08-001",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-anime-25th-collection/tony-tonychopper-op08-001",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ghhvjvvuoudwv3jm/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/629185",
+      "searchScore": 143,
+      "rawMarket": 106,
+      "psa10Market": 750,
+      "netPsa10Exit": 660,
+      "gradingCost": 33,
+      "costBasis": 172,
+      "expectedPsaNet": 488,
+      "profit": 488,
+      "roiPercent": 283.72,
+      "psa10SalesCount": 4,
+      "ungradedSalesCount": 22,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 1013.58,
+      "collectrRawDeltaPercent": 856.21,
+      "psa10SpreadMultiple": 7.08,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 55.6,
+      "buyScore": 55.6,
+      "confidenceTier": "C",
+      "action": "watch",
+      "riskFlags": [
+        "low_psa10_liquidity",
+        "collectr_raw_drift",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 spread is huge versus raw market",
+        "Raw sales volume supports manual searching",
+        "Profit potential clears a solid bar after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 188.48,
+      "targetBuyPrice": 233.13,
+      "stretchBuyPrice": 284.31,
+      "maxBuyPrice": 327.66,
+      "exitZoneLow": 607.2,
+      "exitZoneHigh": 679.8,
+      "reviewTags": [
+        "chase",
+        "wide-spread"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 5
+    },
+    {
       "sourceRank": 8,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
@@ -356,7 +414,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 6
     },
     {
       "sourceRank": 10,
@@ -414,7 +472,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 7
     },
     {
       "sourceRank": 7,
@@ -473,7 +531,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 8
     },
     {
       "sourceRank": 6,
@@ -532,7 +590,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
+      "rank": 9
     },
     {
       "sourceRank": 9,
@@ -589,7 +647,7 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 9
+      "rank": 10
     },
     {
       "sourceRank": 11,
@@ -643,64 +701,6 @@
       "exitZoneHigh": 1699.5,
       "reviewTags": [
         "chase"
-      ],
-      "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 10
-    },
-    {
-      "sourceRank": 5,
-      "code": "OP08-001",
-      "name": "Tony Tony.Chopper (SPR)",
-      "setName": "Extra Booster: Anime 25th Collection",
-      "rarity": "L",
-      "productId": "629185",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-anime-25th-collection/tony-tonychopper-op08-001",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-anime-25th-collection/tony-tonychopper-op08-001",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ghhvjvvuoudwv3jm/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/629185",
-      "searchScore": 143,
-      "rawMarket": 106,
-      "psa10Market": 443.85,
-      "netPsa10Exit": 390.59,
-      "gradingCost": 33,
-      "costBasis": 172,
-      "expectedPsaNet": 218.59,
-      "profit": 218.59,
-      "roiPercent": 127.09,
-      "psa10SalesCount": 3,
-      "ungradedSalesCount": 22,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 1013.58,
-      "collectrRawDeltaPercent": 856.21,
-      "psa10SpreadMultiple": 4.19,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 38.2,
-      "buyScore": 38.2,
-      "confidenceTier": "D",
-      "action": "pass",
-      "riskFlags": [
-        "low_psa10_liquidity",
-        "collectr_raw_drift",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "Strong PSA 10 spread versus raw market",
-        "Raw sales volume supports manual searching",
-        "Profit potential clears a solid bar after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 98.07,
-      "targetBuyPrice": 124.5,
-      "stretchBuyPrice": 154.78,
-      "maxBuyPrice": 180.44,
-      "exitZoneLow": 359.34,
-      "exitZoneHigh": 402.31,
-      "reviewTags": [
-        "chase",
-        "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 11

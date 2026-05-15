@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T09:45:39.240Z",
+  "generatedAt": "2026-05-15T09:46:24.162Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -77,6 +77,22 @@
       "maxBuyPrice": 1337.91,
       "exitZoneLow": 2621.97,
       "exitZoneHigh": 2935.47,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "OP08-001",
+      "name": "Tony Tony.Chopper (SPR)",
+      "setName": "Extra Booster: Anime 25th Collection",
+      "action": "watch",
+      "confidenceTier": "C",
+      "discoveryScore": 55.6,
+      "targetBuyPrice": 233.13,
+      "maxBuyPrice": 327.66,
+      "exitZoneLow": 607.2,
+      "exitZoneHigh": 679.8,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
@@ -173,22 +189,6 @@
       "maxBuyPrice": 673.43,
       "exitZoneLow": 1518,
       "exitZoneHigh": 1699.5,
-      "outcomeStatus": "unreviewed",
-      "outcomeTag": "",
-      "notes": "",
-      "lastReviewedAt": null
-    },
-    {
-      "code": "OP08-001",
-      "name": "Tony Tony.Chopper (SPR)",
-      "setName": "Extra Booster: Anime 25th Collection",
-      "action": "pass",
-      "confidenceTier": "D",
-      "discoveryScore": 38.2,
-      "targetBuyPrice": 124.5,
-      "maxBuyPrice": 180.44,
-      "exitZoneLow": 359.34,
-      "exitZoneHigh": 402.31,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",

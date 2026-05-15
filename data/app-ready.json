@@ -1,112 +1,11 @@
 {
-  "generatedAt": "2026-05-14T09:46:22.920Z",
-  "listingCount": 2,
+  "generatedAt": "2026-05-15T09:47:14.879Z",
+  "listingCount": 0,
   "summary": {
-    "reviewCount": 2,
+    "reviewCount": 0,
     "watchCount": 0,
-    "avgScore": 49.1,
-    "avgPredictedProfit": 81.8
+    "avgScore": 0,
+    "avgPredictedProfit": 0
   },
-  "rows": [
-    {
-      "rank": 1,
-      "itemId": "v1|406922635958|0",
-      "title": "Bandai One Piece Card Game Roronoa Zoro EB04-007 SR Alt Art Holo & Bulk Lot 75",
-      "url": "https://www.ebay.com/itm/406922635958?_skw=one+piece+bulk+cards&hash=item5ebe7aaab6:g:Iw0AAeSweUZqA39a",
-      "imageUrl": "https://i.ebayimg.com/images/g/Iw0AAeSweUZqA39a/s-l225.jpg",
-      "price": 30.96,
-      "shipping": 5.95,
-      "total": 36.910000000000004,
-      "lotType": "bulk_lot",
-      "cardCountGuess": 200,
-      "score": 50.3,
-      "tier": "review",
-      "predictedProfit": 102.09,
-      "maxBuyPrice": 100.08,
-      "maxBidPrice": 90.35,
-      "trueBulk": false,
-      "trueBulkMaxBuyPrice": null,
-      "trueBulkMaxPer1000": 5,
-      "expectedValue": 139,
-      "sellerFeedbackPercent": "99.8",
-      "imageVerdict": "not_reviewed",
-      "imageConfidence": null,
-      "riskLevel": "low",
-      "scoreBreakdown": {
-        "profitScore": 100,
-        "confidenceScore": 50,
-        "evidenceScore": 100,
-        "liquidityScore": 55.6,
-        "sellerQualityScore": 99.8,
-        "junkRiskPenalty": 0
-      },
-      "topReasons": [
-        "visible signals: alt-art signal, specific card EB04-007",
-        "expected spread 102 over ask",
-        "large lot estimate around 200 cards"
-      ],
-      "topRisks": [],
-      "hardGatesPassed": true,
-      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
-      "reason": "No image review yet.",
-      "visibleSignals": [
-        "alt-art signal",
-        "specific card EB04-007"
-      ],
-      "outcomeStatus": "untracked",
-      "decision": null,
-      "decisionAt": null,
-      "realizedProfit": null,
-      "predictionError": null
-    },
-    {
-      "rank": 2,
-      "itemId": "v1|198351807403|0",
-      "title": "One Piece tcg 6 Card Lot Foil Alt Arts Cards Nami Sabo SEC Bonney Portgas Luffy",
-      "url": "https://www.ebay.com/itm/198351807403?_skw=one+piece+tcg+lot&hash=item2e2eb063ab:g:7esAAeSwXbZqBCVI",
-      "imageUrl": "https://i.ebayimg.com/images/g/7esAAeSwXbZqBCVI/s-l225.jpg",
-      "price": 10.5,
-      "shipping": 5,
-      "total": 15.5,
-      "lotType": "mixed_lot",
-      "cardCountGuess": 6,
-      "score": 47.9,
-      "tier": "review",
-      "predictedProfit": 61.5,
-      "maxBuyPrice": 55.44,
-      "maxBidPrice": 50.05,
-      "trueBulk": false,
-      "trueBulkMaxBuyPrice": null,
-      "trueBulkMaxPer1000": 5,
-      "expectedValue": 77,
-      "sellerFeedbackPercent": "100.0",
-      "imageVerdict": "not_reviewed",
-      "imageConfidence": null,
-      "riskLevel": "low",
-      "scoreBreakdown": {
-        "profitScore": 100,
-        "confidenceScore": 50,
-        "evidenceScore": 100,
-        "liquidityScore": 55.6,
-        "sellerQualityScore": 100,
-        "junkRiskPenalty": 0
-      },
-      "topReasons": [
-        "visible signals: alt-art signal",
-        "expected spread 62 over ask"
-      ],
-      "topRisks": [],
-      "hardGatesPassed": true,
-      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
-      "reason": "No image review yet.",
-      "visibleSignals": [
-        "alt-art signal"
-      ],
-      "outcomeStatus": "untracked",
-      "decision": null,
-      "decisionAt": null,
-      "realizedProfit": null,
-      "predictionError": null
-    }
-  ]
+  "rows": []
 }
