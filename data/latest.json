@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-15T09:46:24.065Z",
-  "dateStamp": "2026-05-15",
+  "generatedAt": "2026-05-16T09:46:08.163Z",
+  "dateStamp": "2026-05-16",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -15,11 +15,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 11,
+  "rowsWithEbayField": 12,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 11,
+  "qualifiedCount": 12,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -29,7 +29,7 @@
       "roiPercent": 95.28,
       "rawMarket": 53.42,
       "psa10Market": 265,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -428,7 +428,7 @@
       "roiPercent": 245.63,
       "rawMarket": 82,
       "psa10Market": 581.29,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759585|0",
@@ -847,7 +847,7 @@
       "roiPercent": 124.61,
       "rawMarket": 21.37,
       "psa10Market": 223,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -1223,13 +1223,13 @@
     },
     {
       "code": "OP05-119",
-      "name": "Monkey.D.Luffy (SP) (Silver)",
+      "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
-      "productId": "632503",
-      "roiPercent": 135.61,
-      "rawMarket": 1096.63,
-      "psa10Market": 3238.6,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "productId": "632504",
+      "roiPercent": 100.56,
+      "rawMarket": 3375,
+      "psa10Market": 7949.59,
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1628,7 +1628,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -2037,7 +2037,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2468,7 +2468,7 @@
       "roiPercent": 94.09,
       "rawMarket": 654.46,
       "psa10Market": 1692.64,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2890,7 +2890,7 @@
       "roiPercent": 83.41,
       "rawMarket": 741,
       "psa10Market": 1779.85,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -3288,7 +3288,7 @@
       "roiPercent": 82.91,
       "rawMarket": 855.57,
       "psa10Market": 2013.19,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -3686,7 +3686,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -4064,10 +4064,10 @@
       "name": "Shanks - OP09-004 (SP) (Silver)",
       "setName": "Carrying On His Will",
       "productId": "657443",
-      "roiPercent": 80.72,
-      "rawMarket": 800,
-      "psa10Market": 1875,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "roiPercent": 89.97,
+      "rawMarket": 781.2,
+      "psa10Market": 1930.3,
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -4500,7 +4500,7 @@
       "roiPercent": 81.33,
       "rawMarket": 63.09,
       "psa10Market": 198,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819753891|0",
@@ -4886,7 +4886,7 @@
       "roiPercent": 351.09,
       "rawMarket": 47.44,
       "psa10Market": 581.5,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -5312,7 +5312,7 @@
       "roiPercent": 538.68,
       "rawMarket": 177.12,
       "psa10Market": 1525,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267646032749|0",
@@ -5731,7 +5731,7 @@
       "roiPercent": 419.8,
       "rawMarket": 200.63,
       "psa10Market": 1380,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298261511730|0",
@@ -6141,7 +6141,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -6523,7 +6523,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -6922,7 +6922,7 @@
       "roiPercent": 200.64,
       "rawMarket": 449.97,
       "psa10Market": 1650,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|157856853451|0",
@@ -7335,7 +7335,7 @@
       "roiPercent": 82.77,
       "rawMarket": 2489.88,
       "psa10Market": 5405.95,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -7779,7 +7779,7 @@
       "roiPercent": 283.72,
       "rawMarket": 106,
       "psa10Market": 750,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759651|0",
@@ -8176,7 +8176,7 @@
       "roiPercent": 125.47,
       "rawMarket": 140,
       "psa10Market": 443.25,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -8592,7 +8592,7 @@
       "roiPercent": 117.65,
       "rawMarket": 61.18,
       "psa10Market": 232.93,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -8991,7 +8991,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -9410,7 +9410,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -9836,7 +9836,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -10246,7 +10246,7 @@
       "roiPercent": 80.89,
       "rawMarket": 44.35,
       "psa10Market": 159,
-      "lastSeenAt": "2026-05-14T09:45:39.138Z",
+      "lastSeenAt": "2026-05-15T09:46:24.065Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|287288276977|0",
@@ -10691,7 +10691,7 @@
       "psa10SalesCount": 16,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 83.99,
+      "collectrRawMarket": 84.47,
       "collectrLink": "https://app.getcollectr.com/explore/product/672808",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/mw5t52ihwqhaqcsn/1600.jpg",
@@ -10714,56 +10714,6 @@
         {
           "stage": "search",
           "query": "\"Nico Robin\" \"One Piece Heroine's Edition\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "productId": "672805",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "searchScore": 157,
-      "rawMarket": 47.44,
-      "psa10Market": 581.5,
-      "netPsa10Exit": 511.72,
-      "gradingCost": 33,
-      "shippingCost": 33,
-      "costBasis": 113.44,
-      "profit": 398.28,
-      "roi": 3.5109,
-      "roiPercent": 351.09,
-      "psa10SalesCount": 12,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 115.5,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672805.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Nami\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"EB03-053\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Nami\" \"One Piece Heroine's Edition\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
@@ -10820,32 +10770,32 @@
       "lastReviewSeenAt": null
     },
     {
-      "code": "OP05-119",
-      "name": "Monkey.D.Luffy (SP) (Gold)",
-      "setName": "A Fist of Divine Speed",
-      "productId": "632504",
-      "rarity": "SEC",
+      "code": "OP13-080",
+      "name": "St. Ethanbaron V. Nusjuro (Parallel)",
+      "setName": "Carrying On His Will",
+      "productId": "657348",
+      "rarity": "R",
       "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
-      "searchScore": 157,
-      "rawMarket": 2767.16,
-      "psa10Market": 8159.07,
-      "netPsa10Exit": 7179.98,
-      "gradingCost": 79.99,
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/st-ethanbaron-v-nusjuro-alternate-art-op13-080",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/st-ethanbaron-v-nusjuro-alternate-art-op13-080",
+      "searchScore": 143,
+      "rawMarket": 16.99,
+      "psa10Market": 252.09,
+      "netPsa10Exit": 221.84,
+      "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 2880.15,
-      "profit": 4299.83,
-      "roi": 1.4929,
-      "roiPercent": 149.29,
-      "psa10SalesCount": 23,
-      "ungradedSalesCount": 23,
-      "bgs10SalesCount": 6,
-      "collectrRawMarket": 8592.59,
-      "collectrLink": "https://app.getcollectr.com/explore/product/632504",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/pfa3b3bcgxrtsggz/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632504.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "costBasis": 82.99,
+      "profit": 138.85,
+      "roi": 1.6731,
+      "roiPercent": 167.31,
+      "psa10SalesCount": 5,
+      "ungradedSalesCount": 28,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 542.79,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657348",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/m4inmog2tw6mf5v6/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657348.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
       "ebayCandidateCount": 0,
@@ -10853,21 +10803,26 @@
       "ebayLookupErrors": [
         {
           "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
+          "query": "\"St. Ethanbaron V. Nusjuro\" \"One Piece\"",
           "error": "Missing eBay credentials"
         },
         {
           "stage": "search",
-          "query": "\"OP05-119\" \"One Piece\"",
+          "query": "\"St. Ethanbaron\" \"One Piece\"",
           "error": "Missing eBay credentials"
         },
         {
           "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"A Fist of Divine Speed\" \"One Piece\"",
+          "query": "\"OP13-080\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"St. Ethanbaron V. Nusjuro\" \"Carrying On His Will\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
-      "lastReviewSeenAt": "2026-04-27T13:47:42.414Z"
+      "lastReviewSeenAt": null
     },
     {
       "code": "OP05-119",
@@ -11020,6 +10975,111 @@
       "lastReviewSeenAt": "2026-04-27T13:47:42.414Z"
     },
     {
+      "code": "OP05-119",
+      "name": "Monkey.D.Luffy (SP) (Gold)",
+      "setName": "A Fist of Divine Speed",
+      "productId": "632504",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
+      "searchScore": 157,
+      "rawMarket": 3375,
+      "psa10Market": 7949.59,
+      "netPsa10Exit": 6995.64,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 3487.99,
+      "profit": 3507.65,
+      "roi": 1.0056,
+      "roiPercent": 100.56,
+      "psa10SalesCount": 23,
+      "ungradedSalesCount": 23,
+      "bgs10SalesCount": 6,
+      "collectrRawMarket": 8592.59,
+      "collectrLink": "https://app.getcollectr.com/explore/product/632504",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/pfa3b3bcgxrtsggz/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632504.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP05-119\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"A Fist of Divine Speed\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": "2026-04-27T13:47:42.414Z"
+    },
+    {
+      "code": "EB02-061",
+      "name": "Monkey.D.Luffy - EB02-061 (SP)",
+      "setName": "Premium Booster -The Best- Vol. 2",
+      "productId": "654533",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-premium-booster-2/monkeydluffy-sp-prb-02-eb02-061",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-premium-booster-2/monkeydluffy-sp-prb-02-eb02-061",
+      "searchScore": 145,
+      "rawMarket": 111.55,
+      "psa10Market": 400,
+      "netPsa10Exit": 352,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 177.55,
+      "profit": 174.45,
+      "roi": 0.9825,
+      "roiPercent": 98.25,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 1,
+      "collectrRawMarket": 471.32,
+      "collectrLink": "https://app.getcollectr.com/explore/product/654533",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/lg64el7diw6vdnw5/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_654533.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy - EB02-061\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy -\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"EB02-061\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy - EB02-061\" \"Premium Booster -The Best- Vol. 2\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": "2026-04-27T13:47:42.414Z"
+    },
+    {
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -11038,7 +11098,7 @@
       "profit": 722.07,
       "roi": 0.9409,
       "roiPercent": 94.09,
-      "psa10SalesCount": 15,
+      "psa10SalesCount": 16,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 4,
       "collectrRawMarket": 1417.97,
@@ -11068,6 +11128,61 @@
         }
       ],
       "lastReviewSeenAt": "2026-04-27T13:47:42.414Z"
+    },
+    {
+      "code": "OP09-004",
+      "name": "Shanks - OP09-004 (SP) (Silver)",
+      "setName": "Carrying On His Will",
+      "productId": "657443",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
+      "searchScore": 139,
+      "rawMarket": 781.2,
+      "psa10Market": 1930.3,
+      "netPsa10Exit": 1698.66,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 894.19,
+      "profit": 804.47,
+      "roi": 0.8997,
+      "roiPercent": 89.97,
+      "psa10SalesCount": 4,
+      "ungradedSalesCount": 60,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 1007.61,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657443",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4dab4wymc3pqwjw/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657443.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Shanks - OP09-004\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Shanks -\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP09-004\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Shanks - OP09-004\" \"Carrying On His Will\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
     },
     {
       "code": "EB02-061",
@@ -11164,61 +11279,6 @@
         {
           "stage": "search",
           "query": "\"Gol.D.Roger\" \"Emperors in the New World\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
-      "code": "OP09-004",
-      "name": "Shanks - OP09-004 (SP) (Silver)",
-      "setName": "Carrying On His Will",
-      "productId": "657443",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "searchScore": 139,
-      "rawMarket": 800,
-      "psa10Market": 1875,
-      "netPsa10Exit": 1650,
-      "gradingCost": 79.99,
-      "shippingCost": 33,
-      "costBasis": 912.99,
-      "profit": 737.01,
-      "roi": 0.8072,
-      "roiPercent": 80.72,
-      "psa10SalesCount": 3,
-      "ungradedSalesCount": 60,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 1007.61,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657443",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4dab4wymc3pqwjw/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657443.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Shanks - OP09-004\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Shanks -\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP09-004\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Shanks - OP09-004\" \"Carrying On His Will\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
