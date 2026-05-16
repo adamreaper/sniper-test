@@ -19,6 +19,11 @@ const DATE_STAMP = new Date().toISOString().slice(0, 10);
 const OUT_PATH = path.join(REPORT_DIR, `pricecharting-psa10-scan-results-${DATE_STAMP}.json`);
 const REPORT_PATH = path.join(REPORT_DIR, `pricecharting-psa10-scan-results-${DATE_STAMP}.md`);
 const RETENTION_DAYS = 90;
+const EXCLUDED_SET_PATTERNS = [
+  /extra-booster-anime-25th-collection/i,
+  /anime\s*25th\s*collection/i,
+  /25th\s*(?:anniversary\s*)?collection/i,
+];
 
 const RAW_FLOOR = Number(process.env.PRICECHARTING_RAW_FLOOR || 100);
 const PREFILTER_RAW_FLOOR = Number(process.env.PRICECHARTING_PREFILTER_RAW_FLOOR || 80);
@@ -58,6 +63,11 @@ function money(value) {
 
 function formatMoney(value) {
   return `$${money(value).toFixed(2)}`;
+}
+
+function isExcludedSet(card) {
+  const haystack = [card?.setSlug, card?.setName, card?.collectrSetUrl].filter(Boolean).join(' ');
+  return EXCLUDED_SET_PATTERNS.some((pattern) => pattern.test(haystack));
 }
 
 const SHIPPING_COST = 33;
@@ -373,7 +383,7 @@ async function run() {
   const matchCache = await loadMatchCache();
   const cards = JSON.parse(await fs.readFile(ACTIVE_PATH, 'utf8'));
   const filteredCards = cards
-    .filter((card) => money(card.rawMarket) >= PREFILTER_RAW_FLOOR && card.code)
+    .filter((card) => money(card.rawMarket) >= PREFILTER_RAW_FLOOR && card.code && !isExcludedSet(card))
     .slice(0, MAX_CARDS > 0 ? MAX_CARDS : undefined);
 
   let matched = 0;

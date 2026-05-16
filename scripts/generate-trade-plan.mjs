@@ -10,10 +10,20 @@ const FEED_PATH = path.join(DASHBOARD_DIR, 'latest.json');
 const JSON_OUT = path.join(DASHBOARD_DIR, 'trade-plan.json');
 const REVIEW_OUT = path.join(DASHBOARD_DIR, 'signal-outcomes.json');
 const OUTPUT_DIR = path.join(APP_DIR, 'reports', 'one-piece-hybrid');
+const EXCLUDED_SET_PATTERNS = [
+  /extra-booster-anime-25th-collection/i,
+  /anime\s*25th\s*collection/i,
+  /25th\s*(?:anniversary\s*)?collection/i,
+];
 
 function money(n) {
   const value = Number(n);
   return Number.isFinite(value) ? value : 0;
+}
+
+function isExcludedSet(row) {
+  const haystack = [row?.setSlug, row?.setName, row?.collectrSetUrl].filter(Boolean).join(' ');
+  return EXCLUDED_SET_PATTERNS.some((pattern) => pattern.test(haystack));
 }
 
 function pct(n) {
@@ -202,7 +212,7 @@ function normalizeRows(feed) {
   const rows = Array.isArray(feed.rows) ? feed.rows : [];
   const cards = Array.isArray(feed.cards) ? feed.cards : [];
   const sourceRows = rows.length ? rows : cards;
-  return sourceRows.map((row, index) => {
+  return sourceRows.filter((row) => !isExcludedSet(row)).map((row, index) => {
     const psa10Market = money(row.psa10Market);
     const rawMarket = money(row.rawMarket);
     const netPsa10Exit = money(row.netPsa10Exit);

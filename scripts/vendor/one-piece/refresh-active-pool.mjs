@@ -21,6 +21,11 @@ const FETCH_RETRIES = Math.max(1, Number(process.env.COLLECTR_FETCH_RETRIES || 3
 const FETCH_RETRY_MS = Math.max(250, Number(process.env.COLLECTR_FETCH_RETRY_MS || 1000));
 const execFileAsync = promisify(execFile);
 const RETENTION_DAYS = 90;
+const EXCLUDED_SET_PATTERNS = [
+  /extra-booster-anime-25th-collection/i,
+  /anime\s*25th\s*collection/i,
+  /25th\s*(?:anniversary\s*)?collection/i,
+];
 
 function money(value) {
   const n = Number(value || 0);
@@ -128,12 +133,25 @@ function buildSetUrl(setInfo) {
   return `https://app.getcollectr.com/sets/category/68/${encodePathSegment(setInfo.web_slug_group)}?cardType=cards&groupId=${encodeURIComponent(String(setInfo.catalog_group_id || ''))}&sortType=price&sortOrder=desc`;
 }
 
+function isExcludedSet(setInfoOrCard) {
+  const haystack = [
+    setInfoOrCard?.web_slug_group,
+    setInfoOrCard?.catalog_group_name,
+    setInfoOrCard?.catalog_group,
+    setInfoOrCard?.setSlug,
+    setInfoOrCard?.setName,
+    setInfoOrCard?.collectrSetUrl,
+  ].filter(Boolean).join(' ');
+  return EXCLUDED_SET_PATTERNS.some((pattern) => pattern.test(haystack));
+}
+
 async function loadCollectrUniverse() {
   const setsHtml = await fetchHtml(SETS_URL);
   const sets = extractCollectrSets(setsHtml);
   const cards = [];
 
   for (const setInfo of sets) {
+    if (isExcludedSet(setInfo)) continue;
     const html = await fetchHtml(buildSetUrl(setInfo));
     const products = extractCollectrProducts(html);
     for (const product of products) {
@@ -160,7 +178,7 @@ async function loadCollectrUniverse() {
     }
   }
 
-  const deduped = Array.from(new Map(cards.map((card) => [`${card.code}::${card.name}::${card.setName}`, card])).values())
+  const deduped = Array.from(new Map(cards.filter((card) => !isExcludedSet(card)).map((card) => [`${card.code}::${card.name}::${card.setName}`, card])).values())
     .sort((a, b) => b.rawMarket - a.rawMarket || a.code.localeCompare(b.code));
 
   return { sets, cards: deduped };

@@ -20,6 +20,11 @@ const DASHBOARD_TEST_JSON = path.join(DASHBOARD_DIR, 'latest-v2.json');
 const WEEKLY_BASE_JSON = path.join(DASHBOARD_DIR, 'weekly-base.json');
 const LIVE_BACKUP_JSON = path.join(DASHBOARD_DIR, 'latest.backup.json');
 const SCAN_REPORT_MD = path.join(REPORT_DIR, `pricecharting-psa10-scan-results-${DATE_STAMP}.md`);
+const EXCLUDED_SET_PATTERNS = [
+  /extra-booster-anime-25th-collection/i,
+  /anime\s*25th\s*collection/i,
+  /25th\s*(?:anniversary\s*)?collection/i,
+];
 
 async function run(command, args, options = {}) {
   const { stdout, stderr } = await execFileAsync(command, args, {
@@ -34,6 +39,11 @@ async function run(command, args, options = {}) {
 function money(value) {
   const n = Number(value || 0);
   return Number.isFinite(n) ? `$${n.toFixed(2)}` : '$0.00';
+}
+
+function isExcludedSet(row) {
+  const haystack = [row?.setSlug, row?.setName, row?.collectrSetUrl].filter(Boolean).join(' ');
+  return EXCLUDED_SET_PATTERNS.some((pattern) => pattern.test(haystack));
 }
 
 async function syncDashboardRepo(dateStamp, rowCount) {
@@ -126,7 +136,7 @@ function buildLastSeenReviewRows(currentRows, previousPayload) {
     });
   }
 
-  return stale;
+  return stale.filter((row) => !isExcludedSet(row));
 }
 
 async function backupLiveDashboard() {
@@ -199,12 +209,13 @@ async function main() {
   });
 
   let rows = JSON.parse(await fs.readFile(RESULTS_JSON, 'utf8'));
+  if (Array.isArray(rows)) rows = rows.filter((row) => !isExcludedSet(row));
   let reusedExistingBoard = null;
   if (!Array.isArray(rows) || rows.length === 0) {
     const blocked = await scanLooksBlocked();
     const fallback = await loadFallbackRows();
     if (blocked && fallback) {
-      rows = fallback.rows;
+      rows = fallback.rows.filter((row) => !isExcludedSet(row));
       reusedExistingBoard = fallback.source;
     } else {
       throw new Error('Refusing to publish an empty dashboard payload.');
