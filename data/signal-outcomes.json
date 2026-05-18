@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T09:45:44.100Z",
+  "generatedAt": "2026-05-18T09:45:35.897Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -19,12 +19,28 @@
   },
   "entries": [
     {
+      "code": "EB03-055",
+      "name": "Nico Robin (055) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 73.7,
+      "targetBuyPrice": 196.56,
+      "maxBuyPrice": 286.99,
+      "exitZoneLow": 485.75,
+      "exitZoneHigh": 543.83,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 72.9,
+      "discoveryScore": 72.5,
       "targetBuyPrice": 189.49,
       "maxBuyPrice": 277.13,
       "exitZoneLow": 470.78,
@@ -40,11 +56,11 @@
       "setName": "A Fist of Divine Speed",
       "action": "watch",
       "confidenceTier": "C",
-      "discoveryScore": 62.7,
-      "targetBuyPrice": 991.43,
-      "maxBuyPrice": 1337.91,
-      "exitZoneLow": 2621.97,
-      "exitZoneHigh": 2935.47,
+      "discoveryScore": 61.3,
+      "targetBuyPrice": 952.49,
+      "maxBuyPrice": 1286.37,
+      "exitZoneLow": 2526.68,
+      "exitZoneHigh": 2828.78,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
