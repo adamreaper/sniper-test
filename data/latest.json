@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-18T09:45:35.820Z",
-  "dateStamp": "2026-05-18",
+  "generatedAt": "2026-05-19T09:45:35.430Z",
+  "dateStamp": "2026-05-19",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -15,11 +15,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 12,
+  "rowsWithEbayField": 10,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 12,
+  "qualifiedCount": 10,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -29,7 +29,7 @@
       "roiPercent": 95.28,
       "rawMarket": 53.42,
       "psa10Market": 265,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -428,7 +428,7 @@
       "roiPercent": 123.33,
       "rawMarket": 21.87,
       "psa10Market": 223,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -810,7 +810,7 @@
       "roiPercent": 100.56,
       "rawMarket": 3375,
       "psa10Market": 7949.59,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1209,7 +1209,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1618,7 +1618,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2046,10 +2046,10 @@
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
       "productId": "646573",
-      "roiPercent": 94.09,
+      "roiPercent": 92.07,
       "rawMarket": 654.46,
-      "psa10Market": 1692.64,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "psa10Market": 1675.02,
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2471,7 +2471,7 @@
       "roiPercent": 82.07,
       "rawMarket": 138.92,
       "psa10Market": 423.97,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2869,7 +2869,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3250,7 +3250,7 @@
       "roiPercent": 89.97,
       "rawMarket": 781.2,
       "psa10Market": 1930.3,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3680,10 +3680,10 @@
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
       "productId": "672805",
-      "roiPercent": 356.44,
-      "rawMarket": 46.11,
-      "psa10Market": 581.5,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "roiPercent": 411.17,
+      "rawMarket": 45.9,
+      "psa10Market": 650,
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4109,7 +4109,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4491,7 +4491,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4890,7 +4890,7 @@
       "roiPercent": 82.77,
       "rawMarket": 2489.88,
       "psa10Market": 5405.95,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5334,7 +5334,7 @@
       "roiPercent": 125.47,
       "rawMarket": 140,
       "psa10Market": 443.25,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5750,7 +5750,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6169,7 +6169,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6595,7 +6595,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-05-17T09:45:44.009Z",
+      "lastSeenAt": "2026-05-18T09:45:35.820Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7000,56 +7000,6 @@
   ],
   "rows": [
     {
-      "code": "EB03-055",
-      "name": "Nico Robin (055) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "productId": "672808",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-alternate-art-eb03-055",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-alternate-art-eb03-055",
-      "searchScore": 161,
-      "rawMarket": 24.21,
-      "psa10Market": 599.99,
-      "netPsa10Exit": 527.99,
-      "gradingCost": 33,
-      "shippingCost": 33,
-      "costBasis": 90.21,
-      "profit": 437.78,
-      "roi": 4.8529,
-      "roiPercent": 485.29,
-      "psa10SalesCount": 16,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 84.64,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672808",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/mw5t52ihwqhaqcsn/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672808.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Nico Robin\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"EB03-055\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Nico Robin\" \"One Piece Heroine's Edition\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -7059,19 +7009,19 @@
       "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
       "searchScore": 157,
-      "rawMarket": 46.11,
-      "psa10Market": 581.5,
-      "netPsa10Exit": 511.72,
+      "rawMarket": 45.9,
+      "psa10Market": 650,
+      "netPsa10Exit": 572,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 112.11,
-      "profit": 399.61,
-      "roi": 3.5644,
-      "roiPercent": 356.44,
+      "costBasis": 111.9,
+      "profit": 460.1,
+      "roi": 4.1117,
+      "roiPercent": 411.17,
       "psa10SalesCount": 8,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 113.71,
+      "collectrRawMarket": 113.27,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
@@ -7121,7 +7071,7 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 542.79,
+      "collectrRawMarket": 541.19,
       "collectrLink": "https://app.getcollectr.com/explore/product/657348",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/m4inmog2tw6mf5v6/1600.jpg",
@@ -7223,7 +7173,7 @@
       "profit": 108.37,
       "roi": 1.2333,
       "roiPercent": 123.33,
-      "psa10SalesCount": 11,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 5900,
@@ -7273,7 +7223,7 @@
       "profit": 108.37,
       "roi": 1.2333,
       "roiPercent": 123.33,
-      "psa10SalesCount": 11,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 1217.59,
@@ -7376,7 +7326,7 @@
       "psa10SalesCount": 7,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 443.88,
+      "collectrRawMarket": 445.92,
       "collectrLink": "https://app.getcollectr.com/explore/product/654533",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/lg64el7diw6vdnw5/1600.jpg",
@@ -7420,18 +7370,18 @@
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-gold-op09-093",
       "searchScore": 157,
       "rawMarket": 654.46,
-      "psa10Market": 1692.64,
-      "netPsa10Exit": 1489.52,
+      "psa10Market": 1675.02,
+      "netPsa10Exit": 1474.02,
       "gradingCost": 79.99,
       "shippingCost": 33,
       "costBasis": 767.45,
-      "profit": 722.07,
-      "roi": 0.9409,
-      "roiPercent": 94.09,
+      "profit": 706.57,
+      "roi": 0.9207,
+      "roiPercent": 92.07,
       "psa10SalesCount": 16,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 1472.66,
+      "collectrRawMarket": 1589.84,
       "collectrLink": "https://app.getcollectr.com/explore/product/646573",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/legacy-of-the-master?cardType=cards&groupId=24302&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/hh72dbt75lf3h33t/1600.jpg",
@@ -7460,61 +7410,6 @@
       "lastReviewSeenAt": "2026-04-27T13:47:42.414Z"
     },
     {
-      "code": "OP09-004",
-      "name": "Shanks - OP09-004 (SP) (Silver)",
-      "setName": "Carrying On His Will",
-      "productId": "657443",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "searchScore": 139,
-      "rawMarket": 781.2,
-      "psa10Market": 1930.3,
-      "netPsa10Exit": 1698.66,
-      "gradingCost": 79.99,
-      "shippingCost": 33,
-      "costBasis": 894.19,
-      "profit": 804.47,
-      "roi": 0.8997,
-      "roiPercent": 89.97,
-      "psa10SalesCount": 4,
-      "ungradedSalesCount": 60,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 1007.61,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657443",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4dab4wymc3pqwjw/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657443.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Shanks - OP09-004\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Shanks -\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP09-004\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Shanks - OP09-004\" \"Carrying On His Will\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
       "setName": "Emperors in the New World",
@@ -7536,7 +7431,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 15,
       "bgs10SalesCount": 8,
-      "collectrRawMarket": 29995,
+      "collectrRawMarket": 5500,
       "collectrLink": "https://app.getcollectr.com/explore/product/597065",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/n5t2utlo4vogd6ea/1600.jpg",
@@ -7586,7 +7481,7 @@
       "psa10SalesCount": 8,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 314.23,
+      "collectrRawMarket": 311.18,
       "collectrLink": "https://app.getcollectr.com/explore/product/657448",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/c4ctyw2docqjjkky/1600.jpg",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-18T09:45:35.890Z",
-  "sourceFeedUpdatedAt": "2026-05-18T09:45:35.820Z",
+  "generatedAt": "2026-05-19T09:45:35.521Z",
+  "sourceFeedUpdatedAt": "2026-05-19T09:45:35.430Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,9 +8,9 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 12,
+    "totalPlans": 10,
     "prioritySearchCount": 0,
-    "watchCount": 10,
+    "watchCount": 8,
     "passCount": 2,
     "manualReviewCount": 0,
     "buyNowCount": 0
@@ -18,43 +18,18 @@
   "reviewQueue": [
     {
       "queueRank": 1,
-      "code": "EB03-055",
-      "name": "Nico Robin (055) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "action": "watch",
-      "confidenceTier": "B",
-      "discoveryScore": 73.7,
-      "targetBuyPrice": 196.56,
-      "idealBuyPrice": 155.57,
-      "stretchBuyPrice": 244.89,
-      "maxBuyPrice": 286.99,
-      "exitZoneLow": 485.75,
-      "exitZoneHigh": 543.83,
-      "whyInteresting": "PSA 10 spread is huge versus raw market",
-      "biggestRisk": "Collectr raw market drifts too far from board pricing",
-      "reviewSummary": "Worth checking, but not first in line.",
-      "reviewTags": [
-        "low-entry",
-        "liquid",
-        "wide-spread"
-      ],
-      "collectrLink": "https://app.getcollectr.com/explore/product/672808",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-alternate-art-eb03-055"
-    },
-    {
-      "queueRank": 2,
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 72.5,
-      "targetBuyPrice": 189.49,
-      "idealBuyPrice": 149.76,
-      "stretchBuyPrice": 236.33,
-      "maxBuyPrice": 277.13,
-      "exitZoneLow": 470.78,
-      "exitZoneHigh": 527.07,
+      "discoveryScore": 73.8,
+      "targetBuyPrice": 215.7,
+      "idealBuyPrice": 171.29,
+      "stretchBuyPrice": 268.05,
+      "maxBuyPrice": 313.67,
+      "exitZoneLow": 526.24,
+      "exitZoneHigh": 589.16,
       "whyInteresting": "PSA 10 spread is huge versus raw market",
       "biggestRisk": "Collectr raw market drifts too far from board pricing",
       "reviewSummary": "Worth checking, but not first in line.",
@@ -70,64 +45,6 @@
   "plans": [
     {
       "sourceRank": 1,
-      "code": "EB03-055",
-      "name": "Nico Robin (055) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "rarity": "SR",
-      "productId": "672808",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-alternate-art-eb03-055",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-alternate-art-eb03-055",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/mw5t52ihwqhaqcsn/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672808",
-      "searchScore": 161,
-      "rawMarket": 24.21,
-      "psa10Market": 599.99,
-      "netPsa10Exit": 527.99,
-      "gradingCost": 33,
-      "costBasis": 90.21,
-      "expectedPsaNet": 437.78,
-      "profit": 437.78,
-      "roiPercent": 485.29,
-      "psa10SalesCount": 16,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 84.64,
-      "collectrRawDeltaPercent": 249.61,
-      "psa10SpreadMultiple": 24.78,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 73.7,
-      "buyScore": 73.7,
-      "confidenceTier": "B",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 spread is huge versus raw market",
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Profit potential clears a solid bar after fees"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 155.57,
-      "targetBuyPrice": 196.56,
-      "stretchBuyPrice": 244.89,
-      "maxBuyPrice": 286.99,
-      "exitZoneLow": 485.75,
-      "exitZoneHigh": 543.83,
-      "reviewTags": [
-        "low-entry",
-        "liquid",
-        "wide-spread"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 1
-    },
-    {
-      "sourceRank": 2,
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -139,24 +56,24 @@
       "marketContext": null,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "searchScore": 157,
-      "rawMarket": 46.11,
-      "psa10Market": 581.5,
-      "netPsa10Exit": 511.72,
+      "rawMarket": 45.9,
+      "psa10Market": 650,
+      "netPsa10Exit": 572,
       "gradingCost": 33,
-      "costBasis": 112.11,
-      "expectedPsaNet": 399.61,
-      "profit": 399.61,
-      "roiPercent": 356.44,
+      "costBasis": 111.9,
+      "expectedPsaNet": 460.1,
+      "profit": 460.1,
+      "roiPercent": 411.17,
       "psa10SalesCount": 8,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 113.71,
-      "collectrRawDeltaPercent": 146.61,
-      "psa10SpreadMultiple": 12.61,
+      "collectrRawMarket": 113.27,
+      "collectrRawDeltaPercent": 146.78,
+      "psa10SpreadMultiple": 14.16,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 72.5,
-      "buyScore": 72.5,
+      "discoveryScore": 73.8,
+      "buyScore": 73.8,
       "confidenceTier": "B",
       "action": "watch",
       "riskFlags": [
@@ -170,22 +87,22 @@
         "Profit potential clears a solid bar after fees"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 149.76,
-      "targetBuyPrice": 189.49,
-      "stretchBuyPrice": 236.33,
-      "maxBuyPrice": 277.13,
-      "exitZoneLow": 470.78,
-      "exitZoneHigh": 527.07,
+      "idealBuyPrice": 171.29,
+      "targetBuyPrice": 215.7,
+      "stretchBuyPrice": 268.05,
+      "maxBuyPrice": 313.67,
+      "exitZoneLow": 526.24,
+      "exitZoneHigh": 589.16,
       "reviewTags": [
         "low-entry",
         "liquid",
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 2
+      "rank": 1
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 3,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "setName": "A Fist of Divine Speed",
@@ -240,10 +157,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 3
+      "rank": 2
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 6,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -298,10 +215,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
+      "rank": 3
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 8,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -314,23 +231,23 @@
       "collectrLink": "https://app.getcollectr.com/explore/product/646573",
       "searchScore": 157,
       "rawMarket": 654.46,
-      "psa10Market": 1692.64,
-      "netPsa10Exit": 1489.52,
+      "psa10Market": 1675.02,
+      "netPsa10Exit": 1474.02,
       "gradingCost": 79.99,
       "costBasis": 767.45,
-      "expectedPsaNet": 722.07,
-      "profit": 722.07,
-      "roiPercent": 94.09,
+      "expectedPsaNet": 706.57,
+      "profit": 706.57,
+      "roiPercent": 92.07,
       "psa10SalesCount": 16,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 1472.66,
-      "collectrRawDeltaPercent": 125.02,
-      "psa10SpreadMultiple": 2.59,
+      "collectrRawMarket": 1589.84,
+      "collectrRawDeltaPercent": 142.92,
+      "psa10SpreadMultiple": 2.56,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 55.3,
-      "buyScore": 55.3,
+      "discoveryScore": 54.6,
+      "buyScore": 54.6,
       "confidenceTier": "C",
       "action": "watch",
       "riskFlags": [
@@ -345,21 +262,21 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 382.59,
-      "targetBuyPrice": 467.63,
-      "stretchBuyPrice": 562.04,
-      "maxBuyPrice": 639.58,
-      "exitZoneLow": 1370.36,
-      "exitZoneHigh": 1534.21,
+      "idealBuyPrice": 377.78,
+      "targetBuyPrice": 461.93,
+      "stretchBuyPrice": 555.36,
+      "maxBuyPrice": 632.1,
+      "exitZoneLow": 1356.1,
+      "exitZoneHigh": 1518.24,
       "reviewTags": [
         "liquid",
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 4
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 9,
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
       "setName": "Emperors in the New World",
@@ -382,8 +299,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 15,
       "bgs10SalesCount": 8,
-      "collectrRawMarket": 29995,
-      "collectrRawDeltaPercent": 1104.68,
+      "collectrRawMarket": 5500,
+      "collectrRawDeltaPercent": 120.89,
       "psa10SpreadMultiple": 2.17,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -414,66 +331,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 5
     },
     {
-      "sourceRank": 10,
-      "code": "OP09-004",
-      "name": "Shanks - OP09-004 (SP) (Silver)",
-      "setName": "Carrying On His Will",
-      "rarity": "SR",
-      "productId": "657443",
-      "priceChartingPath": "/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-carrying-on-his-will/shanks-silver-op09-004",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4dab4wymc3pqwjw/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657443",
-      "searchScore": 139,
-      "rawMarket": 781.2,
-      "psa10Market": 1930.3,
-      "netPsa10Exit": 1698.66,
-      "gradingCost": 79.99,
-      "costBasis": 894.19,
-      "expectedPsaNet": 804.47,
-      "profit": 804.47,
-      "roiPercent": 89.97,
-      "psa10SalesCount": 4,
-      "ungradedSalesCount": 60,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 1007.61,
-      "collectrRawDeltaPercent": 28.98,
-      "psa10SpreadMultiple": 2.47,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 52.9,
-      "buyScore": 52.9,
-      "confidenceTier": "D",
-      "action": "watch",
-      "riskFlags": [
-        "low_psa10_liquidity",
-        "high_raw_entry_price",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "Raw sales volume supports manual searching",
-        "Absolute upside is meaningful after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "low_psa10_liquidity",
-      "idealBuyPrice": 428.59,
-      "targetBuyPrice": 518.13,
-      "stretchBuyPrice": 616.18,
-      "maxBuyPrice": 695.65,
-      "exitZoneLow": 1562.77,
-      "exitZoneHigh": 1749.62,
-      "reviewTags": [
-        "chase"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
-    },
-    {
-      "sourceRank": 6,
+      "sourceRank": 5,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -493,7 +354,7 @@
       "expectedPsaNet": 108.37,
       "profit": 108.37,
       "roiPercent": 123.33,
-      "psa10SalesCount": 11,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 1217.59,
@@ -529,10 +390,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
+      "rank": 6
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 4,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -552,7 +413,7 @@
       "expectedPsaNet": 108.37,
       "profit": 108.37,
       "roiPercent": 123.33,
-      "psa10SalesCount": 11,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 5900,
@@ -588,10 +449,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 9
+      "rank": 7
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 7,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy - EB02-061 (SP)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -614,8 +475,8 @@
       "psa10SalesCount": 7,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 443.88,
-      "collectrRawDeltaPercent": 297.92,
+      "collectrRawMarket": 445.92,
+      "collectrRawDeltaPercent": 299.75,
       "psa10SpreadMultiple": 3.59,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -643,10 +504,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 10
+      "rank": 8
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 10,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy - OP09-119 (SP)",
       "setName": "Carrying On His Will",
@@ -669,8 +530,8 @@
       "psa10SalesCount": 8,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 314.23,
-      "collectrRawDeltaPercent": 126.19,
+      "collectrRawMarket": 311.18,
+      "collectrRawDeltaPercent": 124,
       "psa10SpreadMultiple": 3.05,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -699,10 +560,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 11
+      "rank": 9
     },
     {
-      "sourceRank": 3,
+      "sourceRank": 2,
       "code": "OP13-080",
       "name": "St. Ethanbaron V. Nusjuro (Parallel)",
       "setName": "Carrying On His Will",
@@ -725,8 +586,8 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 542.79,
-      "collectrRawDeltaPercent": 3094.76,
+      "collectrRawMarket": 541.19,
+      "collectrRawDeltaPercent": 3085.34,
       "psa10SpreadMultiple": 14.84,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -757,7 +618,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 12
+      "rank": 10
     }
   ]
 }
