@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-19T09:45:35.430Z",
-  "dateStamp": "2026-05-19",
+  "generatedAt": "2026-05-20T09:45:35.287Z",
+  "dateStamp": "2026-05-20",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -16,11 +16,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 10,
+  "rowsWithEbayField": 9,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 10,
+  "qualifiedCount": 9,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -30,7 +30,7 @@
       "roiPercent": 95.28,
       "rawMarket": 53.42,
       "psa10Market": 265,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -429,7 +429,7 @@
       "roiPercent": 123.33,
       "rawMarket": 21.87,
       "psa10Market": 223,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -811,7 +811,7 @@
       "roiPercent": 100.56,
       "rawMarket": 3375,
       "psa10Market": 7949.59,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1210,7 +1210,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1619,7 +1619,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2050,7 +2050,7 @@
       "roiPercent": 92.07,
       "rawMarket": 654.46,
       "psa10Market": 1675.02,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2472,7 +2472,7 @@
       "roiPercent": 82.07,
       "rawMarket": 138.92,
       "psa10Market": 423.97,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2870,7 +2870,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3251,7 +3251,7 @@
       "roiPercent": 89.97,
       "rawMarket": 781.2,
       "psa10Market": 1930.3,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3684,7 +3684,7 @@
       "roiPercent": 411.17,
       "rawMarket": 45.9,
       "psa10Market": 650,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4110,7 +4110,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4492,7 +4492,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4888,10 +4888,10 @@
       "name": "Gol.D.Roger (Manga)",
       "setName": "Emperors in the New World",
       "productId": "597065",
-      "roiPercent": 82.77,
+      "roiPercent": 82.57,
       "rawMarket": 2489.88,
-      "psa10Market": 5405.95,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "psa10Market": 5399.99,
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5335,7 +5335,7 @@
       "roiPercent": 125.47,
       "rawMarket": 140,
       "psa10Market": 443.25,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5751,7 +5751,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6170,7 +6170,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6596,7 +6596,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-05-18T09:45:35.820Z",
+      "lastSeenAt": "2026-05-19T09:45:35.430Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7001,56 +7001,6 @@
   ],
   "rows": [
     {
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "productId": "672805",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "searchScore": 157,
-      "rawMarket": 45.9,
-      "psa10Market": 650,
-      "netPsa10Exit": 572,
-      "gradingCost": 33,
-      "shippingCost": 33,
-      "costBasis": 111.9,
-      "profit": 460.1,
-      "roi": 4.1117,
-      "roiPercent": 411.17,
-      "psa10SalesCount": 8,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 113.27,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672805.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Nami\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"EB03-053\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Nami\" \"One Piece Heroine's Edition\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
       "code": "OP13-080",
       "name": "St. Ethanbaron V. Nusjuro (Parallel)",
       "setName": "Carrying On His Will",
@@ -7274,7 +7224,7 @@
       "profit": 3507.65,
       "roi": 1.0056,
       "roiPercent": 100.56,
-      "psa10SalesCount": 23,
+      "psa10SalesCount": 24,
       "ungradedSalesCount": 23,
       "bgs10SalesCount": 8,
       "collectrRawMarket": 8592.59,
@@ -7379,7 +7329,7 @@
       "profit": 706.57,
       "roi": 0.9207,
       "roiPercent": 92.07,
-      "psa10SalesCount": 16,
+      "psa10SalesCount": 17,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 4,
       "collectrRawMarket": 1589.84,
@@ -7421,14 +7371,14 @@
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/goldroger-manga-op09-118",
       "searchScore": 163,
       "rawMarket": 2489.88,
-      "psa10Market": 5405.95,
-      "netPsa10Exit": 4757.24,
+      "psa10Market": 5399.99,
+      "netPsa10Exit": 4751.99,
       "gradingCost": 79.99,
       "shippingCost": 33,
       "costBasis": 2602.87,
-      "profit": 2154.37,
-      "roi": 0.8277,
-      "roiPercent": 82.77,
+      "profit": 2149.12,
+      "roi": 0.8257,
+      "roiPercent": 82.57,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 15,
       "bgs10SalesCount": 8,
@@ -7482,7 +7432,7 @@
       "psa10SalesCount": 8,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 311.18,
+      "collectrRawMarket": 309.41,
       "collectrLink": "https://app.getcollectr.com/explore/product/657448",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/c4ctyw2docqjjkky/1600.jpg",
