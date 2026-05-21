@@ -1,11 +1,62 @@
 {
-  "generatedAt": "2026-05-20T09:46:19.062Z",
-  "listingCount": 0,
+  "generatedAt": "2026-05-21T09:46:26.728Z",
+  "listingCount": 1,
   "summary": {
     "reviewCount": 0,
-    "watchCount": 0,
-    "avgScore": 0,
-    "avgPredictedProfit": 0
+    "watchCount": 1,
+    "avgScore": 37,
+    "avgPredictedProfit": 96.01
   },
-  "rows": []
+  "rows": [
+    {
+      "rank": 1,
+      "itemId": "v1|157928932149|0",
+      "title": "Shirahoshi EB01-057 SR Memorial Collection JP One Piece Card Game Bandai",
+      "url": "https://www.ebay.com/itm/157928932149?_skw=one+piece+collection+cards&hash=item24c54c4335:g:4UAAAeSw7LZqDtEN",
+      "imageUrl": "https://i.ebayimg.com/images/g/4UAAAeSw7LZqDtEN/s-l225.jpg",
+      "price": 2.99,
+      "shipping": 0,
+      "total": 2.99,
+      "lotType": "collection_lot",
+      "cardCountGuess": 60,
+      "score": 37,
+      "tier": "watch",
+      "predictedProfit": 96.01,
+      "maxBuyPrice": 71.28,
+      "maxBidPrice": 64.35,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 99,
+      "sellerFeedbackPercent": "100.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 60,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: specific card EB01-057",
+        "expected spread 96 over ask",
+        "free shipping"
+      ],
+      "topRisks": [],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "specific card EB01-057"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    }
+  ]
 }

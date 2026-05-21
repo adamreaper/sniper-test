@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T09:45:35.377Z",
+  "generatedAt": "2026-05-21T09:45:37.689Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -18,6 +18,38 @@
     ]
   },
   "entries": [
+    {
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 74.2,
+      "targetBuyPrice": 215.7,
+      "maxBuyPrice": 313.67,
+      "exitZoneLow": 526.24,
+      "exitZoneHigh": 589.16,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "EB03-055",
+      "name": "Nico Robin (055) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 73.7,
+      "targetBuyPrice": 196.56,
+      "maxBuyPrice": 286.99,
+      "exitZoneLow": 485.75,
+      "exitZoneHigh": 543.83,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
     {
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
@@ -136,7 +168,7 @@
       "setName": "Carrying On His Will",
       "action": "pass",
       "confidenceTier": "D",
-      "discoveryScore": 48.1,
+      "discoveryScore": 48.5,
       "targetBuyPrice": 119.91,
       "maxBuyPrice": 175.43,
       "exitZoneLow": 343.24,
