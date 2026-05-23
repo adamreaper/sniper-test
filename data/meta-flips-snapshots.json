@@ -12292,6 +12292,508 @@
           "leaderboardEurPrice": 1.77
         }
       ]
+    },
+    {
+      "generatedAt": "2026-05-23T16:07:29.573Z",
+      "cards": [
+        {
+          "code": "OP13-080",
+          "name": "St. Ethanbaron V. Nusjuro (Parallel)",
+          "usagePercent": null,
+          "rawMarket": 14.5,
+          "score": 51,
+          "action": "grade_candidate",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP13-119",
+          "name": "Portgas.D.Ace (119) (3rd Anniversary)",
+          "usagePercent": null,
+          "rawMarket": 21.87,
+          "score": 51,
+          "action": "grade_candidate",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP05-119",
+          "name": "Monkey.D.Luffy (SP) (Silver)",
+          "usagePercent": null,
+          "rawMarket": 1099,
+          "score": 46,
+          "action": "grade_candidate",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP13-040",
+          "name": "I Know You're Strong... So I'll Go All Out from the Very Start!!!",
+          "usagePercent": 75,
+          "rawMarket": 0.36,
+          "score": 45,
+          "action": "bundle_flip",
+          "tier": "HOT"
+        },
+        {
+          "code": "OP13-076",
+          "name": "Divine Departure",
+          "usagePercent": 78,
+          "rawMarket": 1.36,
+          "score": 44,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP11-106",
+          "name": "Zeus",
+          "usagePercent": 67,
+          "rawMarket": 1.62,
+          "score": 44,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-078",
+          "name": "Mamaragan",
+          "usagePercent": 76,
+          "rawMarket": 4.73,
+          "score": 43,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "EB04-058",
+          "name": "Borsalino",
+          "usagePercent": 91,
+          "rawMarket": 18.57,
+          "score": 42,
+          "action": "raw_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-077",
+          "name": "Lightning Dragon",
+          "usagePercent": 67,
+          "rawMarket": 0.22,
+          "score": 40,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP09-093",
+          "name": "Marshall.D.Teach (SP) (Gold)",
+          "usagePercent": null,
+          "rawMarket": 654.46,
+          "score": 40,
+          "action": "grade_candidate",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-061",
+          "name": "Ohm",
+          "usagePercent": 65,
+          "rawMarket": 0.17,
+          "score": 39,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-075",
+          "name": "El Thor",
+          "usagePercent": 65,
+          "rawMarket": 0.13,
+          "score": 39,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-076",
+          "name": "Lightning Beast Kiten",
+          "usagePercent": 65,
+          "rawMarket": 0.21,
+          "score": 39,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-067",
+          "name": "Shura",
+          "usagePercent": 58,
+          "rawMarket": 0.38,
+          "score": 37,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-066",
+          "name": "Satori",
+          "usagePercent": 52,
+          "rawMarket": 0.37,
+          "score": 35,
+          "action": "bundle_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP08-036",
+          "name": "Electrical Luna",
+          "usagePercent": 72,
+          "rawMarket": 3.9,
+          "score": 34,
+          "action": "raw_flip",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-113",
+          "name": "Roronoa Zoro",
+          "usagePercent": 68,
+          "rawMarket": 4.92,
+          "score": 32,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP13-042",
+          "name": "Edward.Newgate",
+          "usagePercent": 58,
+          "rawMarket": 3.29,
+          "score": 29,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP14-096",
+          "name": "Ground Death",
+          "usagePercent": 53,
+          "rawMarket": 3.37,
+          "score": 29,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP12-037",
+          "name": "Demon Aura Nine Sword Style Asura Blades Drawn Dead Man's Game",
+          "usagePercent": 55,
+          "rawMarket": 2.57,
+          "score": 28,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP05-077",
+          "name": "Gamma Knife",
+          "usagePercent": 54,
+          "rawMarket": 0.11,
+          "score": 27,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP12-071",
+          "name": "Charlotte Pudding",
+          "usagePercent": 57,
+          "rawMarket": 0.46,
+          "score": 26,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP09-118",
+          "name": "Gol.D.Roger",
+          "usagePercent": 69,
+          "rawMarket": 41.39,
+          "score": 25,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP12-063",
+          "name": "Vinsmoke Reiju",
+          "usagePercent": 48,
+          "rawMarket": 3.16,
+          "score": 25,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP14-111",
+          "name": "Perona",
+          "usagePercent": 48,
+          "rawMarket": 0.27,
+          "score": 25,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP14-102",
+          "name": "Kumacy",
+          "usagePercent": 47,
+          "rawMarket": 0.11,
+          "score": 25,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-092",
+          "name": "Monkey.D.Luffy",
+          "usagePercent": 47,
+          "rawMarket": 1.49,
+          "score": 25,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP14-110",
+          "name": "Dr. Hogback",
+          "usagePercent": 46,
+          "rawMarket": 1.91,
+          "score": 24,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-074",
+          "name": "Varie",
+          "usagePercent": 45,
+          "rawMarket": 0.14,
+          "score": 24,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "EB03-053",
+          "name": "Nami (053)",
+          "usagePercent": 63,
+          "rawMarket": 28.45,
+          "score": 23,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP15-118",
+          "name": "Enel",
+          "usagePercent": 65,
+          "rawMarket": 24.72,
+          "score": 21,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP07-064",
+          "name": "Sanji",
+          "usagePercent": 48,
+          "rawMarket": 1.58,
+          "score": 21,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "EB04-007",
+          "name": "Roronoa Zoro",
+          "usagePercent": 54,
+          "rawMarket": 15.84,
+          "score": 19,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP14-104",
+          "name": "Gecko Moria",
+          "usagePercent": 49,
+          "rawMarket": 8.37,
+          "score": 18,
+          "action": "watch",
+          "tier": "WATCH"
+        },
+        {
+          "code": "OP09-118",
+          "name": "Gol.D.Roger (Manga)",
+          "usagePercent": null,
+          "rawMarket": 2489.88,
+          "score": 18,
+          "action": "exit_watch",
+          "tier": "AVOID"
+        }
+      ],
+      "leaderboardCards": [
+        {
+          "code": "EB04-058",
+          "name": "Borsalino",
+          "usagePercent": 91,
+          "leaderboardEurPrice": 17.19
+        },
+        {
+          "code": "OP13-076",
+          "name": "Divine Departure",
+          "usagePercent": 78,
+          "leaderboardEurPrice": 1.26
+        },
+        {
+          "code": "OP15-078",
+          "name": "Mamaragan",
+          "usagePercent": 76,
+          "leaderboardEurPrice": 4.38
+        },
+        {
+          "code": "OP13-040",
+          "name": "I Know You're Strong... So I'll Go All Out from the Very Start!!!",
+          "usagePercent": 75,
+          "leaderboardEurPrice": 0.33
+        },
+        {
+          "code": "OP08-036",
+          "name": "Electrical Luna",
+          "usagePercent": 72,
+          "leaderboardEurPrice": 3.61
+        },
+        {
+          "code": "OP09-118",
+          "name": "Gol.D.Roger",
+          "usagePercent": 69,
+          "leaderboardEurPrice": 23.59
+        },
+        {
+          "code": "OP15-113",
+          "name": "Roronoa Zoro",
+          "usagePercent": 68,
+          "leaderboardEurPrice": 4.56
+        },
+        {
+          "code": "OP15-077",
+          "name": "Lightning Dragon",
+          "usagePercent": 67,
+          "leaderboardEurPrice": 0.2
+        },
+        {
+          "code": "OP11-106",
+          "name": "Zeus",
+          "usagePercent": 67,
+          "leaderboardEurPrice": 1.5
+        },
+        {
+          "code": "OP15-118",
+          "name": "Enel",
+          "usagePercent": 65,
+          "leaderboardEurPrice": 22.89
+        },
+        {
+          "code": "OP15-076",
+          "name": "Lightning Beast Kiten",
+          "usagePercent": 65,
+          "leaderboardEurPrice": 0.19
+        },
+        {
+          "code": "OP15-061",
+          "name": "Ohm",
+          "usagePercent": 65,
+          "leaderboardEurPrice": 0.16
+        },
+        {
+          "code": "OP15-075",
+          "name": "El Thor",
+          "usagePercent": 65,
+          "leaderboardEurPrice": 0.12
+        },
+        {
+          "code": "EB03-053",
+          "name": "Nami",
+          "usagePercent": 63,
+          "leaderboardEurPrice": 23.14
+        },
+        {
+          "code": "OP15-067",
+          "name": "Shura",
+          "usagePercent": 58,
+          "leaderboardEurPrice": 0.35
+        },
+        {
+          "code": "OP13-042",
+          "name": "Edward.Newgate",
+          "usagePercent": 58,
+          "leaderboardEurPrice": 3.05
+        },
+        {
+          "code": "OP12-071",
+          "name": "Charlotte Pudding",
+          "usagePercent": 57,
+          "leaderboardEurPrice": 0.43
+        },
+        {
+          "code": "OP12-037",
+          "name": "Demon Aura Nine Sword Style Asura Blades Drawn Dead Man's Game",
+          "usagePercent": 55,
+          "leaderboardEurPrice": 2.38
+        },
+        {
+          "code": "OP05-077",
+          "name": "Gamma Knife",
+          "usagePercent": 54,
+          "leaderboardEurPrice": 0.1
+        },
+        {
+          "code": "EB04-007",
+          "name": "Roronoa Zoro",
+          "usagePercent": 54,
+          "leaderboardEurPrice": 14.67
+        },
+        {
+          "code": "OP14-096",
+          "name": "Ground Death",
+          "usagePercent": 53,
+          "leaderboardEurPrice": 3.12
+        },
+        {
+          "code": "OP15-066",
+          "name": "Satori",
+          "usagePercent": 52,
+          "leaderboardEurPrice": 0.34
+        },
+        {
+          "code": "OP14-104",
+          "name": "Gecko Moria",
+          "usagePercent": 49,
+          "leaderboardEurPrice": 7.75
+        },
+        {
+          "code": "OP07-064",
+          "name": "Sanji",
+          "usagePercent": 48,
+          "leaderboardEurPrice": 1.46
+        },
+        {
+          "code": "OP12-063",
+          "name": "Vinsmoke Reiju",
+          "usagePercent": 48,
+          "leaderboardEurPrice": 2.93
+        },
+        {
+          "code": "OP14-111",
+          "name": "Perona",
+          "usagePercent": 48,
+          "leaderboardEurPrice": 0.25
+        },
+        {
+          "code": "OP14-102",
+          "name": "Kumacy",
+          "usagePercent": 47,
+          "leaderboardEurPrice": 0.1
+        },
+        {
+          "code": "OP15-092",
+          "name": "Monkey.D.Luffy",
+          "usagePercent": 47,
+          "leaderboardEurPrice": 1.38
+        },
+        {
+          "code": "OP14-110",
+          "name": "Dr. Hogback",
+          "usagePercent": 46,
+          "leaderboardEurPrice": 1.77
+        },
+        {
+          "code": "OP15-074",
+          "name": "Varie",
+          "usagePercent": 45,
+          "leaderboardEurPrice": 0.13
+        }
+      ]
     }
   ]
 }
