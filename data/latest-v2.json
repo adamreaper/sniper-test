@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-23T16:07:27.992Z",
-  "dateStamp": "2026-05-23",
+  "generatedAt": "2026-05-24T09:46:47.117Z",
+  "dateStamp": "2026-05-24",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -16,11 +16,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 7,
+  "rowsWithEbayField": 8,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 7,
+  "qualifiedCount": 8,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -30,7 +30,7 @@
       "roiPercent": 95.28,
       "rawMarket": 53.42,
       "psa10Market": 265,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -426,10 +426,10 @@
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
       "productId": "657407",
-      "roiPercent": 123.33,
-      "rawMarket": 21.87,
+      "roiPercent": 121.17,
+      "rawMarket": 22.73,
       "psa10Market": 223,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -808,10 +808,10 @@
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
       "productId": "632504",
-      "roiPercent": 100.56,
+      "roiPercent": 99.29,
       "rawMarket": 3375,
-      "psa10Market": 7949.59,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "psa10Market": 7899.18,
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1210,7 +1210,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1619,7 +1619,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2050,7 +2050,7 @@
       "roiPercent": 92.07,
       "rawMarket": 654.46,
       "psa10Market": 1675.02,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2472,7 +2472,7 @@
       "roiPercent": 82.07,
       "rawMarket": 138.92,
       "psa10Market": 423.97,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2870,7 +2870,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3251,7 +3251,7 @@
       "roiPercent": 89.97,
       "rawMarket": 781.2,
       "psa10Market": 1930.3,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3684,7 +3684,7 @@
       "roiPercent": 411.17,
       "rawMarket": 45.9,
       "psa10Market": 650,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4110,7 +4110,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4492,7 +4492,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4891,7 +4891,7 @@
       "roiPercent": 82.57,
       "rawMarket": 2489.88,
       "psa10Market": 5399.99,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5335,7 +5335,7 @@
       "roiPercent": 125.47,
       "rawMarket": 140,
       "psa10Market": 443.25,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5751,7 +5751,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6170,7 +6170,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6596,7 +6596,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-05-23T09:47:33.878Z",
+      "lastSeenAt": "2026-05-23T16:07:27.992Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7022,7 +7022,7 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 542.99,
+      "collectrRawMarket": 541.11,
       "collectrLink": "https://app.getcollectr.com/explore/product/657348",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/m4inmog2tw6mf5v6/1600.jpg",
@@ -7115,15 +7115,15 @@
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "searchScore": 139,
-      "rawMarket": 21.87,
+      "rawMarket": 22.73,
       "psa10Market": 223,
       "netPsa10Exit": 196.24,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 87.87,
-      "profit": 108.37,
-      "roi": 1.2333,
-      "roiPercent": 123.33,
+      "costBasis": 88.73,
+      "profit": 107.51,
+      "roi": 1.2117,
+      "roiPercent": 121.17,
       "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
@@ -7165,15 +7165,15 @@
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "searchScore": 157,
-      "rawMarket": 21.87,
+      "rawMarket": 22.73,
       "psa10Market": 223,
       "netPsa10Exit": 196.24,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 87.87,
-      "profit": 108.37,
-      "roi": 1.2333,
-      "roiPercent": 123.33,
+      "costBasis": 88.73,
+      "profit": 107.51,
+      "roi": 1.2117,
+      "roiPercent": 121.17,
       "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
@@ -7206,6 +7206,61 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "EB02-061",
+      "name": "Monkey.D.Luffy - EB02-061 (SP)",
+      "setName": "Premium Booster -The Best- Vol. 2",
+      "productId": "654533",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-premium-booster-2/monkeydluffy-sp-prb-02-eb02-061",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-premium-booster-2/monkeydluffy-sp-prb-02-eb02-061",
+      "searchScore": 145,
+      "rawMarket": 109.37,
+      "psa10Market": 400,
+      "netPsa10Exit": 352,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 175.37,
+      "profit": 176.63,
+      "roi": 1.0072,
+      "roiPercent": 100.72,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 1,
+      "collectrRawMarket": 442.53,
+      "collectrLink": "https://app.getcollectr.com/explore/product/654533",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/lg64el7diw6vdnw5/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_654533.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy - EB02-061\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy -\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"EB02-061\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy - EB02-061\" \"Premium Booster -The Best- Vol. 2\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -7216,14 +7271,14 @@
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
       "searchScore": 157,
       "rawMarket": 3375,
-      "psa10Market": 7949.59,
-      "netPsa10Exit": 6995.64,
+      "psa10Market": 7899.18,
+      "netPsa10Exit": 6951.28,
       "gradingCost": 79.99,
       "shippingCost": 33,
       "costBasis": 3487.99,
-      "profit": 3507.65,
-      "roi": 1.0056,
-      "roiPercent": 100.56,
+      "profit": 3463.29,
+      "roi": 0.9929,
+      "roiPercent": 99.29,
       "psa10SalesCount": 24,
       "ungradedSalesCount": 23,
       "bgs10SalesCount": 8,
