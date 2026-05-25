@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T09:46:47.188Z",
+  "generatedAt": "2026-05-25T09:45:58.366Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -24,11 +24,11 @@
       "setName": "A Fist of Divine Speed",
       "action": "watch",
       "confidenceTier": "C",
-      "discoveryScore": 61.3,
-      "targetBuyPrice": 952.49,
-      "maxBuyPrice": 1286.37,
-      "exitZoneLow": 2526.68,
-      "exitZoneHigh": 2828.78,
+      "discoveryScore": 59.6,
+      "targetBuyPrice": 891.64,
+      "maxBuyPrice": 1196.73,
+      "exitZoneLow": 2431.39,
+      "exitZoneHigh": 2722.1,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",

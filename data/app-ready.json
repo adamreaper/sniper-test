@@ -1,11 +1,62 @@
 {
-  "generatedAt": "2026-05-24T09:48:01.478Z",
-  "listingCount": 0,
+  "generatedAt": "2026-05-25T09:47:03.513Z",
+  "listingCount": 1,
   "summary": {
-    "reviewCount": 0,
+    "reviewCount": 1,
     "watchCount": 0,
-    "avgScore": 0,
-    "avgPredictedProfit": 0
+    "avgScore": 55.3,
+    "avgPredictedProfit": 132
   },
-  "rows": []
+  "rows": [
+    {
+      "rank": 1,
+      "itemId": "v1|147328993868|0",
+      "title": "One Piece Card Set Special Done Opened Packs Fresh NM Bulk Tons Of Cards",
+      "url": "https://www.ebay.com/itm/147328993868?_skw=one+piece+bulk+cards&hash=item224d7e0a4c:g:ZPAAAeSwqyxqE0Co",
+      "imageUrl": "https://i.ebayimg.com/images/g/ZPAAAeSwqyxqE0Co/s-l225.jpg",
+      "price": 1,
+      "shipping": 9,
+      "total": 10,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 200,
+      "score": 55.3,
+      "tier": "review",
+      "predictedProfit": 132,
+      "maxBuyPrice": 102.24,
+      "maxBidPrice": 92.3,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 142,
+      "sellerFeedbackPercent": "100.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 100,
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: SP signal",
+        "expected spread 132 over ask",
+        "large lot estimate around 200 cards"
+      ],
+      "topRisks": [],
+      "hardGatesPassed": true,
+      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "SP signal"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    }
+  ]
 }
