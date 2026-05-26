@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-26T09:46:35.011Z",
-  "sourceFeedUpdatedAt": "2026-05-26T09:46:34.944Z",
+  "generatedAt": "2026-05-26T22:35:00.194Z",
+  "sourceFeedUpdatedAt": "2026-05-26T22:35:00.120Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -382,7 +382,7 @@
       "expectedPsaNet": 107.51,
       "profit": 107.51,
       "roiPercent": 121.17,
-      "psa10SalesCount": 13,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 1233.39,
@@ -441,7 +441,7 @@
       "expectedPsaNet": 107.51,
       "profit": 107.51,
       "roiPercent": 121.17,
-      "psa10SalesCount": 13,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 5900,
