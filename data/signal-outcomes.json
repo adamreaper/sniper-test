@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T09:45:58.366Z",
+  "generatedAt": "2026-05-26T09:46:35.013Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -67,6 +67,22 @@
       "lastReviewedAt": null
     },
     {
+      "code": "OP09-118",
+      "name": "Gol.D.Roger (Manga)",
+      "setName": "Emperors in the New World",
+      "action": "watch",
+      "confidenceTier": "C",
+      "discoveryScore": 54.6,
+      "targetBuyPrice": 1711.81,
+      "maxBuyPrice": 2274.45,
+      "exitZoneLow": 4483.79,
+      "exitZoneHigh": 5019.9,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -77,22 +93,6 @@
       "maxBuyPrice": 632.1,
       "exitZoneLow": 1356.1,
       "exitZoneHigh": 1518.24,
-      "outcomeStatus": "unreviewed",
-      "outcomeTag": "",
-      "notes": "",
-      "lastReviewedAt": null
-    },
-    {
-      "code": "OP09-118",
-      "name": "Gol.D.Roger (Manga)",
-      "setName": "Emperors in the New World",
-      "action": "watch",
-      "confidenceTier": "D",
-      "discoveryScore": 53.9,
-      "targetBuyPrice": 1667.07,
-      "maxBuyPrice": 2215.66,
-      "exitZoneLow": 4371.83,
-      "exitZoneHigh": 4894.55,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
@@ -141,6 +141,22 @@
       "maxBuyPrice": 85.93,
       "exitZoneLow": 180.54,
       "exitZoneHigh": 202.13,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (093) (Manga)",
+      "setName": "Emperors in the New World",
+      "action": "watch",
+      "confidenceTier": "D",
+      "discoveryScore": 50.4,
+      "targetBuyPrice": 366.12,
+      "maxBuyPrice": 506.2,
+      "exitZoneLow": 1116.35,
+      "exitZoneHigh": 1249.82,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
