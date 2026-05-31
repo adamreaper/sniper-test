@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-30T09:46:38.812Z",
-  "sourceFeedUpdatedAt": "2026-05-30T09:46:38.732Z",
+  "generatedAt": "2026-05-31T09:47:11.346Z",
+  "sourceFeedUpdatedAt": "2026-05-31T09:47:11.279Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,9 +8,9 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 9,
+    "totalPlans": 8,
     "prioritySearchCount": 0,
-    "watchCount": 7,
+    "watchCount": 6,
     "passCount": 2,
     "manualReviewCount": 0,
     "buyNowCount": 0
@@ -76,64 +76,7 @@
       "rank": 1
     },
     {
-      "sourceRank": 1,
-      "code": "OP13-080",
-      "name": "St. Ethanbaron V. Nusjuro (Parallel)",
-      "setName": "Carrying On His Will",
-      "rarity": "R",
-      "productId": "657348",
-      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/st-ethanbaron-v-nusjuro-alternate-art-op13-080",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/st-ethanbaron-v-nusjuro-alternate-art-op13-080",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/m4inmog2tw6mf5v6/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657348",
-      "searchScore": 143,
-      "rawMarket": 14.5,
-      "psa10Market": 262.76,
-      "netPsa10Exit": 231.23,
-      "gradingCost": 33,
-      "costBasis": 80.5,
-      "expectedPsaNet": 150.73,
-      "profit": 150.73,
-      "roiPercent": 187.24,
-      "psa10SalesCount": 5,
-      "ungradedSalesCount": 28,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 541.11,
-      "collectrRawDeltaPercent": 3631.79,
-      "psa10SpreadMultiple": 18.12,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 58,
-      "buyScore": 58,
-      "confidenceTier": "C",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 spread is huge versus raw market",
-        "PSA 10 comp depth is acceptable",
-        "Raw sales volume supports manual searching",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 47.85,
-      "targetBuyPrice": 64.98,
-      "stretchBuyPrice": 84.97,
-      "maxBuyPrice": 102.22,
-      "exitZoneLow": 212.73,
-      "exitZoneHigh": 238.17,
-      "reviewTags": [
-        "low-entry",
-        "wide-spread"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 2
-    },
-    {
-      "sourceRank": 6,
+      "sourceRank": 5,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -188,10 +131,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 3
+      "rank": 2
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 7,
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
       "setName": "Emperors in the New World",
@@ -246,10 +189,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
+      "rank": 3
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 8,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -272,8 +215,8 @@
       "psa10SalesCount": 17,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 1589.84,
-      "collectrRawDeltaPercent": 142.92,
+      "collectrRawMarket": 1500,
+      "collectrRawDeltaPercent": 129.2,
       "psa10SpreadMultiple": 2.48,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -304,10 +247,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 4
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 6,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
@@ -362,62 +305,65 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 5
     },
     {
-      "sourceRank": 5,
-      "code": "EB02-061",
-      "name": "Monkey.D.Luffy - EB02-061 (SP)",
-      "setName": "Premium Booster -The Best- Vol. 2",
-      "rarity": "SEC",
-      "productId": "654533",
-      "priceChartingPath": "/game/one-piece-japanese-premium-booster-2/monkeydluffy-sp-prb-02-eb02-061",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-premium-booster-2/monkeydluffy-sp-prb-02-eb02-061",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/lg64el7diw6vdnw5/1600.jpg",
+      "sourceRank": 1,
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rarity": "SR",
+      "productId": "672805",
+      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
       "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/654533",
-      "searchScore": 145,
-      "rawMarket": 109.37,
-      "psa10Market": 400,
-      "netPsa10Exit": 352,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
+      "searchScore": 157,
+      "rawMarket": 44.5,
+      "psa10Market": 498,
+      "netPsa10Exit": 438.24,
       "gradingCost": 33,
-      "costBasis": 175.37,
-      "expectedPsaNet": 176.63,
-      "profit": 176.63,
-      "roiPercent": 100.72,
-      "psa10SalesCount": 7,
+      "costBasis": 110.5,
+      "expectedPsaNet": 327.74,
+      "profit": 327.74,
+      "roiPercent": 296.6,
+      "psa10SalesCount": 4,
       "ungradedSalesCount": 30,
-      "bgs10SalesCount": 1,
-      "collectrRawMarket": 442.53,
-      "collectrRawDeltaPercent": 304.62,
-      "psa10SpreadMultiple": 3.66,
+      "bgs10SalesCount": 4,
+      "collectrRawMarket": 109.92,
+      "collectrRawDeltaPercent": 147.01,
+      "psa10SpreadMultiple": 11.19,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 51,
-      "buyScore": 51,
+      "discoveryScore": 52.1,
+      "buyScore": 52.1,
       "confidenceTier": "D",
       "action": "watch",
       "riskFlags": [
+        "low_psa10_liquidity",
         "collectr_raw_drift",
         "search_only_no_live_pull"
       ],
       "topReasons": [
-        "PSA 10 comp depth is acceptable",
+        "PSA 10 spread is huge versus raw market",
         "Raw sales volume supports manual searching",
+        "Profit potential clears a solid bar after fees",
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 84.33,
-      "targetBuyPrice": 107.8,
-      "stretchBuyPrice": 134.62,
-      "maxBuyPrice": 157.27,
-      "exitZoneLow": 323.84,
-      "exitZoneHigh": 362.56,
+      "idealBuyPrice": 117.08,
+      "targetBuyPrice": 148.09,
+      "stretchBuyPrice": 183.95,
+      "maxBuyPrice": 214.59,
+      "exitZoneLow": 403.18,
+      "exitZoneHigh": 451.39,
       "reviewTags": [
-        "chase"
+        "low-entry",
+        "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 6
     },
     {
       "sourceRank": 4,
@@ -443,8 +389,8 @@
       "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 1255.35,
-      "collectrRawDeltaPercent": 4923.41,
+      "collectrRawMarket": 1269.23,
+      "collectrRawDeltaPercent": 4978.95,
       "psa10SpreadMultiple": 8.92,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -476,7 +422,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 8
+      "rank": 7
     },
     {
       "sourceRank": 3,
@@ -535,7 +481,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 9
+      "rank": 8
     }
   ]
 }
