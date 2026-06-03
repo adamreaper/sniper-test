@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T09:46:46.870Z",
+  "generatedAt": "2026-06-03T09:46:36.239Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -67,22 +67,6 @@
       "lastReviewedAt": null
     },
     {
-      "code": "OP05-119",
-      "name": "Monkey.D.Luffy (SP) (Gold)",
-      "setName": "A Fist of Divine Speed",
-      "action": "watch",
-      "confidenceTier": "C",
-      "discoveryScore": 56.3,
-      "targetBuyPrice": 2475.63,
-      "maxBuyPrice": 3278.12,
-      "exitZoneLow": 6395.18,
-      "exitZoneHigh": 7159.82,
-      "outcomeStatus": "unreviewed",
-      "outcomeTag": "",
-      "notes": "",
-      "lastReviewedAt": null
-    },
-    {
       "code": "EB02-061",
       "name": "Monkey.D.Luffy - EB02-061 (SP)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -109,6 +93,22 @@
       "maxBuyPrice": 2317.79,
       "exitZoneLow": 4566.34,
       "exitZoneHigh": 5112.31,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
+      "code": "OP05-119",
+      "name": "Monkey.D.Luffy (SP) (Gold)",
+      "setName": "A Fist of Divine Speed",
+      "action": "watch",
+      "confidenceTier": "C",
+      "discoveryScore": 54,
+      "targetBuyPrice": 2537.36,
+      "maxBuyPrice": 3359.24,
+      "exitZoneLow": 6549.66,
+      "exitZoneHigh": 7332.78,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
