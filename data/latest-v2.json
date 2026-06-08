@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-07T09:46:43.918Z",
-  "dateStamp": "2026-06-07",
+  "generatedAt": "2026-06-08T09:47:32.051Z",
+  "dateStamp": "2026-06-08",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -16,11 +16,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 11,
+  "rowsWithEbayField": 13,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 11,
+  "qualifiedCount": 13,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -30,7 +30,7 @@
       "roiPercent": 95.28,
       "rawMarket": 53.42,
       "psa10Market": 265,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -426,10 +426,10 @@
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
       "productId": "657407",
-      "roiPercent": 110.45,
-      "rawMarket": 27.25,
+      "roiPercent": 107.77,
+      "rawMarket": 28.45,
       "psa10Market": 223,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -811,7 +811,7 @@
       "roiPercent": 84.29,
       "rawMarket": 3750,
       "psa10Market": 8090,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1210,7 +1210,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1619,7 +1619,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2050,7 +2050,7 @@
       "roiPercent": 85.91,
       "rawMarket": 654.46,
       "psa10Market": 1621.3,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2469,10 +2469,10 @@
       "name": "Monkey.D.Luffy - OP09-119 (SP)",
       "setName": "Carrying On His Will",
       "productId": "657448",
-      "roiPercent": 82.07,
-      "rawMarket": 138.92,
-      "psa10Market": 423.97,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "roiPercent": 93.74,
+      "rawMarket": 152.93,
+      "psa10Market": 481.99,
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2870,7 +2870,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3251,7 +3251,7 @@
       "roiPercent": 89.97,
       "rawMarket": 781.2,
       "psa10Market": 1930.3,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3684,7 +3684,7 @@
       "roiPercent": 317.1,
       "rawMarket": 44.5,
       "psa10Market": 523.75,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4110,7 +4110,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4492,7 +4492,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4891,7 +4891,7 @@
       "roiPercent": 88.86,
       "rawMarket": 2515.04,
       "psa10Market": 5640.24,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5335,7 +5335,7 @@
       "roiPercent": 125.47,
       "rawMarket": 140,
       "psa10Market": 443.25,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5751,7 +5751,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6170,7 +6170,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6596,7 +6596,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-06-06T09:46:34.146Z",
+      "lastSeenAt": "2026-06-07T09:46:43.918Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7069,10 +7069,10 @@
       "profit": 350.4,
       "roi": 3.171,
       "roiPercent": 317.1,
-      "psa10SalesCount": 10,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 116.43,
+      "collectrRawMarket": 116.06,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
@@ -7151,6 +7151,56 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "OP12-014",
+      "name": "Boa Hancock (SP)",
+      "setName": "Adventure on Kami's Island",
+      "productId": "685011",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-adventure-on-kami%27s-island/boa-hancock-sp-op12-014",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-adventure-on-kami%27s-island/boa-hancock-sp-op12-014",
+      "searchScore": 149,
+      "rawMarket": 366.09,
+      "psa10Market": 1070,
+      "netPsa10Exit": 941.6,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 432.09,
+      "profit": 509.51,
+      "roi": 1.1792,
+      "roiPercent": 117.92,
+      "psa10SalesCount": 10,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 549.86,
+      "collectrLink": "https://app.getcollectr.com/explore/product/685011",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k2gyz4btdj54lpty/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685011.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Boa Hancock\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP12-014\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Boa Hancock\" \"Adventure on Kami's Island\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "EB02-061",
       "name": "Monkey.D.Luffy - EB02-061 (SP)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -7169,10 +7219,10 @@
       "profit": 186.01,
       "roi": 1.1206,
       "roiPercent": 112.06,
-      "psa10SalesCount": 8,
+      "psa10SalesCount": 11,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 439.74,
+      "collectrRawMarket": 438.18,
       "collectrLink": "https://app.getcollectr.com/explore/product/654533",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/lg64el7diw6vdnw5/1600.jpg",
@@ -7215,15 +7265,15 @@
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "searchScore": 139,
-      "rawMarket": 27.25,
+      "rawMarket": 28.45,
       "psa10Market": 223,
       "netPsa10Exit": 196.24,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 93.25,
-      "profit": 102.99,
-      "roi": 1.1045,
-      "roiPercent": 110.45,
+      "costBasis": 94.45,
+      "profit": 101.79,
+      "roi": 1.0777,
+      "roiPercent": 107.77,
       "psa10SalesCount": 13,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
@@ -7265,19 +7315,19 @@
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/portgasdace-alternate-art-op13-119",
       "searchScore": 157,
-      "rawMarket": 27.25,
+      "rawMarket": 28.45,
       "psa10Market": 223,
       "netPsa10Exit": 196.24,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 93.25,
-      "profit": 102.99,
-      "roi": 1.1045,
-      "roiPercent": 110.45,
+      "costBasis": 94.45,
+      "profit": 101.79,
+      "roi": 1.0777,
+      "roiPercent": 107.77,
       "psa10SalesCount": 13,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 1309.78,
+      "collectrRawMarket": 1309.26,
       "collectrLink": "https://app.getcollectr.com/explore/product/657407",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ksjriwcc42kw6its/1600.jpg",
@@ -7306,6 +7356,61 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "OP09-119",
+      "name": "Monkey.D.Luffy - OP09-119 (SP)",
+      "setName": "Carrying On His Will",
+      "productId": "657448",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-sp-op09-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-sp-op09-119",
+      "searchScore": 145,
+      "rawMarket": 152.93,
+      "psa10Market": 481.99,
+      "netPsa10Exit": 424.15,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 218.93,
+      "profit": 205.22,
+      "roi": 0.9374,
+      "roiPercent": 93.74,
+      "psa10SalesCount": 16,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 1,
+      "collectrRawMarket": 321.54,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657448",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/c4ctyw2docqjjkky/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657448.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy - OP09-119\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy -\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP09-119\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy - OP09-119\" \"Carrying On His Will\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "OP09-093",
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
@@ -7315,15 +7420,15 @@
       "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/marshalldteach-manga-op09-093",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/marshalldteach-manga-op09-093",
       "searchScore": 155,
-      "rawMarket": 516.99,
-      "psa10Market": 1378.89,
-      "netPsa10Exit": 1213.42,
+      "rawMarket": 520.4,
+      "psa10Market": 1387.5,
+      "netPsa10Exit": 1221,
       "gradingCost": 79.99,
       "shippingCost": 33,
-      "costBasis": 629.98,
-      "profit": 583.44,
-      "roi": 0.9261,
-      "roiPercent": 92.61,
+      "costBasis": 633.39,
+      "profit": 587.61,
+      "roi": 0.9277,
+      "roiPercent": 92.77,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 29,
       "bgs10SalesCount": 3,
@@ -7477,7 +7582,7 @@
       "psa10SalesCount": 28,
       "ungradedSalesCount": 23,
       "bgs10SalesCount": 8,
-      "collectrRawMarket": 13832.66,
+      "collectrRawMarket": 14944.22,
       "collectrLink": "https://app.getcollectr.com/explore/product/632504",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/pfa3b3bcgxrtsggz/1600.jpg",
@@ -7506,32 +7611,32 @@
       "lastReviewSeenAt": null
     },
     {
-      "code": "OP12-014",
-      "name": "Boa Hancock (SP)",
+      "code": "EB02-052",
+      "name": "Enel (SP)",
       "setName": "Adventure on Kami's Island",
-      "productId": "685011",
+      "productId": "685008",
       "rarity": "SR",
       "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-adventure-on-kami%27s-island/boa-hancock-sp-op12-014",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-adventure-on-kami%27s-island/boa-hancock-sp-op12-014",
-      "searchScore": 149,
-      "rawMarket": 351.26,
-      "psa10Market": 864.24,
-      "netPsa10Exit": 760.53,
+      "priceChartingPath": "/game/one-piece-japanese-adventure-on-kami%27s-island/enel-sp-eb02-052",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-adventure-on-kami%27s-island/enel-sp-eb02-052",
+      "searchScore": 145,
+      "rawMarket": 121.72,
+      "psa10Market": 385,
+      "netPsa10Exit": 338.8,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 417.26,
-      "profit": 343.27,
-      "roi": 0.8227,
-      "roiPercent": 82.27,
-      "psa10SalesCount": 8,
+      "costBasis": 187.72,
+      "profit": 151.08,
+      "roi": 0.8048,
+      "roiPercent": 80.48,
+      "psa10SalesCount": 3,
       "ungradedSalesCount": 30,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 549.86,
-      "collectrLink": "https://app.getcollectr.com/explore/product/685011",
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 146.4,
+      "collectrLink": "https://app.getcollectr.com/explore/product/685008",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k2gyz4btdj54lpty/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685011.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/v7y54gzorfyitorz/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685008.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
       "ebayCandidateCount": 0,
@@ -7539,17 +7644,17 @@
       "ebayLookupErrors": [
         {
           "stage": "search",
-          "query": "\"Boa Hancock\" \"One Piece\"",
+          "query": "\"Enel\" \"One Piece\"",
           "error": "Missing eBay credentials"
         },
         {
           "stage": "search",
-          "query": "\"OP12-014\" \"One Piece\"",
+          "query": "\"EB02-052\" \"One Piece\"",
           "error": "Missing eBay credentials"
         },
         {
           "stage": "search",
-          "query": "\"Boa Hancock\" \"Adventure on Kami's Island\" \"One Piece\"",
+          "query": "\"Enel\" \"Adventure on Kami's Island\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
