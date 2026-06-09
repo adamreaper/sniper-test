@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-08T09:47:32.124Z",
-  "sourceFeedUpdatedAt": "2026-06-08T09:47:32.051Z",
+  "generatedAt": "2026-06-09T09:46:38.924Z",
+  "sourceFeedUpdatedAt": "2026-06-09T09:46:38.853Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,9 +8,9 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 13,
+    "totalPlans": 12,
     "prioritySearchCount": 0,
-    "watchCount": 10,
+    "watchCount": 9,
     "passCount": 3,
     "manualReviewCount": 0,
     "buyNowCount": 0
@@ -92,8 +92,8 @@
       "psa10SalesCount": 16,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 81.42,
-      "collectrRawDeltaPercent": 190.79,
+      "collectrRawMarket": 81.38,
+      "collectrRawDeltaPercent": 190.64,
       "psa10SpreadMultiple": 21.07,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -150,8 +150,8 @@
       "psa10SalesCount": 12,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 116.06,
-      "collectrRawDeltaPercent": 160.81,
+      "collectrRawMarket": 115.46,
+      "collectrRawDeltaPercent": 159.46,
       "psa10SpreadMultiple": 11.77,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -266,8 +266,8 @@
       "psa10SalesCount": 11,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 438.18,
-      "collectrRawDeltaPercent": 338.22,
+      "collectrRawMarket": 439.9,
+      "collectrRawDeltaPercent": 339.94,
       "psa10SpreadMultiple": 4,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -301,7 +301,7 @@
       "rank": 4
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 8,
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
       "setName": "Emperors in the New World",
@@ -313,24 +313,24 @@
       "marketContext": null,
       "collectrLink": "https://app.getcollectr.com/explore/product/597065",
       "searchScore": 163,
-      "rawMarket": 2515.04,
-      "psa10Market": 5640.24,
-      "netPsa10Exit": 4963.41,
+      "rawMarket": 2502.46,
+      "psa10Market": 5874.8,
+      "netPsa10Exit": 5169.82,
       "gradingCost": 79.99,
-      "costBasis": 2628.03,
-      "expectedPsaNet": 2335.38,
-      "profit": 2335.38,
-      "roiPercent": 88.86,
+      "costBasis": 2615.45,
+      "expectedPsaNet": 2554.37,
+      "profit": 2554.37,
+      "roiPercent": 97.66,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 15,
       "bgs10SalesCount": 8,
       "collectrRawMarket": 4500,
-      "collectrRawDeltaPercent": 78.92,
-      "psa10SpreadMultiple": 2.24,
+      "collectrRawDeltaPercent": 79.82,
+      "psa10SpreadMultiple": 2.35,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 54.9,
-      "buyScore": 54.9,
+      "discoveryScore": 56.2,
+      "buyScore": 56.2,
       "confidenceTier": "C",
       "action": "watch",
       "riskFlags": [
@@ -345,12 +345,12 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 1461.44,
-      "targetBuyPrice": 1744.79,
-      "stretchBuyPrice": 2059.41,
-      "maxBuyPrice": 2317.79,
-      "exitZoneLow": 4566.34,
-      "exitZoneHigh": 5112.31,
+      "idealBuyPrice": 1525.54,
+      "targetBuyPrice": 1820.68,
+      "stretchBuyPrice": 2148.38,
+      "maxBuyPrice": 2417.51,
+      "exitZoneLow": 4756.23,
+      "exitZoneHigh": 5324.91,
       "reviewTags": [
         "liquid",
         "chase"
@@ -382,8 +382,8 @@
       "psa10SalesCount": 10,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 549.86,
-      "collectrRawDeltaPercent": 50.2,
+      "collectrRawMarket": 545.5,
+      "collectrRawDeltaPercent": 49.01,
       "psa10SpreadMultiple": 2.92,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -417,7 +417,7 @@
       "rank": 6
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 11,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -475,65 +475,7 @@
       "rank": 7
     },
     {
-      "sourceRank": 11,
-      "code": "OP09-093",
-      "name": "Marshall.D.Teach (SP) (Gold)",
-      "setName": "Legacy of the Master",
-      "rarity": "SR",
-      "productId": "646573",
-      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-gold-op09-093",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-gold-op09-093",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/hh72dbt75lf3h33t/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/646573",
-      "searchScore": 157,
-      "rawMarket": 654.46,
-      "psa10Market": 1621.3,
-      "netPsa10Exit": 1426.74,
-      "gradingCost": 79.99,
-      "costBasis": 767.45,
-      "expectedPsaNet": 659.29,
-      "profit": 659.29,
-      "roiPercent": 85.91,
-      "psa10SalesCount": 18,
-      "ungradedSalesCount": 16,
-      "bgs10SalesCount": 4,
-      "collectrRawMarket": 1360.67,
-      "collectrRawDeltaPercent": 107.91,
-      "psa10SpreadMultiple": 2.48,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 52.6,
-      "buyScore": 52.6,
-      "confidenceTier": "D",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "high_raw_entry_price",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Absolute upside is meaningful after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 363.1,
-      "targetBuyPrice": 444.55,
-      "stretchBuyPrice": 534.98,
-      "maxBuyPrice": 609.26,
-      "exitZoneLow": 1312.6,
-      "exitZoneHigh": 1469.54,
-      "reviewTags": [
-        "liquid",
-        "chase"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
-    },
-    {
-      "sourceRank": 9,
+      "sourceRank": 10,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
@@ -588,10 +530,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 9
+      "rank": 8
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 9,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy - OP09-119 (SP)",
       "setName": "Carrying On His Will",
@@ -611,11 +553,11 @@
       "expectedPsaNet": 205.22,
       "profit": 205.22,
       "roiPercent": 93.74,
-      "psa10SalesCount": 16,
+      "psa10SalesCount": 17,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 321.54,
-      "collectrRawDeltaPercent": 110.25,
+      "collectrRawMarket": 321.16,
+      "collectrRawDeltaPercent": 110,
       "psa10SpreadMultiple": 3.15,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -645,7 +587,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 10
+      "rank": 9
     },
     {
       "sourceRank": 7,
@@ -668,7 +610,7 @@
       "expectedPsaNet": 101.79,
       "profit": 101.79,
       "roiPercent": 107.77,
-      "psa10SalesCount": 13,
+      "psa10SalesCount": 14,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 1309.26,
@@ -704,7 +646,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 11
+      "rank": 10
     },
     {
       "sourceRank": 6,
@@ -727,7 +669,7 @@
       "expectedPsaNet": 101.79,
       "profit": 101.79,
       "roiPercent": 107.77,
-      "psa10SalesCount": 13,
+      "psa10SalesCount": 14,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 6150,
@@ -763,10 +705,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 12
+      "rank": 11
     },
     {
-      "sourceRank": 13,
+      "sourceRank": 12,
       "code": "EB02-052",
       "name": "Enel (SP)",
       "setName": "Adventure on Kami's Island",
@@ -817,7 +759,7 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 13
+      "rank": 12
     }
   ]
 }
