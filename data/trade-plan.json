@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-11T09:47:18.850Z",
-  "sourceFeedUpdatedAt": "2026-06-11T09:47:18.777Z",
+  "generatedAt": "2026-06-12T09:46:35.293Z",
+  "sourceFeedUpdatedAt": "2026-06-12T09:46:35.224Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,9 +8,9 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 12,
+    "totalPlans": 13,
     "prioritySearchCount": 0,
-    "watchCount": 8,
+    "watchCount": 9,
     "passCount": 4,
     "manualReviewCount": 0,
     "buyNowCount": 0
@@ -43,28 +43,26 @@
     },
     {
       "queueRank": 2,
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (SP) (Silver)",
+      "setName": "Legacy of the Master",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 71.8,
-      "targetBuyPrice": 168.44,
-      "idealBuyPrice": 132.47,
-      "stretchBuyPrice": 210.85,
-      "maxBuyPrice": 247.8,
-      "exitZoneLow": 426.25,
-      "exitZoneHigh": 477.22,
-      "whyInteresting": "PSA 10 spread is huge versus raw market",
+      "discoveryScore": 69.2,
+      "targetBuyPrice": 467.74,
+      "idealBuyPrice": 386.45,
+      "stretchBuyPrice": 559.62,
+      "maxBuyPrice": 636.39,
+      "exitZoneLow": 1188.57,
+      "exitZoneHigh": 1330.68,
+      "whyInteresting": "PSA 10 comp depth is acceptable",
       "biggestRisk": "Collectr raw market drifts too far from board pricing",
       "reviewSummary": "Worth checking, but not first in line.",
       "reviewTags": [
-        "low-entry",
-        "liquid",
-        "wide-spread"
+        "chase"
       ],
-      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053"
+      "collectrLink": "https://app.getcollectr.com/explore/product/646572",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093"
     }
   ],
   "plans": [
@@ -92,8 +90,8 @@
       "psa10SalesCount": 16,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 81.18,
-      "collectrRawDeltaPercent": 189.93,
+      "collectrRawMarket": 81.07,
+      "collectrRawDeltaPercent": 189.54,
       "psa10SpreadMultiple": 21.07,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -127,6 +125,63 @@
       "rank": 1
     },
     {
+      "sourceRank": 3,
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (SP) (Silver)",
+      "setName": "Legacy of the Master",
+      "rarity": "SR",
+      "productId": "646572",
+      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/dj6b4uku6fftbuca/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/646572",
+      "searchScore": 157,
+      "rawMarket": 376.7,
+      "psa10Market": 1468.09,
+      "netPsa10Exit": 1291.92,
+      "gradingCost": 33,
+      "costBasis": 442.7,
+      "expectedPsaNet": 849.22,
+      "profit": 849.22,
+      "roiPercent": 191.83,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 12,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 971.09,
+      "collectrRawDeltaPercent": 157.79,
+      "psa10SpreadMultiple": 3.9,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 69.2,
+      "buyScore": 69.2,
+      "confidenceTier": "B",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "high_raw_entry_price",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 comp depth is acceptable",
+        "Raw sales volume supports manual searching",
+        "Absolute upside is meaningful after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 386.45,
+      "targetBuyPrice": 467.74,
+      "stretchBuyPrice": 559.62,
+      "maxBuyPrice": 636.39,
+      "exitZoneLow": 1188.57,
+      "exitZoneHigh": 1330.68,
+      "reviewTags": [
+        "chase"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 2
+    },
+    {
       "sourceRank": 2,
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
@@ -147,17 +202,17 @@
       "expectedPsaNet": 349.82,
       "profit": 349.82,
       "roiPercent": 308.21,
-      "psa10SalesCount": 12,
+      "psa10SalesCount": 6,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 113.82,
-      "collectrRawDeltaPercent": 139.62,
+      "collectrRawMarket": 111.93,
+      "collectrRawDeltaPercent": 135.64,
       "psa10SpreadMultiple": 11.08,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 71.8,
-      "buyScore": 71.8,
-      "confidenceTier": "B",
+      "discoveryScore": 67,
+      "buyScore": 67,
+      "confidenceTier": "C",
       "action": "watch",
       "riskFlags": [
         "collectr_raw_drift",
@@ -165,27 +220,26 @@
       ],
       "topReasons": [
         "PSA 10 spread is huge versus raw market",
-        "PSA 10 sales are liquid enough to matter",
+        "PSA 10 comp depth is acceptable",
         "Raw sales volume supports manual searching",
         "Profit potential clears a solid bar after fees"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 132.47,
-      "targetBuyPrice": 168.44,
-      "stretchBuyPrice": 210.85,
-      "maxBuyPrice": 247.8,
+      "idealBuyPrice": 129,
+      "targetBuyPrice": 163.32,
+      "stretchBuyPrice": 203.39,
+      "maxBuyPrice": 237.95,
       "exitZoneLow": 426.25,
       "exitZoneHigh": 477.22,
       "reviewTags": [
         "low-entry",
-        "liquid",
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 2
+      "rank": 3
     },
     {
-      "sourceRank": 3,
+      "sourceRank": 4,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "setName": "A Fist of Divine Speed",
@@ -240,10 +294,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 3
+      "rank": 4
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 9,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy - EB02-061 (SP)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -266,8 +320,8 @@
       "psa10SalesCount": 11,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 444.61,
-      "collectrRawDeltaPercent": 344.65,
+      "collectrRawMarket": 444.94,
+      "collectrRawDeltaPercent": 344.98,
       "psa10SpreadMultiple": 4,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -298,10 +352,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
+      "rank": 5
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 10,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -356,10 +410,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 6
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 12,
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
       "setName": "Emperors in the New World",
@@ -414,10 +468,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 7
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 5,
       "code": "OP12-014",
       "name": "Boa Hancock (SP)",
       "setName": "Adventure on Kami's Island",
@@ -440,8 +494,8 @@
       "psa10SalesCount": 10,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 549.92,
-      "collectrRawDeltaPercent": 50.21,
+      "collectrRawMarket": 551.45,
+      "collectrRawDeltaPercent": 50.63,
       "psa10SpreadMultiple": 2.92,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -472,10 +526,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 8
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 11,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
@@ -530,10 +584,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
+      "rank": 9
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 8,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -589,10 +643,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 9
+      "rank": 10
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 7,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -615,8 +669,8 @@
       "psa10SalesCount": 15,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 6150,
-      "collectrRawDeltaPercent": 24500,
+      "collectrRawMarket": 6050,
+      "collectrRawDeltaPercent": 24100,
       "psa10SpreadMultiple": 8.92,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -648,10 +702,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 10
+      "rank": 11
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 13,
       "code": "EB02-052",
       "name": "Enel (SP)",
       "setName": "Adventure on Kami's Island",
@@ -674,13 +728,13 @@
       "psa10SalesCount": 3,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 146.12,
-      "collectrRawDeltaPercent": 20.05,
+      "collectrRawMarket": 145.88,
+      "collectrRawDeltaPercent": 19.85,
       "psa10SpreadMultiple": 3.16,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 47.6,
-      "buyScore": 47.6,
+      "discoveryScore": 47.7,
+      "buyScore": 47.7,
       "confidenceTier": "D",
       "action": "pass",
       "riskFlags": [
@@ -702,10 +756,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 11
+      "rank": 12
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 6,
       "code": "OP13-031",
       "name": "Trafalgar Law (SP)",
       "setName": "Adventure on Kami's Island",
@@ -758,7 +812,7 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 12
+      "rank": 13
     }
   ]
 }

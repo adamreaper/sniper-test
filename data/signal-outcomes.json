@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T09:47:18.858Z",
+  "generatedAt": "2026-06-12T09:46:35.297Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -35,14 +35,30 @@
       "lastReviewedAt": null
     },
     {
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (SP) (Silver)",
+      "setName": "Legacy of the Master",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 69.2,
+      "targetBuyPrice": 467.74,
+      "maxBuyPrice": 636.39,
+      "exitZoneLow": 1188.57,
+      "exitZoneHigh": 1330.68,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
       "action": "watch",
-      "confidenceTier": "B",
-      "discoveryScore": 71.8,
-      "targetBuyPrice": 168.44,
-      "maxBuyPrice": 247.8,
+      "confidenceTier": "C",
+      "discoveryScore": 67,
+      "targetBuyPrice": 163.32,
+      "maxBuyPrice": 237.95,
       "exitZoneLow": 426.25,
       "exitZoneHigh": 477.22,
       "outcomeStatus": "unreviewed",
@@ -184,7 +200,7 @@
       "setName": "Adventure on Kami's Island",
       "action": "pass",
       "confidenceTier": "D",
-      "discoveryScore": 47.6,
+      "discoveryScore": 47.7,
       "targetBuyPrice": 99.34,
       "maxBuyPrice": 144.38,
       "exitZoneLow": 311.7,

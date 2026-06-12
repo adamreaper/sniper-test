@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-11T09:47:18.777Z",
-  "dateStamp": "2026-06-11",
+  "generatedAt": "2026-06-12T09:46:35.224Z",
+  "dateStamp": "2026-06-12",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -15,11 +15,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 12,
+  "rowsWithEbayField": 13,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 12,
+  "qualifiedCount": 13,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -29,7 +29,7 @@
       "roiPercent": 95.28,
       "rawMarket": 53.42,
       "psa10Market": 265,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -428,7 +428,7 @@
       "roiPercent": 115.65,
       "rawMarket": 25,
       "psa10Market": 223,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -810,7 +810,7 @@
       "roiPercent": 99.88,
       "rawMarket": 3750,
       "psa10Market": 8774.17,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1209,7 +1209,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1618,7 +1618,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2049,7 +2049,7 @@
       "roiPercent": 99.19,
       "rawMarket": 500,
       "psa10Market": 1387.5,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2471,7 +2471,7 @@
       "roiPercent": 93.74,
       "rawMarket": 152.93,
       "psa10Market": 481.99,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2869,7 +2869,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3250,7 +3250,7 @@
       "roiPercent": 89.97,
       "rawMarket": 781.2,
       "psa10Market": 1930.3,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3683,7 +3683,7 @@
       "roiPercent": 308.21,
       "rawMarket": 47.5,
       "psa10Market": 526.5,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4109,7 +4109,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4491,7 +4491,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4890,7 +4890,7 @@
       "roiPercent": 97.66,
       "rawMarket": 2502.46,
       "psa10Market": 5874.8,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5334,7 +5334,7 @@
       "roiPercent": 125.47,
       "rawMarket": 140,
       "psa10Market": 443.25,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5750,7 +5750,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6169,7 +6169,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6595,7 +6595,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-06-10T09:46:45.727Z",
+      "lastSeenAt": "2026-06-11T09:47:18.777Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7021,7 +7021,7 @@
       "psa10SalesCount": 16,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 81.18,
+      "collectrRawMarket": 81.07,
       "collectrLink": "https://app.getcollectr.com/explore/product/672808",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/mw5t52ihwqhaqcsn/1600.jpg",
@@ -7068,10 +7068,10 @@
       "profit": 349.82,
       "roi": 3.0821,
       "roiPercent": 308.21,
-      "psa10SalesCount": 12,
+      "psa10SalesCount": 6,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 113.82,
+      "collectrRawMarket": 111.93,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
@@ -7094,6 +7094,56 @@
         {
           "stage": "search",
           "query": "\"Nami\" \"One Piece Heroine's Edition\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (SP) (Silver)",
+      "setName": "Legacy of the Master",
+      "productId": "646572",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
+      "searchScore": 157,
+      "rawMarket": 376.7,
+      "psa10Market": 1468.09,
+      "netPsa10Exit": 1291.92,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 442.7,
+      "profit": 849.22,
+      "roi": 1.9183,
+      "roiPercent": 191.83,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 12,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 971.09,
+      "collectrLink": "https://app.getcollectr.com/explore/product/646572",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/legacy-of-the-master?cardType=cards&groupId=24302&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/dj6b4uku6fftbuca/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_646572.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Marshall.D.Teach\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP09-093\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Marshall.D.Teach\" \"Legacy of the Master\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
@@ -7171,7 +7221,7 @@
       "psa10SalesCount": 10,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 549.92,
+      "collectrRawMarket": 551.45,
       "collectrLink": "https://app.getcollectr.com/explore/product/685011",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k2gyz4btdj54lpty/1600.jpg",
@@ -7271,7 +7321,7 @@
       "psa10SalesCount": 15,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 6150,
+      "collectrRawMarket": 6050,
       "collectrLink": "https://app.getcollectr.com/explore/product/657406",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ksjriwcc42kw6its/1600.jpg",
@@ -7371,7 +7421,7 @@
       "psa10SalesCount": 11,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 444.61,
+      "collectrRawMarket": 444.94,
       "collectrLink": "https://app.getcollectr.com/explore/product/654533",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/lg64el7diw6vdnw5/1600.jpg",
@@ -7576,7 +7626,7 @@
       "psa10SalesCount": 3,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 146.12,
+      "collectrRawMarket": 145.88,
       "collectrLink": "https://app.getcollectr.com/explore/product/685008",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/v7y54gzorfyitorz/1600.jpg",

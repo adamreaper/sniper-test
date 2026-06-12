@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-11T09:48:33.745Z",
-  "listingCount": 1,
+  "generatedAt": "2026-06-12T09:48:02.188Z",
+  "listingCount": 2,
   "summary": {
     "reviewCount": 1,
-    "watchCount": 0,
-    "avgScore": 54.4,
-    "avgPredictedProfit": 66.6
+    "watchCount": 1,
+    "avgScore": 42.8,
+    "avgPredictedProfit": 66.16
   },
   "rows": [
     {
@@ -51,6 +51,56 @@
       "reason": "No image review yet.",
       "visibleSignals": [
         "alt-art signal"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 2,
+      "itemId": "v1|306996236130|0",
+      "title": "OP16-014 A Time Of Battle Bulk Cards Rare Common Uncommon Cards -NO SR-",
+      "url": "https://www.ebay.com/itm/306996236130?_skw=one+piece+bulk+cards&hash=item477a66cf62:g:ATsAAeSwFqpqKupa",
+      "imageUrl": "https://i.ebayimg.com/images/g/ATsAAeSwFqpqKupa/s-l225.jpg",
+      "price": 0.27,
+      "shipping": 0,
+      "total": 0.27,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 200,
+      "score": 31.2,
+      "tier": "watch",
+      "predictedProfit": 65.73,
+      "maxBuyPrice": 47.52,
+      "maxBidPrice": 42.9,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 66,
+      "sellerFeedbackPercent": "98.5",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 60,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 98.5,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: specific card OP16-014",
+        "expected spread 66 over ask",
+        "large lot estimate around 200 cards"
+      ],
+      "topRisks": [],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "specific card OP16-014"
       ],
       "outcomeStatus": "untracked",
       "decision": null,
