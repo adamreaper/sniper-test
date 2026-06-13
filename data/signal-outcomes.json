@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T09:46:35.297Z",
+  "generatedAt": "2026-06-13T09:46:39.571Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -18,6 +18,22 @@
     ]
   },
   "entries": [
+    {
+      "code": "EB03-053",
+      "name": "Nami (053) (Alternate Art)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "action": "watch",
+      "confidenceTier": "B",
+      "discoveryScore": 75.4,
+      "targetBuyPrice": 237.98,
+      "maxBuyPrice": 344.73,
+      "exitZoneLow": 573.4,
+      "exitZoneHigh": 641.96,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
     {
       "code": "EB03-055",
       "name": "Nico Robin (055) (Alternate Art)",
@@ -45,22 +61,6 @@
       "maxBuyPrice": 636.39,
       "exitZoneLow": 1188.57,
       "exitZoneHigh": 1330.68,
-      "outcomeStatus": "unreviewed",
-      "outcomeTag": "",
-      "notes": "",
-      "lastReviewedAt": null
-    },
-    {
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "action": "watch",
-      "confidenceTier": "C",
-      "discoveryScore": 67,
-      "targetBuyPrice": 163.32,
-      "maxBuyPrice": 237.95,
-      "exitZoneLow": 426.25,
-      "exitZoneHigh": 477.22,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
@@ -163,6 +163,22 @@
       "lastReviewedAt": null
     },
     {
+      "code": "OP06-119",
+      "name": "Sanji (Manga)",
+      "setName": "Premium Booster -The Best- Vol. 2",
+      "action": "watch",
+      "confidenceTier": "D",
+      "discoveryScore": 53.1,
+      "targetBuyPrice": 421.48,
+      "maxBuyPrice": 578.95,
+      "exitZoneLow": 1254.88,
+      "exitZoneHigh": 1404.92,
+      "outcomeStatus": "unreviewed",
+      "outcomeTag": "",
+      "notes": "",
+      "lastReviewedAt": null
+    },
+    {
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -200,7 +216,7 @@
       "setName": "Adventure on Kami's Island",
       "action": "pass",
       "confidenceTier": "D",
-      "discoveryScore": 47.7,
+      "discoveryScore": 47.8,
       "targetBuyPrice": 99.34,
       "maxBuyPrice": 144.38,
       "exitZoneLow": 311.7,
