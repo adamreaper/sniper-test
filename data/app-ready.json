@@ -1,62 +1,11 @@
 {
-  "generatedAt": "2026-06-13T09:47:56.701Z",
-  "listingCount": 1,
+  "generatedAt": "2026-06-14T09:47:59.679Z",
+  "listingCount": 0,
   "summary": {
-    "reviewCount": 1,
+    "reviewCount": 0,
     "watchCount": 0,
-    "avgScore": 54.4,
-    "avgPredictedProfit": 66.6
+    "avgScore": 0,
+    "avgPredictedProfit": 0
   },
-  "rows": [
-    {
-      "rank": 1,
-      "itemId": "v1|398038847050|0",
-      "title": "Bandai One Piece Card Game OP06 7-Card Mixed Lot Buggy Yamato Alt Art Foil",
-      "url": "https://www.ebay.com/itm/398038847050?_skw=one+piece+cards+mixed+lot&hash=item5cacf6ce4a:g:SOcAAeSwnmZqJg4V",
-      "imageUrl": "https://i.ebayimg.com/images/g/SOcAAeSwnmZqJg4V/s-l225.jpg",
-      "price": 12.4,
-      "shipping": 0,
-      "total": 12.4,
-      "lotType": "mixed_lot",
-      "cardCountGuess": 20,
-      "score": 54.4,
-      "tier": "review",
-      "predictedProfit": 66.6,
-      "maxBuyPrice": 56.88,
-      "maxBidPrice": 51.35,
-      "trueBulk": false,
-      "trueBulkMaxBuyPrice": null,
-      "trueBulkMaxPer1000": 5,
-      "expectedValue": 79,
-      "sellerFeedbackPercent": "100.0",
-      "imageVerdict": "not_reviewed",
-      "imageConfidence": null,
-      "riskLevel": "low",
-      "scoreBreakdown": {
-        "profitScore": 100,
-        "confidenceScore": 50,
-        "evidenceScore": 100,
-        "liquidityScore": 55.6,
-        "sellerQualityScore": 100,
-        "junkRiskPenalty": 0
-      },
-      "topReasons": [
-        "visible signals: alt-art signal",
-        "expected spread 67 over ask",
-        "free shipping"
-      ],
-      "topRisks": [],
-      "hardGatesPassed": true,
-      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
-      "reason": "No image review yet.",
-      "visibleSignals": [
-        "alt-art signal"
-      ],
-      "outcomeStatus": "untracked",
-      "decision": null,
-      "decisionAt": null,
-      "realizedProfit": null,
-      "predictionError": null
-    }
-  ]
+  "rows": []
 }
