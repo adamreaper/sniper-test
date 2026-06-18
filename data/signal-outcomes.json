@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T09:46:44.424Z",
+  "generatedAt": "2026-06-18T09:46:38.860Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -24,7 +24,7 @@
       "setName": "Extra Booster: One Piece Heroine's Edition",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 74.7,
+      "discoveryScore": 74.3,
       "targetBuyPrice": 224,
       "maxBuyPrice": 325.24,
       "exitZoneLow": 543.81,
