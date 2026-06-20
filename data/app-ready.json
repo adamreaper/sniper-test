@@ -1,11 +1,63 @@
 {
-  "generatedAt": "2026-06-19T09:48:04.813Z",
-  "listingCount": 0,
+  "generatedAt": "2026-06-20T09:47:42.855Z",
+  "listingCount": 1,
   "summary": {
-    "reviewCount": 0,
+    "reviewCount": 1,
     "watchCount": 0,
-    "avgScore": 0,
-    "avgPredictedProfit": 0
+    "avgScore": 46.9,
+    "avgPredictedProfit": 80.75
   },
-  "rows": []
+  "rows": [
+    {
+      "rank": 1,
+      "itemId": "v1|178237481013|0",
+      "title": "Vergo OP14-061 Alt Art One Piece TCG And Dracula Mihawk Op14. 2 Card Lot",
+      "url": "https://www.ebay.com/itm/178237481013?_skw=one+piece+tcg+lot&hash=item297fc82035:g:tbUAAeSwkcBqNcSd",
+      "imageUrl": "https://i.ebayimg.com/images/g/tbUAAeSwkcBqNcSd/s-l225.jpg",
+      "price": 10.25,
+      "shipping": 0,
+      "total": 10.25,
+      "lotType": "mixed_lot",
+      "cardCountGuess": 2,
+      "score": 46.9,
+      "tier": "review",
+      "predictedProfit": 80.75,
+      "maxBuyPrice": 65.52,
+      "maxBidPrice": 59.15,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 91,
+      "sellerFeedbackPercent": "99.5",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 100,
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 99.5,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: alt-art signal, specific card OP14-061",
+        "expected spread 81 over ask",
+        "free shipping"
+      ],
+      "topRisks": [],
+      "hardGatesPassed": true,
+      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "alt-art signal",
+        "specific card OP14-061"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    }
+  ]
 }
