@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T09:46:48.215Z",
-  "sourceFeedUpdatedAt": "2026-06-24T09:46:48.146Z",
+  "generatedAt": "2026-06-25T09:46:09.479Z",
+  "sourceFeedUpdatedAt": "2026-06-25T09:46:09.406Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,16 +8,39 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 18,
-    "prioritySearchCount": 0,
+    "totalPlans": 19,
+    "prioritySearchCount": 1,
     "watchCount": 15,
     "passCount": 3,
-    "manualReviewCount": 0,
+    "manualReviewCount": 1,
     "buyNowCount": 0
   },
   "reviewQueue": [
     {
       "queueRank": 1,
+      "code": "OP08-001",
+      "name": "Tony Tony.Chopper (001) (Parallel)",
+      "setName": "Two Legends",
+      "action": "priority-search",
+      "confidenceTier": "A",
+      "discoveryScore": 90.8,
+      "targetBuyPrice": 231.56,
+      "idealBuyPrice": 186.26,
+      "stretchBuyPrice": 283.95,
+      "maxBuyPrice": 328.71,
+      "exitZoneLow": 589.01,
+      "exitZoneHigh": 659.44,
+      "whyInteresting": "PSA 10 spread is huge versus raw market",
+      "biggestRisk": "No verified eBay pull yet — this is still a manual search workflow",
+      "reviewSummary": "Search this one first.",
+      "reviewTags": [
+        "wide-spread"
+      ],
+      "collectrLink": "https://app.getcollectr.com/explore/product/558022",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-anime-25th-collection/tony-tonychopper-op08-001"
+    },
+    {
+      "queueRank": 2,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "setName": "A Fist of Divine Speed",
@@ -41,19 +64,19 @@
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-silver-op05-119"
     },
     {
-      "queueRank": 2,
+      "queueRank": 3,
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 72.2,
-      "targetBuyPrice": 176.48,
-      "idealBuyPrice": 139.07,
-      "stretchBuyPrice": 220.58,
-      "maxBuyPrice": 259,
-      "exitZoneLow": 443.26,
-      "exitZoneHigh": 496.25,
+      "discoveryScore": 71.2,
+      "targetBuyPrice": 157.54,
+      "idealBuyPrice": 123.51,
+      "stretchBuyPrice": 197.65,
+      "maxBuyPrice": 232.6,
+      "exitZoneLow": 403.18,
+      "exitZoneHigh": 451.39,
       "whyInteresting": "PSA 10 spread is huge versus raw market",
       "biggestRisk": "Collectr raw market drifts too far from board pricing",
       "reviewSummary": "Worth checking, but not first in line.",
@@ -66,7 +89,7 @@
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053"
     },
     {
-      "queueRank": 3,
+      "queueRank": 4,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Silver)",
       "setName": "Legacy of the Master",
@@ -92,6 +115,61 @@
   "plans": [
     {
       "sourceRank": 2,
+      "code": "OP08-001",
+      "name": "Tony Tony.Chopper (001) (Parallel)",
+      "setName": "Two Legends",
+      "rarity": "L",
+      "productId": "558022",
+      "priceChartingPath": "/game/one-piece-japanese-extra-booster-anime-25th-collection/tony-tonychopper-op08-001",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-anime-25th-collection/tony-tonychopper-op08-001",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ghhvjvvuoudwv3jm/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/558022",
+      "searchScore": 143,
+      "rawMarket": 106.17,
+      "psa10Market": 727.53,
+      "netPsa10Exit": 640.23,
+      "gradingCost": 33,
+      "costBasis": 172.17,
+      "expectedPsaNet": 468.06,
+      "profit": 468.06,
+      "roiPercent": 271.86,
+      "psa10SalesCount": 7,
+      "ungradedSalesCount": 22,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 81.82,
+      "collectrRawDeltaPercent": 22.93,
+      "psa10SpreadMultiple": 6.85,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 90.8,
+      "buyScore": 90.8,
+      "confidenceTier": "A",
+      "action": "priority-search",
+      "riskFlags": [
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 spread is huge versus raw market",
+        "PSA 10 comp depth is acceptable",
+        "Raw sales volume supports manual searching",
+        "Profit potential clears a solid bar after fees"
+      ],
+      "biggestRisk": "search_only_no_live_pull",
+      "idealBuyPrice": 186.26,
+      "targetBuyPrice": 231.56,
+      "stretchBuyPrice": 283.95,
+      "maxBuyPrice": 328.71,
+      "exitZoneLow": 589.01,
+      "exitZoneHigh": 659.44,
+      "reviewTags": [
+        "wide-spread"
+      ],
+      "reviewSummary": "Search this one first.",
+      "rank": 1
+    },
+    {
+      "sourceRank": 3,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Silver)",
       "setName": "A Fist of Divine Speed",
@@ -146,7 +224,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 1
+      "rank": 2
     },
     {
       "sourceRank": 1,
@@ -161,24 +239,24 @@
       "marketContext": null,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "searchScore": 157,
-      "rawMarket": 47,
-      "psa10Market": 547.5,
-      "netPsa10Exit": 481.8,
+      "rawMarket": 49,
+      "psa10Market": 498,
+      "netPsa10Exit": 438.24,
       "gradingCost": 33,
-      "costBasis": 113,
-      "expectedPsaNet": 368.8,
-      "profit": 368.8,
-      "roiPercent": 326.37,
+      "costBasis": 115,
+      "expectedPsaNet": 323.24,
+      "profit": 323.24,
+      "roiPercent": 281.08,
       "psa10SalesCount": 10,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 104.16,
-      "collectrRawDeltaPercent": 121.62,
-      "psa10SpreadMultiple": 11.65,
+      "collectrRawMarket": 104.81,
+      "collectrRawDeltaPercent": 113.9,
+      "psa10SpreadMultiple": 10.16,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 72.2,
-      "buyScore": 72.2,
+      "discoveryScore": 71.2,
+      "buyScore": 71.2,
       "confidenceTier": "B",
       "action": "watch",
       "riskFlags": [
@@ -192,22 +270,22 @@
         "Profit potential clears a solid bar after fees"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 139.07,
-      "targetBuyPrice": 176.48,
-      "stretchBuyPrice": 220.58,
-      "maxBuyPrice": 259,
-      "exitZoneLow": 443.26,
-      "exitZoneHigh": 496.25,
+      "idealBuyPrice": 123.51,
+      "targetBuyPrice": 157.54,
+      "stretchBuyPrice": 197.65,
+      "maxBuyPrice": 232.6,
+      "exitZoneLow": 403.18,
+      "exitZoneHigh": 451.39,
       "reviewTags": [
         "low-entry",
         "liquid",
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 2
+      "rank": 3
     },
     {
-      "sourceRank": 3,
+      "sourceRank": 4,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Silver)",
       "setName": "Legacy of the Master",
@@ -261,10 +339,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 3
+      "rank": 4
     },
     {
-      "sourceRank": 16,
+      "sourceRank": 17,
       "code": "EB02-052",
       "name": "Enel (SP)",
       "setName": "Adventure on Kami's Island",
@@ -287,8 +365,8 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 140.1,
-      "collectrRawDeltaPercent": 7.04,
+      "collectrRawMarket": 139.9,
+      "collectrRawDeltaPercent": 6.88,
       "psa10SpreadMultiple": 3.36,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -316,10 +394,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
+      "rank": 5
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 13,
       "code": "OP13-118",
       "name": "Monkey.D.Luffy (118) (Manga)",
       "setName": "Carrying On His Will",
@@ -374,10 +452,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
+      "rank": 6
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 11,
       "code": "OP05-119",
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
@@ -432,10 +510,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 6
+      "rank": 7
     },
     {
-      "sourceRank": 13,
+      "sourceRank": 14,
       "code": "OP09-118",
       "name": "Gol.D.Roger (Manga)",
       "setName": "Emperors in the New World",
@@ -490,10 +568,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
+      "rank": 8
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 9,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
@@ -516,8 +594,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 29,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 1506,
-      "collectrRawDeltaPercent": 201.2,
+      "collectrRawMarket": 1595,
+      "collectrRawDeltaPercent": 219,
       "psa10SpreadMultiple": 2.9,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -548,10 +626,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 8
+      "rank": 9
     },
     {
-      "sourceRank": 14,
+      "sourceRank": 15,
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art) (Manga)",
       "setName": "Wings of the Captain",
@@ -606,10 +684,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 9
+      "rank": 10
     },
     {
-      "sourceRank": 15,
+      "sourceRank": 16,
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art)",
       "setName": "Wings of the Captain",
@@ -632,8 +710,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 126.65,
-      "collectrRawDeltaPercent": 89.96,
+      "collectrRawMarket": 130.98,
+      "collectrRawDeltaPercent": 89.62,
       "psa10SpreadMultiple": 2.44,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -663,10 +741,10 @@
         "liquid"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 10
+      "rank": 11
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 12,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy - EB02-061 (SP)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -719,10 +797,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 11
+      "rank": 12
     },
     {
-      "sourceRank": 5,
+      "sourceRank": 6,
       "code": "OP12-014",
       "name": "Boa Hancock (SP)",
       "setName": "Adventure on Kami's Island",
@@ -745,8 +823,8 @@
       "psa10SalesCount": 10,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 557.25,
-      "collectrRawDeltaPercent": 50.59,
+      "collectrRawMarket": 568.88,
+      "collectrRawDeltaPercent": 53.73,
       "psa10SpreadMultiple": 2.89,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -777,68 +855,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 12
-    },
-    {
-      "sourceRank": 17,
-      "code": "OP06-119",
-      "name": "Sanji (Manga)",
-      "setName": "Premium Booster -The Best- Vol. 2",
-      "rarity": "SEC",
-      "productId": "654637",
-      "priceChartingPath": "/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/aven56ts7nrw2yaw/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/654637",
-      "searchScore": 155,
-      "rawMarket": 655,
-      "psa10Market": 1650.2,
-      "netPsa10Exit": 1452.18,
-      "gradingCost": 79.99,
-      "costBasis": 767.99,
-      "expectedPsaNet": 684.19,
-      "profit": 684.19,
-      "roiPercent": 89.09,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 1,
-      "collectrRawMarket": 2182.06,
-      "collectrRawDeltaPercent": 233.14,
-      "psa10SpreadMultiple": 2.52,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 53.6,
-      "buyScore": 53.6,
-      "confidenceTier": "D",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "high_raw_entry_price",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Absolute upside is meaningful after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 371,
-      "targetBuyPrice": 453.9,
-      "stretchBuyPrice": 545.95,
-      "maxBuyPrice": 621.55,
-      "exitZoneLow": 1336.01,
-      "exitZoneHigh": 1495.75,
-      "reviewTags": [
-        "liquid",
-        "chase"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
       "rank": 13
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 10,
       "code": "ST18-005",
       "name": "Luffy-Tarou (SP)",
       "setName": "A Fist of Divine Speed",
@@ -918,8 +938,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 1847.25,
-      "collectrRawDeltaPercent": 207.15,
+      "collectrRawMarket": 1946.33,
+      "collectrRawDeltaPercent": 223.63,
       "psa10SpreadMultiple": 2.5,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -953,7 +973,65 @@
       "rank": 15
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 19,
+      "code": "OP06-119",
+      "name": "Sanji (Manga)",
+      "setName": "Premium Booster -The Best- Vol. 2",
+      "rarity": "SEC",
+      "productId": "654637",
+      "priceChartingPath": "/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/aven56ts7nrw2yaw/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/654637",
+      "searchScore": 155,
+      "rawMarket": 655,
+      "psa10Market": 1575,
+      "netPsa10Exit": 1386,
+      "gradingCost": 79.99,
+      "costBasis": 767.99,
+      "expectedPsaNet": 618.01,
+      "profit": 618.01,
+      "roiPercent": 80.47,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 1,
+      "collectrRawMarket": 2216.33,
+      "collectrRawDeltaPercent": 238.37,
+      "psa10SpreadMultiple": 2.4,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 50.8,
+      "buyScore": 50.8,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "high_raw_entry_price",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Absolute upside is meaningful after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 350.44,
+      "targetBuyPrice": 429.57,
+      "stretchBuyPrice": 517.42,
+      "maxBuyPrice": 589.58,
+      "exitZoneLow": 1275.12,
+      "exitZoneHigh": 1427.58,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 16
+    },
+    {
+      "sourceRank": 8,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (Super Alternate Art)",
       "setName": "Carrying On His Will",
@@ -1009,10 +1087,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 16
+      "rank": 17
     },
     {
-      "sourceRank": 6,
+      "sourceRank": 7,
       "code": "OP13-119",
       "name": "Portgas.D.Ace (119) (3rd Anniversary)",
       "setName": "Carrying On His Will",
@@ -1068,10 +1146,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 17
+      "rank": 18
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 5,
       "code": "OP13-031",
       "name": "Trafalgar Law (SP)",
       "setName": "Adventure on Kami's Island",
@@ -1094,8 +1172,8 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 20,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 260.51,
-      "collectrRawDeltaPercent": 96.11,
+      "collectrRawMarket": 256.26,
+      "collectrRawDeltaPercent": 92.91,
       "psa10SpreadMultiple": 3.75,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -1124,7 +1202,7 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 18
+      "rank": 19
     }
   ]
 }

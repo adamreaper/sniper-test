@@ -1,11 +1,111 @@
 {
-  "generatedAt": "2026-06-24T09:53:14.787Z",
-  "listingCount": 0,
+  "generatedAt": "2026-06-25T09:47:30.701Z",
+  "listingCount": 2,
   "summary": {
-    "reviewCount": 0,
-    "watchCount": 0,
-    "avgScore": 0,
-    "avgPredictedProfit": 0
+    "reviewCount": 1,
+    "watchCount": 1,
+    "avgScore": 39.7,
+    "avgPredictedProfit": 81.61
   },
-  "rows": []
+  "rows": [
+    {
+      "rank": 1,
+      "itemId": "v1|287417264698|0",
+      "title": "One Piece Card Big Mom Pirates Bulk Sale Perospero SR Parallel",
+      "url": "https://www.ebay.com/itm/287417264698?_skw=one+piece+bulk+cards&hash=item42eb676a3a:g:bXkAAeSwK3ZqPJ9h",
+      "imageUrl": "https://i.ebayimg.com/images/g/bXkAAeSwK3ZqPJ9h/s-l225.jpg",
+      "price": 25.79,
+      "shipping": 8.99,
+      "total": 34.78,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 200,
+      "score": 48.3,
+      "tier": "review",
+      "predictedProfit": 92.22,
+      "maxBuyPrice": 91.44,
+      "maxBidPrice": 82.55,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 127,
+      "sellerFeedbackPercent": "98.9",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 100,
+        "liquidityScore": 77.8,
+        "sellerQualityScore": 98.9,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: SP signal, parallel signal",
+        "expected spread 92 over ask",
+        "large lot estimate around 200 cards"
+      ],
+      "topRisks": [],
+      "hardGatesPassed": true,
+      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "SP signal",
+        "parallel signal"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 2,
+      "itemId": "v1|168486833034|0",
+      "title": "One Piece 50 Cards Bulk Lot TCG Card Game Mixed Cards Near Mint 10 Hlo/Leadr1 SR",
+      "url": "https://www.ebay.com/itm/168486833034?_skw=one+piece+50+cards+lot&hash=item273a990b8a:g:zB4AAeSwQERqO2S3",
+      "imageUrl": "https://i.ebayimg.com/images/g/zB4AAeSwQERqO2S3/s-l225.jpg",
+      "price": 8,
+      "shipping": 1,
+      "total": 9,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 50,
+      "score": 31,
+      "tier": "watch",
+      "predictedProfit": 71,
+      "maxBuyPrice": 57.6,
+      "maxBidPrice": 52,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 80,
+      "sellerFeedbackPercent": "100.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 0,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "expected spread 71 over ask"
+      ],
+      "topRisks": [
+        "value depends on hidden hits, not visible proof"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    }
+  ]
 }
