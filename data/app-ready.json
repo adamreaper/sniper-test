@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-06-25T09:47:30.701Z",
+  "generatedAt": "2026-06-26T09:47:33.477Z",
   "listingCount": 2,
   "summary": {
-    "reviewCount": 1,
-    "watchCount": 1,
-    "avgScore": 39.7,
-    "avgPredictedProfit": 81.61
+    "reviewCount": 0,
+    "watchCount": 2,
+    "avgScore": 42.3,
+    "avgPredictedProfit": 87.76
   },
   "rows": [
     {
       "rank": 1,
-      "itemId": "v1|287417264698|0",
-      "title": "One Piece Card Big Mom Pirates Bulk Sale Perospero SR Parallel",
-      "url": "https://www.ebay.com/itm/287417264698?_skw=one+piece+bulk+cards&hash=item42eb676a3a:g:bXkAAeSwK3ZqPJ9h",
-      "imageUrl": "https://i.ebayimg.com/images/g/bXkAAeSwK3ZqPJ9h/s-l225.jpg",
-      "price": 25.79,
-      "shipping": 8.99,
-      "total": 34.78,
-      "lotType": "bulk_lot",
-      "cardCountGuess": 200,
-      "score": 48.3,
-      "tier": "review",
-      "predictedProfit": 92.22,
+      "itemId": "v1|336656639969|0",
+      "title": "One Piece Card Game Assorted Character Card Lot Mixed Rarities R, C, UC Alt Art",
+      "url": "https://www.ebay.com/itm/336656639969?_skw=one+piece+cards+mixed+lot&hash=item4e624ca7e1:g:O4MAAeSwS95qPXbe",
+      "imageUrl": "https://i.ebayimg.com/images/g/O4MAAeSwS95qPXbe/s-l225.jpg",
+      "price": 9.99,
+      "shipping": 12.5,
+      "total": 22.490000000000002,
+      "lotType": "mixed_lot",
+      "cardCountGuess": 100,
+      "score": 53.5,
+      "tier": "watch",
+      "predictedProfit": 104.51,
       "maxBuyPrice": 91.44,
       "maxBidPrice": 82.55,
       "trueBulk": false,
       "trueBulkMaxBuyPrice": null,
       "trueBulkMaxPer1000": 5,
       "expectedValue": 127,
-      "sellerFeedbackPercent": "98.9",
+      "sellerFeedbackPercent": "99.6",
       "imageVerdict": "not_reviewed",
       "imageConfidence": null,
       "riskLevel": "low",
@@ -36,22 +36,23 @@
         "profitScore": 100,
         "confidenceScore": 50,
         "evidenceScore": 100,
-        "liquidityScore": 77.8,
-        "sellerQualityScore": 98.9,
-        "junkRiskPenalty": 0
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 99.6,
+        "junkRiskPenalty": 14.8
       },
       "topReasons": [
-        "visible signals: SP signal, parallel signal",
-        "expected spread 92 over ask",
-        "large lot estimate around 200 cards"
+        "visible signals: alt-art signal",
+        "expected spread 105 over ask",
+        "large lot estimate around 100 cards"
       ],
-      "topRisks": [],
-      "hardGatesPassed": true,
-      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "topRisks": [
+        "shipping eats margin"
+      ],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
       "reason": "No image review yet.",
       "visibleSignals": [
-        "SP signal",
-        "parallel signal"
+        "alt-art signal"
       ],
       "outcomeStatus": "untracked",
       "decision": null,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T09:46:09.482Z",
+  "generatedAt": "2026-06-26T09:46:11.168Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -24,7 +24,7 @@
       "setName": "Two Legends",
       "action": "priority-search",
       "confidenceTier": "A",
-      "discoveryScore": 90.8,
+      "discoveryScore": 91.5,
       "targetBuyPrice": 231.56,
       "maxBuyPrice": 328.71,
       "exitZoneLow": 589.01,
@@ -88,7 +88,7 @@
       "setName": "Adventure on Kami's Island",
       "action": "watch",
       "confidenceTier": "C",
-      "discoveryScore": 59.7,
+      "discoveryScore": 60.4,
       "targetBuyPrice": 118.15,
       "maxBuyPrice": 169.59,
       "exitZoneLow": 355.98,
