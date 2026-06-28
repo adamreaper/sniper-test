@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-27T09:46:20.767Z",
-  "dateStamp": "2026-06-27",
+  "generatedAt": "2026-06-28T09:47:33.336Z",
+  "dateStamp": "2026-06-28",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -16,11 +16,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 19,
+  "rowsWithEbayField": 20,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 19,
+  "qualifiedCount": 20,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -30,7 +30,7 @@
       "roiPercent": 103.27,
       "rawMarket": 968.73,
       "psa10Market": 2498.6,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -429,7 +429,7 @@
       "roiPercent": 110.54,
       "rawMarket": 27.21,
       "psa10Market": 223,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -811,7 +811,7 @@
       "roiPercent": 105.17,
       "rawMarket": 3750,
       "psa10Market": 9006.56,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1210,7 +1210,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1619,7 +1619,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2047,10 +2047,10 @@
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
       "productId": "597035",
-      "roiPercent": 108.16,
+      "roiPercent": 123.79,
       "rawMarket": 500,
-      "psa10Market": 1450,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "psa10Market": 1558.89,
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2472,7 +2472,7 @@
       "roiPercent": 93.74,
       "rawMarket": 152.93,
       "psa10Market": 481.99,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2870,7 +2870,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3251,7 +3251,7 @@
       "roiPercent": 81.5,
       "rawMarket": 640,
       "psa10Market": 1553,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3684,7 +3684,7 @@
       "roiPercent": 281.08,
       "rawMarket": 49,
       "psa10Market": 498,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4110,7 +4110,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4492,7 +4492,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4891,7 +4891,7 @@
       "roiPercent": 102.5,
       "rawMarket": 2502.46,
       "psa10Market": 6018.47,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5335,7 +5335,7 @@
       "roiPercent": 126.85,
       "rawMarket": 85,
       "psa10Market": 389.25,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5751,7 +5751,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6170,7 +6170,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6596,7 +6596,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-06-26T09:46:11.095Z",
+      "lastSeenAt": "2026-06-27T09:46:20.767Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7001,6 +7001,56 @@
   ],
   "rows": [
     {
+      "code": "OP15-086",
+      "name": "Nami (OP15-086) (Alternate Art)",
+      "setName": "Adventure on Kami's Island",
+      "productId": "685439",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-adventure-on-kami%27s-island/nami-alternate-art-op15-086",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-adventure-on-kami%27s-island/nami-alternate-art-op15-086",
+      "searchScore": 157,
+      "rawMarket": 250,
+      "psa10Market": 1686.27,
+      "netPsa10Exit": 1483.92,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 316,
+      "profit": 1167.92,
+      "roi": 3.6959,
+      "roiPercent": 369.59,
+      "psa10SalesCount": 6,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 1,
+      "collectrRawMarket": 255.18,
+      "collectrLink": "https://app.getcollectr.com/explore/product/685439",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/odj7pn3ybcomvdsz/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685439.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Nami\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP15-086\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Nami\" \"Adventure on Kami's Island\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -7022,7 +7072,7 @@
       "psa10SalesCount": 14,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 106.93,
+      "collectrRawMarket": 106.96,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
@@ -7072,7 +7122,7 @@
       "psa10SalesCount": 7,
       "ungradedSalesCount": 22,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 84.09,
+      "collectrRawMarket": 84.65,
       "collectrLink": "https://app.getcollectr.com/explore/product/558022",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/two-legends?cardType=cards&groupId=23462&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ghhvjvvuoudwv3jm/1600.jpg",
@@ -7201,6 +7251,56 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (093) (Manga)",
+      "setName": "Emperors in the New World",
+      "productId": "597035",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/marshalldteach-manga-op09-093",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/marshalldteach-manga-op09-093",
+      "searchScore": 155,
+      "rawMarket": 500,
+      "psa10Market": 1558.89,
+      "netPsa10Exit": 1371.82,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 612.99,
+      "profit": 758.83,
+      "roi": 1.2379,
+      "roiPercent": 123.79,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 29,
+      "bgs10SalesCount": 3,
+      "collectrRawMarket": 1595,
+      "collectrLink": "https://app.getcollectr.com/explore/product/597035",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4zaqi7nn5hnlk4j/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597035.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Marshall.D.Teach\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP09-093\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Marshall.D.Teach\" \"Emperors in the New World\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "OP13-031",
       "name": "Trafalgar Law (SP)",
       "setName": "Adventure on Kami's Island",
@@ -7222,7 +7322,7 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 20,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 256.26,
+      "collectrRawMarket": 255.9,
       "collectrLink": "https://app.getcollectr.com/explore/product/685017",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/r44ptuperfsagniz/1600.jpg",
@@ -7272,7 +7372,7 @@
       "psa10SalesCount": 10,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 573.78,
+      "collectrRawMarket": 576.42,
       "collectrLink": "https://app.getcollectr.com/explore/product/685011",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k2gyz4btdj54lpty/1600.jpg",
@@ -7372,7 +7472,7 @@
       "psa10SalesCount": 17,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 1317.25,
+      "collectrRawMarket": 1320.02,
       "collectrLink": "https://app.getcollectr.com/explore/product/657407",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ksjriwcc42kw6its/1600.jpg",
@@ -7395,56 +7495,6 @@
         {
           "stage": "search",
           "query": "\"Portgas.D.Ace\" \"Carrying On His Will\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
-      "code": "OP09-093",
-      "name": "Marshall.D.Teach (093) (Manga)",
-      "setName": "Emperors in the New World",
-      "productId": "597035",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/marshalldteach-manga-op09-093",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/marshalldteach-manga-op09-093",
-      "searchScore": 155,
-      "rawMarket": 500,
-      "psa10Market": 1450,
-      "netPsa10Exit": 1276,
-      "gradingCost": 79.99,
-      "shippingCost": 33,
-      "costBasis": 612.99,
-      "profit": 663.01,
-      "roi": 1.0816,
-      "roiPercent": 108.16,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 29,
-      "bgs10SalesCount": 3,
-      "collectrRawMarket": 1595,
-      "collectrLink": "https://app.getcollectr.com/explore/product/597035",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4zaqi7nn5hnlk4j/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597035.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Marshall.D.Teach\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP09-093\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Marshall.D.Teach\" \"Emperors in the New World\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
@@ -7627,7 +7677,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 2201.4,
+      "collectrRawMarket": 2216.58,
       "collectrLink": "https://app.getcollectr.com/explore/product/657402",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/fdyzo36emvippowt/1600.jpg",
@@ -7727,7 +7777,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 2244.77,
+      "collectrRawMarket": 2275.36,
       "collectrLink": "https://app.getcollectr.com/explore/product/541660",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/wings-of-the-captain?cardType=cards&groupId=23272&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/wqttukrrsqlyjmv4/1600.jpg",
@@ -7827,7 +7877,7 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 137.93,
+      "collectrRawMarket": 137.86,
       "collectrLink": "https://app.getcollectr.com/explore/product/685008",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/v7y54gzorfyitorz/1600.jpg",
