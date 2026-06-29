@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-28T09:47:33.336Z",
-  "dateStamp": "2026-06-28",
+  "generatedAt": "2026-06-29T09:46:19.743Z",
+  "dateStamp": "2026-06-29",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -16,21 +16,21 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 20,
+  "rowsWithEbayField": 21,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 20,
+  "qualifiedCount": 21,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (Manga)",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
-      "productId": "657402",
-      "roiPercent": 103.27,
-      "rawMarket": 968.73,
-      "psa10Market": 2498.6,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "productId": "657403",
+      "roiPercent": 81.7,
+      "rawMarket": 81.11,
+      "psa10Market": 303.75,
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -429,7 +429,7 @@
       "roiPercent": 110.54,
       "rawMarket": 27.21,
       "psa10Market": 223,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -808,10 +808,10 @@
       "name": "Monkey.D.Luffy (SP) (Gold)",
       "setName": "A Fist of Divine Speed",
       "productId": "632504",
-      "roiPercent": 105.17,
+      "roiPercent": 121.89,
       "rawMarket": 3750,
-      "psa10Market": 9006.56,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "psa10Market": 9740.34,
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1210,7 +1210,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1619,7 +1619,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2044,13 +2044,13 @@
     },
     {
       "code": "OP09-093",
-      "name": "Marshall.D.Teach (093) (Manga)",
-      "setName": "Emperors in the New World",
-      "productId": "597035",
-      "roiPercent": 123.79,
-      "rawMarket": 500,
-      "psa10Market": 1558.89,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "name": "Marshall.D.Teach (SP) (Gold)",
+      "setName": "Legacy of the Master",
+      "productId": "646573",
+      "roiPercent": 96.07,
+      "rawMarket": 650,
+      "psa10Market": 1699.99,
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2472,7 +2472,7 @@
       "roiPercent": 93.74,
       "rawMarket": 152.93,
       "psa10Market": 481.99,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2870,7 +2870,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3251,7 +3251,7 @@
       "roiPercent": 81.5,
       "rawMarket": 640,
       "psa10Market": 1553,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3684,7 +3684,7 @@
       "roiPercent": 281.08,
       "rawMarket": 49,
       "psa10Market": 498,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4110,7 +4110,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4492,7 +4492,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4891,7 +4891,7 @@
       "roiPercent": 102.5,
       "rawMarket": 2502.46,
       "psa10Market": 6018.47,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5335,7 +5335,7 @@
       "roiPercent": 126.85,
       "rawMarket": 85,
       "psa10Market": 389.25,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5751,7 +5751,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6170,7 +6170,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6596,7 +6596,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-06-27T09:46:20.767Z",
+      "lastSeenAt": "2026-06-28T09:47:33.336Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7022,7 +7022,7 @@
       "psa10SalesCount": 6,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 255.18,
+      "collectrRawMarket": 250.98,
       "collectrLink": "https://app.getcollectr.com/explore/product/685439",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/odj7pn3ybcomvdsz/1600.jpg",
@@ -7069,7 +7069,7 @@
       "profit": 323.24,
       "roi": 2.8108,
       "roiPercent": 281.08,
-      "psa10SalesCount": 14,
+      "psa10SalesCount": 13,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
       "collectrRawMarket": 106.96,
@@ -7169,7 +7169,7 @@
       "profit": 3573.84,
       "roi": 2.2093,
       "roiPercent": 220.93,
-      "psa10SalesCount": 11,
+      "psa10SalesCount": 12,
       "ungradedSalesCount": 24,
       "bgs10SalesCount": 0,
       "collectrRawMarket": 3716.67,
@@ -7222,7 +7222,7 @@
       "psa10SalesCount": 7,
       "ungradedSalesCount": 12,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 993.44,
+      "collectrRawMarket": 998.87,
       "collectrLink": "https://app.getcollectr.com/explore/product/646572",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/legacy-of-the-master?cardType=cards&groupId=24302&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/dj6b4uku6fftbuca/1600.jpg",
@@ -7301,6 +7301,56 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "OP05-119",
+      "name": "Monkey.D.Luffy (SP) (Gold)",
+      "setName": "A Fist of Divine Speed",
+      "productId": "632504",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
+      "searchScore": 157,
+      "rawMarket": 3750,
+      "psa10Market": 9740.34,
+      "netPsa10Exit": 8571.5,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 3862.99,
+      "profit": 4708.51,
+      "roi": 1.2189,
+      "roiPercent": 121.89,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 22,
+      "bgs10SalesCount": 9,
+      "collectrRawMarket": 12980.74,
+      "collectrLink": "https://app.getcollectr.com/explore/product/632504",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/pfa3b3bcgxrtsggz/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632504.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP05-119\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"A Fist of Divine Speed\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "OP13-031",
       "name": "Trafalgar Law (SP)",
       "setName": "Adventure on Kami's Island",
@@ -7322,7 +7372,7 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 20,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 255.9,
+      "collectrRawMarket": 258.05,
       "collectrLink": "https://app.getcollectr.com/explore/product/685017",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/r44ptuperfsagniz/1600.jpg",
@@ -7372,7 +7422,7 @@
       "psa10SalesCount": 10,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 576.42,
+      "collectrRawMarket": 577.98,
       "collectrLink": "https://app.getcollectr.com/explore/product/685011",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k2gyz4btdj54lpty/1600.jpg",
@@ -7501,6 +7551,56 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Manga)",
+      "setName": "Carrying On His Will",
+      "productId": "657402",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-manga-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-manga-op13-118",
+      "searchScore": 155,
+      "rawMarket": 1150,
+      "psa10Market": 2970.48,
+      "netPsa10Exit": 2614.02,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 1262.99,
+      "profit": 1351.03,
+      "roi": 1.0697,
+      "roiPercent": 106.97,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 2218.48,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657402",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/fdyzo36emvippowt/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657402.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP13-118\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"Carrying On His Will\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "ST18-005",
       "name": "Luffy-Tarou (SP)",
       "setName": "A Fist of Divine Speed",
@@ -7522,7 +7622,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 309.49,
+      "collectrRawMarket": 309.6,
       "collectrLink": "https://app.getcollectr.com/explore/product/632509",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/56p7onpghbjfcxnh/1600.jpg",
@@ -7545,56 +7645,6 @@
         {
           "stage": "search",
           "query": "\"Luffy-Tarou\" \"A Fist of Divine Speed\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
-      "code": "OP05-119",
-      "name": "Monkey.D.Luffy (SP) (Gold)",
-      "setName": "A Fist of Divine Speed",
-      "productId": "632504",
-      "rarity": "SEC",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-fist-of-divine-speed/monkeydluffy-sp-gold-op05-119",
-      "searchScore": 157,
-      "rawMarket": 3750,
-      "psa10Market": 9006.56,
-      "netPsa10Exit": 7925.77,
-      "gradingCost": 79.99,
-      "shippingCost": 33,
-      "costBasis": 3862.99,
-      "profit": 4062.78,
-      "roi": 1.0517,
-      "roiPercent": 105.17,
-      "psa10SalesCount": 29,
-      "ungradedSalesCount": 22,
-      "bgs10SalesCount": 9,
-      "collectrRawMarket": 12980.74,
-      "collectrLink": "https://app.getcollectr.com/explore/product/632504",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/a-fist-of-divine-speed?cardType=cards&groupId=24241&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/pfa3b3bcgxrtsggz/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_632504.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP05-119\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"A Fist of Divine Speed\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
@@ -7656,106 +7706,6 @@
       "lastReviewSeenAt": null
     },
     {
-      "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (Manga)",
-      "setName": "Carrying On His Will",
-      "productId": "657402",
-      "rarity": "SEC",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-manga-op13-118",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-manga-op13-118",
-      "searchScore": 155,
-      "rawMarket": 968.73,
-      "psa10Market": 2498.6,
-      "netPsa10Exit": 2198.77,
-      "gradingCost": 79.99,
-      "shippingCost": 33,
-      "costBasis": 1081.72,
-      "profit": 1117.05,
-      "roi": 1.0327,
-      "roiPercent": 103.27,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 2216.58,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657402",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/fdyzo36emvippowt/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657402.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP13-118\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"Carrying On His Will\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
-      "code": "OP09-118",
-      "name": "Gol.D.Roger (Manga)",
-      "setName": "Emperors in the New World",
-      "productId": "597065",
-      "rarity": "SEC",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/goldroger-manga-op09-118",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/goldroger-manga-op09-118",
-      "searchScore": 163,
-      "rawMarket": 2502.46,
-      "psa10Market": 6018.47,
-      "netPsa10Exit": 5296.25,
-      "gradingCost": 79.99,
-      "shippingCost": 33,
-      "costBasis": 2615.45,
-      "profit": 2680.8,
-      "roi": 1.025,
-      "roiPercent": 102.5,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 16,
-      "bgs10SalesCount": 8,
-      "collectrRawMarket": 4500,
-      "collectrLink": "https://app.getcollectr.com/explore/product/597065",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/n5t2utlo4vogd6ea/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_597065.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Gol.D.Roger\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP09-118\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Gol.D.Roger\" \"Emperors in the New World\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art) (Manga)",
       "setName": "Wings of the Captain",
@@ -7777,7 +7727,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 2275.36,
+      "collectrRawMarket": 2264.7,
       "collectrLink": "https://app.getcollectr.com/explore/product/541660",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/wings-of-the-captain?cardType=cards&groupId=23272&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/wqttukrrsqlyjmv4/1600.jpg",
@@ -7906,6 +7856,106 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (SP) (Gold)",
+      "setName": "Legacy of the Master",
+      "productId": "646573",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-gold-op09-093",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-gold-op09-093",
+      "searchScore": 157,
+      "rawMarket": 650,
+      "psa10Market": 1699.99,
+      "netPsa10Exit": 1495.99,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 762.99,
+      "profit": 733,
+      "roi": 0.9607,
+      "roiPercent": 96.07,
+      "psa10SalesCount": 19,
+      "ungradedSalesCount": 16,
+      "bgs10SalesCount": 4,
+      "collectrRawMarket": 1580.19,
+      "collectrLink": "https://app.getcollectr.com/explore/product/646573",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/legacy-of-the-master?cardType=cards&groupId=24302&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/hh72dbt75lf3h33t/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_646573.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Marshall.D.Teach\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP09-093\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Marshall.D.Teach\" \"Legacy of the Master\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "setName": "Carrying On His Will",
+      "productId": "657403",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "searchScore": 139,
+      "rawMarket": 81.11,
+      "psa10Market": 303.75,
+      "netPsa10Exit": 267.3,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 147.11,
+      "profit": 120.19,
+      "roi": 0.817,
+      "roiPercent": 81.7,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 88.41,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657403.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP13-118\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Monkey.D.Luffy\" \"Carrying On His Will\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "OP09-004",
       "name": "Shanks (Manga)",
       "setName": "Emperors in the New World",
@@ -7927,7 +7977,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 5,
-      "collectrRawMarket": 1946.33,
+      "collectrRawMarket": 1908.5,
       "collectrLink": "https://app.getcollectr.com/explore/product/596925",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/bjjnrtgslgxhsnaw/1600.jpg",
