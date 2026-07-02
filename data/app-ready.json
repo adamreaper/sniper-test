@@ -1,116 +1,15 @@
 {
-  "generatedAt": "2026-07-01T09:48:23.461Z",
-  "listingCount": 3,
+  "generatedAt": "2026-07-02T09:52:52.763Z",
+  "listingCount": 1,
   "summary": {
-    "reviewCount": 1,
-    "watchCount": 2,
-    "avgScore": 38,
-    "avgPredictedProfit": 84.06
+    "reviewCount": 0,
+    "watchCount": 1,
+    "avgScore": 32,
+    "avgPredictedProfit": 72.01
   },
   "rows": [
     {
       "rank": 1,
-      "itemId": "v1|318516971279|0",
-      "title": "ONE PIECE Collection Lot 100 Cards All NM. Mixed Sets! R, SR, Alt Arts, And More",
-      "url": "https://www.ebay.com/itm/318516971279?_skw=one+piece+cards+mixed+lot&hash=item4a2917470f:g:OtwAAeSwH5NqQZ8W",
-      "imageUrl": "https://i.ebayimg.com/images/g/OtwAAeSwH5NqQZ8W/s-l225.jpg",
-      "price": 75,
-      "shipping": 0,
-      "total": 75,
-      "lotType": "collection_lot",
-      "cardCountGuess": 100,
-      "score": 43.7,
-      "tier": "review",
-      "predictedProfit": 100,
-      "maxBuyPrice": 126,
-      "maxBidPrice": 113.75,
-      "trueBulk": false,
-      "trueBulkMaxBuyPrice": null,
-      "trueBulkMaxPer1000": 5,
-      "expectedValue": 175,
-      "sellerFeedbackPercent": "100.0",
-      "imageVerdict": "not_reviewed",
-      "imageConfidence": null,
-      "riskLevel": "low",
-      "scoreBreakdown": {
-        "profitScore": 53.3,
-        "confidenceScore": 50,
-        "evidenceScore": 46.7,
-        "liquidityScore": 55.6,
-        "sellerQualityScore": 100,
-        "junkRiskPenalty": 0
-      },
-      "topReasons": [
-        "visible signals: alt-art signal",
-        "expected spread 100 over ask",
-        "large lot estimate around 100 cards"
-      ],
-      "topRisks": [],
-      "hardGatesPassed": true,
-      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
-      "reason": "No image review yet.",
-      "visibleSignals": [
-        "alt-art signal"
-      ],
-      "outcomeStatus": "untracked",
-      "decision": null,
-      "decisionAt": null,
-      "realizedProfit": null,
-      "predictionError": null
-    },
-    {
-      "rank": 2,
-      "itemId": "v1|398127311788|0",
-      "title": "One Piece Chopper Volume 1-2 Set with Card, Manga Paperback Collection",
-      "url": "https://www.ebay.com/itm/398127311788?_skw=one+piece+collection+cards&hash=item5cb23cabac:g:eXUAAeSwsyhqRNzG",
-      "imageUrl": "https://i.ebayimg.com/images/g/eXUAAeSwsyhqRNzG/s-l225.jpg",
-      "price": 106.83,
-      "shipping": 20,
-      "total": 126.83,
-      "lotType": "collection_lot",
-      "cardCountGuess": 60,
-      "score": 38.4,
-      "tier": "watch",
-      "predictedProfit": 80.17,
-      "maxBuyPrice": 149.04,
-      "maxBidPrice": 134.55,
-      "trueBulk": false,
-      "trueBulkMaxBuyPrice": null,
-      "trueBulkMaxPer1000": 5,
-      "expectedValue": 207,
-      "sellerFeedbackPercent": "99.4",
-      "imageVerdict": "not_reviewed",
-      "imageConfidence": null,
-      "riskLevel": "low",
-      "scoreBreakdown": {
-        "profitScore": 25.3,
-        "confidenceScore": 50,
-        "evidenceScore": 94.6,
-        "liquidityScore": 100,
-        "sellerQualityScore": 99.4,
-        "junkRiskPenalty": 14.8
-      },
-      "topReasons": [
-        "visible signals: manga signal",
-        "expected spread 80 over ask"
-      ],
-      "topRisks": [
-        "shipping eats margin"
-      ],
-      "hardGatesPassed": false,
-      "note": "Large lot watch; value depends on manual photo review.",
-      "reason": "No image review yet.",
-      "visibleSignals": [
-        "manga signal"
-      ],
-      "outcomeStatus": "untracked",
-      "decision": null,
-      "decisionAt": null,
-      "realizedProfit": null,
-      "predictionError": null
-    },
-    {
-      "rank": 3,
       "itemId": "v1|168486833034|0",
       "title": "One Piece 50 Cards Bulk Lot TCG Card Game Mixed Cards Near Mint 10 Hlo/Leadr1 SR",
       "url": "https://www.ebay.com/itm/168486833034?_skw=one+piece+50+cards+lot&hash=item273a990b8a:g:zB4AAeSwQERqO2S3",
