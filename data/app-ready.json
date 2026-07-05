@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-04T09:47:31.773Z",
+  "generatedAt": "2026-07-05T09:47:36.724Z",
   "listingCount": 1,
   "summary": {
     "reviewCount": 0,
     "watchCount": 1,
-    "avgScore": 32,
-    "avgPredictedProfit": 72.01
+    "avgScore": 34.5,
+    "avgPredictedProfit": 74.5
   },
   "rows": [
     {
@@ -14,14 +14,14 @@
       "title": "One Piece 50 Cards Bulk Lot TCG Card Game Mixed Cards Near Mint 10 Hlo/Leadr1 SR",
       "url": "https://www.ebay.com/itm/168486833034?_skw=one+piece+50+cards+lot&hash=item273a990b8a:g:zB4AAeSwQERqO2S3",
       "imageUrl": "https://i.ebayimg.com/images/g/zB4AAeSwQERqO2S3/s-l225.jpg",
-      "price": 6.99,
-      "shipping": 1,
-      "total": 7.99,
+      "price": 5.5,
+      "shipping": 0,
+      "total": 5.5,
       "lotType": "bulk_lot",
       "cardCountGuess": 50,
-      "score": 32,
+      "score": 34.5,
       "tier": "watch",
-      "predictedProfit": 72.01,
+      "predictedProfit": 74.5,
       "maxBuyPrice": 57.6,
       "maxBidPrice": 52,
       "trueBulk": false,
@@ -41,7 +41,8 @@
         "junkRiskPenalty": 0
       },
       "topReasons": [
-        "expected spread 72 over ask"
+        "expected spread 75 over ask",
+        "free shipping"
       ],
       "topRisks": [
         "value depends on hidden hits, not visible proof"
