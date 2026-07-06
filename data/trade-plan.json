@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-05T09:46:12.576Z",
-  "sourceFeedUpdatedAt": "2026-07-05T09:46:12.504Z",
+  "generatedAt": "2026-07-06T09:46:06.373Z",
+  "sourceFeedUpdatedAt": "2026-07-06T09:46:06.301Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -8,9 +8,9 @@
     "No verified eBay candidate pull is required for these rankings; every card should still be searched manually before action."
   ],
   "summary": {
-    "totalPlans": 27,
+    "totalPlans": 28,
     "prioritySearchCount": 2,
-    "watchCount": 17,
+    "watchCount": 18,
     "passCount": 8,
     "manualReviewCount": 2,
     "buyNowCount": 0
@@ -24,16 +24,17 @@
       "action": "priority-search",
       "confidenceTier": "A",
       "discoveryScore": 100,
-      "targetBuyPrice": 560.57,
-      "idealBuyPrice": 461.64,
-      "stretchBuyPrice": 673.63,
-      "maxBuyPrice": 769.12,
-      "exitZoneLow": 1365.21,
-      "exitZoneHigh": 1528.44,
-      "whyInteresting": "PSA 10 spread is huge versus raw market",
-      "biggestRisk": "No verified eBay pull yet — this is still a manual search workflow",
+      "targetBuyPrice": 479.13,
+      "idealBuyPrice": 392.03,
+      "stretchBuyPrice": 579.55,
+      "maxBuyPrice": 665.1,
+      "exitZoneLow": 1149.63,
+      "exitZoneHigh": 1287.09,
+      "whyInteresting": "Strong PSA 10 spread versus raw market",
+      "biggestRisk": "Raw entry price is high enough to slow turnover",
       "reviewSummary": "Search this one first.",
       "reviewTags": [
+        "liquid",
         "wide-spread"
       ],
       "collectrLink": "https://app.getcollectr.com/explore/product/685439",
@@ -94,7 +95,7 @@
       "setName": "Adventure on Kami's Island",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 70.6,
+      "discoveryScore": 70.5,
       "targetBuyPrice": 114.49,
       "idealBuyPrice": 89.91,
       "stretchBuyPrice": 142.58,
@@ -117,7 +118,7 @@
       "setName": "Carrying On His Will",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 70.3,
+      "discoveryScore": 70.5,
       "targetBuyPrice": 87.04,
       "idealBuyPrice": 65.6,
       "stretchBuyPrice": 112.31,
@@ -150,20 +151,20 @@
       "marketContext": null,
       "collectrLink": "https://app.getcollectr.com/explore/product/685439",
       "searchScore": 157,
-      "rawMarket": 250,
-      "psa10Market": 1686.27,
-      "netPsa10Exit": 1483.92,
+      "rawMarket": 255,
+      "psa10Market": 1420,
+      "netPsa10Exit": 1249.6,
       "gradingCost": 33,
-      "costBasis": 316,
-      "expectedPsaNet": 1167.92,
-      "profit": 1167.92,
-      "roiPercent": 369.59,
-      "psa10SalesCount": 6,
+      "costBasis": 321,
+      "expectedPsaNet": 928.6,
+      "profit": 928.6,
+      "roiPercent": 289.28,
+      "psa10SalesCount": 17,
       "ungradedSalesCount": 30,
-      "bgs10SalesCount": 1,
+      "bgs10SalesCount": 2,
       "collectrRawMarket": 276.79,
-      "collectrRawDeltaPercent": 10.72,
-      "psa10SpreadMultiple": 6.75,
+      "collectrRawDeltaPercent": 8.55,
+      "psa10SpreadMultiple": 5.57,
       "noVerifiedListingPull": true,
       "marketStats": null,
       "discoveryScore": 100,
@@ -171,22 +172,24 @@
       "confidenceTier": "A",
       "action": "priority-search",
       "riskFlags": [
+        "high_raw_entry_price",
         "search_only_no_live_pull"
       ],
       "topReasons": [
-        "PSA 10 spread is huge versus raw market",
-        "PSA 10 comp depth is acceptable",
+        "Strong PSA 10 spread versus raw market",
+        "PSA 10 sales are liquid enough to matter",
         "Raw sales volume supports manual searching",
         "Absolute upside is meaningful after fees"
       ],
-      "biggestRisk": "search_only_no_live_pull",
-      "idealBuyPrice": 461.64,
-      "targetBuyPrice": 560.57,
-      "stretchBuyPrice": 673.63,
-      "maxBuyPrice": 769.12,
-      "exitZoneLow": 1365.21,
-      "exitZoneHigh": 1528.44,
+      "biggestRisk": "high_raw_entry_price",
+      "idealBuyPrice": 392.03,
+      "targetBuyPrice": 479.13,
+      "stretchBuyPrice": 579.55,
+      "maxBuyPrice": 665.1,
+      "exitZoneLow": 1149.63,
+      "exitZoneHigh": 1287.09,
       "reviewTags": [
+        "liquid",
         "wide-spread"
       ],
       "reviewSummary": "Search this one first.",
@@ -268,11 +271,11 @@
       "expectedPsaNet": 322.25,
       "profit": 322.25,
       "roiPercent": 277.83,
-      "psa10SalesCount": 15,
+      "psa10SalesCount": 14,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 100.38,
-      "collectrRawDeltaPercent": 100.8,
+      "collectrRawMarket": 99.13,
+      "collectrRawDeltaPercent": 98.3,
       "psa10SpreadMultiple": 9.96,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -329,13 +332,13 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 137.81,
-      "collectrRawDeltaPercent": 5.55,
+      "collectrRawMarket": 138.09,
+      "collectrRawDeltaPercent": 5.77,
       "psa10SpreadMultiple": 3.21,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 70.6,
-      "buyScore": 70.6,
+      "discoveryScore": 70.5,
+      "buyScore": 70.5,
       "confidenceTier": "B",
       "action": "watch",
       "riskFlags": [
@@ -384,13 +387,13 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 85.43,
-      "collectrRawDeltaPercent": 15.59,
+      "collectrRawMarket": 85.08,
+      "collectrRawDeltaPercent": 15.11,
       "psa10SpreadMultiple": 4.24,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 70.3,
-      "buyScore": 70.3,
+      "discoveryScore": 70.5,
+      "buyScore": 70.5,
       "confidenceTier": "B",
       "action": "watch",
       "riskFlags": [
@@ -732,8 +735,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 2270.25,
-      "collectrRawDeltaPercent": 97.41,
+      "collectrRawMarket": 2290.99,
+      "collectrRawDeltaPercent": 99.22,
       "psa10SpreadMultiple": 2.61,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -963,8 +966,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 142.87,
-      "collectrRawDeltaPercent": 88.68,
+      "collectrRawMarket": 144.73,
+      "collectrRawDeltaPercent": 88.53,
       "psa10SpreadMultiple": 2.46,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -1017,7 +1020,7 @@
       "expectedPsaNet": 723.71,
       "profit": 723.71,
       "roiPercent": 93.71,
-      "psa10SalesCount": 19,
+      "psa10SalesCount": 22,
       "ungradedSalesCount": 16,
       "bgs10SalesCount": 4,
       "collectrRawMarket": 1761.94,
@@ -1053,6 +1056,64 @@
       ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 16
+    },
+    {
+      "sourceRank": 25,
+      "code": "OP09-119",
+      "name": "Monkey.D.Luffy (Manga)",
+      "setName": "Emperors in the New World",
+      "rarity": "SEC",
+      "productId": "597068",
+      "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/4ypzweq6uizvmx62/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/597068",
+      "searchScore": 155,
+      "rawMarket": 1017.21,
+      "psa10Market": 2344.6,
+      "netPsa10Exit": 2063.25,
+      "gradingCost": 79.99,
+      "costBasis": 1130.2,
+      "expectedPsaNet": 933.05,
+      "profit": 933.05,
+      "roiPercent": 82.56,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 27,
+      "bgs10SalesCount": 7,
+      "collectrRawMarket": 2699,
+      "collectrRawDeltaPercent": 165.33,
+      "psa10SpreadMultiple": 2.3,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 54.7,
+      "buyScore": 54.7,
+      "confidenceTier": "C",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "high_raw_entry_price",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Absolute upside is meaningful after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 560.77,
+      "targetBuyPrice": 678.56,
+      "stretchBuyPrice": 809.34,
+      "maxBuyPrice": 916.75,
+      "exitZoneLow": 1898.19,
+      "exitZoneHigh": 2125.15,
+      "reviewTags": [
+        "liquid",
+        "chase"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 17
     },
     {
       "sourceRank": 13,
@@ -1109,10 +1170,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 17
+      "rank": 18
     },
     {
-      "sourceRank": 27,
+      "sourceRank": 28,
       "code": "OP06-119",
       "name": "Sanji (Manga)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -1135,8 +1196,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 2224.23,
-      "collectrRawDeltaPercent": 239.58,
+      "collectrRawMarket": 2247.58,
+      "collectrRawDeltaPercent": 243.14,
       "psa10SpreadMultiple": 2.4,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -1167,7 +1228,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 18
+      "rank": 19
     },
     {
       "sourceRank": 22,
@@ -1224,7 +1285,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 19
+      "rank": 20
     },
     {
       "sourceRank": 23,
@@ -1280,7 +1341,7 @@
         "liquid"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 20
+      "rank": 21
     },
     {
       "sourceRank": 11,
@@ -1339,7 +1400,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 21
+      "rank": 22
     },
     {
       "sourceRank": 10,
@@ -1398,7 +1459,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 22
+      "rank": 23
     },
     {
       "sourceRank": 18,
@@ -1413,24 +1474,24 @@
       "marketContext": null,
       "collectrLink": "https://app.getcollectr.com/explore/product/657401",
       "searchScore": 139,
-      "rawMarket": 76.24,
-      "psa10Market": 320.21,
-      "netPsa10Exit": 281.78,
+      "rawMarket": 73.91,
+      "psa10Market": 313.74,
+      "netPsa10Exit": 276.09,
       "gradingCost": 33,
-      "costBasis": 142.24,
-      "expectedPsaNet": 139.54,
-      "profit": 139.54,
-      "roiPercent": 98.11,
+      "costBasis": 139.91,
+      "expectedPsaNet": 136.18,
+      "profit": 136.18,
+      "roiPercent": 97.33,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
       "collectrRawMarket": 8950,
-      "collectrRawDeltaPercent": 11639.24,
-      "psa10SpreadMultiple": 4.2,
+      "collectrRawDeltaPercent": 12009.32,
+      "psa10SpreadMultiple": 4.24,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 47.5,
-      "buyScore": 47.5,
+      "discoveryScore": 47.6,
+      "buyScore": 47.6,
       "confidenceTier": "D",
       "action": "pass",
       "riskFlags": [
@@ -1445,21 +1506,22 @@
         "Search score says the card is bubbling to the top"
       ],
       "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 67.64,
-      "targetBuyPrice": 89.51,
-      "stretchBuyPrice": 115.31,
-      "maxBuyPrice": 137.78,
-      "exitZoneLow": 259.24,
-      "exitZoneHigh": 290.23,
+      "idealBuyPrice": 65.6,
+      "targetBuyPrice": 87.04,
+      "stretchBuyPrice": 112.31,
+      "maxBuyPrice": 134.33,
+      "exitZoneLow": 254,
+      "exitZoneHigh": 284.37,
       "reviewTags": [
+        "low-entry",
         "liquid",
         "wide-spread"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 23
+      "rank": 24
     },
     {
-      "sourceRank": 26,
+      "sourceRank": 27,
       "code": "EB03-055",
       "name": "Nico Robin - 055 (SP)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -1514,10 +1576,10 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 24
+      "rank": 25
     },
     {
-      "sourceRank": 25,
+      "sourceRank": 26,
       "code": "OP12-014",
       "name": "Boa Hancock (SP)",
       "setName": "Adventure on Kami's Island",
@@ -1572,7 +1634,7 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 25
+      "rank": 26
     },
     {
       "sourceRank": 5,
@@ -1598,8 +1660,8 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 542.09,
-      "collectrRawDeltaPercent": 91.44,
+      "collectrRawMarket": 559.2,
+      "collectrRawDeltaPercent": 97.49,
       "psa10SpreadMultiple": 3.6,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -1629,7 +1691,7 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 26
+      "rank": 27
     },
     {
       "sourceRank": 20,
@@ -1655,8 +1717,8 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 20,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 258.9,
-      "collectrRawDeltaPercent": 94.06,
+      "collectrRawMarket": 260.33,
+      "collectrRawDeltaPercent": 95.14,
       "psa10SpreadMultiple": 3.35,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -1684,7 +1746,7 @@
         "chase"
       ],
       "reviewSummary": "Pass for now unless the market shifts.",
-      "rank": 27
+      "rank": 28
     }
   ]
 }
