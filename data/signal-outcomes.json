@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T09:46:12.530Z",
+  "generatedAt": "2026-07-11T09:46:07.079Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -40,7 +40,7 @@
       "setName": "Two Legends",
       "action": "priority-search",
       "confidenceTier": "A",
-      "discoveryScore": 92.5,
+      "discoveryScore": 92.6,
       "targetBuyPrice": 226.12,
       "maxBuyPrice": 321.28,
       "exitZoneLow": 576.9,
@@ -104,7 +104,7 @@
       "setName": "Carrying On His Will",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 69.9,
+      "discoveryScore": 70.1,
       "targetBuyPrice": 77.92,
       "maxBuyPrice": 119.6,
       "exitZoneLow": 242.88,
@@ -296,7 +296,7 @@
       "setName": "Emperors in the New World",
       "action": "watch",
       "confidenceTier": "D",
-      "discoveryScore": 53,
+      "discoveryScore": 52.9,
       "targetBuyPrice": 381.04,
       "maxBuyPrice": 525.81,
       "exitZoneLow": 1153.68,
