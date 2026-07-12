@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T09:46:07.079Z",
+  "generatedAt": "2026-07-12T09:46:38.750Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -104,7 +104,7 @@
       "setName": "Carrying On His Will",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 70.1,
+      "discoveryScore": 70.3,
       "targetBuyPrice": 77.92,
       "maxBuyPrice": 119.6,
       "exitZoneLow": 242.88,
@@ -120,11 +120,11 @@
       "setName": "Legacy of the Master",
       "action": "watch",
       "confidenceTier": "B",
-      "discoveryScore": 69.5,
-      "targetBuyPrice": 469.32,
-      "maxBuyPrice": 643.92,
-      "exitZoneLow": 1164.57,
-      "exitZoneHigh": 1303.82,
+      "discoveryScore": 69.2,
+      "targetBuyPrice": 465.5,
+      "maxBuyPrice": 638.77,
+      "exitZoneLow": 1155.71,
+      "exitZoneHigh": 1293.9,
       "outcomeStatus": "unreviewed",
       "outcomeTag": "",
       "notes": "",
