@@ -1,15 +1,65 @@
 {
-  "generatedAt": "2026-07-13T09:47:15.175Z",
-  "listingCount": 1,
+  "generatedAt": "2026-07-14T09:47:30.218Z",
+  "listingCount": 2,
   "summary": {
-    "reviewCount": 0,
+    "reviewCount": 1,
     "watchCount": 1,
-    "avgScore": 34.5,
-    "avgPredictedProfit": 74.5
+    "avgScore": 45.4,
+    "avgPredictedProfit": 101.7
   },
   "rows": [
     {
       "rank": 1,
+      "itemId": "v1|407070984570|0",
+      "title": "pokemon bulk cards mix one piece and sports cards Topps  700+ lot",
+      "url": "https://www.ebay.com/itm/407070984570?_skw=one+piece+cards+mixed+lot&hash=item5ec752497a:g:UyAAAeSwxUxqVYNM",
+      "imageUrl": "https://i.ebayimg.com/images/g/UyAAAeSwxUxqVYNM/s-l225.jpg",
+      "price": 11.11,
+      "shipping": 0,
+      "total": 11.11,
+      "lotType": "bulk_lot",
+      "cardCountGuess": 200,
+      "score": 56.3,
+      "tier": "review",
+      "predictedProfit": 128.89,
+      "maxBuyPrice": 100.8,
+      "maxBidPrice": 91,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 140,
+      "sellerFeedbackPercent": "98.9",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 100,
+        "liquidityScore": 55.6,
+        "sellerQualityScore": 98.9,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: SP signal",
+        "expected spread 129 over ask",
+        "large lot estimate around 200 cards"
+      ],
+      "topRisks": [],
+      "hardGatesPassed": true,
+      "note": "No image fixture yet; passes price/evidence/shipping gates, manually inspect photos before buying.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "SP signal"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 2,
       "itemId": "v1|168486833034|0",
       "title": "One Piece 50 Cards Bulk Lot TCG Card Game Mixed Cards Near Mint 10 Hlo/Leadr1 SR",
       "url": "https://www.ebay.com/itm/168486833034?_skw=one+piece+50+cards+lot&hash=item273a990b8a:g:zB4AAeSwQERqO2S3",
