@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-17T09:47:03.286Z",
-  "dateStamp": "2026-07-17",
+  "generatedAt": "2026-07-18T09:46:01.403Z",
+  "dateStamp": "2026-07-18",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -16,21 +16,21 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 23,
+  "rowsWithEbayField": 22,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 23,
+  "qualifiedCount": 22,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
-      "productId": "657401",
-      "roiPercent": 89.25,
-      "rawMarket": 73.5,
+      "productId": "657403",
+      "roiPercent": 90.22,
+      "rawMarket": 72.79,
       "psa10Market": 300,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -429,7 +429,7 @@
       "roiPercent": 90.88,
       "rawMarket": 30,
       "psa10Market": 208.23,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -811,7 +811,7 @@
       "roiPercent": 124.1,
       "rawMarket": 3750,
       "psa10Market": 9837.62,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1210,7 +1210,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1619,7 +1619,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2050,7 +2050,7 @@
       "roiPercent": 101.77,
       "rawMarket": 536.87,
       "psa10Market": 1490,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2472,7 +2472,7 @@
       "roiPercent": 85.24,
       "rawMarket": 1010.65,
       "psa10Market": 2365.31,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2870,7 +2870,7 @@
       "roiPercent": 89.07,
       "rawMarket": 80.75,
       "psa10Market": 244.39,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3251,7 +3251,7 @@
       "roiPercent": 82.88,
       "rawMarket": 640,
       "psa10Market": 1564.84,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3684,7 +3684,7 @@
       "roiPercent": 282.34,
       "rawMarket": 50,
       "psa10Market": 504,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4110,7 +4110,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4492,7 +4492,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4891,7 +4891,7 @@
       "roiPercent": 86.72,
       "rawMarket": 2950,
       "psa10Market": 6499.05,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5335,7 +5335,7 @@
       "roiPercent": 126.85,
       "rawMarket": 85,
       "psa10Market": 389.25,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5751,7 +5751,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6170,7 +6170,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6596,7 +6596,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-07-16T09:46:01.214Z",
+      "lastSeenAt": "2026-07-17T09:47:03.286Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7001,56 +7001,6 @@
   ],
   "rows": [
     {
-      "code": "EB03-053",
-      "name": "Nami (053) (Alternate Art)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "productId": "672805",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nami-alternate-art-eb03-053",
-      "searchScore": 157,
-      "rawMarket": 50,
-      "psa10Market": 504,
-      "netPsa10Exit": 443.52,
-      "gradingCost": 33,
-      "shippingCost": 33,
-      "costBasis": 116,
-      "profit": 327.52,
-      "roi": 2.8234,
-      "roiPercent": 282.34,
-      "psa10SalesCount": 14,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 4,
-      "collectrRawMarket": 93.62,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672805",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672805.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Nami\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"EB03-053\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Nami\" \"One Piece Heroine's Edition\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
       "code": "OP08-001",
       "name": "Tony Tony.Chopper (001) (Parallel)",
       "setName": "Two Legends",
@@ -7201,6 +7151,61 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "EB03-055",
+      "name": "Nico Robin - 055 (SP)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "productId": "672828",
+      "rarity": "SR",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
+      "searchScore": 149,
+      "rawMarket": 446.16,
+      "psa10Market": 1600.79,
+      "netPsa10Exit": 1408.7,
+      "gradingCost": 33,
+      "shippingCost": 33,
+      "costBasis": 512.16,
+      "profit": 896.54,
+      "roi": 1.7505,
+      "roiPercent": 175.05,
+      "psa10SalesCount": 18,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 1307.71,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672828",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ajbo7pmoh2n6wkpz/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672828.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Nico Robin - 055\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Nico Robin\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"EB03-055\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Nico Robin - 055\" \"One Piece Heroine's Edition\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "ST26-005",
       "name": "Monkey.D.Luffy (SP)",
       "setName": "Adventure on Kami's Island",
@@ -7222,7 +7227,7 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 567.27,
+      "collectrRawMarket": 577.34,
       "collectrLink": "https://app.getcollectr.com/explore/product/685194",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/tbqsxf62yszndaz5/1600.jpg",
@@ -7272,7 +7277,7 @@
       "psa10SalesCount": 20,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 264.22,
+      "collectrRawMarket": 255.47,
       "collectrLink": "https://app.getcollectr.com/explore/product/685439",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/odj7pn3ybcomvdsz/1600.jpg",
@@ -7322,7 +7327,7 @@
       "psa10SalesCount": 18,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 470.57,
+      "collectrRawMarket": 481.14,
       "collectrLink": "https://app.getcollectr.com/explore/product/654533",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/lg64el7diw6vdnw5/1600.jpg",
@@ -7427,7 +7432,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 2114.36,
+      "collectrRawMarket": 2116.43,
       "collectrLink": "https://app.getcollectr.com/explore/product/657402",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/fdyzo36emvippowt/1600.jpg",
@@ -7527,7 +7532,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 148.47,
+      "collectrRawMarket": 147.81,
       "collectrLink": "https://app.getcollectr.com/explore/product/541659",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/wings-of-the-captain?cardType=cards&groupId=23272&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/wqttukrrsqlyjmv4/1600.jpg",
@@ -7627,7 +7632,7 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 22,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 258.31,
+      "collectrRawMarket": 261.29,
       "collectrLink": "https://app.getcollectr.com/explore/product/685017",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/r44ptuperfsagniz/1600.jpg",
@@ -7757,9 +7762,9 @@
     },
     {
       "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
       "setName": "Carrying On His Will",
-      "productId": "657403",
+      "productId": "657401",
       "rarity": "SEC",
       "productSubType": "Foil",
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
@@ -7777,11 +7782,11 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 82.48,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "collectrRawMarket": 8950,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657403.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657401.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
       "ebayCandidateCount": 0,
@@ -7807,31 +7812,31 @@
     },
     {
       "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
       "setName": "Carrying On His Will",
-      "productId": "657401",
+      "productId": "657403",
       "rarity": "SEC",
       "productSubType": "Foil",
       "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
       "searchScore": 139,
-      "rawMarket": 73.5,
+      "rawMarket": 72.79,
       "psa10Market": 300,
       "netPsa10Exit": 264,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 139.5,
-      "profit": 124.5,
-      "roi": 0.8925,
-      "roiPercent": 89.25,
+      "costBasis": 138.79,
+      "profit": 125.21,
+      "roi": 0.9022,
+      "roiPercent": 90.22,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 8950,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657401",
+      "collectrRawMarket": 87.61,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657401.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657403.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
       "ebayCandidateCount": 0,
@@ -7877,7 +7882,7 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 138.16,
+      "collectrRawMarket": 138.09,
       "collectrLink": "https://app.getcollectr.com/explore/product/685008",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/v7y54gzorfyitorz/1600.jpg",
@@ -8050,61 +8055,6 @@
         {
           "stage": "search",
           "query": "\"Sanji\" \"Premium Booster -The Best- Vol. 2\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
-      "code": "EB03-055",
-      "name": "Nico Robin - 055 (SP)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "productId": "672828",
-      "rarity": "SR",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
-      "searchScore": 149,
-      "rawMarket": 428.01,
-      "psa10Market": 1025.07,
-      "netPsa10Exit": 902.06,
-      "gradingCost": 33,
-      "shippingCost": 33,
-      "costBasis": 494.01,
-      "profit": 408.05,
-      "roi": 0.826,
-      "roiPercent": 82.6,
-      "psa10SalesCount": 17,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 1307.71,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672828",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ajbo7pmoh2n6wkpz/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_672828.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Nico Robin - 055\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Nico Robin\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"EB03-055\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Nico Robin - 055\" \"One Piece Heroine's Edition\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
