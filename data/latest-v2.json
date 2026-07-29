@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-28T09:45:34.201Z",
-  "dateStamp": "2026-07-28",
+  "generatedAt": "2026-07-29T09:47:17.311Z",
+  "dateStamp": "2026-07-29",
   "filters": {
     "source": "PriceCharting One Piece full-price guide (all languages) + eBay raw candidates",
     "llmVisionEnabled": false,
@@ -16,11 +16,11 @@
   },
   "ebayScoutSkipped": false,
   "publishMode": "full",
-  "rowsWithEbayField": 24,
+  "rowsWithEbayField": 23,
   "rowsWithEbayCandidates": 0,
   "weeklyBaseJson": "./data/weekly-base.json",
   "reusedExistingBoard": null,
-  "qualifiedCount": 24,
+  "qualifiedCount": 23,
   "lastSeenReviewRows": [
     {
       "code": "OP13-118",
@@ -30,7 +30,7 @@
       "roiPercent": 100.46,
       "rawMarket": 1205.51,
       "psa10Market": 3003.46,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -429,7 +429,7 @@
       "roiPercent": 92.12,
       "rawMarket": 29.1,
       "psa10Market": 207.62,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -811,7 +811,7 @@
       "roiPercent": 124.1,
       "rawMarket": 3750,
       "psa10Market": 9837.62,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -1210,7 +1210,7 @@
       "roiPercent": 122.77,
       "rawMarket": 24.28,
       "psa10Market": 145,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|178078707558|0",
@@ -1619,7 +1619,7 @@
       "roiPercent": 95.89,
       "rawMarket": 979.61,
       "psa10Market": 2432.18,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|298263328732|0",
@@ -2050,7 +2050,7 @@
       "roiPercent": 113.98,
       "rawMarket": 536.78,
       "psa10Market": 1580,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|116969131281|0",
@@ -2469,10 +2469,10 @@
       "name": "Monkey.D.Luffy (Manga)",
       "setName": "Emperors in the New World",
       "productId": "597068",
-      "roiPercent": 124.88,
-      "rawMarket": 981.92,
+      "roiPercent": 121.21,
+      "rawMarket": 1000.1,
       "psa10Market": 2798,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -2870,7 +2870,7 @@
       "roiPercent": 89.72,
       "rawMarket": 93.18,
       "psa10Market": 343.17,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819759744|0",
@@ -3251,7 +3251,7 @@
       "roiPercent": 83.05,
       "rawMarket": 584.57,
       "psa10Market": 1451,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819767966|0",
@@ -3684,7 +3684,7 @@
       "roiPercent": 289.55,
       "rawMarket": 46.5,
       "psa10Market": 498,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|267634276865|0",
@@ -4110,7 +4110,7 @@
       "roiPercent": 235.04,
       "rawMarket": 50,
       "psa10Market": 316,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137171546752|0",
@@ -4492,7 +4492,7 @@
       "roiPercent": 205.22,
       "rawMarket": 30.43,
       "psa10Market": 220,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|136819765477|0",
@@ -4891,7 +4891,7 @@
       "roiPercent": 86.72,
       "rawMarket": 2950,
       "psa10Market": 6499.05,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|236777323111|0",
@@ -5335,7 +5335,7 @@
       "roiPercent": 126.85,
       "rawMarket": 85,
       "psa10Market": 389.25,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|168023491204|0",
@@ -5751,7 +5751,7 @@
       "roiPercent": 113.16,
       "rawMarket": 202.32,
       "psa10Market": 570,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|336431349606|0",
@@ -6170,7 +6170,7 @@
       "roiPercent": 99.47,
       "rawMarket": 830.48,
       "psa10Market": 2063.8,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|376748962664|0",
@@ -6596,7 +6596,7 @@
       "roiPercent": 84.79,
       "rawMarket": 377.5,
       "psa10Market": 862,
-      "lastSeenAt": "2026-07-27T09:45:34.878Z",
+      "lastSeenAt": "2026-07-28T09:45:34.201Z",
       "lastSeenReviewCandidates": [
         {
           "itemId": "v1|137259354231|0",
@@ -7022,7 +7022,7 @@
       "psa10SalesCount": 11,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 92.86,
+      "collectrRawMarket": 92.58,
       "collectrLink": "https://app.getcollectr.com/explore/product/672805",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/jedln4iqj7p2jytz/1600.jpg",
@@ -7072,7 +7072,7 @@
       "psa10SalesCount": 19,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 1372.61,
+      "collectrRawMarket": 1415.09,
       "collectrLink": "https://app.getcollectr.com/explore/product/672828",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/extra-booster-one-piece-heroine's-edition?cardType=cards&groupId=24545&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ajbo7pmoh2n6wkpz/1600.jpg",
@@ -7127,7 +7127,7 @@
       "psa10SalesCount": 3,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 95.34,
+      "collectrRawMarket": 97.51,
       "collectrLink": "https://app.getcollectr.com/explore/product/685453",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/5pr5ysv5phpwz22u/1600.jpg",
@@ -7411,32 +7411,32 @@
       "lastReviewSeenAt": null
     },
     {
-      "code": "OP15-086",
-      "name": "Nami (OP15-086) (Alternate Art)",
-      "setName": "Adventure on Kami's Island",
-      "productId": "685439",
-      "rarity": "SR",
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "setName": "Carrying On His Will",
+      "productId": "657403",
+      "rarity": "SEC",
       "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-adventure-on-kami%27s-island/nami-alternate-art-op15-086",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-adventure-on-kami%27s-island/nami-alternate-art-op15-086",
-      "searchScore": 157,
-      "rawMarket": 300.97,
-      "psa10Market": 940,
-      "netPsa10Exit": 827.2,
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "searchScore": 139,
+      "rawMarket": 73,
+      "psa10Market": 349.84,
+      "netPsa10Exit": 307.86,
       "gradingCost": 33,
       "shippingCost": 33,
-      "costBasis": 366.97,
-      "profit": 460.23,
-      "roi": 1.2541,
-      "roiPercent": 125.41,
-      "psa10SalesCount": 24,
+      "costBasis": 139,
+      "profit": 168.86,
+      "roi": 1.2148,
+      "roiPercent": 121.48,
+      "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 218.02,
-      "collectrLink": "https://app.getcollectr.com/explore/product/685439",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/odj7pn3ybcomvdsz/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_685439.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "collectrRawMarket": 106.28,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657403.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
       "ebayCandidates": [],
       "reviewCandidates": [],
       "ebayCandidateCount": 0,
@@ -7444,17 +7444,17 @@
       "ebayLookupErrors": [
         {
           "stage": "search",
-          "query": "\"Nami\" \"One Piece\"",
+          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
           "error": "Missing eBay credentials"
         },
         {
           "stage": "search",
-          "query": "\"OP15-086\" \"One Piece\"",
+          "query": "\"OP13-118\" \"One Piece\"",
           "error": "Missing eBay credentials"
         },
         {
           "stage": "search",
-          "query": "\"Nami\" \"Adventure on Kami's Island\" \"One Piece\"",
+          "query": "\"Monkey.D.Luffy\" \"Carrying On His Will\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
@@ -7470,15 +7470,15 @@
       "priceChartingPath": "/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-emperors-in-the-new-world/monkeydluffy-manga-op09-119",
       "searchScore": 155,
-      "rawMarket": 981.92,
+      "rawMarket": 1000.1,
       "psa10Market": 2798,
       "netPsa10Exit": 2462.24,
       "gradingCost": 79.99,
       "shippingCost": 33,
-      "costBasis": 1094.91,
-      "profit": 1367.33,
-      "roi": 1.2488,
-      "roiPercent": 124.88,
+      "costBasis": 1113.09,
+      "profit": 1349.15,
+      "roi": 1.2121,
+      "roiPercent": 121.21,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 27,
       "bgs10SalesCount": 8,
@@ -7561,56 +7561,6 @@
       "lastReviewSeenAt": null
     },
     {
-      "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (Parallel)",
-      "setName": "Carrying On His Will",
-      "productId": "657403",
-      "rarity": "SEC",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "searchScore": 139,
-      "rawMarket": 75.5,
-      "psa10Market": 355,
-      "netPsa10Exit": 312.4,
-      "gradingCost": 33,
-      "shippingCost": 33,
-      "costBasis": 141.5,
-      "profit": 170.9,
-      "roi": 1.2078,
-      "roiPercent": 120.78,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 3,
-      "collectrRawMarket": 103.87,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/carrying-on-his-will?cardType=cards&groupId=24303&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_657403.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP13-118\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Monkey.D.Luffy\" \"Carrying On His Will\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art) (Manga)",
       "setName": "Wings of the Captain",
@@ -7620,15 +7570,15 @@
       "priceChartingPath": "/game/one-piece-japanese-wings-of-the-captain/roronoa-zoro-alternate-art-manga-op06-118",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-wings-of-the-captain/roronoa-zoro-alternate-art-manga-op06-118",
       "searchScore": 177,
-      "rawMarket": 1079.56,
-      "psa10Market": 2925.5,
-      "netPsa10Exit": 2574.44,
+      "rawMarket": 1083.98,
+      "psa10Market": 2936.81,
+      "netPsa10Exit": 2584.39,
       "gradingCost": 79.99,
       "shippingCost": 33,
-      "costBasis": 1192.55,
-      "profit": 1381.89,
-      "roi": 1.1588,
-      "roiPercent": 115.88,
+      "costBasis": 1196.97,
+      "profit": 1387.42,
+      "roi": 1.1591,
+      "roiPercent": 115.91,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
@@ -7670,19 +7620,19 @@
       "priceChartingPath": "/game/one-piece-japanese-wings-of-the-captain/roronoa-zoro-alternate-art-manga-op06-118",
       "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-wings-of-the-captain/roronoa-zoro-alternate-art-manga-op06-118",
       "searchScore": 161,
-      "rawMarket": 1079.56,
-      "psa10Market": 2925.5,
-      "netPsa10Exit": 2574.44,
+      "rawMarket": 1083.98,
+      "psa10Market": 2936.81,
+      "netPsa10Exit": 2584.39,
       "gradingCost": 79.99,
       "shippingCost": 33,
-      "costBasis": 1192.55,
-      "profit": 1381.89,
-      "roi": 1.1588,
-      "roiPercent": 115.88,
+      "costBasis": 1196.97,
+      "profit": 1387.42,
+      "roi": 1.1591,
+      "roiPercent": 115.91,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 136.96,
+      "collectrRawMarket": 136.71,
       "collectrLink": "https://app.getcollectr.com/explore/product/541659",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/wings-of-the-captain?cardType=cards&groupId=23272&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/wqttukrrsqlyjmv4/1600.jpg",
@@ -7732,7 +7682,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 29,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 1675,
+      "collectrRawMarket": 1783.33,
       "collectrLink": "https://app.getcollectr.com/explore/product/597035",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/l4zaqi7nn5hnlk4j/1600.jpg",
@@ -7861,6 +7811,56 @@
       "lastReviewSeenAt": null
     },
     {
+      "code": "OP06-119",
+      "name": "Sanji (Manga)",
+      "setName": "Premium Booster -The Best- Vol. 2",
+      "productId": "654637",
+      "rarity": "SEC",
+      "productSubType": "Foil",
+      "priceChartingPath": "/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
+      "searchScore": 155,
+      "rawMarket": 645.68,
+      "psa10Market": 1719.91,
+      "netPsa10Exit": 1513.52,
+      "gradingCost": 79.99,
+      "shippingCost": 33,
+      "costBasis": 758.67,
+      "profit": 754.85,
+      "roi": 0.995,
+      "roiPercent": 99.5,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 1,
+      "collectrRawMarket": 2265.97,
+      "collectrLink": "https://app.getcollectr.com/explore/product/654637",
+      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/aven56ts7nrw2yaw/1600.jpg",
+      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_654637.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
+      "ebayCandidates": [],
+      "reviewCandidates": [],
+      "ebayCandidateCount": 0,
+      "ebayLookupDegraded": true,
+      "ebayLookupErrors": [
+        {
+          "stage": "search",
+          "query": "\"Sanji\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"OP06-119\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        },
+        {
+          "stage": "search",
+          "query": "\"Sanji\" \"Premium Booster -The Best- Vol. 2\" \"One Piece\"",
+          "error": "Missing eBay credentials"
+        }
+      ],
+      "lastReviewSeenAt": null
+    },
+    {
       "code": "EB02-052",
       "name": "Enel (SP)",
       "setName": "Adventure on Kami's Island",
@@ -7882,7 +7882,7 @@
       "psa10SalesCount": 5,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 138.78,
+      "collectrRawMarket": 138.75,
       "collectrLink": "https://app.getcollectr.com/explore/product/685008",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/v7y54gzorfyitorz/1600.jpg",
@@ -7932,7 +7932,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 237.98,
+      "collectrRawMarket": 241.54,
       "collectrLink": "https://app.getcollectr.com/explore/product/646566",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/legacy-of-the-master?cardType=cards&groupId=24302&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k5xnv2ldhbc6kq2n/1600.jpg",
@@ -7982,7 +7982,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 119.99,
+      "collectrRawMarket": 118.84,
       "collectrLink": "https://app.getcollectr.com/explore/product/600658",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/emperors-in-the-new-world?cardType=cards&groupId=23589&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k5xnv2ldhbc6kq2n/1600.jpg",
@@ -8005,56 +8005,6 @@
         {
           "stage": "search",
           "query": "\"Zoro-Juurou\" \"Emperors in the New World\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        }
-      ],
-      "lastReviewSeenAt": null
-    },
-    {
-      "code": "OP06-119",
-      "name": "Sanji (Manga)",
-      "setName": "Premium Booster -The Best- Vol. 2",
-      "productId": "654637",
-      "rarity": "SEC",
-      "productSubType": "Foil",
-      "priceChartingPath": "/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-premium-booster-2/sanji-manga-op06-119",
-      "searchScore": 155,
-      "rawMarket": 642.05,
-      "psa10Market": 1598.14,
-      "netPsa10Exit": 1406.36,
-      "gradingCost": 79.99,
-      "shippingCost": 33,
-      "costBasis": 755.04,
-      "profit": 651.32,
-      "roi": 0.8626,
-      "roiPercent": 86.26,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 1,
-      "collectrRawMarket": 2265.97,
-      "collectrLink": "https://app.getcollectr.com/explore/product/654637",
-      "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/aven56ts7nrw2yaw/1600.jpg",
-      "collectrImageUrl": "https://public.getcollectr.com/public-assets/products/product_654637.jpg?optimizer=image&format=webp&width=1200&quality=80&strip=metadata",
-      "ebayCandidates": [],
-      "reviewCandidates": [],
-      "ebayCandidateCount": 0,
-      "ebayLookupDegraded": true,
-      "ebayLookupErrors": [
-        {
-          "stage": "search",
-          "query": "\"Sanji\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"OP06-119\" \"One Piece\"",
-          "error": "Missing eBay credentials"
-        },
-        {
-          "stage": "search",
-          "query": "\"Sanji\" \"Premium Booster -The Best- Vol. 2\" \"One Piece\"",
           "error": "Missing eBay credentials"
         }
       ],
@@ -8132,7 +8082,7 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 1,
-      "collectrRawMarket": 871.41,
+      "collectrRawMarket": 881.37,
       "collectrLink": "https://app.getcollectr.com/explore/product/653835",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/premium-booster--the-best--vol.-2?cardType=cards&groupId=24305&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/s36w5d34tii3im7z/1600.jpg",
@@ -8182,7 +8132,7 @@
       "psa10SalesCount": 4,
       "ungradedSalesCount": 22,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 281,
+      "collectrRawMarket": 291.24,
       "collectrLink": "https://app.getcollectr.com/explore/product/685017",
       "collectrSetUrl": "https://app.getcollectr.com/sets/category/68/adventure-on-kami's-island?cardType=cards&groupId=24637&sortType=price&sortOrder=desc",
       "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/r44ptuperfsagniz/1600.jpg",
