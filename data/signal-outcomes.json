@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T09:45:43.138Z",
+  "generatedAt": "2026-07-31T09:45:41.267Z",
   "instructions": {
     "purpose": "Manual review ledger for sniper-test signals.",
     "outcomeStatusOptions": [
@@ -88,7 +88,7 @@
       "setName": "Emperors in the New World",
       "action": "watch",
       "confidenceTier": "C",
-      "discoveryScore": 61.2,
+      "discoveryScore": 62,
       "targetBuyPrice": 93.89,
       "maxBuyPrice": 141.56,
       "exitZoneLow": 277.83,

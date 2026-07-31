@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-30T09:47:06.586Z",
-  "listingCount": 1,
+  "generatedAt": "2026-07-31T09:47:04.602Z",
+  "listingCount": 2,
   "summary": {
     "reviewCount": 1,
-    "watchCount": 0,
-    "avgScore": 48.4,
-    "avgPredictedProfit": 99
+    "watchCount": 1,
+    "avgScore": 43.2,
+    "avgPredictedProfit": 98.01
   },
   "rows": [
     {
@@ -53,6 +53,55 @@
       "reason": "No image review yet.",
       "visibleSignals": [
         "alt-art signal"
+      ],
+      "outcomeStatus": "untracked",
+      "decision": null,
+      "decisionAt": null,
+      "realizedProfit": null,
+      "predictionError": null
+    },
+    {
+      "rank": 2,
+      "itemId": "v1|227456030522|0",
+      "title": "One Piece Card Ms. Monday C EB01-035 Extra Booster Memorial Collection Japan",
+      "url": "https://www.ebay.com/itm/227456030522?_skw=one+piece+collection+cards&hash=item34f56f973a:g:As0AAeSwhZ9qbFTB",
+      "imageUrl": "https://i.ebayimg.com/images/g/As0AAeSwhZ9qbFTB/s-l225.jpg",
+      "price": 0.99,
+      "shipping": 0.99,
+      "total": 1.98,
+      "lotType": "collection_lot",
+      "cardCountGuess": 60,
+      "score": 38,
+      "tier": "watch",
+      "predictedProfit": 97.02,
+      "maxBuyPrice": 71.28,
+      "maxBidPrice": 64.35,
+      "trueBulk": false,
+      "trueBulkMaxBuyPrice": null,
+      "trueBulkMaxPer1000": 5,
+      "expectedValue": 99,
+      "sellerFeedbackPercent": "100.0",
+      "imageVerdict": "not_reviewed",
+      "imageConfidence": null,
+      "riskLevel": "low",
+      "scoreBreakdown": {
+        "profitScore": 100,
+        "confidenceScore": 50,
+        "evidenceScore": 60,
+        "liquidityScore": 33.3,
+        "sellerQualityScore": 100,
+        "junkRiskPenalty": 0
+      },
+      "topReasons": [
+        "visible signals: specific card EB01-035",
+        "expected spread 97 over ask"
+      ],
+      "topRisks": [],
+      "hardGatesPassed": false,
+      "note": "Large lot watch; value depends on manual photo review.",
+      "reason": "No image review yet.",
+      "visibleSignals": [
+        "specific card EB01-035"
       ],
       "outcomeStatus": "untracked",
       "decision": null,
