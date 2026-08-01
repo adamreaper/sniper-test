@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-31T09:45:41.260Z",
-  "sourceFeedUpdatedAt": "2026-07-31T09:45:41.189Z",
+  "generatedAt": "2026-08-01T09:45:38.231Z",
+  "sourceFeedUpdatedAt": "2026-08-01T09:45:38.158Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -171,11 +171,11 @@
       "expectedPsaNet": 325.74,
       "profit": 325.74,
       "roiPercent": 289.55,
-      "psa10SalesCount": 11,
+      "psa10SalesCount": 13,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 90.9,
-      "collectrRawDeltaPercent": 95.48,
+      "collectrRawMarket": 90.15,
+      "collectrRawDeltaPercent": 93.87,
       "psa10SpreadMultiple": 10.71,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -285,7 +285,7 @@
       "profit": 1182.36,
       "roiPercent": 152.44,
       "psa10SalesCount": 24,
-      "ungradedSalesCount": 16,
+      "ungradedSalesCount": 17,
       "bgs10SalesCount": 4,
       "collectrRawMarket": 1792.56,
       "collectrRawDeltaPercent": 170.51,
@@ -345,13 +345,13 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 116.51,
-      "collectrRawDeltaPercent": 25.04,
+      "collectrRawMarket": 117.23,
+      "collectrRawDeltaPercent": 25.81,
       "psa10SpreadMultiple": 3.68,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 62,
-      "buyScore": 62,
+      "discoveryScore": 61.6,
+      "buyScore": 61.6,
       "confidenceTier": "C",
       "action": "watch",
       "riskFlags": [
@@ -377,7 +377,7 @@
       "rank": 5
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 10,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy (Manga)",
       "setName": "Emperors in the New World",
@@ -435,6 +435,64 @@
       "rank": 6
     },
     {
+      "sourceRank": 8,
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "setName": "Carrying On His Will",
+      "rarity": "SEC",
+      "productId": "657403",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "searchScore": 139,
+      "rawMarket": 65.25,
+      "psa10Market": 334.65,
+      "netPsa10Exit": 294.49,
+      "gradingCost": 33,
+      "costBasis": 131.25,
+      "expectedPsaNet": 163.24,
+      "profit": 163.24,
+      "roiPercent": 124.37,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 3,
+      "collectrRawMarket": 106.38,
+      "collectrRawDeltaPercent": 63.03,
+      "psa10SpreadMultiple": 5.13,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 60,
+      "buyScore": 60,
+      "confidenceTier": "C",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "Strong PSA 10 spread versus raw market",
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 72.18,
+      "targetBuyPrice": 95.04,
+      "stretchBuyPrice": 121.99,
+      "maxBuyPrice": 145.48,
+      "exitZoneLow": 270.93,
+      "exitZoneHigh": 303.32,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 7
+    },
+    {
       "sourceRank": 9,
       "code": "OP13-118",
       "name": "Monkey.D.Luffy (118) (3rd Anniversary)",
@@ -490,68 +548,10 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 7
-    },
-    {
-      "sourceRank": 10,
-      "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (Parallel)",
-      "setName": "Carrying On His Will",
-      "rarity": "SEC",
-      "productId": "657403",
-      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
-      "searchScore": 139,
-      "rawMarket": 73,
-      "psa10Market": 349.84,
-      "netPsa10Exit": 307.86,
-      "gradingCost": 33,
-      "costBasis": 139,
-      "expectedPsaNet": 168.86,
-      "profit": 168.86,
-      "roiPercent": 121.48,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 3,
-      "collectrRawMarket": 107.15,
-      "collectrRawDeltaPercent": 46.78,
-      "psa10SpreadMultiple": 4.79,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 59.9,
-      "buyScore": 59.9,
-      "confidenceTier": "C",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "Strong PSA 10 spread versus raw market",
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 76.95,
-      "targetBuyPrice": 100.85,
-      "stretchBuyPrice": 129.03,
-      "maxBuyPrice": 153.58,
-      "exitZoneLow": 283.23,
-      "exitZoneHigh": 317.1,
-      "reviewTags": [
-        "low-entry",
-        "liquid",
-        "wide-spread"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
       "rank": 8
     },
     {
-      "sourceRank": 12,
+      "sourceRank": 11,
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art) (Manga)",
       "setName": "Wings of the Captain",
@@ -609,7 +609,7 @@
       "rank": 9
     },
     {
-      "sourceRank": 13,
+      "sourceRank": 12,
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art)",
       "setName": "Wings of the Captain",
@@ -666,65 +666,7 @@
       "rank": 10
     },
     {
-      "sourceRank": 6,
-      "code": "OP09-093",
-      "name": "Marshall.D.Teach (SP) (Silver)",
-      "setName": "Legacy of the Master",
-      "rarity": "SR",
-      "productId": "646572",
-      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/dj6b4uku6fftbuca/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/646572",
-      "searchScore": 157,
-      "rawMarket": 409.08,
-      "psa10Market": 1271,
-      "netPsa10Exit": 1118.48,
-      "gradingCost": 33,
-      "costBasis": 475.08,
-      "expectedPsaNet": 643.4,
-      "profit": 643.4,
-      "roiPercent": 135.43,
-      "psa10SalesCount": 8,
-      "ungradedSalesCount": 13,
-      "bgs10SalesCount": 2,
-      "collectrRawMarket": 1213.32,
-      "collectrRawDeltaPercent": 196.6,
-      "psa10SpreadMultiple": 3.11,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 59.4,
-      "buyScore": 59.4,
-      "confidenceTier": "C",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "high_raw_entry_price",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Absolute upside is meaningful after fees",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 337.36,
-      "targetBuyPrice": 410.84,
-      "stretchBuyPrice": 494.58,
-      "maxBuyPrice": 565.12,
-      "exitZoneLow": 1029,
-      "exitZoneHigh": 1152.03,
-      "reviewTags": [
-        "liquid",
-        "chase"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 11
-    },
-    {
-      "sourceRank": 14,
+      "sourceRank": 13,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
@@ -779,10 +721,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 12
+      "rank": 11
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 6,
       "code": "OP08-106",
       "name": "Nami (SP)",
       "setName": "Emperors in the New World",
@@ -836,10 +778,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 13
+      "rank": 12
     },
     {
-      "sourceRank": 8,
+      "sourceRank": 7,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy - EB02-061 (SP)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -862,8 +804,8 @@
       "psa10SalesCount": 20,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 468.57,
-      "collectrRawDeltaPercent": 223.15,
+      "collectrRawMarket": 479.12,
+      "collectrRawDeltaPercent": 230.43,
       "psa10SpreadMultiple": 3.73,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -893,10 +835,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 14
+      "rank": 13
     },
     {
-      "sourceRank": 15,
+      "sourceRank": 14,
       "code": "OP08-001",
       "name": "Tony Tony.Chopper (001) (Parallel)",
       "setName": "Two Legends",
@@ -949,7 +891,7 @@
         "liquid"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 15
+      "rank": 14
     },
     {
       "sourceRank": 16,
@@ -1007,7 +949,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 16
+      "rank": 15
     },
     {
       "sourceRank": 17,
@@ -1065,7 +1007,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 17
+      "rank": 16
     },
     {
       "sourceRank": 5,
@@ -1119,6 +1061,64 @@
       "exitZoneLow": 809.6,
       "exitZoneHigh": 906.4,
       "reviewTags": [
+        "chase"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 17
+    },
+    {
+      "sourceRank": 15,
+      "code": "OP09-093",
+      "name": "Marshall.D.Teach (SP) (Silver)",
+      "setName": "Legacy of the Master",
+      "rarity": "SR",
+      "productId": "646572",
+      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/marshalldteach-sp-silver-op09-093",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/dj6b4uku6fftbuca/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/646572",
+      "searchScore": 157,
+      "rawMarket": 453.6,
+      "psa10Market": 1197.3,
+      "netPsa10Exit": 1053.62,
+      "gradingCost": 33,
+      "costBasis": 519.6,
+      "expectedPsaNet": 534.02,
+      "profit": 534.02,
+      "roiPercent": 102.78,
+      "psa10SalesCount": 8,
+      "ungradedSalesCount": 13,
+      "bgs10SalesCount": 2,
+      "collectrRawMarket": 1213.32,
+      "collectrRawDeltaPercent": 167.49,
+      "psa10SpreadMultiple": 2.64,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 51.7,
+      "buyScore": 51.7,
+      "confidenceTier": "D",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "high_raw_entry_price",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Absolute upside is meaningful after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 309.08,
+      "targetBuyPrice": 375.38,
+      "stretchBuyPrice": 450.31,
+      "maxBuyPrice": 512.92,
+      "exitZoneLow": 969.33,
+      "exitZoneHigh": 1085.23,
+      "reviewTags": [
+        "liquid",
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
@@ -1262,8 +1262,8 @@
       "psa10SalesCount": 3,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 98.74,
-      "collectrRawDeltaPercent": 83.77,
+      "collectrRawMarket": 100.66,
+      "collectrRawDeltaPercent": 87.34,
       "psa10SpreadMultiple": 7.31,
       "noVerifiedListingPull": true,
       "marketStats": null,

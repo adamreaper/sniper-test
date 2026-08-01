@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-31T09:47:04.602Z",
+  "generatedAt": "2026-08-01T09:47:12.250Z",
   "listingCount": 2,
   "summary": {
     "reviewCount": 1,
     "watchCount": 1,
-    "avgScore": 43.2,
-    "avgPredictedProfit": 98.01
+    "avgScore": 39.6,
+    "avgPredictedProfit": 107.6
   },
   "rows": [
     {
@@ -28,7 +28,7 @@
       "trueBulkMaxBuyPrice": null,
       "trueBulkMaxPer1000": 5,
       "expectedValue": 127,
-      "sellerFeedbackPercent": "96.9",
+      "sellerFeedbackPercent": "97.0",
       "imageVerdict": "not_reviewed",
       "imageConfidence": null,
       "riskLevel": "low",
@@ -37,7 +37,7 @@
         "confidenceScore": 50,
         "evidenceScore": 100,
         "liquidityScore": 55.6,
-        "sellerQualityScore": 96.9,
+        "sellerQualityScore": 97,
         "junkRiskPenalty": 11.1
       },
       "topReasons": [
@@ -62,25 +62,25 @@
     },
     {
       "rank": 2,
-      "itemId": "v1|227456030522|0",
-      "title": "One Piece Card Ms. Monday C EB01-035 Extra Booster Memorial Collection Japan",
-      "url": "https://www.ebay.com/itm/227456030522?_skw=one+piece+collection+cards&hash=item34f56f973a:g:As0AAeSwhZ9qbFTB",
-      "imageUrl": "https://i.ebayimg.com/images/g/As0AAeSwhZ9qbFTB/s-l225.jpg",
-      "price": 0.99,
-      "shipping": 0.99,
-      "total": 1.98,
+      "itemId": "v1|318662733159|0",
+      "title": "Monkey D. Luffy EB02-061 SEC Anime 25th Collection ONE PIECE Card Game Japanese",
+      "url": "https://www.ebay.com/itm/318662733159?_skw=one+piece+collection+cards&hash=item4a31c76d67:g:2m0AAeSwzDRqbaLv",
+      "imageUrl": "https://i.ebayimg.com/images/g/2m0AAeSwzDRqbaLv/s-l225.jpg",
+      "price": 11.8,
+      "shipping": 0,
+      "total": 11.8,
       "lotType": "collection_lot",
       "cardCountGuess": 60,
-      "score": 38,
+      "score": 30.7,
       "tier": "watch",
-      "predictedProfit": 97.02,
-      "maxBuyPrice": 71.28,
-      "maxBidPrice": 64.35,
+      "predictedProfit": 116.2,
+      "maxBuyPrice": 92.16,
+      "maxBidPrice": 83.2,
       "trueBulk": false,
       "trueBulkMaxBuyPrice": null,
       "trueBulkMaxPer1000": 5,
-      "expectedValue": 99,
-      "sellerFeedbackPercent": "100.0",
+      "expectedValue": 128,
+      "sellerFeedbackPercent": "98.9",
       "imageVerdict": "not_reviewed",
       "imageConfidence": null,
       "riskLevel": "low",
@@ -89,19 +89,20 @@
         "confidenceScore": 50,
         "evidenceScore": 60,
         "liquidityScore": 33.3,
-        "sellerQualityScore": 100,
+        "sellerQualityScore": 98.9,
         "junkRiskPenalty": 0
       },
       "topReasons": [
-        "visible signals: specific card EB01-035",
-        "expected spread 97 over ask"
+        "visible signals: specific card EB02-061",
+        "expected spread 116 over ask",
+        "free shipping"
       ],
       "topRisks": [],
       "hardGatesPassed": false,
       "note": "Large lot watch; value depends on manual photo review.",
       "reason": "No image review yet.",
       "visibleSignals": [
-        "specific card EB01-035"
+        "specific card EB02-061"
       ],
       "outcomeStatus": "untracked",
       "decision": null,
