@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-02T09:46:42.865Z",
-  "sourceFeedUpdatedAt": "2026-08-02T09:46:42.790Z",
+  "generatedAt": "2026-08-03T09:45:43.001Z",
+  "sourceFeedUpdatedAt": "2026-08-03T09:45:42.927Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -18,31 +18,6 @@
   "reviewQueue": [
     {
       "queueRank": 1,
-      "code": "EB03-055",
-      "name": "Nico Robin - 055 (SP)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "action": "watch",
-      "confidenceTier": "B",
-      "discoveryScore": 76,
-      "targetBuyPrice": 540.71,
-      "idealBuyPrice": 443.14,
-      "stretchBuyPrice": 653.21,
-      "maxBuyPrice": 749.04,
-      "exitZoneLow": 1287.87,
-      "exitZoneHigh": 1441.86,
-      "whyInteresting": "Strong PSA 10 spread versus raw market",
-      "biggestRisk": "Collectr raw market drifts too far from board pricing",
-      "reviewSummary": "Worth checking, but not first in line.",
-      "reviewTags": [
-        "liquid",
-        "chase",
-        "wide-spread"
-      ],
-      "collectrLink": "https://app.getcollectr.com/explore/product/672828",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055"
-    },
-    {
-      "queueRank": 2,
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
       "setName": "Extra Booster: One Piece Heroine's Edition",
@@ -69,65 +44,6 @@
   ],
   "plans": [
     {
-      "sourceRank": 3,
-      "code": "EB03-055",
-      "name": "Nico Robin - 055 (SP)",
-      "setName": "Extra Booster: One Piece Heroine's Edition",
-      "rarity": "SR",
-      "productId": "672828",
-      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ajbo7pmoh2n6wkpz/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/672828",
-      "searchScore": 149,
-      "rawMarket": 379.45,
-      "psa10Market": 1590.75,
-      "netPsa10Exit": 1399.86,
-      "gradingCost": 33,
-      "costBasis": 445.45,
-      "expectedPsaNet": 954.41,
-      "profit": 954.41,
-      "roiPercent": 214.26,
-      "psa10SalesCount": 19,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 0,
-      "collectrRawMarket": 1415.09,
-      "collectrRawDeltaPercent": 272.93,
-      "psa10SpreadMultiple": 4.19,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 76,
-      "buyScore": 76,
-      "confidenceTier": "B",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "high_raw_entry_price",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "Strong PSA 10 spread versus raw market",
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Absolute upside is meaningful after fees"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 443.14,
-      "targetBuyPrice": 540.71,
-      "stretchBuyPrice": 653.21,
-      "maxBuyPrice": 749.04,
-      "exitZoneLow": 1287.87,
-      "exitZoneHigh": 1441.86,
-      "reviewTags": [
-        "liquid",
-        "chase",
-        "wide-spread"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 1
-    },
-    {
       "sourceRank": 1,
       "code": "EB03-053",
       "name": "Nami (053) (Alternate Art)",
@@ -151,8 +67,8 @@
       "psa10SalesCount": 14,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 89.4,
-      "collectrRawDeltaPercent": 92.26,
+      "collectrRawMarket": 89.16,
+      "collectrRawDeltaPercent": 91.74,
       "psa10SpreadMultiple": 10.71,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -183,7 +99,7 @@
         "wide-spread"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 2
+      "rank": 1
     },
     {
       "sourceRank": 12,
@@ -237,10 +153,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 3
+      "rank": 2
     },
     {
-      "sourceRank": 4,
+      "sourceRank": 3,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (SP) (Gold)",
       "setName": "Legacy of the Master",
@@ -295,7 +211,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 4
+      "rank": 3
     },
     {
       "sourceRank": 2,
@@ -321,8 +237,8 @@
       "psa10SalesCount": 3,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 100.48,
-      "collectrRawDeltaPercent": 33.99,
+      "collectrRawMarket": 100.53,
+      "collectrRawDeltaPercent": 34.06,
       "psa10SpreadMultiple": 6.92,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -350,6 +266,64 @@
       "reviewTags": [
         "low-entry",
         "wide-spread"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 4
+    },
+    {
+      "sourceRank": 4,
+      "code": "EB03-055",
+      "name": "Nico Robin - 055 (SP)",
+      "setName": "Extra Booster: One Piece Heroine's Edition",
+      "rarity": "SR",
+      "productId": "672828",
+      "priceChartingPath": "/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-extra-booster-heroines-edition/nico-robin-sp-eb03-055",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ajbo7pmoh2n6wkpz/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/672828",
+      "searchScore": 149,
+      "rawMarket": 458.87,
+      "psa10Market": 1415.76,
+      "netPsa10Exit": 1245.87,
+      "gradingCost": 33,
+      "costBasis": 524.87,
+      "expectedPsaNet": 721,
+      "profit": 721,
+      "roiPercent": 137.37,
+      "psa10SalesCount": 21,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 0,
+      "collectrRawMarket": 1415.09,
+      "collectrRawDeltaPercent": 208.39,
+      "psa10SpreadMultiple": 3.09,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 61.6,
+      "buyScore": 61.6,
+      "confidenceTier": "C",
+      "action": "watch",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "high_raw_entry_price",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Absolute upside is meaningful after fees",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 379.54,
+      "targetBuyPrice": 461.39,
+      "stretchBuyPrice": 554.67,
+      "maxBuyPrice": 633.24,
+      "exitZoneLow": 1146.2,
+      "exitZoneHigh": 1283.25,
+      "reviewTags": [
+        "liquid",
+        "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 5
@@ -549,8 +523,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 106.17,
-      "collectrRawDeltaPercent": 62.71,
+      "collectrRawMarket": 106.41,
+      "collectrRawDeltaPercent": 63.08,
       "psa10SpreadMultiple": 5.13,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -665,8 +639,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 137.19,
-      "collectrRawDeltaPercent": 87.34,
+      "collectrRawMarket": 136.43,
+      "collectrRawDeltaPercent": 87.41,
       "psa10SpreadMultiple": 2.71,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -1069,8 +1043,8 @@
       "psa10SalesCount": 8,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 616.61,
-      "collectrRawDeltaPercent": 106.22,
+      "collectrRawMarket": 624.21,
+      "collectrRawDeltaPercent": 108.77,
       "psa10SpreadMultiple": 2.55,
       "noVerifiedListingPull": true,
       "marketStats": null,
