@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03T09:45:43.001Z",
-  "sourceFeedUpdatedAt": "2026-08-03T09:45:42.927Z",
+  "generatedAt": "2026-08-04T09:45:35.425Z",
+  "sourceFeedUpdatedAt": "2026-08-04T09:45:35.355Z",
   "sourceMode": "rows",
   "workflowMode": "manual-search",
   "notes": [
@@ -10,8 +10,8 @@
   "summary": {
     "totalPlans": 19,
     "prioritySearchCount": 0,
-    "watchCount": 17,
-    "passCount": 2,
+    "watchCount": 16,
+    "passCount": 3,
     "manualReviewCount": 0,
     "buyNowCount": 0
   },
@@ -64,11 +64,11 @@
       "expectedPsaNet": 325.74,
       "profit": 325.74,
       "roiPercent": 289.55,
-      "psa10SalesCount": 14,
+      "psa10SalesCount": 15,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 4,
-      "collectrRawMarket": 89.16,
-      "collectrRawDeltaPercent": 91.74,
+      "collectrRawMarket": 88.52,
+      "collectrRawDeltaPercent": 90.37,
       "psa10SpreadMultiple": 10.71,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -237,13 +237,13 @@
       "psa10SalesCount": 3,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 0,
-      "collectrRawMarket": 100.53,
-      "collectrRawDeltaPercent": 34.06,
+      "collectrRawMarket": 99.62,
+      "collectrRawDeltaPercent": 32.84,
       "psa10SpreadMultiple": 6.92,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 63.1,
-      "buyScore": 63.1,
+      "discoveryScore": 63.7,
+      "buyScore": 63.7,
       "confidenceTier": "C",
       "action": "watch",
       "riskFlags": [
@@ -269,6 +269,61 @@
       ],
       "reviewSummary": "Worth checking, but not first in line.",
       "rank": 4
+    },
+    {
+      "sourceRank": 17,
+      "code": "ST18-004",
+      "name": "Zoro-Juurou (ST18-004)",
+      "setName": "Emperors in the New World",
+      "rarity": "TR",
+      "productId": "600658",
+      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/zoro-juurou-st18-004",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/zoro-juurou-st18-004",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k5xnv2ldhbc6kq2n/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/600658",
+      "searchScore": 143,
+      "rawMarket": 92.94,
+      "psa10Market": 343.28,
+      "netPsa10Exit": 302.09,
+      "gradingCost": 33,
+      "costBasis": 158.94,
+      "expectedPsaNet": 143.15,
+      "profit": 143.15,
+      "roiPercent": 90.06,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 3,
+      "collectrRawMarket": 115.91,
+      "collectrRawDeltaPercent": 24.71,
+      "psa10SpreadMultiple": 3.69,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 62.3,
+      "buyScore": 62.3,
+      "confidenceTier": "C",
+      "action": "watch",
+      "riskFlags": [
+        "low_absolute_profit",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "low_absolute_profit",
+      "idealBuyPrice": 71.89,
+      "targetBuyPrice": 93.93,
+      "stretchBuyPrice": 119.57,
+      "maxBuyPrice": 141.62,
+      "exitZoneLow": 277.92,
+      "exitZoneHigh": 311.15,
+      "reviewTags": [
+        "liquid"
+      ],
+      "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 5
     },
     {
       "sourceRank": 4,
@@ -326,65 +381,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 5
-    },
-    {
-      "sourceRank": 17,
-      "code": "ST18-004",
-      "name": "Zoro-Juurou (ST18-004)",
-      "setName": "Emperors in the New World",
-      "rarity": "TR",
-      "productId": "600658",
-      "priceChartingPath": "/game/one-piece-japanese-legacy-of-the-master/zoro-juurou-st18-004",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-legacy-of-the-master/zoro-juurou-st18-004",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/k5xnv2ldhbc6kq2n/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/600658",
-      "searchScore": 143,
-      "rawMarket": 92.94,
-      "psa10Market": 343.28,
-      "netPsa10Exit": 302.09,
-      "gradingCost": 33,
-      "costBasis": 158.94,
-      "expectedPsaNet": 143.15,
-      "profit": 143.15,
-      "roiPercent": 90.06,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 3,
-      "collectrRawMarket": 117.23,
-      "collectrRawDeltaPercent": 26.14,
-      "psa10SpreadMultiple": 3.69,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 61.5,
-      "buyScore": 61.5,
-      "confidenceTier": "C",
-      "action": "watch",
-      "riskFlags": [
-        "low_absolute_profit",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "low_absolute_profit",
-      "idealBuyPrice": 71.89,
-      "targetBuyPrice": 93.93,
-      "stretchBuyPrice": 119.57,
-      "maxBuyPrice": 141.62,
-      "exitZoneLow": 277.92,
-      "exitZoneHigh": 311.15,
-      "reviewTags": [
-        "liquid"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
       "rank": 6
     },
     {
-      "sourceRank": 7,
+      "sourceRank": 6,
       "code": "OP09-119",
       "name": "Monkey.D.Luffy (Manga)",
       "setName": "Emperors in the New World",
@@ -500,65 +500,7 @@
       "rank": 8
     },
     {
-      "sourceRank": 6,
-      "code": "OP13-118",
-      "name": "Monkey.D.Luffy (118) (Parallel)",
-      "setName": "Carrying On His Will",
-      "rarity": "SEC",
-      "productId": "657403",
-      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
-      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
-      "marketContext": null,
-      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
-      "searchScore": 139,
-      "rawMarket": 65.25,
-      "psa10Market": 334.65,
-      "netPsa10Exit": 294.49,
-      "gradingCost": 33,
-      "costBasis": 131.25,
-      "expectedPsaNet": 163.24,
-      "profit": 163.24,
-      "roiPercent": 124.37,
-      "psa10SalesCount": 30,
-      "ungradedSalesCount": 30,
-      "bgs10SalesCount": 3,
-      "collectrRawMarket": 106.41,
-      "collectrRawDeltaPercent": 63.08,
-      "psa10SpreadMultiple": 5.13,
-      "noVerifiedListingPull": true,
-      "marketStats": null,
-      "discoveryScore": 60,
-      "buyScore": 60,
-      "confidenceTier": "C",
-      "action": "watch",
-      "riskFlags": [
-        "collectr_raw_drift",
-        "search_only_no_live_pull"
-      ],
-      "topReasons": [
-        "Strong PSA 10 spread versus raw market",
-        "PSA 10 sales are liquid enough to matter",
-        "Raw sales volume supports manual searching",
-        "Search score says the card is bubbling to the top"
-      ],
-      "biggestRisk": "collectr_raw_drift",
-      "idealBuyPrice": 72.18,
-      "targetBuyPrice": 95.04,
-      "stretchBuyPrice": 121.99,
-      "maxBuyPrice": 145.48,
-      "exitZoneLow": 270.93,
-      "exitZoneHigh": 303.32,
-      "reviewTags": [
-        "low-entry",
-        "liquid",
-        "wide-spread"
-      ],
-      "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 9
-    },
-    {
-      "sourceRank": 8,
+      "sourceRank": 7,
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art) (Manga)",
       "setName": "Wings of the Captain",
@@ -613,10 +555,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 10
+      "rank": 9
     },
     {
-      "sourceRank": 9,
+      "sourceRank": 8,
       "code": "OP06-118",
       "name": "Roronoa Zoro (Alternate Art)",
       "setName": "Wings of the Captain",
@@ -639,8 +581,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 28,
       "bgs10SalesCount": 14,
-      "collectrRawMarket": 136.43,
-      "collectrRawDeltaPercent": 87.41,
+      "collectrRawMarket": 135.91,
+      "collectrRawDeltaPercent": 87.46,
       "psa10SpreadMultiple": 2.71,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -670,10 +612,10 @@
         "liquid"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 11
+      "rank": 10
     },
     {
-      "sourceRank": 10,
+      "sourceRank": 9,
       "code": "OP09-093",
       "name": "Marshall.D.Teach (093) (Manga)",
       "setName": "Emperors in the New World",
@@ -696,8 +638,8 @@
       "psa10SalesCount": 30,
       "ungradedSalesCount": 29,
       "bgs10SalesCount": 3,
-      "collectrRawMarket": 1750,
-      "collectrRawDeltaPercent": 226.02,
+      "collectrRawMarket": 1999.99,
+      "collectrRawDeltaPercent": 272.59,
       "psa10SpreadMultiple": 2.94,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -728,7 +670,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 12
+      "rank": 11
     },
     {
       "sourceRank": 14,
@@ -786,7 +728,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 13
+      "rank": 12
     },
     {
       "sourceRank": 15,
@@ -844,10 +786,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 14
+      "rank": 13
     },
     {
-      "sourceRank": 11,
+      "sourceRank": 10,
       "code": "EB02-061",
       "name": "Monkey.D.Luffy - EB02-061 (SP)",
       "setName": "Premium Booster -The Best- Vol. 2",
@@ -870,8 +812,8 @@
       "psa10SalesCount": 20,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 2,
-      "collectrRawMarket": 479.12,
-      "collectrRawDeltaPercent": 187.52,
+      "collectrRawMarket": 482.53,
+      "collectrRawDeltaPercent": 189.56,
       "psa10SpreadMultiple": 3.28,
       "noVerifiedListingPull": true,
       "marketStats": null,
@@ -901,7 +843,7 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 15
+      "rank": 14
     },
     {
       "sourceRank": 13,
@@ -959,10 +901,10 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
-      "rank": 16
+      "rank": 15
     },
     {
-      "sourceRank": 19,
+      "sourceRank": 18,
       "code": "OP09-004",
       "name": "Shanks (Manga)",
       "setName": "Emperors in the New World",
@@ -974,24 +916,24 @@
       "marketContext": null,
       "collectrLink": "https://app.getcollectr.com/explore/product/596925",
       "searchScore": 155,
-      "rawMarket": 584.57,
+      "rawMarket": 580.34,
       "psa10Market": 1451,
       "netPsa10Exit": 1276.88,
       "gradingCost": 79.99,
-      "costBasis": 697.56,
-      "expectedPsaNet": 579.32,
-      "profit": 579.32,
-      "roiPercent": 83.05,
+      "costBasis": 693.33,
+      "expectedPsaNet": 583.55,
+      "profit": 583.55,
+      "roiPercent": 84.17,
       "psa10SalesCount": 30,
       "ungradedSalesCount": 30,
       "bgs10SalesCount": 5,
       "collectrRawMarket": 2028,
-      "collectrRawDeltaPercent": 246.92,
-      "psa10SpreadMultiple": 2.48,
+      "collectrRawDeltaPercent": 249.45,
+      "psa10SpreadMultiple": 2.5,
       "noVerifiedListingPull": true,
       "marketStats": null,
-      "discoveryScore": 50.6,
-      "buyScore": 50.6,
+      "discoveryScore": 50.9,
+      "buyScore": 50.9,
       "confidenceTier": "D",
       "action": "watch",
       "riskFlags": [
@@ -1017,10 +959,69 @@
         "chase"
       ],
       "reviewSummary": "Worth checking, but not first in line.",
+      "rank": 16
+    },
+    {
+      "sourceRank": 11,
+      "code": "OP13-118",
+      "name": "Monkey.D.Luffy (118) (Parallel)",
+      "setName": "Carrying On His Will",
+      "rarity": "SEC",
+      "productId": "657403",
+      "priceChartingPath": "/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingUrl": "https://www.pricecharting.com/game/one-piece-japanese-carrying-on-his-will/monkeydluffy-alternate-art-op13-118",
+      "priceChartingImageUrl": "https://storage.googleapis.com/images.pricecharting.com/axadghgx5xrp7urc/1600.jpg",
+      "marketContext": null,
+      "collectrLink": "https://app.getcollectr.com/explore/product/657403",
+      "searchScore": 139,
+      "rawMarket": 65.25,
+      "psa10Market": 305.95,
+      "netPsa10Exit": 269.24,
+      "gradingCost": 33,
+      "costBasis": 131.25,
+      "expectedPsaNet": 137.99,
+      "profit": 137.99,
+      "roiPercent": 105.13,
+      "psa10SalesCount": 30,
+      "ungradedSalesCount": 30,
+      "bgs10SalesCount": 3,
+      "collectrRawMarket": 106.9,
+      "collectrRawDeltaPercent": 63.83,
+      "psa10SpreadMultiple": 4.69,
+      "noVerifiedListingPull": true,
+      "marketStats": null,
+      "discoveryScore": 49.8,
+      "buyScore": 49.8,
+      "confidenceTier": "D",
+      "action": "pass",
+      "riskFlags": [
+        "collectr_raw_drift",
+        "low_absolute_profit",
+        "search_only_no_live_pull"
+      ],
+      "topReasons": [
+        "Strong PSA 10 spread versus raw market",
+        "PSA 10 sales are liquid enough to matter",
+        "Raw sales volume supports manual searching",
+        "Search score says the card is bubbling to the top"
+      ],
+      "biggestRisk": "collectr_raw_drift",
+      "idealBuyPrice": 63.16,
+      "targetBuyPrice": 84.06,
+      "stretchBuyPrice": 108.71,
+      "maxBuyPrice": 130.18,
+      "exitZoneLow": 247.7,
+      "exitZoneHigh": 277.32,
+      "reviewTags": [
+        "low-entry",
+        "liquid",
+        "wide-spread"
+      ],
+      "reviewSummary": "Pass for now unless the market shifts.",
       "rank": 17
     },
     {
-      "sourceRank": 18,
+      "sourceRank": 19,
       "code": "ST26-005",
       "name": "Monkey.D.Luffy (SP)",
       "setName": "Adventure on Kami's Island",
